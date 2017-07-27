@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Redesigning New Website">
+  	<meta name="author" content="Shruthipriya Soranjerry Baskar">
+  	<!-- InstanceBeginEditable name="doctitle" -->
+  	<title>Wayne State University's Humanities Center | Welcome</title>
+     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript">
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+  	<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../main.css">
+  <link rel="icon" type="image/gif/png" href= "../img/w.png" width="16" height="13">
+  <link href="../search.htm"> 
+   <script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+  <link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Script for responsive menu-->
+  <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	
+	</script>
+  <!-- Script for the timeline slideshow-->
+ <script language="javascript">
+ (function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+
+</script>
+ 
+ <!-- InstanceBeginEditable name="head" -->
+ <!-- InstanceEndEditable -->
+ 
+</head>
+<body> 
+
+<!-- Wayne State University Header -->
+<div class="wsuheader">
+    <div class="wsuwrap">
+        <div class="wsuwordmark">
+            <a href="https://wayne.edu/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="57.22 18.736 350 32.636">
+                    <path d="M90.612 20.567c-.208.45-.382.737-.522 1.23l-8.67 28.428-6.86-21.63-6.72 21.794-9.192-29.13c-.104-.45-.208-.74-.487-1.15-.31-.45-.52-.7-.94-.99H62c-.174.33-.28.53-.313.9-.07.32-.105.57 0 .9l6.37 21.3 5.47-17.13-1.29-3.85c-.174-.53-.418-.78-.696-1.19-.24-.37-.45-.61-.73-.94h4.74c-.14.29-.21.45-.28.78-.1.57-.03.94.11 1.47l6.4 20.94 5.92-20.69c.21-.53.35-.9.32-1.43-.03-.45-.1-.74-.31-1.11h3.83c-.38.53-.59.9-.9 1.47zm80.894 29.655c-2.263-.04-3.69.04-5.814-.888V46.11c1.915 1.847 3.62 2.05 6.093 2.092 4.108.162 6.615-2.01 6.615-5.824 0-2.912-1.846-4.43-4.003-5.866l-4.735-3.2c-2.542-1.763-4.04-3.772-4.074-7.054-.035-4.84 4.004-7.68 8.39-7.516 2.055.08 3.344 0 5.225.888v3.142c-1.463-1.64-2.925-2.01-4.945-2.092-2.854-.202-5.99 2.05-5.745 5.415.174 2.174 1.427 3.364 3.064 4.47l4.142 2.83c3.13 2.134 5.74 3.28 5.92 8.49.2 6.762-5.44 8.46-10.14 8.337zm100.757-29.777c-.07.574-.035.902-.035 1.476v17.92c0 5.91-4.285 10.21-9.65 10.33-5.75.08-10.417-4.26-10.417-10.49V22.09c0-.534.04-.86-.03-1.394-.07-.656-.14-1.025-.31-1.6h3.55c-.17.45-.24.74-.31 1.27-.1.534-.07.903-.07 1.436V39.31c0 4.713 3.59 8.362 7.6 8.2 3.98-.124 6.76-3.61 6.76-7.955v-17.55c0-.614 0-.983-.07-1.56-.1-.53-.17-.86-.34-1.35h3.62c-.14.492-.21.82-.28 1.352zM105.83 49.205c-.136-.21-.26-.404-.41-.665-.564-1.05-.827-1.756-1.265-2.93l-7.09-19.017H94.22l.044.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.792 18.59c-.255.71-.43 1.06-.864 1.72-.152.25-.274.39-.443.59l-.526.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.13-.46l2.56-7.32h7.78l2.44 6.47c.04.1.07.2.11.3.08.19.13.34.15.57.05.4.02.67-.12 1.09l-.12.35h4.3l-.24-.41c-.12-.2-.22-.36-.31-.51zm-6.96-10.01h-6.233l3.047-8.596 3.187 8.59zm16.17-12.3c.024.194.024.325.003.5-.042.22-.124.375-.237.588l-4.223 7.857-3.84-7.324-.057-.103c-.152-.28-.252-.464-.334-.77-.05-.27-.072-.455-.048-.727l.025-.29h-4.11l.49.462c.22.21.34.37.5.587l.03.034c.2.33.31.51.48.84l5.28 9.73v10.4c0 .14 0 .24-.03.39-.02.21-.07.37-.17.65l-.14.36h3.28l-.1-.34c-.06-.21-.09-.35-.13-.52l-.03-.14c-.05-.29-.08-.46-.08-.72V38.29l5.35-9.434c.204-.397.33-.637.56-.995.185-.3.33-.51.62-.82l.42-.45H115l.037.3zm21.624.1c.068.298.115.496.162.8.144.877.138 1.5.13 2.286 0 .19-.003.39-.003.6v13.75l-13.236-17.8h-3.863l.69.49c.235.17.35.31.46.6.135.29.185.53.185.87v19.17c0 .46 0 .74-.11 1.19-.05.29-.13.44-.31.73l-.24.4h3.31l-.09-.33-.08-.29c-.07-.24-.12-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.493-.03-22.266c0-.46 0-.714.07-1.185v-.01c.05-.38.09-.616.2-.98l.1-.34h-2.87l.09.4zm17.882 20.465c-.8.302-1.266.352-2.073.352H146.5v-9.68h4.954c.303 0 .523 0 .79.05.418.115.667.2 1.04.405l.397.217V35.91h-7.25v-7.062h5.03c.12 0 .24-.007.34-.013.29-.016.49-.03.77.086.27.11.44.24.65.48l.48.56v-3.3h-10.77l.38.44c.16.19.23.32.32.55.1.32.15.53.15.9v19.23c0 .12.01.22.01.32.01.28.02.5-.05.79-.07.33-.15.52-.3.78l-.24.41h11.9l.938-3.54-.627.49c-.31.24-.49.34-.82.45zm35.942 1.444c-.107-.698-.106-.743-.104-.997v-19.06h3.99c.39 0 .647.05 1.057.2l.03.007c.34.09.55.177.82.34l.45.26-.24-2.997h-15.1l-.57 3.23.54-.386c.32-.23.56-.36.95-.45.24-.08.37-.1.59-.1h4.64v18.84c0 .16.01.29.01.42.01.28.02.51-.03.78-.07.27-.12.44-.24.71l-.17.38h3.85l-.19-.38c-.15-.3-.23-.49-.26-.76zm23.952.302c-.134-.21-.26-.405-.408-.666-.562-1.048-.824-1.75-1.265-2.93l-7.09-19.017h-2.844l.043.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.79 18.59c-.254.71-.43 1.06-.863 1.72-.152.25-.274.39-.444.59l-.52.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.14-.46l2.56-7.31h7.77l2.44 6.47c.03.1.07.2.11.3.07.19.13.34.15.57.05.4.02.67-.12 1.09l-.11.35h4.3l-.25-.41c-.12-.2-.22-.36-.312-.51zm-6.957-10.01h-6.234l3.04-8.596 3.18 8.596zm4.95-12.538l-.572 3.23.54-.386c.32-.232.56-.365.95-.455.24-.084.37-.107.59-.107h4.65v18.84c0 .153.01.287.01.415.01.28.02.504-.03.784-.07.26-.12.43-.24.69l-.17.38H222l-.193-.39c-.152-.31-.238-.49-.262-.77-.106-.7-.105-.75-.103-1V28.84h3.99c.39 0 .647.048 1.056.198l.022.007c.338.09.545.18.823.34l.447.26-.245-2.995h-15.097zm28.57 20.802c-.798.302-1.265.352-2.073.352h-5.973v-9.68h4.955c.302 0 .52 0 .79.05.425.117.665.2 1.04.405l.396.217V35.91h-7.258v-7.062h5.03c.123 0 .233-.007.34-.013.283-.017.488-.03.764.086.27.11.442.24.65.48l.474.56v-3.3h-10.77l.377.44c.16.19.223.32.314.55.09.32.14.53.14.9v19.23c0 .12 0 .22.01.32.01.28.01.5-.05.79-.08.33-.15.52-.31.78l-.24.41h11.9l.93-3.54-.63.49c-.31.24-.49.34-.82.45zm51.694-20.337c.054.23.096.406.137.673.145.874.14 1.495.13 2.282 0 .187-.003.383-.003.593v13.76l-13.23-17.8h-3.86l.69.49c.23.17.35.32.46.6.14.29.19.53.19.87v19.17c0 .46 0 .74-.1 1.19-.04.29-.12.43-.3.74l-.24.41h3.31l-.09-.33-.08-.29c-.06-.23-.11-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.495-.03-22.266c0-.46 0-.72.08-1.19v-.01c.06-.4.11-.62.2-.96l.1-.34h-2.86l.13.51zm9.8.76l.053-.173c.08-.26.147-.485.25-.723l.16-.374h-4.08l.228.4c.195.343.29.633.394 1.023.125.446.145.696.145 1.124v18.648c0 .45 0 .72-.148 1.13-.07.282-.14.45-.29.72l-.22.398h3.94l-.2-.388-.13-.23c-.11-.194-.19-.335-.22-.553-.08-.754-.08-1.77-.08-2.948v-16.84c0-.32 0-.516.17-1.215zm17.996-.923c.072.282.097.476.097.747-.017.27-.09.452-.185.682-.038.09-.076.18-.11.28l-6.333 15.99-6.75-16.72c-.07-.22-.108-.34-.108-.53 0-.14.015-.24.104-.42l.188-.39h-4.368l.645.48c.244.18.382.31.554.63.102.18.155.33.216.51l.083.23 9.367 22.51L322.678 29c.13-.337.234-.546.403-.86l.01-.016c.2-.43.34-.697.61-1.1l.27-.42h-3.55l.09.336zm15.52 20.5c-.8.302-1.265.352-2.074.352h-5.98v-9.68h4.95c.3 0 .52 0 .79.05.42.117.66.2 1.04.405l.39.217V35.91h-7.26v-7.063h5.03c.12 0 .23-.007.34-.013.28-.017.48-.03.76.086.27.107.44.233.65.48l.47.56v-3.303h-10.77l.37.442c.16.18.22.31.31.54.09.31.14.53.14.9v19.55c.01.28.02.49-.05.78-.08.33-.15.51-.31.78l-.24.4h11.91l.932-3.54-.63.49c-.306.24-.487.34-.82.45zm18.152 1.32c-.552-.565-.993-1.242-1.552-2.1l-4.734-7.082c-.47-.692-.78-1.103-1.31-1.7h.03c.97 0 1.91-.347 2.72-1.006 1.31-1.078 2.11-2.847 2.14-4.73.04-1.633-.48-3.043-1.49-4.078-.94-.956-2.2-1.48-3.56-1.48h-6.29l.26.565c.11.24.2.41.25.69.13.87.15 1.35.15 2.17v16.48c0 .82 0 1.85-.08 2.31-.02.24-.09.41-.2.66-.03.06-.06.14-.1.21l-.15.37h3.63l-.1-.35c-.037-.11-.06-.2-.09-.29-.09-.28-.15-.48-.19-.81-.08-.38-.08-.61-.08-.96v-10.2c.07.08.125.17.19.28.05.09.11.19.18.28l7.82 12 .08.13h3.936l-.53-.47c-.398-.35-.628-.57-.978-.92zm-10.67-19.93c.604-.295 1.03-.328 1.776-.328 2.92.143 3.42 1.87 3.53 3.712.15 2.377-1.31 3.937-3.89 4.173-.47.023-1.02.01-1.41-.03V28.85zm21.172 8.974c-.23-.152-.465-.308-.705-.47l-3.104-2.12c-1.256-.85-2.06-1.674-2.177-3.145-.07-.99.28-1.92.99-2.62.79-.79 1.95-1.23 3.04-1.15 1.45.06 2.48.32 3.52 1.48l.47.52v-3.24l-.15-.08c-1.28-.62-2.2-.65-3.46-.69-.18-.01-.36-.01-.55-.02-1.88-.07-3.65.57-4.88 1.76-1.11 1.08-1.69 2.52-1.68 4.16.03 2.33.98 3.97 3.17 5.5l3.55 2.39c1.52 1.01 2.88 2.09 2.88 4.17 0 1.25-.38 2.29-1.12 2.99-.81.78-2.04 1.16-3.56 1.1-1.74-.03-2.98-.15-4.38-1.49l-.45-.44v3.23l.16.07c1.49.66 2.53.67 3.97.69l.49.01h.34c1.62 0 4.25-.3 5.96-2.02 1.11-1.118 1.64-2.64 1.58-4.53-.12-3.64-1.85-4.78-3.86-6.1zm10.15-9.94c.105-.34.178-.568.302-.858l.15-.374h-4.07l.22.4c.19.332.28.58.39.984.12.443.14.694.14 1.123V47.8c0 .45 0 .72-.15 1.132-.07.28-.14.447-.29.716l-.23.4h3.94l-.2-.39-.13-.23c-.11-.193-.19-.333-.22-.55-.077-.754-.077-1.77-.077-2.947V29.1c.004-.324.004-.52.177-1.217zm28.817-1.29l.038.3c.023.195.023.326.002.502-.04.22-.123.372-.235.584l-4.23 7.86-3.84-7.325-.06-.105c-.15-.278-.26-.462-.34-.77-.05-.265-.07-.45-.05-.726l.02-.29h-4.1l.03.032h-13.22l-.58 3.23.53-.388c.32-.232.55-.365.95-.455.24-.084.36-.107.59-.107h4.64V47.78c0 .15 0 .285.01.41.01.283.01.507-.03.783-.08.266-.13.44-.25.7l-.177.38h3.85l-.197-.386c-.15-.304-.237-.488-.26-.765-.105-.7-.105-.74-.1-.998v-19.06h3.99c.39 0 .65.05 1.06.2l.02.008c.336.09.54.177.82.34l.38.222 4.694 8.676v10.22c0 .067.003.13.005.188 0 .145 0 .24-.03.397-.02.21-.07.376-.17.656l-.13.36h3.27l-.096-.33c-.06-.21-.09-.35-.12-.52l-.03-.14c-.05-.3-.077-.47-.077-.72V38.3l5.35-9.437c.206-.396.336-.637.56-.994v-.01c.19-.3.34-.51.62-.82l.426-.46h-3.58z"></path>
+                </svg>
+            </a>
+            <div class="wsuaimhigher">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100px" height="15px" viewBox="0 0 98 14" xml:space="preserve">
+                    <path d="M8.1 1.4l4.2 11.2H9.8l-1-3.1h-4l-1.2 3.1h-2L6.3 1.4H8.1zM8.4 8.2C8 6.7 7.5 5.3 6.9 3.6h0c-0.5 1.7-1 3.1-1.5 4.6H8.4zM13.7 12.6V1.4h2.3v11.2H13.7zM31.3 12.6H29V3.9h0c-1.2 3.1-2.5 5.9-3.8 8.7H24c-1.2-2.8-2.4-5.6-3.6-8.7h0v8.7h-1.8V1.4h2.8c1.2 2.8 3 7.1 3.4 8.6h0c0.5-1.5 2.5-5.8 3.8-8.6h2.6V12.6zM47.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM50.4 12.6V1.4h2.3v11.2H50.4zM64.8 7.5v4.6c-1.2 0.4-2.5 0.7-3.7 0.7 -3.9 0-6.3-2.6-6.3-5.9 0-3.1 2.4-5.7 6.4-5.7 1.2 0 2.5 0.4 3.2 0.9l-0.7 1.3C63 3.1 62 2.8 61.2 2.8c-2.4 0-4 1.6-4 4.2 0 2.7 1.9 4.2 3.8 4.2 0.6 0 1.1-0.1 1.6-0.3V7.5H64.8zM76.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM85.4 2.9h-3.8V6h3.7v1.5h-3.7v3.6h4.4v1.5h-6.7V1.4h6V2.9zM88.1 1.4H92c2.1 0 3.6 1 3.6 2.9 0 1.7-0.8 2.6-1.9 3.2l2.7 4.8 -2.4 0.4 -2.3-4.7h-1.3v4.5h-2.3V1.4zM90.3 6.6h0.9c1.6 0 2-1.2 2-2 0-1.3-0.9-1.7-1.8-1.7h-1.2V6.6z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="wsusearch">
+            <nav>
+                <ul>
+                    <li><a href="http://academica.wayne.edu/" class="spf-nolink">Academica</a></li>
+                    <li><a href="http://wayne.edu/directory/" class="spf-nolink">Directory</a></li>
+                    <li><a href="http://wayne.edu/contact/" class="spf-nolink">Contact</a></li>
+                    <li class="aimhigher"><a href="http://wayne.edu/aimhigher/" class="spf-nolink">Aim Higher</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="https://wayne.edu/search/">
+                <label for="q">Search:</label>
+                <input name="q" class="input-group-field" id="q" placeholder="Search..." type="text">
+                <button type="submit" class="button"><span class="search-icon"><span>Search</span></span></button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- WSU Header ends-->
+<div class="container">
+<!--Humanities Center logo-->
+<a class="notA" href="http://research2.wayne.edu/hum/"><img class="forhcheader" width="600" height="80" src="../img/hcheader.png"> </a>
+<!-- HC logo ends-->
+<div id="site-search">
+<form action="../search.htm" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="013346447988890295882:ebh4g3_d5_4" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+   <label for="site-q">Search</label>
+		<input id="site-q" class="searchText" type="text" size="13" name="q"/>
+    <input type="image" name="sa" alt="Search" src="../img/searchButton.jpg" />
+  </div>
+</form>		
+</div>	 
+</div><!--container div ends-->
+
+<section id="showcase"> 
+<div id="forid"><!-- #BeginLibraryItem "/Library/NavBarLibraryItem.lbi" -->
+  <nav class="clearfix">
+    <!-- div begins: make a gift floating label -->
+    <div id="gift"><img src="../img/gift-label1.png"></div>
+    <!-- div ends: floating label-->
+    <ul id="MenuBar2" class="MenuBarHorizontal clearfix">
+      <li><a href="http://research2.wayne.edu/hum/">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="../AboutUs/DirectorsMessage/message.html">Message from the Director</a></li>
+          <li><a href="../AboutUs/AdvisoryBoard/advisory.html">Advisory Board</a></li>
+          <li><a href="../AboutUs/SteeringCommittee/committee.html">Steering Committee</a></li>
+          <li><a href="https://www.flickr.com/photos/53952766@N07/sets/">Photos</a></li>
+          <li><a href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p">Videos</a></li>
+          <li><a href="../AboutUs/AnnualReports/reports.html">Annual Reports</a></li>
+          <li><a href="../AboutUs/OurStaff/staff.html">Our Staff</a></li>
+        </ul>
+      </li>
+      <li><a class="MenuBarItemSubmenu" href="#">Funding</a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">Faculty Funding</a>
+            <ul>
+              <li><a href="../FacultyFunding/MWFF/marilyn.html">Marilyn Williamson Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/ResidentScholars/resident.html">Resident Scholars</a></li>
+              <li><a href="../FacultyFunding/FacultyFellowship/fellowship.html">Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/WorkingGroups/groups.html">Working Groups</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Student Funding</a>
+            <ul>
+              <li><a href="../StudentFunding/DoctoralDissertation/dissertation.html">Doctoral Dissertation Fellowship</a></li>
+              <li><a href="../StudentFunding/DoctoralDissertation/travel.html">Graduate Travel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
+      <li><a href="conference.html">Conference</a></li>
+      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+<!-- #EndLibraryItem --></div>
+<!-- forid div ends -->
+</section>
+<!-- InstanceBeginEditable name="EditTimeline" -->
+<!--Slideshow-->
+<img src="1213timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
+
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
+<div class="bg border">
+<form name="form" id="form">
+  <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
+  <option value="conference.html">Conference</option>
+    <option value="2017.html">2017</option>
+    <option value="2016.html">2016</option> 
+    <option value="2015.html">2015</option>
+    <option value="2014.html" selected>2014</option>
+    <option value="2013.html">2013</option>
+    <option value="2012.html">2012</option>
+    <option value="2011.html">2011</option>
+    <option value="2010.html">2010</option>
+    <option value="2009.html">2009</option>
+    <option value="2008.html">2008</option>
+    <option value="2007.html">2007</option>
+    <option value="2006.html">2006</option>
+    <option value="2005.html">2005</option>
+    <option value="2004.html">2004</option>
+    <option value="2003.html">2003</option>
+    <option value="2002.html">2002</option>
+    <option value="2001.html">2001</option>
+    <option value="300.html">Detroit 300</option>
+    <option value="2000.html">2000</option>
+</select>
+</form>
+<br><br><br>
+<div id="text">
+<div class="titles">Theme: Redefining Politics in a Monetary Age</div>
+<p>Each year the Humanities Center sponsors a Faculty Fellowship Competition on a specific theme. This year's theme was &quot;Redefining Politics in a Monetary Age&quot;. Fellowships provide Wayne State University faculty with funding to help pay for expenses related to their research projects, including travel, research assistance, summer salary and fringe benefits. Fellowships average $6,000 and recipients are expected to participate in the annual Faculty Fellows' Conference held the following spring. Below is the explication of the theme, followed by brief descriptions of the projects that were selected for funding for the 2013-2014 academic year.</p>
+<p><strong>Conference date:</strong> Friday, April 4, 2014 <br />
+  Alumni House <br />
+  441 Gilmour Mall, Detroit, MI 48202 <br />
+</p>
+<p>Click <a class="normalA" href="2014_Schedule.pdf" class="normalA">here</a> for the schedule of events.</p>
+</div>
+<div class="titles">Explication</div>
+<div id="text">
+ <p>Contemporary scholarship across the Humanities, Arts and Social Sciences has, as its underlying theme, a re-envisioning of what politics means, how it is constituted and constructed in everyday life and culture, and what the Political. So it is that in feminist criticism, critical race theory, post-structuralism, post-colonial and subaltern studies, the realm of formal politics and the infrapolitics of social movements, we have seen an exploration and expansion of what constitutes the Political. Seen through the lens of presidential elections, campaigns against sex trafficking or against the global sweatshop, in boycotts and in silent protests, or in the intimate struggles in bedrooms and with language, Politics has been redefined in global, national, and interpersonal terms.?</p>
+ <p>In the past thirty years, however, the struggle over Politics and the Political has taken another turn.? The Supreme Court decision in?<em>Citizens United</em>?has unleashed a veritable flood of political money that has overtaken our political process even as banking, national debt, deficit spending, taxes, the instability of currency, and the rising tide of inequality are reshaping political struggles not just in the United States but globally.? The recent and explosive growth of unregulated financial derivatives, whose value today is several multiples of the world's real economic output, has had calamitous consequences for many national economies, even as a return to what economist Paul Krugman has described as a disastrous fixation on austerity and deficit reduction has intensified both economic instability and political upheaval throughout the world.?As historian Niall Ferguson has argued in?<em>The Ascent of Money</em>, financial instabilities often lead to political instabilities, the most dramatic of which was the rise of the National Socialist Party in Germany in the 1930s.? Recent political uprisings from Egypt to Greece, the surprising Socialist victory in the French elections, and the now precarious fate of the Euro indicate that the symbolic and ideological uses of money, inequality, and debt play a decisive role in our current political landscape.?</p>
+ <p>We are looking for proposals that re-evaluate and re-locate, defamiliarize and discomfort our sense of what constitutes politics and the Political, projects that explore what Politics and the Political mean through the media of film, literature, art, music, ethnographic study, historical sources and artifacts, and which show the connection between money and value on the one hand and political struggles on the other.</p>
+ <p>Photos from the conference can be found <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/sets/72157643967808154/">here</a>.</p>
+</div>
+<div class="titles">Keynoters/Abstracts</div>
+<div id="text">
+  <p><strong>Title: Possesive Collectivism: Ownership and the Politics of Credit Access in Late-Twentieth Century America<br />
+</strong>Greta R. Krippner, Associate Professor, Sociology, University of Michigan</p>
+<p>From  the tax protests of the 1970s to the backlash against &ldquo;bailouts&rdquo; in our own  day, ownership has emerged as a privileged discourse of political claims-making  in contemporary American society.? The  goal of this paper is to explain why it is that particular forms of claiming  rights over economic resources assume salience under different historical  conditions, and more specifically why the discourse of ownership appears to  occupy such a privileged position at this historical moment.? I observe two key  features of the discourse of ownership that have advantaged it over competing  forms of mobilizing political claims, the most important of which, arguably, is  represented by anti-discrimination discourse. First, I argue that political  claims based on ownership have the potential to transcend perennial tensions  between individual and group rights that have often proved debilitating to  movements for social change, particularly movements grounded in  anti-discrimination law.? Second, I  suggest that ownership claims have the property of status-quo neutrality in so  far as they appear to respect existing distributions of resources and  entitlements.? In contrast, the discourse  of anti-discrimination challenges the status quo, asking society (or more  aptly, the state) to remedy or repair a harm. ?While these properties of the discourse of  ownership are not unique to the late twentieth century, the paper identifies  historical conditions that have amplified the advantages of ownership over  other available discourses of economic citizenship in the period beginning in  the 1970s. I illustrate this argument by examining three movements that  mobilized to broaden access to credit beginning in the late 1960s and 1970s: 1)  the welfare rights movement&rsquo;s campaign to gain access to department store  credit for welfare recipients; 2) feminist mobilization to end gender  discrimination in credit markets; and 3) the struggle of community activists  against the practice of redlining urban neighborhoods.</p>
+<p>Video of the keynote lecture can be found <a class="normalA" href="https://www.youtube.com/watch?v=Uha84sa3mls&amp;feature=youtu.be">here.</a></p>
+</div>
+
+<div class="titles">Speakers/Abstracts</div>
+<div class="tab">
+    <button class="tablinks active" onClick="openCity(event, 'September')" id="defaultOpen">Krista M. Brumley</button>
+    <button class="tablinks" onClick="openCity(event, 'October')">Sarika Chandra</button>
+    <button class="tablinks" onClick="openCity(event, 'November')">Tracy Neumann</button>
+    <button class="tablinks" onClick="openCity(event, 'December')">Andrew I. Port</button>
+    <button class="tablinks" onClick="openCity(event, 'January')">Marsha L. Richmond</button>
+    <button class="tablinks" onClick="openCity(event, 'February')">Francis Shor</button>
+    <button class="tablinks" onClick="openCity(event, 'March')">Abderrahmane Zouhir</button>
+  </div>
+  <div id="September" class="tabcontent active">
+    <b>Having it All or Stalling Out? Gender, Family, and Work in the New Economy</b><br />
+Brumley, Krista - Assistant Professor, Sociology<br />
+<p>Economic shifts have  restructured workplaces in ways that fundamentally alter women&rsquo;s and men&rsquo;s work  experiences.? More women enter the paid  labor force and stay there even after having children.? More families have dual-earner incomes.? Higher demands at work put more pressure on  families, and in turn, work-family conflict can lead to high turnover, burnout,  and job-related stress.? Employers are  paying closer attention to workplace conditions to accommodate working  families.? Some companies have policies  like flexible work arrangements and other support programs.? While businesses implement the policies in a  market-driven model to maintain efficiency, productivity, and profit, it also  suggests they are reexamining women&rsquo;s and men&rsquo;s work roles because of  increasing work-family conflict.?  However, research shows that expectations of working long hours and  putting work about family responsibilities have not dissipated, even when  companies implement work-family policies or initiatives to reduce gender  inequality, leaving the pace of change slow.</p>
+<p>The  purpose of this proposed project is to examine women&rsquo;s and men&rsquo;s experiences in  the workplace within the context of the &lsquo;new&rsquo; economy.? My previous research examined employees&rsquo;  experiences at a Mexican multi-national company in Mexico.? This proposed project is an intentional shift  to develop a domestic research agenda while maintaining my research focus on  workplace organizations.? Using in-depth,  qualitative interviews with employees in professional and managerial positions,  this proposed project explores the following themes: (1) daily work  experiences, (2) work-family policies, and (3) career aspirations.? I will investigate the mechanisms (re)producing  gendered workplaces.? Research underscores  that the goals of profit-making organizations are primary, and as a result,  workplaces remain dominated by an economic organization structured to  disadvantage women and some men.? This  study contributes to the scholarly discussion on gendered workplaces by  examining <em>how</em> expectations of the  &lsquo;ideal worker&rsquo; are embedded in employee narratives as workplaces transform in  the new economy.? Importantly, the study  also contributes by capturing the experiences of both women and men.? Men&rsquo;s voices have often not been heard on  work-family issues.<br />
+  <br />
+  (<a class="normalA" href="https://www.youtube.com/watch?v=AaRQcMDAtxg&amp;feature=youtu.be">Video</a>)</p>
+  </div>
+  <div id="October" class="tabcontent">
+    <b>Critiquing the Global Crisis</b><br />
+Chandra, Sarika - Associate Professor, English
+
+<p>Since the onset of the  credit crisis in 2007, and the government bailout of big banking and credit  institutions, debates about money and politics have taken center stage in  public discourse.? A variety of scholars,  among them Robert Brenner and Robin Blackburn, have suggested that the  financialization of the economy began in the early 1970s with the dissolution  of the gold standard when world currencies became free-floating.? In the most basic terms, financialization can  be described as the process whereby financial markets and institutions leverage  control over economic structures.? This  has resulted in the enormous growth of the debt/credit system in the world  economy.? Critics such as David Harvey,  seeking to understand financialization through the political project of  neoliberalism, have identified the philosophical underpinnings of neoliberalism  in the theories of mainstream economic theorists such as Milton Friedman and  Friedrich von Hayek.? Since the 1970s,  neoliberal policies, spearheaded by conservative government heads such as  Margaret Thatcher, Ronald Reagan, and Augusto Pinochet have overseen the  dismantling of the gains in social welfare made by the liberal state.? With more emphasis on privatization and a  reduction in government planning, more and more aspects of society have become  subjected to the absolute logic of profit, setting into motion a number of  crises around the world.</p>
+<p>In the wake of the current  global financial crisis, topics like debt, credit, toxic assets, corporate  greed, dubious banking practices, etc. have forced their way into the U.S.  media.? However, the world at large,  especially the nation-states of the global south in Asia, Africa, and Latin America, has been living under the conditions of  debt crisis for some time, via such things as IMF austerity programs.? Structural adjustment programs and local  government collusion have left welfare structures weak through currency  devaluations, credit system failures and defaults on loans.? According to a recent IMF study on banking  crises b Luc Laeven, there have been at least forty-two recorded financial  crises between 1970 and 2007 across the world.?  The same period has witnessed the sharp economic decline of many geographical  areas within the United States,  including Detroit  itself.<br />
+</p>
+  </div>
+  <div id="November" class="tabcontent">
+    <b>From Sites of Production to Sites of Consumption: The Politics of Redevelopment in Pittsburgh</b><br />
+  Neumann, Tracy - Assistant Professor, History
+
+    <p>My research seeks to reframe  major debates in the fields of US  political history, North American urban history, and transnational policy  history.? I argue that there is a  mutually constitutive relationship between the post-industrial transformation  of manufacturing centers and the emergence of neoliberal urbanism in the late  twentieth century.? In the project, I  examine redevelopment strategies at the national level in the US and Canada  and at the municipal level in Pittsburgh, Pennsylvania and Hamilton,   Ontario.? Beginning in the late 1960s, Pittsburgh  and Hamilton&rsquo;s  elite-led growth coalitions set out to eliminate all traces of each city&rsquo;s  industrial past by &ldquo;diversifying&rdquo; local industry away from heavy manufacturing  and toward service- and finance-sector employment.? In both places, these efforts to remake  economic activity were accompanied by extensive redevelopment schemes for  central business districts and residential neighborhoods originally built to  support a manufacturing-based economy, and by marketing campaigns that promoted  idealized visions of &ldquo;post-industrial&rdquo; Pittsburgh  and Hamilton.? Local government officials and urban  policymakers increasingly conferred citizenship rights on non-residents,  imagined future residents, and corporate elites.? While existing residents, neighborhood  groups, and labor organizations challenged the urban visions of political and  business elites, in both cities a powerful spatial and social imaginary of post-steel,  white collar jobs dominated public discourse, land use planning, and economic  development initiatives.</p>
+    <p>It is at the neighborhood  level that the political conflicts between workers, residents, corporate  leaders, city officials, and local activists over post-industrial redevelopment  are most viable.? Building on the themes  of neoliberal urbanism and the &ldquo;right to the city&rdquo; central to the project, the  article examines competing visions for the future of Pittsburgh's urban  steel-producing neighborhoods and political struggles to determine what &ldquo;value&rdquo;  means and which groups get to define it in the context of urban land use.? From the end of the nineteenth century  through World War II, the South Side and Hazelwood neighborhoods experienced  industrial growth in steel and metals and attracted an influx of immigrants  from Ireland, Italy, Hungary,  and Poland.? Despite their similar origins, however, the  populations and physical development of the two industrial neighborhoods  diverged beginning in the 1960s.? Both  Hazelwood and the South Side suffered greater population losses than the city  as a whole between 1960 and 1990, first because of suburbanization and later  because of regional steel mill closures.?  While the South Side remained overwhelmingly white and working class,  Hazelwood&rsquo;s white population and income levels declined.? Today, the South Side is a heavy gentrified  residential and commercial district catering to young professionals.? Hazelwood is an impoverished African American  neighborhood with few business or commercial services designed to employ or  serve residents, but the neighborhood is home to high technology centers for  the University of   Pittsburgh and Carnegie  Mellon.</p>
+  </div>
+  <div id="December" class="tabcontent">
+    <b>German Reactions to Post-Holocaust Genocide</b>
+<br />
+Port, Andrew  - Associate Professor, History
+<p>My project explores the ways  in which Germans have responded to acts of genocide that have taken place  elsewhere in the world since 1945.? the  study concentrates primarily on German reactions to the horrific events that  occurred from the mid-1970s to the late 1990s in Cambodia,  Rwanda,  and the Balkans, and focuses in particular on the German media as well as on  the political, diplomatic, intellectual, and human rights establishments.</p>
+<p>The object of this study is  twofold: 1) to delineate and account for the evolution of German foreign policy  and especially its increasingly interventionist role abroad since unification  and the end of the Cold War, ostensibly for humanitarian reasons, and 2) to  shed new light ? through the prism of genocide elsewhere ? on how the country  most closely associated with genocide has dealt with its own tarnished  past.? What especially interests me here  is a comparison between the Eastern and Western halves of Germany both  before <em>and</em> after the dramatic events  of 1989-90.? in short, this transnational  project examines the intersection between domestic debates about the Nazi  period and the evolving nature of postwar German foreign policy.</p>
+  </div>
+  <div id="January" class="tabcontent">
+    <b>Speaking Truth to Power: Women Scientists and Postwar Political Activism</b><br />
+  Richmond, Marsha - Associate Professor, History
+
+    <p>The development of the  atomic bomb during the Second World War led to a wave of anti-nuclear political  activism in which scientists played leading roles.? Prominent scientists warned about the threats  posed by the nuclear age and advocated for a test ban treaty and nuclear  disarmament.? This movement, scholars  have notes, provides a good case study in assessing the impact of scientists in  the formation of U.S.  foreign policy during the Cold War.? Life  scientists working on the impact of radiation on the environment during the  1960s were less political, but nonetheless raised important questions relating  to social and environmental concerns as well as regulatory responsibility.? Thus scientists in the immediate postwar  period used their expertise to educate the public, serve as expert witnesses,  clarify relationships among governmental agencies, as well as martial public  opinion.? In short, like Quakers in 1955,  they aimed to &ldquo;speak truth to power&rdquo; in an attempt to influence postwar  political policies.</p>
+    <p>Within the literature on  postwar scientific activism, gender has received almost no attention.? The majority of participants in these debates  were males, and as a consequence we have been left with an overly masculine  image of this movement.? There were,  however, a number of women scientists who were actively engaged in postwar  political activism, in which issues they regarded as important coaxed them out  of the laboratory and into the public spotlight, and sometimes even a hostile  political arena.</p>
+    <p>This project examines the  political activism of two women scientists in the 1940s and 1950s and seeks to  highlight the ways in which each attempted to influence the public  understanding of science and its sociocultural implications.? I ask how their efforts compared and  contrasted with those of their male colleagues, the ways in which gender may  have influenced their approaches, and also the responses to their efforts.? The thesis to be explored is whether the fact  that both were geneticists ? and hence well aware of the harm that radiation  and certain chemicals posed to future generations ? influenced the nature of  their activism.<br />
+      <br />
+      (<a class="normalA" href="https://www.youtube.com/watch?v=JmPOcY91TL4&amp;feature=youtu.be">Video</a>) (<a class="normalA" href="2014 Powerpoints/Richmond_PowerPoint.pdf">PowerPoint</a>)</p>
+  </div>
+  <div id="February" class="tabcontent">
+    <b>Another World is Possible: Utopian Politics from the Global Sixties through the Global South</b> <br />
+Shor, Francis - Professor, History<br />
+<p>As a consequence of the world-wide  insurgencies and &ldquo;anti-systemic movements&rdquo; of the Global Sixties, politics were  re-defined and transformed in numerous ways. The demand for recognition and the  desire for self-determination were significant tropes that framed the emergence  of a new revolutionary subject in the Global Sixties. The &ldquo;New Left&rdquo; philosopher  Herbert Marcuse identified this revolutionary subject as the &ldquo;outcasts and  outsiders&rdquo; who were &ldquo;the exploited and persecuted of other races and  colors.&rdquo;<br />
+  ? <br />
+  Among Marcuse&rsquo;s outcasts and outsiders were  those marginalized because of class, race, gender, and sexual orientation. In  addition, they were often those who suffered oppression and exploitation as a  consequence of the neo-colonial policies of an imperial United States.? Hence, they were members of an emergent  Global South whose political aspirations were rooted in the struggles to escape  impoverishment, sexism, and cultural imperialism imposed by the economic and  power elites of the United    States.? <br />
+  <br />
+  Embedded in those political aspirations  were forms of utopianism that articulated radical representations of  imagination and praxis.? As described by  Fredric Jameson, &ldquo;the fundamental dynamic of any utopian politics (or of any  political utopianism) will therefore always be in the dialectic of Identity and  Difference, to the degree in which such politics aims at imagining and  sometimes even at realizing a system radically different from this one.&rdquo;<br />
+  <br />
+  What I propose to explore in this paper  will be the role of a utopian imaginary in fiction and in political philosophy,  specifically in Marge Piercy&rsquo;s utopian novel, <em>Woman on the Edge of Time </em>and then the liberation theology of  Gustavo Gutierrez. Following the thread of role of the poor of the Global  South, I will consider the emancipatory meaning of the Zapatistas especially  against the backdrop of U.    S. imperialism, neoliberal globalization,  and globalization from below. Finally, I will consider the possibilities in  developing the links between these utopian visions and insurgent social and  political praxis required in realizing a new or another world.<br />
+  <br />
+  (<a class="normalA" href="#">Video</a>) (<a class="normalA" href="2014 Powerpoints/Shor_PowerPoint.pptx">PowerPoint</a>) (<a class="normalA" href="2014 Powerpoints/Shor_Lecture.docx">Lecture</a>)</p>
+  </div>
+  <div id="March" class="tabcontent">
+    <b>The Language of Politics and the Politics of Language in Sudan</b><br />
+Zouhir, Abderrahmane- Assistant Professor, CMLLC<br />
+<br />
+<p>I will investigate the  interplay between language and politics in Sudan.? In particular, this project aims to engage  with issues of hegemony, power asymmetries, and social inequalities between the  South and North of former Sudan.? In suggesting that there is a political  agenda behind Arabization or Sudanization policies, I destabilize the basic  definition of Arabization and language policy in the former Sudan while  also shifting attention to a critical approach.?  My arguments are based on a critical perspective which investigates how  language policies affect the lives of people who have no influence over the  policy making process.? It is an approach  that aims to show how linguistic practices are linked to the wider  sociopolitical structures of power and domination.? This entails that language policy must be  understood in connection with broad social, political, economic, and cultural  forces that shape it.? This approach goes  beyond work that only describes.? It  addresses issues of power, resistance, disparity, and difference between the  North and South of former Sudan.<br />
+</p>
+  </div>
+</div><!-- bg border ends-->
+<!-- InstanceEndEditable --><!--OuterBox ends-->
+
+  <footer>  
+    <ul class="footerlist seperator">
+    	<li><a href="#"><img src="../img/Humanities Center Logo.png" width="70" height="77"></a></li>
+    </ul>
+     <ul class="footerlist-map">      
+        <li><a href="https://maps.wayne.edu/all/#buildings-faculty-administration" target="blank"><img src="../img/map.png" width="50" height="50"></a></li></ul>
+        <ul class="footerlist seperator"> 
+        <li>656 W. Kirby </li>
+        <li> 2226 Faculty Administration Building</li>
+        <li> Detroit, MI 48202</li>
+    </ul>
+  	 <ul class="footerlist seperator">
+    	<li> PH: 313-577-5471</li>
+        <li>   FX: 313-577-2843 </li>
+        <li>  http://research2.wayne.edu/hum/</li>
+        <li> <a class="notA" href="mailto:walter.edwards@wayne.edu">walter.edwards@wayne.edu</a></li>
+    </ul> 
+    <ul class="footerlist ">
+    	<li><a class="notA" href="../AboutUs/OurMission/mission.html">Our Mission</a></li>
+        <li> <a class="notA" href="../MakeAGift/gift.html">Make a Gift</a></li>
+        <li> <a class="notA">Past Programs</a>
+            <ul class="dropdown">
+                <li><a class="notA" href="../PastPrograms/lecture.html"> Virtual Lecture</a></li>
+                <li> <a class="notA" href="../PastPrograms/OpenCompetition/competition.html">Open Competition</a></li>
+                <li> <a class="notA" href="../PastPrograms/InnovativeProjects/projects.html">Innovative Projects</a></li>
+                <li> <a class="notA" href="../PastPrograms/munusculum.html">Munusculum</a></li>
+                <li> <a class="notA" href="../PastPrograms/mentoring.html">Grant Mentoring</a></li>
+            </ul>
+        </li>
+        
+        <li><a class="notA" href="#"> Links</a> 
+            <ul class="dropdown">
+                <li><a class="notA" href="../Links/internal.html">Internal Links</a></li>
+                <li><a class="notA" href="../Links/external.html">External Links</a></li>
+            </ul>
+        </li>
+        
+    </ul> 
+    <ul class="horizontal hover1 footerlist">
+    	<li><a class="notA" href="https://twitter.com/wsuhumanities"> <img src="../img/twitter.png" width="45" height="40">  </a></li>
+        <li> <a class="notA" href="https://www.facebook.com/WSUHumanities">  <img src="../img/fb.png" width="50" height="50"></a></li>
+        <li><a class="notA" href="https://www.flickr.com/photos/53952766@N07/sets/">  <img src="../img/flikr.png" width="50" height="50"></a></li>
+        <li> <a class="notA" href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p"> <img src="../img/youtube.png" width="50" height="50"> </a></li>
+    </ul>   <hr>
+             <div class="left"> 
+             Developed by Shruthipriya Soranjerry Baskar. Operated by Jennifer Leonard
+             </div>
+             <div class="right">Humanities Center, Copyright &copy; 2017
+             </div>
+   </footer> 
+ 
+
+
+<!-- WSU Footer -->
+<div class="wsufooter">
+    <div class="wsuwrap">
+        <div class="privacy">
+            <p><a href="https://wayne.edu/policies/">Privacy and University Policies</a></p>
+        </div>
+        <div class="copyright">
+            <p><a href="https://wayne.edu/">Wayne State University</a> &copy; 2017</p>
+        </div>
+    </div>
+</div>
+<!-- WSU Footer-->
+   <script type="text/javascript">
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
+  </body>
+<!-- InstanceEnd --></html>
