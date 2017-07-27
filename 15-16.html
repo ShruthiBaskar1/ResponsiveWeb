@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/BrownBagTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Redesigning New Website">
+  	<meta name="author" content="Shruthipriya Soranjerry Baskar">
+  	<!-- InstanceBeginEditable name="doctitle" -->
+  	<title>Wayne State University's Humanities Center | Welcome</title>
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript">
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+
+
+  	<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../main.css">
+  <link rel="icon" type="image/gif/png" href= "../img/w.png" width="16" height="13">
+  <link href="../search.htm"> 
+   <script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+  <link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Script for responsive menu-->
+  <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	
+	</script>
+  <!-- Script for the timeline slideshow-->
+ <script language="javascript">
+ (function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+
+</script>
+ 
+ <!-- InstanceBeginEditable name="head" -->
+ <!-- InstanceEndEditable -->
+ 
+</head>
+<body> 
+
+<!-- Wayne State University Header -->
+<div class="wsuheader">
+    <div class="wsuwrap">
+        <div class="wsuwordmark">
+            <a href="https://wayne.edu/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="57.22 18.736 350 32.636">
+                    <path d="M90.612 20.567c-.208.45-.382.737-.522 1.23l-8.67 28.428-6.86-21.63-6.72 21.794-9.192-29.13c-.104-.45-.208-.74-.487-1.15-.31-.45-.52-.7-.94-.99H62c-.174.33-.28.53-.313.9-.07.32-.105.57 0 .9l6.37 21.3 5.47-17.13-1.29-3.85c-.174-.53-.418-.78-.696-1.19-.24-.37-.45-.61-.73-.94h4.74c-.14.29-.21.45-.28.78-.1.57-.03.94.11 1.47l6.4 20.94 5.92-20.69c.21-.53.35-.9.32-1.43-.03-.45-.1-.74-.31-1.11h3.83c-.38.53-.59.9-.9 1.47zm80.894 29.655c-2.263-.04-3.69.04-5.814-.888V46.11c1.915 1.847 3.62 2.05 6.093 2.092 4.108.162 6.615-2.01 6.615-5.824 0-2.912-1.846-4.43-4.003-5.866l-4.735-3.2c-2.542-1.763-4.04-3.772-4.074-7.054-.035-4.84 4.004-7.68 8.39-7.516 2.055.08 3.344 0 5.225.888v3.142c-1.463-1.64-2.925-2.01-4.945-2.092-2.854-.202-5.99 2.05-5.745 5.415.174 2.174 1.427 3.364 3.064 4.47l4.142 2.83c3.13 2.134 5.74 3.28 5.92 8.49.2 6.762-5.44 8.46-10.14 8.337zm100.757-29.777c-.07.574-.035.902-.035 1.476v17.92c0 5.91-4.285 10.21-9.65 10.33-5.75.08-10.417-4.26-10.417-10.49V22.09c0-.534.04-.86-.03-1.394-.07-.656-.14-1.025-.31-1.6h3.55c-.17.45-.24.74-.31 1.27-.1.534-.07.903-.07 1.436V39.31c0 4.713 3.59 8.362 7.6 8.2 3.98-.124 6.76-3.61 6.76-7.955v-17.55c0-.614 0-.983-.07-1.56-.1-.53-.17-.86-.34-1.35h3.62c-.14.492-.21.82-.28 1.352zM105.83 49.205c-.136-.21-.26-.404-.41-.665-.564-1.05-.827-1.756-1.265-2.93l-7.09-19.017H94.22l.044.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.792 18.59c-.255.71-.43 1.06-.864 1.72-.152.25-.274.39-.443.59l-.526.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.13-.46l2.56-7.32h7.78l2.44 6.47c.04.1.07.2.11.3.08.19.13.34.15.57.05.4.02.67-.12 1.09l-.12.35h4.3l-.24-.41c-.12-.2-.22-.36-.31-.51zm-6.96-10.01h-6.233l3.047-8.596 3.187 8.59zm16.17-12.3c.024.194.024.325.003.5-.042.22-.124.375-.237.588l-4.223 7.857-3.84-7.324-.057-.103c-.152-.28-.252-.464-.334-.77-.05-.27-.072-.455-.048-.727l.025-.29h-4.11l.49.462c.22.21.34.37.5.587l.03.034c.2.33.31.51.48.84l5.28 9.73v10.4c0 .14 0 .24-.03.39-.02.21-.07.37-.17.65l-.14.36h3.28l-.1-.34c-.06-.21-.09-.35-.13-.52l-.03-.14c-.05-.29-.08-.46-.08-.72V38.29l5.35-9.434c.204-.397.33-.637.56-.995.185-.3.33-.51.62-.82l.42-.45H115l.037.3zm21.624.1c.068.298.115.496.162.8.144.877.138 1.5.13 2.286 0 .19-.003.39-.003.6v13.75l-13.236-17.8h-3.863l.69.49c.235.17.35.31.46.6.135.29.185.53.185.87v19.17c0 .46 0 .74-.11 1.19-.05.29-.13.44-.31.73l-.24.4h3.31l-.09-.33-.08-.29c-.07-.24-.12-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.493-.03-22.266c0-.46 0-.714.07-1.185v-.01c.05-.38.09-.616.2-.98l.1-.34h-2.87l.09.4zm17.882 20.465c-.8.302-1.266.352-2.073.352H146.5v-9.68h4.954c.303 0 .523 0 .79.05.418.115.667.2 1.04.405l.397.217V35.91h-7.25v-7.062h5.03c.12 0 .24-.007.34-.013.29-.016.49-.03.77.086.27.11.44.24.65.48l.48.56v-3.3h-10.77l.38.44c.16.19.23.32.32.55.1.32.15.53.15.9v19.23c0 .12.01.22.01.32.01.28.02.5-.05.79-.07.33-.15.52-.3.78l-.24.41h11.9l.938-3.54-.627.49c-.31.24-.49.34-.82.45zm35.942 1.444c-.107-.698-.106-.743-.104-.997v-19.06h3.99c.39 0 .647.05 1.057.2l.03.007c.34.09.55.177.82.34l.45.26-.24-2.997h-15.1l-.57 3.23.54-.386c.32-.23.56-.36.95-.45.24-.08.37-.1.59-.1h4.64v18.84c0 .16.01.29.01.42.01.28.02.51-.03.78-.07.27-.12.44-.24.71l-.17.38h3.85l-.19-.38c-.15-.3-.23-.49-.26-.76zm23.952.302c-.134-.21-.26-.405-.408-.666-.562-1.048-.824-1.75-1.265-2.93l-7.09-19.017h-2.844l.043.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.79 18.59c-.254.71-.43 1.06-.863 1.72-.152.25-.274.39-.444.59l-.52.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.14-.46l2.56-7.31h7.77l2.44 6.47c.03.1.07.2.11.3.07.19.13.34.15.57.05.4.02.67-.12 1.09l-.11.35h4.3l-.25-.41c-.12-.2-.22-.36-.312-.51zm-6.957-10.01h-6.234l3.04-8.596 3.18 8.596zm4.95-12.538l-.572 3.23.54-.386c.32-.232.56-.365.95-.455.24-.084.37-.107.59-.107h4.65v18.84c0 .153.01.287.01.415.01.28.02.504-.03.784-.07.26-.12.43-.24.69l-.17.38H222l-.193-.39c-.152-.31-.238-.49-.262-.77-.106-.7-.105-.75-.103-1V28.84h3.99c.39 0 .647.048 1.056.198l.022.007c.338.09.545.18.823.34l.447.26-.245-2.995h-15.097zm28.57 20.802c-.798.302-1.265.352-2.073.352h-5.973v-9.68h4.955c.302 0 .52 0 .79.05.425.117.665.2 1.04.405l.396.217V35.91h-7.258v-7.062h5.03c.123 0 .233-.007.34-.013.283-.017.488-.03.764.086.27.11.442.24.65.48l.474.56v-3.3h-10.77l.377.44c.16.19.223.32.314.55.09.32.14.53.14.9v19.23c0 .12 0 .22.01.32.01.28.01.5-.05.79-.08.33-.15.52-.31.78l-.24.41h11.9l.93-3.54-.63.49c-.31.24-.49.34-.82.45zm51.694-20.337c.054.23.096.406.137.673.145.874.14 1.495.13 2.282 0 .187-.003.383-.003.593v13.76l-13.23-17.8h-3.86l.69.49c.23.17.35.32.46.6.14.29.19.53.19.87v19.17c0 .46 0 .74-.1 1.19-.04.29-.12.43-.3.74l-.24.41h3.31l-.09-.33-.08-.29c-.06-.23-.11-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.495-.03-22.266c0-.46 0-.72.08-1.19v-.01c.06-.4.11-.62.2-.96l.1-.34h-2.86l.13.51zm9.8.76l.053-.173c.08-.26.147-.485.25-.723l.16-.374h-4.08l.228.4c.195.343.29.633.394 1.023.125.446.145.696.145 1.124v18.648c0 .45 0 .72-.148 1.13-.07.282-.14.45-.29.72l-.22.398h3.94l-.2-.388-.13-.23c-.11-.194-.19-.335-.22-.553-.08-.754-.08-1.77-.08-2.948v-16.84c0-.32 0-.516.17-1.215zm17.996-.923c.072.282.097.476.097.747-.017.27-.09.452-.185.682-.038.09-.076.18-.11.28l-6.333 15.99-6.75-16.72c-.07-.22-.108-.34-.108-.53 0-.14.015-.24.104-.42l.188-.39h-4.368l.645.48c.244.18.382.31.554.63.102.18.155.33.216.51l.083.23 9.367 22.51L322.678 29c.13-.337.234-.546.403-.86l.01-.016c.2-.43.34-.697.61-1.1l.27-.42h-3.55l.09.336zm15.52 20.5c-.8.302-1.265.352-2.074.352h-5.98v-9.68h4.95c.3 0 .52 0 .79.05.42.117.66.2 1.04.405l.39.217V35.91h-7.26v-7.063h5.03c.12 0 .23-.007.34-.013.28-.017.48-.03.76.086.27.107.44.233.65.48l.47.56v-3.303h-10.77l.37.442c.16.18.22.31.31.54.09.31.14.53.14.9v19.55c.01.28.02.49-.05.78-.08.33-.15.51-.31.78l-.24.4h11.91l.932-3.54-.63.49c-.306.24-.487.34-.82.45zm18.152 1.32c-.552-.565-.993-1.242-1.552-2.1l-4.734-7.082c-.47-.692-.78-1.103-1.31-1.7h.03c.97 0 1.91-.347 2.72-1.006 1.31-1.078 2.11-2.847 2.14-4.73.04-1.633-.48-3.043-1.49-4.078-.94-.956-2.2-1.48-3.56-1.48h-6.29l.26.565c.11.24.2.41.25.69.13.87.15 1.35.15 2.17v16.48c0 .82 0 1.85-.08 2.31-.02.24-.09.41-.2.66-.03.06-.06.14-.1.21l-.15.37h3.63l-.1-.35c-.037-.11-.06-.2-.09-.29-.09-.28-.15-.48-.19-.81-.08-.38-.08-.61-.08-.96v-10.2c.07.08.125.17.19.28.05.09.11.19.18.28l7.82 12 .08.13h3.936l-.53-.47c-.398-.35-.628-.57-.978-.92zm-10.67-19.93c.604-.295 1.03-.328 1.776-.328 2.92.143 3.42 1.87 3.53 3.712.15 2.377-1.31 3.937-3.89 4.173-.47.023-1.02.01-1.41-.03V28.85zm21.172 8.974c-.23-.152-.465-.308-.705-.47l-3.104-2.12c-1.256-.85-2.06-1.674-2.177-3.145-.07-.99.28-1.92.99-2.62.79-.79 1.95-1.23 3.04-1.15 1.45.06 2.48.32 3.52 1.48l.47.52v-3.24l-.15-.08c-1.28-.62-2.2-.65-3.46-.69-.18-.01-.36-.01-.55-.02-1.88-.07-3.65.57-4.88 1.76-1.11 1.08-1.69 2.52-1.68 4.16.03 2.33.98 3.97 3.17 5.5l3.55 2.39c1.52 1.01 2.88 2.09 2.88 4.17 0 1.25-.38 2.29-1.12 2.99-.81.78-2.04 1.16-3.56 1.1-1.74-.03-2.98-.15-4.38-1.49l-.45-.44v3.23l.16.07c1.49.66 2.53.67 3.97.69l.49.01h.34c1.62 0 4.25-.3 5.96-2.02 1.11-1.118 1.64-2.64 1.58-4.53-.12-3.64-1.85-4.78-3.86-6.1zm10.15-9.94c.105-.34.178-.568.302-.858l.15-.374h-4.07l.22.4c.19.332.28.58.39.984.12.443.14.694.14 1.123V47.8c0 .45 0 .72-.15 1.132-.07.28-.14.447-.29.716l-.23.4h3.94l-.2-.39-.13-.23c-.11-.193-.19-.333-.22-.55-.077-.754-.077-1.77-.077-2.947V29.1c.004-.324.004-.52.177-1.217zm28.817-1.29l.038.3c.023.195.023.326.002.502-.04.22-.123.372-.235.584l-4.23 7.86-3.84-7.325-.06-.105c-.15-.278-.26-.462-.34-.77-.05-.265-.07-.45-.05-.726l.02-.29h-4.1l.03.032h-13.22l-.58 3.23.53-.388c.32-.232.55-.365.95-.455.24-.084.36-.107.59-.107h4.64V47.78c0 .15 0 .285.01.41.01.283.01.507-.03.783-.08.266-.13.44-.25.7l-.177.38h3.85l-.197-.386c-.15-.304-.237-.488-.26-.765-.105-.7-.105-.74-.1-.998v-19.06h3.99c.39 0 .65.05 1.06.2l.02.008c.336.09.54.177.82.34l.38.222 4.694 8.676v10.22c0 .067.003.13.005.188 0 .145 0 .24-.03.397-.02.21-.07.376-.17.656l-.13.36h3.27l-.096-.33c-.06-.21-.09-.35-.12-.52l-.03-.14c-.05-.3-.077-.47-.077-.72V38.3l5.35-9.437c.206-.396.336-.637.56-.994v-.01c.19-.3.34-.51.62-.82l.426-.46h-3.58z"></path>
+                </svg>
+            </a>
+            <div class="wsuaimhigher">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100px" height="15px" viewBox="0 0 98 14" xml:space="preserve">
+                    <path d="M8.1 1.4l4.2 11.2H9.8l-1-3.1h-4l-1.2 3.1h-2L6.3 1.4H8.1zM8.4 8.2C8 6.7 7.5 5.3 6.9 3.6h0c-0.5 1.7-1 3.1-1.5 4.6H8.4zM13.7 12.6V1.4h2.3v11.2H13.7zM31.3 12.6H29V3.9h0c-1.2 3.1-2.5 5.9-3.8 8.7H24c-1.2-2.8-2.4-5.6-3.6-8.7h0v8.7h-1.8V1.4h2.8c1.2 2.8 3 7.1 3.4 8.6h0c0.5-1.5 2.5-5.8 3.8-8.6h2.6V12.6zM47.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM50.4 12.6V1.4h2.3v11.2H50.4zM64.8 7.5v4.6c-1.2 0.4-2.5 0.7-3.7 0.7 -3.9 0-6.3-2.6-6.3-5.9 0-3.1 2.4-5.7 6.4-5.7 1.2 0 2.5 0.4 3.2 0.9l-0.7 1.3C63 3.1 62 2.8 61.2 2.8c-2.4 0-4 1.6-4 4.2 0 2.7 1.9 4.2 3.8 4.2 0.6 0 1.1-0.1 1.6-0.3V7.5H64.8zM76.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM85.4 2.9h-3.8V6h3.7v1.5h-3.7v3.6h4.4v1.5h-6.7V1.4h6V2.9zM88.1 1.4H92c2.1 0 3.6 1 3.6 2.9 0 1.7-0.8 2.6-1.9 3.2l2.7 4.8 -2.4 0.4 -2.3-4.7h-1.3v4.5h-2.3V1.4zM90.3 6.6h0.9c1.6 0 2-1.2 2-2 0-1.3-0.9-1.7-1.8-1.7h-1.2V6.6z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="wsusearch">
+            <nav>
+                <ul>
+                    <li><a href="http://academica.wayne.edu/" class="spf-nolink">Academica</a></li>
+                    <li><a href="http://wayne.edu/directory/" class="spf-nolink">Directory</a></li>
+                    <li><a href="http://wayne.edu/contact/" class="spf-nolink">Contact</a></li>
+                    <li class="aimhigher"><a href="http://wayne.edu/aimhigher/" class="spf-nolink">Aim Higher</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="https://wayne.edu/search/">
+                <label for="q">Search:</label>
+                <input name="q" class="input-group-field" id="q" placeholder="Search..." type="text">
+                <button type="submit" class="button"><span class="search-icon"><span>Search</span></span></button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- WSU Header ends-->
+<div class="container">
+<!--Humanities Center logo-->
+<a class="notA" href="http://research2.wayne.edu/hum/"><img class="forhcheader" width="600" height="80" src="../img/hcheader.png"> </a>
+<!-- HC logo ends-->
+<div id="site-search">
+<form action="../search.htm" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="013346447988890295882:ebh4g3_d5_4" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+   <label for="site-q">Search</label>
+		<input id="site-q" class="searchText" type="text" size="13" name="q"/>
+    <input type="image" name="sa" alt="Search" src="../img/searchButton.jpg" />
+  </div>
+</form>		
+</div>	 
+</div><!--container div ends-->
+
+<section id="showcase"> 
+<div id="forid"><!-- #BeginLibraryItem "/Library/NavBarLibraryItem.lbi" -->
+  <nav class="clearfix">
+    <!-- div begins: make a gift floating label -->
+    <div id="gift"><img src="../img/gift-label1.png"></div>
+    <!-- div ends: floating label-->
+    <ul id="MenuBar2" class="MenuBarHorizontal clearfix">
+      <li><a href="http://research2.wayne.edu/hum/">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="../AboutUs/DirectorsMessage/message.html">Message from the Director</a></li>
+          <li><a href="../AboutUs/AdvisoryBoard/advisory.html">Advisory Board</a></li>
+          <li><a href="../AboutUs/SteeringCommittee/committee.html">Steering Committee</a></li>
+          <li><a href="https://www.flickr.com/photos/53952766@N07/sets/">Photos</a></li>
+          <li><a href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p">Videos</a></li>
+          <li><a href="../AboutUs/AnnualReports/reports.html">Annual Reports</a></li>
+          <li><a href="../AboutUs/OurStaff/staff.html">Our Staff</a></li>
+        </ul>
+      </li>
+      <li><a class="MenuBarItemSubmenu" href="#">Funding</a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">Faculty Funding</a>
+            <ul>
+              <li><a href="../FacultyFunding/MWFF/marilyn.html">Marilyn Williamson Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/ResidentScholars/resident.html">Resident Scholars</a></li>
+              <li><a href="../FacultyFunding/FacultyFellowship/fellowship.html">Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/WorkingGroups/groups.html">Working Groups</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Student Funding</a>
+            <ul>
+              <li><a href="../StudentFunding/DoctoralDissertation/dissertation.html">Doctoral Dissertation Fellowship</a></li>
+              <li><a href="../StudentFunding/DoctoralDissertation/travel.html">Graduate Travel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="brownbag.html">Brown Bag Colloquium Series</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+<!-- #EndLibraryItem --></div>
+<!-- forid div ends -->
+</section>
+<!-- InstanceBeginEditable name="EditTimeline" -->
+<img src="Smith-20.jpg" style="z-index:-2;position:relative;"> 
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="brownbagYearMenu" -->
+<div class="bg border">
+  <form name="form" id="form">
+    <select name="AdvisoryMenu" id="Menu" onChange="MM_jumpMenu('parent',this,0)">
+      <option value="brownbag.html">Brown Bag Series</option>
+      <option value="16-17.html">2016-2017</option>
+      <option value="15-16.html" selected>2015-2016</option>
+      <option value="14-15.html">2014-2015</option>
+      <option value="13-14.html">2013-2014</option>
+      <option value="12-13.html">2012-2013</option>
+      <option value="11-12.html">2011-2012</option>
+      <option value="10-11.html">2010-2011</option>
+      <option value="09-10.html">2009-2010</option>
+      <option value="08-09.html">2008-2009</option>
+      <option value="07-08.html">2007-2008</option>
+      <option value="06-07.html">2006-2007</option>
+      <option value="05-06.html">2005-2006</option>
+      <option value="04-05.html">2004-2005</option>
+      <option value="03-04.html">2003-2004</option>
+      <option value="02-03.html">2002-2003</option>
+      <option value="01-02.html">2001-2002</option>
+      <option value="00-01.html">2000-2001</option>
+      <option value="99-00.html">1999-2000</option>
+      <option value="98-99.html">1998-1999</option>
+      <option value="97-98.html">1997-1998</option>
+    </select>
+  </form>
+ <!-- InstanceEndEditable -->
+  <br>
+  <br>
+  <br>
+  <!-- InstanceBeginEditable name="brownbagtext" -->
+  <div class="tab">
+    <button class="tablinks active" onClick="openCity(event, 'September')" id="defaultOpen">September</button>
+    <button class="tablinks" onClick="openCity(event, 'October')">October</button>
+    <button class="tablinks" onClick="openCity(event, 'November')">November</button>
+    <button class="tablinks" onClick="openCity(event, 'December')">December</button>
+    <button class="tablinks" onClick="openCity(event, 'January')">January</button>
+    <button class="tablinks" onClick="openCity(event, 'February')">February</button>
+    <button class="tablinks" onClick="openCity(event, 'March')">March</button>
+    <button class="tablinks" onClick="openCity(event, 'April')">April</button>
+  </div>
+  <div id="September" class="tabcontent active">
+    <p><strong><u>September 15 - Ken Jackson</u></strong> <br />
+        <b>English, Chair<em>: First Folio! The Book That Gave Us Shakespeare</em></b></p>
+      <p align="justify"><b>Abstract: </b> <em>First Folio! The Book That Gave Us Shakespeare</em>?is a traveling exhibition on tour from the Folger Shakespeare Library in Washington, DC, designed to teach visitors about the 1623 First Folio of Shakespeare. Assembled seven years after Shakespeare's death, the First Folio includes 36 of his plays?18 of which had never before been published. Without it,?<em>Julius Caesar, Macbeth, As You Like It, The Tempest</em>, and more could have been lost. The exhibition, which also includes panels and digital content, exclusively features First Folios from the Folger Shakespeare Library in Washington, DC, whose collection of 82 First Folios is by far the largest in the world. The nation-wide exhibition was funded in large part by a generous grant from the National Endowment for the Humanities.</p>
+      <p align="justify">Wayne State University, in collaboration with the DIA (which will house the actual Folio), and Detroit Public Libraries, was selected through a grant review process to be the host of Michigan's First Folio.</p>
+      <p align="justify">A number of events are planned as part of the exhibition that runs from March 10 to April 1, 2016.?<span tabindex="0" role="button">Wayne State University will be hosting an opening night gala at the DIA on March 10, 2016, a gala that coincides</span>?with an academic conference at the Bernath Auditorium David Adamany Library. The conference brings together Shakespeare scholars from around the state (UM, MSU, Hope, Western, EMU, etc.) Legendary Shakespearean David Bevington from the U. of Chicago will deliver a keynote address as will Professor Mary Crane from Boston University.</p>
+      <p align="justify">There will be an additional WSU Libraries exhibit, including First Folio/Folger materials, outside Bernath Library. The following week, WSU's Professor Emeritus Arthur F. Marotti will deliver a talk on Shakespeare and the Folio for the annu al?<em>Mary Adelaide Hester</em>?talk at Detroit Public Library. DPL will be hosting its own exhibition of Shakespearean materials, including a 2nd?edition Folio. The DIA, in collaboration with WSU faculty, are organizing K12 workshops. And the Hilberry Theater will be staging?<em>Love's Labour's Lost</em>?(January 29 thru March 12). The Detroit Film Theater is planning its programming that month to include a number of Shakespearean adaptations.</p>
+      <p align="justify">This talk will discuss the significance of the First Folio and plans ? still ongoing ? for a celebration of Shakespeare in Detroit for 2016.      </p>
+      <p>        (<a class="normalA" href="flyers/15-16/Jackson web flyer.jpg" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/gp/wsuhumanitiescenter/8704xg" target="_blank">Photos</a>) (<a class="normalA" href="https://www.youtube.com/watch?v=q_Adsu0txD8" target="_blank">Video</a>)</p>
+      <p><strong><u>September 16 - Robin Boyle</u></strong> <br />
+  <b>Urban Studies and Planning, Professor<em>: Growth Management - Learning from Melbourne, Australia</em></b></p>
+      <p align="justify"><b>Abstract: </b>For most of the past sixty plus years I've lived and studied and written about cities facing the consequences of demographic, economic and social decline: in particular Glasgow, Scotland and Detroit, Michigan. To put it in European terms, I am not merely a student but also a survivor of what have become known as &quot;shrinking cities&quot;. In the winter of 2015, while on leave from WSU, I had the opportunity to live, experience and study in a well-established city moving rapidly in the opposite direction: Melbourne, Australia. Melbourne represents a classic case of a contemporary city faced with the turbulence and challenges of growth.</p>
+<p align="justify" dir="ltr">At this session I'll introduce the context of urban change in Australia, detail some of the implications of urban growth in the 21st century, and discuss the role of strategic planning in metropolitan Melbourne. In particular, I'll address the difficulties of using the established planning system to direct and shape growth in Melbourne's downtown and across its diverse suburban?landscape.</p>
+<p align="left" dir="ltr">  (<a class="normalA" href="flyers/15-16/boyle flyer.pdf" target="_new">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/gp/wsuhumanitiescenter/Lvc6FW" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/3iIYxeZQkBo" target="_blank">Video</a>) (<a class="normalA" href="Powerpoint/15-16/Melbourne Growth Talk.pdf" target="_blank">PowerPoint</a>)</p>
+<p><strong><u>September 22 - Geoff Steven Nathan</u></strong> <br />
+  <b>English,  Professor<em>: Parallelisms Between Language and Music</em></b></p>
+<p align="justify"><br />
+  <b>Abstract: </b>In this talk I will argue that linguistic &lsquo;prosody&rsquo; (stress and intonation/pitch) is not a linguistically-specific human ability, but rather simply an instance of what psychologists call &lsquo;entrainment&rsquo;. Our ability to line up stretches of speech with stretches of melody, based on the alignment of &lsquo;beats,&rsquo; which are abstract timing units that correspond with both mental and physical rhythmic behavior is common to musical production (singing, clapping and production of instrumental music) and speech. What is traditionally referred to as stress is simply alignment of the appropriate syllables (defined either by weight in weight-sensitive stress systems, or by location in weight-insensitive systems) with accented beats.</p>
+<p align="justify" dir="ltr">Goswami argues that attention to syllable structure and attention to rhythmic beat in music are the same cognitive task. In addition, she notes that appropriately shaped onsets of rhythmic beats facilitate the ability to entrain (that is, to get the listener in sync with the music being heard). This fact coincides with my claim that the universal preference for CV syllables is driven by the perceptual preference for clearly demarcated beats with a sharply audible onset. In addition Goswami has found evidence for a correlation between dyslexia and difficulty in perceiving speech prosody and syllable stress.</p>
+<p align="left" dir="ltr">  (<a class="normalA" href="flyers/15-16/Nathan web flyer.jpg" target="_new">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/gp/wsuhumanitiescenter/i6id4p" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/nyjR6qKtOc8" target="_blank">Videos</a>)</p>
+<p><strong><u>September 23 - Jorgelina Corbatta</u></strong> <br />
+  <b>CMLLC,  Professor<em>: Eroticism and Mysticism in?<em>The Holy Girl</em>?by Lucrecia Martel: A Reading in Key with Freud's Dora</em></b></p>
+<p align="justify"><b>Abstract: </b>The purpose of this paper is to study the combination of eroticism and mysticism incarnated in Amalia, the main character of the film The Holy Girl (La ni?a santa, 2004), following the traces of Freud's reading of Dora. Amalia, the girl of the title, is an adolescent who, together with her friend Josefina, starts exploring her sexual desires while experiencing the passion of the Catholic dogma. To an extent, The Holy Girl is an exploration of the intersection between religious belief and the realm of the emerging sexual desire and, according to Martel, inspired in her autobiographical experience.</p>
+<p align="justify" dir="ltr">The film was directed by the Argentine director Lucrecia Martel and produced by Lita Stantic and the executive company El Deseo, owned by the Spanish film director Pedro Almodovar, his brother Agust?n and Esther Garc?a. The film received prizes in Argentina and Brazil and was nominated in Cannes, Venezia, Toronto and Berlin Film festivals. The Holy Girl, together with The Swamp (La ci?naga 2001) and The Headless Woman (La mujer sin cabeza, 2007), is part of Lucrecia Martel's trilogy of family dramas based in the provincial middle class of Salta, a tropical northeastern Argentine province.</p>
+<p align="left" dir="ltr">  (<a class="normalA" href="flyers/15-16/corbatta print flyer.pdf" target="_new">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/gp/wsuhumanitiescenter/AV3098" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/If2doQ8Mb94" target="_blank">Video</a>)</p>
+<p><strong><u>September 24 - Edward Paulino</u></strong> <br />
+  <b>Global History, Assistant Professor<em>: Background to the Crisis of Stateless Dominicans of Haitian Descent: The Dictator Rafael Trujillo's Border Campaign against Haiti, 1930-1961</em></b></p>
+<p><b>Abstract:</b> Today the Dominican Republic has been widely condemned by the international community for its 2013 constitutional amendment ruling which denied and stripped the citizenship to at least 200,000 Dominicans of Haitian descent and thousands more long-term Haitian residents. Accusations of massive deportations, concentration camps, Dominican xenophobia and racism have abounded in the traditional and social media. The popular consensus is that a historic and timeless enmity exists between both nations since the 19th century. Prof. Paulino's talk challenges this notion by showing that the current humanitarian crisis of statelessness and exclusion of the Haitian diaspora in the DR originates in the 20th century under the dictator Rafael Trujillo's (1930-1961) national campaign to Dominicanize the border and turn Haitians into official &quot;other&quot; sparked by the 1937 genocidal massacre of 1937.</p>
+<p>  (<a class="normalA" href="flyers/15-16/Paulino web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/?">Photos</a>)<br />
+</p>
+<p><strong><u>September 29 - Chera Kee</u></strong> <br />
+  <b>English, Assistant Professor<em>: Diversity in Comics: Xombi and the Curious Case of David Kim</em></b></p>
+<p><b>Abstract:</b> Race is at the forefront of the comic book Xombi. Not only is its main character David Kim one of only a small handful  of Korean-American main characters in American comics, but Xombi was originally a Milestone title. Launched  under the DC umbrella in 1993, Milestone was an attempt by African-American artists and writers to correct the severe  underrepresentation of minorities in American comics. After introducing a slate of African-American heroes, in  1994, Milestone added Xombi to their repertoire. Despite critical acclaim, by 1995, Milestone was forced to cancel  the original run of the series. Jeffrey A. Brown argues that one of the reasons Milestone comics like Xombi failed  was because of their associations with African-American creators and subject-matter: readers assumed Xombi was  a &ldquo;black&rdquo; comic, when in fact, it was anything but. Exploring the ways in which race is both wholly defining AND  seemingly inconsequential in Xombi, this presentation examines some of the conundrums comics producers of the  1990s faced in trying to broaden the repertoire of superheroes available to the American public.</p>
+<p>  (<a class="normalA" href="flyers/15-16/kee flyer (1).pdf" target="_new">Flyer</a>)</p>
+<p><strong><u>September 30 - Anne Rothe</u></strong> <br />
+  <b>CMLLC, Associate Professor<em>: The Survivor Figure in American Culture: Intersections of Social Darwinism, Holocaust Memory and Popular Culture</em></b></p>
+<p><b>Abstract:</b> Expanding on?the?exploration of?mainstream?American?Holocaust discourse for understanding?popular culture?representations of?victimhood and violence as melodramatic spectacles of trauma kitsch developed in?Popular Trauma Culture: Selling the Pain of Others in the Mass Media?(Rutgers UP, 2011),?Anne?Rothe's?next?book?project?will?examine the?metamorphoses of the quintessentially American?figure of the survivor. Tentatively titled?Survivors Made in America: Intersections of Holocaust Memory, Social Darwinism, and Popular Culture, the?monograph will trace the genealogy of this?inherently composite?figure?which became?ubiquitous in?the?mass media?after?it?had?emerged with the television broadcasts?of survivor testimony?from the?trial of AdolfEichmann?in Jerusalem?and the?translation and publication of?Elie?Wiesel's?Night?in the U.S.?The presentation will provide an outline of the overall argument to be made in the book.?As such, itwill?analyze the?prefiguration?of the survivor?in such core American characters as the frontier hero and the self-made man and?explore?the?emergence of the?survivor?figure in American Holocaust discourse generally and the role of the Eichmann trial, Wiesel's memoir,?and his public persona specifically.?The talk will?furthermore?discuss?the?fusion?of the survivor figure?with Social Darwinist?survivalism?in TV Reality Shows and post-Apocalyptic Hollywood cinema?and conclude with an analysis of?both?the gender re-coding of this decidedly masculine figure?and?theubiquitous from-victim-to survivor trope?in the interrelated discourses of popular feminism and self-help literature?and the pink kitsch of the American Breast Cancer Movement in particular.?</p>
+<p>  (<a class="normalA" href="flyers/15-16/Rothe web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://flic.kr/s/aHskhYSdnQ" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/39IE0pUdgNI" target="_blank">Video</a>)<br />
+</p>
+  </div>
+  <div id="October" class="tabcontent">
+    <p><strong><u>October 6</u></strong> <u>-<strong> Race, Class, and Gender in Narratives of Contemporary American Musicians?</strong></u><br />
+       <strong>Emery Stephens, Music, Assistant Professor; Joshua S. Duchan, Music, Assistant Professor; and Wendy K. Matthews, Music, Assistant Professor</strong></p>
+<p align="justify"><b>Abstract: </b>This presentation combines faculty from three separate areas of musical study?musicology, music education, and music performance?in an examination of American musicians and their works. ?At the core of our inquiry are narratives, which appear in lyrics, music, and through the experiences of musicians themselves. ?The presentation entails case studies that reflect and illuminate how issues of race, class, and gender are articulated in musical performance and its discourse.</p>
+<p align="justify">Joshua S. Duchan's contribution to the project considers the music of Billy Joel, whose compositions, like many singer-songwriters, express his observations of and commentary on larger cultural trends in the late twentieth century. ?Wendy Matthews explores nearly fifty years in the career and teaching contributions of one of the most prominent women trumpet players of our time, Carole Dawn Rienhart. ?Emery Stephens examines the life and legacy of Dr. Louise Toppin, a major pedagogue and promoter of classical vocal music by African American composers.</p>
+<p align="justify">Based on these studies, race, class, and gender emerge as salient themes across the twentieth-century musical experience. Our conclusions can ultimately inform our teaching, enabling us to cultivate a nuanced understanding of music and culture among our students.</p>
+<p><br />
+  (<a class="normalA" href="flyers/15-16/Duchan Matthews Stephens web flyer.pdf" target="_blank">Flyer</a>)</p>
+<p><strong><u>October 7 - Marvin Zalman</u></strong> <br />
+  <b>Criminal Justice, Professor<em>: Reinventing the Criminal Trial to Increase Accuracy and Prevent Wrongful Convictions</em></b></p>
+<p align="justify"><br />
+  <b>Abstract:</b> The grossly uneven American criminal justice process plausibly results in 10,000 false convictions each year. This knowledge spurred &ldquo;innocence movement&rdquo; reform proposals aimed mainly at police, forensic science, prosecution, and defense competence and procedures. Reform attention has recently turned to the trial process itself. Recent legal scholarship by D. Michael Risinger, Tim Bakken, Keith Findley, Samuel Gross, and Christopher Slobogin proposes modified pre-trial and trial procedures to reduce wrongful convictions.??Some fit the adversary model and others have &ldquo;inquisitorial&rdquo; features. My talk is taken from a longer co-authored, forthcoming, analysis with a German lawyer. It will compare and evaluate the five authors&rsquo; recommendations for their novelty, feasibility, complexity, likely impact, and possible negative or positive side effects.</p>
+<p><br />
+  (<a class="normalA" href="flyers/15-16/new zalman web flyer.pdf" target="_new">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661302542742" target="_blank">Photos</a>) (<a class="normalA" href="https://www.youtube.com/watch?v=O5zJQjBTQRc" target="_blank">Video</a>)</p>
+<p><strong><u>October 13 - David Goldberg and L.T. Duncan</u></strong> <br />
+  <b>African American Studies, Assistant Professor ; English, Senior Lecturer<em>: Citizen Pettiway</em></b></p>
+<p align="justify"><br />
+  <b>Abstract:</b> In what sense is an educated citizenry important, and how might we think about this???Our presentation invites this inquiry through an overview and exploration of the life of Quill Pettway.??To some degree his life fits into a recognizable pattern of African American experience in Detroit: a coming to the city during the Great Migration, participation in the UAW organizing of the automobile industry, upward mobility and long-term residency in the city.??It is, though, the specific ways that he understood his life and his larger?pursuits that command our attention. Our desire is to gain useful insights by exploring how Mr. Pettway's lived experiences were shaped by his understanding of the importance of?education, history and intergenerational dialogue,?individual and collective development---with rights and responsibilities.</p>
+<p align="justify">Professor L.T?Duncan, drawing upon historical research and personal interactions, provides a brief biography while emphasizing how Mr. Pettway's rich life and personal history were guided by his firm commitment to a set of core beliefs and values that continue to be relevant today.?Professor?Goldberg builds upon these ideas by detailing his efforts to have Mr. Pettway's many contributions publicly recognized, but does so while also exploring the impact that revanchism and gentrification have already had on race, remembrance, and public history in Detroit.</p>
+<p>(<a class="normalA" href="flyers/15-16/Goldberg Duncan web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157660552491137" target="_blank">Photos</a>)</p>
+<p><strong><u>October 14 - R. Khari Brown, Ronald Brown</u></strong><u><strong>,</strong> <strong>James Jackson</strong></u><br />
+  <b>Sociology, Assistant Professor; Political Science, Associate Professor; University of Michigan, Institute for Social Research<em>: Understanding Policy Attitudes about Social Inequality</em></b></p>
+<p align="left">
+  <b>Abstract: </b>This pilot?study?is interested in better understanding the connection?between?exposure?to?information about the systemic basis of?social?inequality with support for policies aimed at reducing social inequality.??This pilot study?suggests?that black and white Americans have very different reactions to such information.? When?exposed to?vignette within a survey that emphasizes the systemic nature of gender inequality,?Whites?appear to?become?less?supportive?of?policies aimed at reducing gender inequality.??Conversely, Blacks?become?moresupportive?such policies.??This preliminary study discusses the relevance?of?the theory of motivated reasoning, which?suggests that exposure to information that challenges long held beliefs results in individuals staunchly defending their beliefs, to explaining white attitudes about social inequality.? We also discuss the relevance of?Rawls'?Theory of Justice, which?maintainsthat individuals would become more supportive of strategies aimed at helping the least advantaged when made aware of the arbitrary nature of privilege and inequality, to explaining Black social inequality attitudes.? Finally, we discuss the?implications?of?our?findings for?why elected officials?are?reluctant to publicly espouse a policy platform that identifies systemic inequities in the opportunity structure as the basis for unequal outcomes in the US.</p>
+<p align="left"><br />
+  (<a class="normalA" href="flyers/15-16/Brown web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157660552445838" target="_blank">Photos</a>) (<a class="normalA" href="https://www.youtube.com/watch?v=8mmKNsPuI0M" target="_blank">Video</a>)<br />
+  <br />
+</p>
+<p><strong><u>October 20 - Lisa Maruca</u></strong> <br />
+  <b>English, Associate Professor<em>: Teaching Shakespeare in the Eighteenth Century</em></b></p>
+<p align="justify"><br />
+  <b>Abstract:</b> The Eighteenth Century in England witnessed the consolidation of Shakespeare's reputation for artistic genius.??He went from being one of a small number of early modern playwrights only occasionally presented on the Restoration stage to a beloved national symbol by the century's end.??It is also the period that first saw sustained and serious scholarly editing of the Bard's works.??At the same time,??the Eighteenth Century saw a relative rise in literacy rates through an expansion of education into the middling classes, for both boys meant to become merchants and tradesmen and girls destined to be genteel helpmeets and mothers.??Where does the study of Shakespeare fit into the transformation of this period's reading and writing pedagogies? Were Shakespeare's plays held up as writing or speech to be emulated, representations of moral behavior, or beauty to be appreciated? This Brown Bag will discuss work in progress investigating the ways Shakespeare was used in schools, textbooks, and other didactic materials.</p>
+<p><br />
+  (<a class="normalA" href="flyers/15-16/Maruca web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661302819202" target="_blank">Photos</a>) (<a class="normalA" href="https://www.youtube.com/watch?v=gcZTgrJrbyI&amp;feature=youtu.be" target="_blank">Video</a>)</p>
+<br />
+<p><strong><u>October 21 - Shirin Montazer, Marisa Young</u></strong> <strong><font color="#FF0000">***CANCELLED***</font></strong><br />
+  <b>Assistant Professor, Sociology; Assistant Professor, Sociology, McMaster University<em>: Level of Economic Development of the Country of Origin and Work-to-Family Conflict After Migration to Canada</em></b></p>
+<p align="justify"><br />
+  <b>Abstract:</b> Using a sample of employed adults living in Toronto, Canada, this article examines patterns and antecedents of work-family conflict (WFC) among immigrants, relative to the native born. Specifically we test whether the economic development of immigrants' country of origin -- or intermediary country beyond origin, and length of residence?in Canada interact to affect WFC differentially among immigrants. We situate our argument within human capital and role conflict theory, and hypothesize that country of origin and length of residence?impacts the capital immigrants bring to the labor market, and the return to that capital they receive. Discrepancies between the two likely result in stressful work experiences, and thus greater WFC for immigrants, relative to the native born.?Results of hierarchical linear models indicate greater WFC among immigrants from less developed countries compared to the native born. Further analyses suggest that a) higher WFC among this group is most pertinent to immigrants in the country for 10 years or less and those in the country between 11 and 20 years; b) the higher WFC among these groups is partially mediated by the experience of higher work stress; and c) holding all antecedents and controls constant, WFC is significantly higher among men than women from less developed countries who have been in Canada between 11 and 20 years. Immigrants from developed countries of origin do not report significantly different levels of WFC than the native born.</p>
+<p><br />
+  (<a class="normalA" href="flyers/15-16/montazer web  flyer.pdf" target="_blank">Flyer</a>)</p>
+<p><strong><u>October 22 - Andrea Sankar, Arlene Weisz, Jessica  Robbins-Ruskowski</u><br />
+  Anthropology, Professor and Chair; School of Social Work,  Professor; Anthropology, Assistant Professor</strong>: <strong><em>Social Work and  Anthropology (SWAN): Launching a new Interdisciplinary Doctoral Degree </em></strong><em></em></p>
+<p align="justify"><strong>Abstract:</strong> This brown bag will highlight the new interdisciplinary  doctoral degree, SWAN. &nbsp;The SWAN program's mission and vision will be  discussed by faculty associated with the program. &nbsp;This degree&nbsp;integrates a professional degree (MSW), a  doctorate in Social Work, and a social science doctorate in Anthropology and  integrates the strengths of&nbsp;Anthropology and Social Work in the following  areas: <br />
+  *  Interdisciplinary theoretical and practical approaches to social problems <br />
+  *  Professional applied skills <br />
+  *  Ethnography <br />
+  SWAN  faculty and students are committed to scholarship that is applied, practice,  public and engaged</p>
+<p>(<a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Perry web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661335540571" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/-vjNSGxNcco">Video</a>)</p>
+<p><strong><u>October 27 - George Parris </u><br />
+  Education, Assistant Professor and Coordinator; <em>Integrating Emotional Intelligence and Creative Thinking into the Curriculum</em></strong></p>
+<p align="justify"><strong>Abstract:</strong> Colleges and?Universities have been challenged?to ensure that they graduate students who can think?creatively.???Ever since the birth of psychology, psychologists?have been dealing with the term &lsquo;intelligence&rsquo;. In the earlier part of the 20th century,?intelligence quotient?(IQ)?became an important issue.?However, many psychologists have come up with different?approaches to?explaining intelligence.?For example, Thorndike&rsquo;s?(1920) &lsquo;Social Intelligence&rsquo;, Howard Gardner&rsquo;s (1993) &lsquo;Multiple Intelligence theory&rsquo;, and?Daniel Goleman&rsquo;s (1995) &lsquo;Emotional Intelligence&rsquo;?are some of?the major concepts of intelligence.?Emotional intelligence is a type of social intelligence, which involves the capacity for recognizing one&rsquo;s own feelings and those of others for motivating and managing emotions well in oneself and in one&rsquo;s relationships. EI refers to an array of?competencies and skills that influence one&rsquo;s ability to succeed in coping with environmental demands and pressures.?Specific?processes which improve the ability to be?creative,?original, diverse and?to?elaborate ideas.?This?presentation presents an overview of the conceptual?framework of EI.?It focuses principally on the?theoretical underpinnings,?the pedagogical organization and approaches, and outlines an approach for the development of EI into the curriculum.??</p>
+<p>(<a class="normalA" href="flyers/15-16/Parris web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661303014882" target="_blank">Photos</a>) (<a class="normalA" href="https://www.youtube.com/watch?v=K_30YY77jKM&amp;feature=youtu.be" target="_blank">Video</a>)</p>
+<p><strong><u>October 28 - Kristin O'Donovan</u><br />
+  Political Science, Assistant Professor; Learning After Disaster</strong></p>
+<p align="justify"><strong>Abstract:</strong> The purpose of this project is to determine whether policy failures are a mechanism for policy learning and ultimately diffusion. It is well established in the diffusion literature that states, cities and counties learn about and adopt policies that have been considered successes by their neighbors. However, the role of perceived policy failures has not been investigated as extensively as successes. The policy learning literature indicates that governments can and do learn after a perceived policy failure. This paper asks two questions. First, is policy failure a mechanism for diffusion? Second, if policy failure is a mechanism for diffusion, is the type of policy learning that occurs an important factor? Using the policy learning literature as an organizing framework, this work analyzes two instances of perceived policy failures: the school collapse during the Moore Tornado of 2013 and the residential development damage in the Oso Mudslide of 2014. Using local government data, this research tests for learning of policies designed to prevent future failures to neighboring municipalities. Findings suggest that repeated policy failures are associated with social policy learning and ultimately diffusion.</p>
+<p>(<a class="normalA" href="flyers/15-16/odonovan print flyer.pdf">Flyer</a>)</p>
+  </div>
+  <div id="November" class="tabcontent">
+    <p><strong><u>November 3 - John Corvino</u></strong></p>
+   <p><b>Professor and Chair, Philosophy<em>: Bake Me a Cake: Emerging Conflicts Around Religious Liberty, Tolerance, and Discrimination</em></b></p>
+   <p align="justify"><b>Abstract:</b> Now that same-sex couples may marry in all 50 states, the &ldquo;culture wars&rdquo; have largely shifted to conscientious objectors: clerks who don&rsquo;t want to issue marriage licenses to same-sex couples, photographers who don&rsquo;t want to take their photographs, bakers who don&rsquo;t want to bake their cakes, and so on. The controversies often arise not because of marriage law, but because of anti-discrimination law, which in some jurisdictions covers sexual-orientation discrimination.   </p>
+   <p align="justify">Consider for example Sweet Cakes by Melissa, which was charged with violating the Oregon Equality Act and ordered to pay $135,000 in damages after declining to provide a wedding cake for a lesbian couple. Many observers are conflicted about this case: On the one hand, they appreciate Oregon&rsquo;s efforts to combat discrimination in public accommodations. On the other hand, they worry about trampling the bakers&rsquo; liberty to choose their commissions?and even more so the liberty of photographers in related cases, where free-speech concerns are more conspicuous.   </p>
+   <p align="justify">In this talk, Prof. Corvino will critically examine five alternatives for balancing our commitment to equality and nondiscrimination with our commitment to personal liberty as we approach the &ldquo;cake wars.&rdquo;</p>
+   <p>(<a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Corvino print flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661138126912">Photos</a>)</p>
+   <p><u><strong>November 4 - Stephen Calkins</strong></u></p>
+   <p><strong>Professor, Law S</strong><strong>chool</strong>: <strong>An American Academic in Dublin: Reflections on Almost Four Years in the  Irish Government</strong></p>
+<p align="justify"><strong>Abstract:</strong> Ireland is an unusual country that freely considers foreign  applicants for senior government positions.&nbsp; Stephen Calkins successfully  applied for appointment as a Member of Ireland's Competition Authority, which  was scheduled to (and eventually did) merge with Ireland's National Consumer Agency  to form the new Competition and Consumer Protection Commission.&nbsp; Professor  Calkins has agreed to share reflections on his experience.&nbsp; It was a  challenging time for Ireland, which had committed to a disastrous bank bailout  that backfired badly.&nbsp; Ireland was something of a ward the European Troika  (the European Commission, the European Central Bank, and the IMF).&nbsp; At the  same time, a country that was 84% Catholic was working through fallout from  abuse scandals, and relations with the UK and with Northern Ireland were a work  in progress.&nbsp; Today Ireland has emerged from the bailout process but is  still deeply in debt; Northern Ireland is posing new challenges; and the  Catholic Church was largely marginalized during the extraordinary referendum  that legalized gay marriage.&nbsp; Within the Irish Government Calkins  experienced the very different functioning of an Irish enforcement agency and  legal and political system.&nbsp; Time permitting, Calkins will also offer  observations about politics, the press, and life in Dublin.</p>
+<p>(<a class="normalA" href="flyers/15-16/Calkins print flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661139718965" target="_blank">Photos</a>)</p>
+<p><strong><u>November 10 - Katheryn Maguire</u></strong></p>
+<p><strong>Communication, Associate Professor: Communication, Paradox, and the&nbsp;Long  Distance&nbsp;Experience&nbsp; </strong></p>
+<p align="justify"><strong>Abstract:</strong> Long distance  relationships are a common occurrence. Whether in dating  relationships,&nbsp;military&nbsp;marriages, or transnational&nbsp;families,  relational partners must find&nbsp;ways to cope with the challenges of  maintaining&nbsp;close emotional&nbsp;ties across a distance. In particular,  relational partners may encounter&nbsp;times&nbsp;when&nbsp;the message  they&nbsp;send&nbsp;to accomplish one goal (e.g., cope with  stress,&nbsp;express affection) results in an unexpected or&nbsp;negative  outcome.&nbsp;These paradoxical outcomes, in turn, may&nbsp;further&nbsp;impede&nbsp;the&nbsp;family  member&rsquo;s ability to stay connected with&nbsp;loved ones.&nbsp;In this  presentation, the concept of the &ldquo;communication paradox&rdquo;&nbsp;will be discussed  within the context of long distance family relationships.&nbsp;By understanding  that these paradoxes are&nbsp;often&nbsp;context and time dependent, family  members may recognize the paradox is not indicative of a problem with the  relationship; instead, it is an outcome of the situation, and thus may not  reoccur when the family is out of the stressful situation.&nbsp; </p>
+<p>(<a class="normalA" href="flyers/15-16/Maguire web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661066787756" target="_blank">Photos</a>)</p>
+<p><u><strong>November 11 - Stella M. Resko</strong></u></p>
+<p><strong>Assistant  Professor,&nbsp;School of Social Work &amp; Merrill Palmer Skillman Institute: Changes in Marijuana Policy, Perceived Risk and Adolescent  Marijuana Use</strong></p>
+<p align="justify"><strong>Abstract:</strong> Marijuana is the most commonly used illicit substance  and U.S. marijuana policy and public opinion are rapidly evolving. Currently,  23 states have enacted laws making medical marijuana legal and 4 states have  enacted state laws legalizing recreational marijuana use for adults. This  presentation examines the growing political debate on marijuana policy and  whether the legalization of medical and recreational marijuana results in  increased access and use among adolescents. We review recent trends in  adolescent marijuana use and empirical evidence on the impact of marijuana use  among adolescents. We then describe the results of our recent statewide survey  (N=560) on the perceived risk of adolescent marijuana use in Michigan. Our  findings suggest adults generally had fewer concerns with adolescent marijuana  use that was not associated with other problems (e.g. failing grades, school  suspension, and marijuana possession arrest). Adults were more concerned by  vignettes that involved solitary marijuana use or use in multiple contexts  (e.g. social settings and alone). We conclude with a discussion of how shifts  in marijuana policy and the perceived risk associated with marijuana impact  social workers and other substance use prevention and treatment practitioners.</p>
+<p>(<a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Resko web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157658829950284" target="_blank">Photos</a>) (Videos: <a class="normalA" href="https://youtu.be/-BIKDbuBXL4">Part 1</a> - <a class="normalA" href="https://youtu.be/5DJtVVENZDk">Part 2</a>)</p>
+<p><strong><u>November 12 - Noah Horn</u></strong></p>
+<p><strong>Assistant Professor, Music: Spatial Music</strong></p>
+<p align="justify"><strong>Abstract: </strong>The place in which we hear music greatly influences our reactions  to that music. From grand symphony halls to black box theaters, venues  condition our experiences and place constraints upon composers. In this talk,  we will focus on spatial music that utilizes venues to make the music more  meaningful, from the galleries of Basilica di San Marco in 17th-century Venice  to offstage brass in modern music. Specific composers included will be Giovanni  Gabrieli, Handel, Berlioz, Henry Brant, and Stockhausen (including his infamous  Helicopter Quartet). Many significant pieces in music history succeeded in part  due to their choice of performance space. We will discover implications for all  musical performances, from choral music to pop artists, and propose guidelines for  matching music with venues, sometimes in unexpected ways. Local venues in  Detroit will be used as case studies.</p>
+<p>(<a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Horn web flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661337459725" target="_blank">Photos</a>) (Videos: <a class="normalA" href="https://www.youtube.com/watch?v=R8NyMScAr9U&amp;feature=youtu.be" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/pi1uXwkFwsk" target="_blank">Part 2</a>)</p>
+<p><u><strong>November 17 - Richard Raspa</strong></u></p>
+<p><strong>Professor, English: Inside  the Hermeneutic Circle:&nbsp;Cassius, Brutus, and Antony in  Shakespeare's&nbsp;<em>Julius Caesar</em></strong>&nbsp; </p>
+<p align="justify"><strong>Abstract:</strong> In this essay, I argue that the concept of the Hermeneutic  Circle illuminates the way characters interpret things in Shakespeare&rsquo;s early  modern&nbsp;tragedy ?<em>Julius&nbsp;Caesar</em>. Indeed, the play can be read as  a&nbsp;Hermeneutic? problem, what Heidegger might call the problem of the  ?&ldquo;un-discussed assumption.&rdquo; ?In this play, what is un-discussed is what the  enemies of Caesar take for granted and what they claim everybody knows is true:  namely, Caesar is ambitious, and<strong>&nbsp;</strong>ambitious people could be tyrants,  and the solution to tyranny is to do away with potential  tyrants.&nbsp;Murdering Caesar unfolds as the singular solution to a complex  problem for the conspirators -- Cassius and Brutus and the other assassins.  ?Their failure to address their concealed assumption explicitly and confront  the possible consequences of assassination in the Hermeneutic process is  catastrophic:?it blocks the truth from disclosure, and leads to the death of  Caesar, the fall of the Roman Republic, and the butchering of so many?friends  and foes alike-- in the civil war that follows.</p>
+<p>(<a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/raspa print flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661344816902" target="_blank">Photos</a>) (Videos: <a class="normalA" href="https://youtu.be/ULoFFjRf5z4" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/fP-cXCo4zmI" target="_blank">Part 2</a>)</p>
+<p><u><strong>November 18 - Robert Sedler</strong></u></p>
+<p><strong>Distinguished Professor, Law School: The  Constitution and Marriage Equality</strong></p>
+<p align="justify"><strong>Abstract:</strong> This is Professor Sedler&rsquo;s third presentation at the Humanities Center Brown  Bag Colloquium Series on the subject of the Constitution and marriage equality.  The first presentation took place in the 2004-2005 series and was entitled &ldquo;The  Constitution Should Protect the Right to Same Sex Marriage.&rdquo; It was based on  his 2004 Wayne Law Review law review article with the same title. In the law  review article Professor Sedler contended that the state could assert no  legitimate reason to prohibit marriage for same sex couples and that because  bans on marriage for same sex couples caused very significant legal, financial,  social and psychological harms to same sex couples and their children, those  bans were unconstitutional. In 2012, Professor Sedler joined two lawyers, one  of whom was a former student, in bringing the case of DeBoer v. Synder, which  challenged Michigan&rsquo;s ban on marriage for same-sex couples. DeBoer v. Snyder,  was one of numerous such cases throughout the Nation. In his 2014-2015 series  presentation, &ldquo;The Constitution and Same-Sex Marriage,&rdquo; Professor Sedler  discussed these cases and a possible decision by the United States Supreme  Court.<br />
+  In  January,2015, four of these cases, including DeBoer v. Snyder, reached the  United States Supreme Court. On June 26, 2015, the Supreme Court rendered a  landmark decision in these cases under the heading Obergefell v. Hodges,  holding unconstitutional all bans on marriage for same sex couples. Marriage  equality is now the law of the land. Professor Sedler will discuss the Supreme  Court decision and the process that brought DeBoer v. Snyder before the Supreme  Court. He will also discuss continuing efforts to bring about full equality for  LGBT persons in this Nation.</p>
+<p>(<a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Sedler print flyer.pdf">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157660790250070" target="_blank">Photos</a>) (Videos: <a class="normalA" href="https://youtu.be/wk4bowRPpuo" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/vlXtejEOBII" target="_blank">Part 2</a>)</p>
+  </div>
+  <div id="December" class="tabcontent">
+    <p><strong><u>December 1 - Mary Elizabeth Anderson<br />
+    </u>Associate Professor, Theatre; <em>Mobile Homestead: Spatialities of Artistic Citizenship</em></strong></p>
+  <p align="justify"><strong>Abstract:</strong> Mobile Homestead is a reconstruction of the artist Mike Kelley&rsquo;s childhood home in the Detroit suburb of Westland. Bearing several distinct, yet intertwined identities, the work is a nomadic sculpture, a site-specific installation, and a designated community space located at the Museum of Contemporary Art ? Detroit in Midtown. A bright white ranch-style structure, complete with a two-car garage and a patch of fertilized lawn, the work offers a complex meditation on space, place, time, memory and identity. It is autobiographical in the most direct way. Yet, because of the structure&rsquo;s unusual positioning within the city of Detroit, the work, like so many of Kelley&rsquo;s earlier sculptures, films and performances, is designed to expose and pervert its own autobiographical limitations. As Mobile Homestead juxtaposes the dream-architecture of 1950s suburbia against the emergent landscape of a tentatively revitalized sliver of urban space located in the center of one of the most abidingly violent, disenfranchised cities in the U.S., the work comments quizzically on the philosophical undercurrents of presence and absence, &ldquo;insideness&rdquo; and &ldquo;outsideness&rdquo; (Relph 1976) in Detroit.</p>
+  <p>(<a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Anderson web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157659597614414" target="_blank">Photos</a>) (Video: <a class="normalA" href="https://www.youtube.com/watch?v=cNL2cZyCFqI" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/ABgoENtDwmc" target="_blank">Part 2</a> - <a class="normalA" href="https://youtu.be/-qwUXSwR0gY" target="_blank">Part 3</a>)</p>
+  <p><strong><u>December 8 - Sarah Swider <br />
+  </u>Assistant Professor, Sociology;<em> Race, space and Gender:</em> <em>African American Women Entrepreneurs in Detroit's Informal Economy</em></strong></p>
+  <p align="justify"><strong>Abstract:</strong> This study looks at the haircare industry in one Detroit neighborhood as a way to explore how economic opportunities for black women in Detroit have changed over time and how it has impacted neighborhoods.  I have chosen the haircare industry because of its historical importance.  In part, demand for beauty services among African American women has been fueled by society's insistence that African American women conform to white mainstream beauty ideals.  This demand has been satiated by entrepreneurial African American women who have dominated the industry with successful and thriving beauty salons. These salons have played an important role in creating economic stability for African American families, economic advancement for African American women and vitality in African American communities. Using a mix of qualitative and quantitative data, this study reveals significant changes in the industry in one neighborhood, showing how registered storefront salons have disappeared and been replaced by &quot;kitchen salons&quot; in private homes.  It explores why this change has happened and what the effects have been on these women, their families and the community.</p>
+  <p>(<a class="normalA" href="flyers/15-16/Swider web flyer (1).pdf" target="_blank">Fl</a><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Swider web flyer (1).pdf" target="_blank">yer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157662222235306" target="_blank">Photos</a>) (<a class="normalA" href="https://youtu.be/rJbq0DYyhZ4" target="_blank">Video</a>)</p>
+  <p><strong><u>December 9 - Marc W. Kruman</u><br />
+    Professor of History and Director of the Center for the Study of Citizenship</strong>: <strong><em>Citizenship in Detroit in a Time of Bankruptcy</em></strong></p>
+<p align="justify"><strong>Abstract:</strong> Once the driving force of American manufacturing and a vast city of two million residents in 1950, Detroit's economy crumbled and now barely 670,000 residents dot 140 square miles of land. Fifty years of economic and demographic decline--combined with opaque, outdated and sometimes corrupt City operations--found the City financially insolvent and unable to deliver basic city services. Many streetlights went dark; an inadequate police force patrolled inadequately; and buildings burned in the face of a short-staffed fire department. In the face of massive unemployment, underemployment and poorly paid employment, citizens worried more about survival than citizenship, about mass incarceration and poor transportation than holding officials accountable. In 2013, Michigan's Governor concluded that the City could not pay its bills, and he appointed an emergency manager, Kevyn Orr, to govern the City. Orr in turn concluded that the City was insolvent and recommended bankruptcy. A federal bankruptcy judge then moved the City through the bankruptcy process with remarkable speed and success (the City emerged from bankruptcy only 16 months after it sought bankruptcy protection in July 2013), but without the full investment of Detroit's citizenry and elected officials. This talk will explore how the bankruptcy and related issues transformed the formal and informal relationships of citizen, city and community. In so doing, it will explore the limits of both the neoliberal critique of urban governance and the critique of neoliberalism.</p>
+<p>(<a class="normalA" href="flyers/15-16/Kruman web flyer.pdf" target="_blank">Flyer</a>) (<a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157661580465899" target="_blank">Photos</a>) (Video: <a class="normalA" href="https://youtu.be/Qx3r-KK8iZw" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/8CgvcutO0so" target="_blank">Part 2</a>)</p>
+    </div>
+          <div class="TabbedPanelsContent">
+          
+          <p><strong><u>January 12 - Lee Wilkins</u><br />
+            Chair, Department of Communication; <em>Dystopia on Camera: Political Power and Individual Development in a Mediated State</em></strong></p>
+          <p align="justify"><strong>Abstract:</strong><em>The Hunger Games</em>?trilogy?places the media?as an instrument capable of influencing events and individuals--at the center of a modern-day dystopia.? In?<em>The Hunger Games,?</em>the central characters are so media savvy that they understand what will be mediated? by the dominant culture and how to manipulate media content to their advantage.??<em>The Hunger Games</em>?takes seriously both the notion that truth is the first casuality of war and that the truth?or at least the dominant meme-- will be defined by those who capture both the image and the popular narrative of how power is distributed.?</p>
+<p align="justify">But the trilogy also includes a more intimate plot line, one that explores how media content, and the ability to escape or redirect it, influences individual growth and development.?It is within this mediated world that Collins?explores the concept of individual development within a mediated political community. Unlike its intellectual ancestors, in?<em>The Hunger Games</em>?constructing an identity inside and outside the media spotlight is part of the accepted work of adolescence and of governing.?</p>
+<p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Wilkins web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157663552049612" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/DCC5bh_Z71g" target="_blank">Video</a></p>
+          <p><strong><u>January 13 - Wendy K. Matthews</u><br />
+            Assistant Professor, Music; <em>On the Flipped Side: Can We Reach Millennials Through the 'Flipped Classroom' Method?</em></strong></p>
+          <p align="justify"><strong>Abstract</strong>: A new trend in teaching is &quot;flipping&quot; the classroom, which is a form of blended learning wherein students first engage with materials in an on-line environment and then practice the concepts in the classroom with teacher support (Bergmann &amp; Sams, 2014; Bowen, 2012). This classroom design allows students to collaborate and solve real world problems, while providing teachers more in-class time to monitor student performance and provide immediate feedback (Herreid &amp; Schiller, 2013). Research studies have examined the use of the flipped classroom in a myriad of non-music classrooms (e.g. Pearson, 2012; Gray 2013; Roach, 2014), but can this new trend work in collegiate classrooms?<br />
+            This Brown Bag talk discusses the implementation of the flipped classroom instructional model in a lower level course for music education majors. The course design utilized an extensive companion Blackboard site, instrument modules, video lectures, games, and video assessments. Student reaction to participating in the flipped classroom was positive as noted through university post-term course evaluations. These findings will be discussed in light of lessons learned during the implementation of the course as well as applications to other collegiate courses.</p>
+          <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Matthews web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157663586392912" target="_blank">Photos</a> - Videos: <a class="normalA" href="https://youtu.be/Hbq65uP-ul8" target="_blank">Part 1</a> - <a class="normalA" href="https://youtu.be/UfOAwU_Rolg" target="_blank">Part 2</a></p>
+          <p><strong><u>January 20 - Denise Vultee </u><br />
+            Lecturer, Communication; Symbolic Communication Theories in the 21st Century: <em>An Interdisciplinary Research Agenda</em></strong></p>
+<p align="justify"><strong>Abstract:</strong> Why do large numbers of well-educated people reject ostensibly sound, rational arguments based on scientific evidence, and instead cling to notions that may strike us as baseless and irrational?  How does an idea?good or bad?&quot;go viral&quot;?  As members of the species Walter Fisher called &quot;homo narrans,&quot; we are often swayed less by a good rational argument than by a good story.  And when we share those stories with others, key themes may catch fire and spread through a process Ernest Bormann called &quot;symbolic convergence.&quot;  In today's age of viral videos, hashtags, and partisan news media, the symbolic communication theories Fisher and Bormann developed in the 1970s and '80s are more salient than ever.  This talk will explore how these two theories can help researchers in both the humanities and social sciences as they grapple with communication-related problems in their disciplines.</p>
+          <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Vultee web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664297236292" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/0XCMU03cYGI" target="_blank">Video</a></p>
+          <p><strong><u>January 26 - Thomas Trimble- Senior Lecturer, English; Jule Wallis- Lecturer, English; Adrienne Jankens- Lecturer, English; Clay Walker- Lecturer, English</u></strong><br />
+            <br />
+            <strong><em>&quot;Learning Windows: Using Reflective Writing to Promote Learning Transfer&quot;</em></strong></p>
+          <p align="justify"><strong>Abstract:</strong> Reflective writing has recently received interest from scholars across disciplines due to the suggested relationship between reflection and metacognitive thinking and learning transfer. This presentation will feature four different perspectives on student reflective writing based on research conducted within the English Department Composition Program. </p>
+          <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Trimble web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664068714025" target="_blank">Photos</a> - <a class="normalA" href="https://www.youtube.com/watch?v=kxzytyoiuxI&amp;feature=youtu.be" target="_blank">Video</a> - <a class="normalA" href="/hum/Hum/Programs/brownbag/flyers/15-16/Prof. Trimble's Presentation.pptx" target="_blank">Document</a></p>
+          <p><strong><u>January 27 - Marsha L. Richmond</u><br />
+            Associate Professor, History; <em>Rachel Carson, Gender, and the Rise of Environmental Citizenship</em></strong></p>
+          <p align="justify"><strong>Abstract</strong>: The publication of Rachel Carson's Silent Spring opened up a new phase in scientists' political activism.  In the 1950s, many scientists had been frustrated by their inability to influence policy makers on important issues involving science.  In her book Carson adopted a conscious strategy of aiming her message directly to the public, in effect advocating a new form of civic engagement that involved marshalling citizens to influence public officials.  Carson also appears to have reached out to women, promoting their traditional &quot;maternal responsibility&quot; for domestic well-being to a concern for nature's health as well.  Her book effectively mobilized a generation of well-educated women as well as men, who joined in the growing environmental movement of the 1960s.</p>
+          <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Richmond web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157663899469131" target="_blank">Photos</a> - <a class="normalA" href="https://www.youtube.com/watch?v=jSAY9roxlkg" target="_blank">Video</a> - <a class="normalA" href="/hum/Hum/Programs/brownbag/flyers/15-16/Prof. Richmond's Presentation.pdf" target="_blank">Document</a></p>
+  </div>
+    
+  <div id="February" class="tabcontent">
+    <p><strong><u>February 2 - Natalie Bakopoulos</u><br />
+             Creative Writing, Department of English, Visiting Assistant Professor: <em>Blurred Boundaries: Narration, Knowledge, and Other Selves</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> We have a cultural fixation with borders and boundaries: their crossings, their rigidity, and where they blur. How does this recent capturing of our cultural imagination manifest itself in contemporary literature, both in content and form? How do authors negotiate the boundary between the self who writes and the self who appears on the page? This talk will explore these questions, focusing primarily on the work of the Italian novelist Elena Ferrante; examine literature whose form blurs boundaries, particularly the recently popularized phenomenon of autofiction; and discuss ways in which the concept of boundaries appears in the novelist's own creative work, particularly her novel-in-progress, Invisible City, which is set in Athens, Greece.</p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Bakopoulos print flyer (1).pdf" target="_blank">Flyer</a></p>
+            <p><strong><u>February 3 - Kelly Young</u><br />
+              Communication, Associate Professor: <em>The N-word and R-words: the National Football League's Shameful Attempts to Regulate Rhetoric and Personal/Institutional Conduct</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> Beginning in 2013, many community leaders raised concerns about the use of the n-word between players and officials. Many years prior to this, the logo and name of the team in Washington, DC was also deemed a racial insult. In the case of the n-word, owners were unified in prioritizing action on the issue. In the case of the r-word, no action was taken. Commissioner Goodell even went so far as to publically defend the name. Within a context that called on the NFL to adapt and evolve to meet modern multicultural sensibilities, how is it possible that the NFL could regulate individual players' use of some racial slurs while defending institutional use of a similar slur? </p>
+            <p align="justify">Using Kenneth Burke's Dramatism as a methodology, I analyze a number of texts issued in 2014 that addressed the use of racial slurs in the NFL. I explore how the NFL's discourse over-emphasizes individual players and moments of speech. This foregrounding of the individual agent and his actions comes at the expense of examining the need for changes in the broader NFL discourses, hiring practices, and rules and policies. </p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Young web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="The N-word and R-word.pptx" target="_blank">Document</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664146791031" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/fw2GN-xUipU" target="_blank">Video</a></p>
+            <p align="justify"><strong><u>February 9 - Melissa Wooten</u><br />
+             Associate Professor, University of Massachusetts: <em>In the Face of Inequality: How Black Colleges Adapt</em></strong></p>
+            <p align="justify"><strong>Abstract: </strong>A quarter of black Americans earn college degrees from black colleges. Martin Luther King, Jr., Toni Morrison, Jesse Jackson, and Spike Lee are but a few of the influential Americans that have graduated from black colleges. Yet, and still, questions about the necessity of black colleges abound. Despite their many achievements, black colleges struggle to attain the notoriety and prestige that is readily bestowed upon predominantly white colleges of lesser historic and contemporary importance. Why is this so? For much of America's history, educational and social policy was explicitly designed to limit black colleges' organizational development. This was no more evident than in the mid-twentieth century when instead of promoting policies intended to remedy the negative impact of Jim Crow on black colleges, political support went to policies that cast black colleges as obstacles to racially integrating American higher education. As an alternative to questioning the continued relevance of these schools, the institutional theory literature is used to investigate how race and racism precludes black colleges from acquiring the resources and respect worthy of organizations that have contributed immeasurably to the American economic, political, and social landscape.</p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Wooten web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664369017341" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/ioVEECljZHw" target="_blank">Video</a><br />
+            </p>
+            <p><strong><u>February 10 - Michelle R. Jacobs</u><br />
+             Sociology, Visiting Assistant Professor: <em>Off the Reservation: American Indian Life in the City</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> American Indians often are racially miscategorized in urban spaces.  In part, their invisibility is caused by cultural images that define &quot;Indianness&quot; with respect to stereotypical attributes such as brown skin, black eyes, feathers, and full-bloodedness.  Based on 2 ? years of ethnographic research in two urban American Indian communities, this presentation explores how urban American Indians simultaneously resist and reify racialized images that contribute to their invisibility in urban spheres.  Urban, frequently &quot;mixed-blood&quot; American Indians work to attach new meanings to Indianness that align with their individual experiences of Indian identity.  At the same time, however, they contradict their resistance efforts with incongruent practices and statements that indicate their attachment to the very meanings they wish to eradicate.  As such, this presentation illustrates the role of internalization in the reproduction of racialized images and myths about American Indian people. </p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/jacobs web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157662252481434" target="_blank">Photos</a> - <a class="normalA" href="https://www.youtube.com/watch?v=XQf9wkuagyk" target="_blank">Video</a></p>
+            <p><strong><u>February 16 - Tam Perry and Vanessa Olivia Rorai</u><br />
+             Social Work, Associate Professor; Social Work, Graduate Student: <em>Landscapes in Older Adulthood</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> This talk will focus on issues related to relocation of older adults in Detroit.  The presentation will focus on a John A. Hartford &quot;ChangeAGEnt&quot; funded project focusing on key housing concerns of low-income older adults in urban Detroit, Michigan. In the coming decade, over 2000 older adults in Detroit may be displaced because their buildings will be converted from low-income senior housing to market rate as the city undergoes revitalization. Conducted by a locally based interdisciplinary team, this project documents the experiences of older adults who have recently experienced involuntary relocation out of downtown Detroit, furthering our understanding of how these adults respond to the ongoing challenges of resettlement. </p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Perry  flyer.pdf" target="_blank">Flyer<br />
+            </a></p>
+            <p><strong><u>February 17 - Donyale Padgett - Associate Professor, Communication; Monita H. Mungo - Doctoral Graduate, Sociology and Melvin Gupton - Doctoral student, Communication</u></strong>.</p>
+            <p><strong>Title: <em>&ldquo;Lift Every Voice&rdquo;: Using Student Narratives to Develop Strategies to Close the Achievement Gap</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> Wayne State University has enjoyed a diverse campus and has invested in student retention in a deliberate manner for decades. However, we also have serious inequalities with regard to racial/ethnic disparities. Nationally, approximately 40 percent of African American undergrads complete a bachelor's degree within six years, compared with 60 percent for white undergrads. While research in this area points to African Americans as a population greatly affected by this divide, there are other underrepresented groups on campus to consider when we look at potential retention disparities. Approaches and strategies used by colleges and universities to decrease the achievement gap must address the underlying cause in order to make significant gains. This study will capture the voices of undergraduate students who identify with an underrepresented identity that has been marginalized in some way on campus. Our team will present details from a study designed to capture the authentic voices and lived experiences of these diverse student populations through brief narratives.</p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Padgett flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664244581690" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/owcZJGSMxLo" target="_blank">Video</a> - <a class="normalA" href="flyers/15-16/Lift Every Voice Brown Bag - FNLversion Feb16.pdf" target="_blank">Handout1</a> - <a class="normalA" href="flyers/15-16/Handout Retntn Hum Cntr PresFNL.pdf" target="_blank">Handout2</a></p>
+            <p><strong><u>February 23 - Victor Figueroa</u><br />
+             CMLLC, Associate Professor: <em>Commodity and Sacred Realm: The Representation of Caribbean Nature in the Poetry of Luis Pal?s Matos</em></strong></p>
+            <p align="justify"><strong>Abstract</strong>: This paper examines the representation of nature in Tunt?n de pasa y grifer?a (1950), a collection of poems by the Puerto Rican Luis Pal?s Matos, which constitutes a foundational text of Afro-Caribbean poetry in Spanish. Although Pal?s&rsquo;s poems are not explicitly ecological, his representation of nature actively responds to the colonial forms of capitalist developmentalism that shaped the Caribbean during the first half of the twentieth century. Pal?s offers a critical and ironic portrayal of a &ldquo;natural&rdquo; landscape dominated my multinational economic interests (particularly the transformation of Puerto Rico into a series of massive sugar cane plantations) and by unsustainable models of tourism. By contrast, Pal?s offers in some of his poems a vision of nature anchored in the realm of Afro-Caribbean spiritual belief systems. However, Pal?s does not present an idealized view of nature?his ironic perspective remains ambivalent between a critique of a capitalist modernity in which nature is simply an exploitable resource, and a sacred vision to which modernity, including the poet himself, no longer has access.</p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/Figueroa web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157664349317329" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/fyT7mjdlVaM" target="_blank">Video</a></p>
+            <p><strong><u>February 24 - Shenika Hankerson</u><br />
+             Lecturer, Department of English; Journeys Toward Equity: <em>Cultivating Successful Writing Experiences and Outcomes for Culturally and Linguistically Diverse Students</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> In this presentation, I will illustrate the trajectory of my teaching and research journey with African American Language (AAL)-speaking students. In considering the highlights of this journey, I will elaborate on how three interconnected activities that have traditionally hindered the successful writing experiences and outcomes for this population of students, led to my ongoing research agenda and current research project, a critical language intervention with one English instructor and several AAL-speaking students in college preparatory English courses at a public, urban, research university situated in a large, Midwestern city. In specific, I will explore how the intervention was understood and negotiated in ways that ultimately led to greater experiences, outcomes, justice and equity. I will conclude by describing how the major implications of this research project impacts theoretical, methodological, and praxis-oriented understandings for sustaining and enhancing the writing of culturally and linguistically diverse students more generally.</p>
+            <p><a class="normalA" href="../../Hum/Programs/brownbag/flyers/15-16/hankerson print flyer.jpg" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157663387647804" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/Q-lgI5mXlqI" target="_blank">Video</a></p>
+  </div>
+  <div id="March" class="tabcontent">
+   <p><strong><u>March 1 - Eric Hiddleston</u><br />
+             Philosophy- Associate Professor; Mixed Media: <em>&quot;Why consciousness is a hard(er) problem in the philosophy of mind&quot;</em></strong></p>
+            <p align="justify"><strong>Abstract: </strong>The aim of this presentation is to lightly introduce some issues in philosophy of mind. The title reflects the fact that some people think there is an unsolvable &quot;hard&quot; problem about consciousness. I want to introduce some general issues about minds, brains, bodies, and the relations among them, and to explain why many people nowadays think that minds (better, mentality) could really be &quot;material&quot; or &quot;physical&quot;. The answer to the question suggested by my title is that the strategies on offer for explaining many mental functions do not easily apply to explaining things in the neighborhood of &quot;consciousness&quot;. So, I want to explain how those strategies work in outline, and explain how difficulties arise in applying them to these cases. Depending on how time and discussion goes, we may talk a bit about proposed solutions.</p>
+            <p><a class="normalA" href="flyers/15-16/Pearson web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157665205127601" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/2Ar3FXmIvio" target="_blank">Video</a></p>
+            <p><strong><u>March 2 - Matthew Younglove</u><br />
+              Music Department - Lecturer, Director of Athletic Bands and Applied Saxophone; <em>Mixed Media: The Overlapping Sound Worlds of Live Performance and Digitization</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> As a society, we hold our musical traditions firmly in our grasp and often neglect to view it as a field that has progressed tremendously throughout the various ages of technological development. The industrial revolution gave us the means to bend wood and forge metal strong enough to support the tension needs of a piano; in addition, new methods of metal production created the opportunity for the creation of better brass instruments and the brass-woodwind hybrid, the saxophone. As a result, the saxophone has always been comfortable living in the world of the new and technologically present. Perhaps no revolution was as great for music as the transition from analog to digital. We live (and listen) in an analog world, but it is the digital world where new possibilities abound. This Brown Bag Lecture will trace advancements of music technology, starting with fixed media and live music interaction, interactive loops, and culminating in the present with interactive technologies that allow for multidimensional interaction of the digital and analog sound worlds. This lecture will include musical performances of excerpts by Steve Reich, Claudio Gabriele, and a sneak peak of a new collaborative creation envisioned by WSU's faculty composer, Dr. Jon Anderson and performed by WSU's saxophone professor, Matthew Younglove.</p>
+            <p><a class="normalA" href="flyers/15-16/Younglove  web flyer.pdf" target="_blank">Flyer</a></p>
+            <p><strong><u>March 8 - Yuson Jung; Andrew Newman; Erika Carrillo; Jaroslava Pallas<br />
+            </u>Anthropology, Assistant Professor; Anthropology, Assistant Professor; Anthropology, Graduate Student; Anthropology, Graduate Student</strong></p>
+            <p><strong><em>&quot;Good Food, Better City? Politics, Pedagogy, and the Reimagining of Detroit's Food Landscape&quot;</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> In Detroit, food has emerged as an important and visible part of the city's tumultuous political economic climate in recent years. Before, during, and after the Detroit bankruptcy, food has become an idiom for trying to re-imagine the city's future at several levels. Issues of unequal food access have become one of the most important ways for activists to challenge and envision alternatives to the city's political order. At the same time, social entrepreneurs and business leaders (such as Whole Foods Market which was the first national chain grocer to return to Detroit in 2013) have invoked the issue of unequal food access to mobilize capital investment in the city and educate citizens on food and healthy eating. While all of these various projects and understandings use Detroit's food landscape as a starting point, there are competing ideas and understandings of  &quot;good food&quot; and its relationship to building a &quot;better&quot; city.  We explore how different stakeholders in the city engage with and advocate for &quot;good food,&quot; making food as a center of pedagogical project for the reconstruction of the city. What is it about food and eating that provoke competing ideas on what is &quot;right&quot; and &quot;wrong&quot; in urban politics? What are the different stakeholders trying to cultivate through their respective pedagogical goals? And how do these goals intersect, collide, and collude? The presentation is based on ethnographic research conducted in Detroit since 2012.</p>
+            <p><a class="normalA" href="/hum/Hum/Programs/brownbag/flyers/15-16/Jung web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157665446532642" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/TR71DUe2tpY" target="_blank">Video</a></p>
+            <p><strong><u>March 9 - Mysoon Rizk</u><br />
+             Mysoon Rizk, Associate Professor and Head of Art History, University of Toledo, Department of Art: <em>Dirty Work: The Art of David Wojnarowicz</em></strong></p>
+            <p align="justify"><strong>Abstract</strong>: In 1966, quoting the American philosopher William James, the British anthropologist Mary Douglas explained &quot;dirt&quot; as &quot;matter out of place,&quot; a notion that proves useful for appreciating the &quot;dirty work&quot; of New York-based artist David Wojnarowicz (1954-1992). (36) Drawing upon excerpts from a book project about the artist, this talk explores the avenues by which dirt precipitates various systems of order. As Douglas argues, when &quot;disorder spoils pattern, it also provides the material of pattern.&quot; (95) In her classic text Purity and Danger: An Analysis of Concept of Pollution and Taboo, the anthropologist describes dirt as a catalyst, where &quot;eliminating it is not a negative moment, but a positive effort to organize the environment.&quot; (2) Engaged in just such a positive effort, Wojnarowicz reorders and reorganizes the very environment keen on eliminating him, given that he and his work have been subject to periodic campaigns of obliteration and censorship. The artist locates opportunities for creative transformation in the very events typically associated with chaos, such as natural disasters. Out of disparate source materials, a surplus of detritus, and collaboration with &quot;critters&quot; such as ants or cockroaches, Wojnarowicz initiates new, recombinant, and often-messy histories that &quot;shake the boundaries of the illusion of the ONE-TRIBE-NATION . . . called AMERICA.&quot;</p>
+            <p><a class="normalA" href="Rizk web flyer.pdf" target="_blank">Flyer</a><br />
+            </p>
+            <p><strong><u>March 22 - Eric Ash</u><br />
+             History - Associate Professor; Mixed Media: Interpreting the Wetlands: <em>Expertise and Resource management in the English Fens</em></strong></p>
+<p align="justify"><strong>Abstract: </strong>The drainage of the English Fens was one of the largest improvement projects undertaken in seventeenth century Europe. Located in eastern England, the Fens were a massive peat-based wetland spanning some 700,000 acres. The fenland inhabitants practiced pastoral agriculture, grazing herds of cattle and sheep on the abundant grasses that grew in the region's extensive common wastes. Around the turn of the 17th century, the English crown came to perceive the perennially flooded land as dysfunctional and unproductive, and launched a series of efforts to drain it and transform it into arable land capable of producing grain. The Fens thus became a paradigmatic example of the need for agricultural improvement, part of a broader interest in improvement projects that reached a crescendo during the tumultuous years surrounding the English Civil War and Interregnum (c. 1630-1660). Eric Ash will discuss the ways in which contemporary perceptions of the Fens shifted, from a challenging yet moderately productive landscape to a waste of valuable resources in dire need of aggressive human intervention. As the English struggled to maximize the exploitation of their natural resources, the Fens became part of a early modern debate about the very meaning of the natural environment.</p>
+<p><a class="normalA" href="flyers/15-16/Ash web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157666126468892" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/ShkEoZmLUnw" target="_blank">Video</a></p>
+            <p><strong><u>March 23 - Frederic Pearson</u><br />
+             Political Science - Professor;<em> International Intervention and the Consequences for Insurgent Strategy in Civil Wars</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> Given the destabilizing nature of civil wars, it is not surprising that external actors frequently feel compelled to intervene either for their own purposes or on behalf of government or insurgents. Previous research has demonstrated that foreign military intervention tends to lengthen war and produce unintended consequences, such as increasing the levels of one-sided violence. Despite these realities, when faced with the type of security issues as those currently present in Syria, major powers often feel compelled to act in some way. In other words, external powers may mobilize in response to civil war developments, but through their own actions, they may influence the path of violence in often unpredictable ways. We suggest here that the relationship between intervention and civil war actor behavior is complex and has yet to be captured in previous analyses. This study examines the global pattern of intervention and insurgent behavior between 1989 and the present, including the ongoing civil war in Syria, in order to better understand the factors that stimulate foreign military and diplomatic intervention, as well as the impacts those interventions have on the actors involved. </p>
+            <p><a class="normalA" href="flyers/15-16/Pearson web flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157666208091581" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/KV3wp_9Dku8" target="_blank">Video</a></p>
+            <p><strong><u>March 29 - Geralyn E. Stephens</u><br />
+             Education - Associate Professor; <em>ONLINE TEACHING: Maximizing the Use of Collaborative Groups</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> Demonstrating the ability to collaborate effectively is essential for students moving into 21st century workplaces. Employers are expecting new hires to already possess group-work skills and will seek evidence of their ability to cooperate, collaborate and complete projects with colleagues, including remotely or at a distance.  Instructional activities and assignments that provide students with a variety of ways to engage have a direct and immediate effect on their academic performance. Research supports that academic success is positively impacted by students' levels of engagement with the content, their peers and the faculty (Astin, 1999; Kuh, 2003; Handelsman, Briggs, &amp; Sullivan, 2005; Liu, Magiuka, Bonk, &amp; Lee, 2007).  Incorporating concepts for scaffolding instruction (Bruner, 1961) as a foundation, this paper shares an instructional planning model for faculty use, which familiarizes students with the process and technology necessary to collaborate in online environments. The model utilizes proven strategies to maximize student-student and student-content relationships in the online classroom. This, in turn, builds the competencies necessary for success in the current job market.  There are three sequential phases in the Facilitating Collaboration in Online Groups (FCOG) instructional planning model. They begin with instructors creating a Group Set containing themed-groups and a self-enrollment option for student membership.  Phase 2 provides instructors with suggestions on how to deliver operational and performance expectations for groups and the individual members within the group.  In Phase 3, instructors are provided with web-based communication tools and implementation suggestions to familiarize students with maximizing their use.  These extra efforts made by instructors, will provide the support for optimal group-work in an online course. </p>
+            <p><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Stephens flyer.pdf" target="_blank">Flyer</a> - <a class="normalA" href="https://prezi.com/lmnlxdacy0zy/facilitating-collaboration/?utm_campaign=share&amp;utm_medium=copy" target="_blank">Document</a> - <a class="normalA" href="https://www.flickr.com/photos/wsuhumanitiescenter/albums/72157666578331925/with/26044532842/" target="_blank">Photos</a> - <a class="normalA" href="https://youtu.be/gwqsemvE-xw" target="_blank">Video</a></p>
+            <p><strong><u>March 30 - Anne E. Duggan</u><br />
+             CMLLC - Associate Professor; <em>The Animal Sublime, or Scud?ry's Of Chameleons</em></strong></p>
+            <p align="justify"><strong>Abstract:</strong> In 1672, Madeleine de Scud?ry received a male and a female chameleon from the French consul in Alexandria; over ten years later she published her &quot;findings&quot; about her chameleons in New Moral Conversations (Nouvelles Conversations de Morale, 1688). Erica Harth first discussed the importance of Scud?ry's observations of the two chameleons from the perspective of women's critiques of Cartesian rationalism in Cartesian Women (1992). Drawing from Harth's study, I intend to analyze the ways in which Scud?ry's description of the chameleons suggests that these creatures indeed are sublime, in the later seventeenth-century sense of &quot;pure,&quot; &quot;refined,&quot; &quot;elevated,&quot; even &quot;marvelous.&quot; Moreover, her account carries out the work of sublimation?of purification and elevation?of the defective and physical attributes and properties attributed to chameleons in Antique and Renaissance narratives. After a process of sublimation that, for instance, transforms excrement into musk, an eyeball into a pearl, Scud?ry importantly situates her chameleons on the same plane of existence as the human.</p>
+            <p><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Duggan flyer.pdf" target="_blank">Flyer</a><br />
+            </p>
+  </div>
+  <div id="April" class="tabcontent">
+    <p align="justify"><strong><u>April 5 - Jorge Chinea</u><br />
+     Latino/a and Latin American Studies - Director and Associate Professor; <em>Slavery and Child Trafficking in Puerto Rico in the Age of Abolition: Majesty Incident, c. 1859-1865</em></strong></p>
+   <p align="justify"><strong>Abstract:</strong> The Spanish colony of Puerto Rico participated in the &quot;sugar revolutions&quot; that led to the consolidation of a slave-based plantation complex in the South Atlantic roughly between 1765 and 1850.  Towards the end of the eighteenth century a series of international changes eventually led England to abolish the slave trade within its imperial domain starting in 1807.  An intense British-led abolitionist campaign followed, and Spain was compelled to sign a string of Anglo-Hispanic treaties to cease the importation of African captives in its American colonies. Spain did so reluctantly, and began circumvent the agreements in order to continue to supply Cuba and Puerto Rico with bonded African labor.  This inter-European rivalry helped shape the opportunities and constraints under which the nefarious commerce that serviced both islands functioned during the first half of the nineteenth century.  As a result, during that interval illegal slave traders spared no effort to conceal the African provenance of the involuntary migrants taken to Puerto Rico and Cuba.  This essay seeks to contribute to this latter under-explored theme by examining the last known introduction of enslaved Africans in Puerto Rico that occurred in 1859 with the clandestine arrival of nearly an estimated 1000 Congolese captives, mainly children and adolescents, aboard the slaver Majesty. </p>
+   <p align="justify"><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Chinea flyer.pdf" target="_blank">Flyer</a></p>
+   <p align="justify"><strong><u>April 6 - Hal Weary</u><br />
+Music, Lecturer; Educating 21st Century Musicians: Artistry, Industry, Technology, &amp; Pedagogy</strong></p>
+   <p align="justify"><strong>Abstract: </strong>Entrepreneurial artists, who possess creative talent, business acumen, and an in-depth knowledge of technology, increasingly drive the music industry. Entrepreneurial artists have taken control of both the content and delivery of their artistic material to the mass market, due to the advances in digital technology and user-friendly online distribution systems. It is becoming increasingly essential for students in the arts to acquire the skills and problem-solving abilities needed to thrive in a complex and ever-evolving industry. The DIY, do-it-yourself artist, can arguably, be traced back as early as Ludwig van Beethoven. &quot;Long before record label deals and music industry middlemen, there was Ludvig van Beethoven, the ultimate 'DIY' indie artist. Beethoven, arguably the greatest classical composer in history, pre-dated the major label by more than 150 years and certainly couldn't sell recordings. But in an era free of middlemen and heavy-handed contracts, Beethoven managed to earn a decent living by directly collecting revenue from a myriad of sources.&quot;1 Beethoven was able to accomplish this through patronage, sheet music, live performances, instruction, and paid residencies. 21st century musicians who possess a well-rounded pedigree have a greater chance at achieving sustainable success through diversification.</p>
+   <p align="justify"><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Weary flyer.pdf" target="_blank">Flyer</a></p>
+   <p align="justify"><strong><u>April 12 - Charles Frank Klahm</u><br />
+Criminal Justice, Assistant Professor: Blurred Boundaries: Collateral Damage: <em>Assessing the Impact of Broken Windows Policing Policies on Public Opinion and Electoral Behavior</em></strong></p>
+   <p align="justify"><strong>Abstract:</strong> One claim made salient by recent police shootings of unarmed African American men is that public indignation toward law enforcement is the result of &quot;broken windows&quot; (BW) policing regimes, with opponents claiming they foster excessive force and unfairly target communities of color. This article explores this claim by focusing on the response of public opinion and electoral behavior to two applications of BW policing theory?&quot;Quality of Life&quot; (QOL) policing and &quot;Stop, Question, and Frisk&quot; (SQF).  We demonstrate that increases in the rate of QOL arrests by local law enforcement is associated with significant increases in citizens' perception of racial bias and excessive force in policing, but only in contexts with large minority populations. Building on this, we demonstrate that increases in SQF per capita in NYC neighborhoods is associated with higher rates of voter turnout and support for an anti-SQF candidate, but, again, only in neighborhoods with large minority populations.</p>
+   <p align="justify"><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/Klahm flyer.pdf" target="_blank">Flyer</a></p>
+   <p align="justify"><strong><u>April 19 - Eldonna May</u><br />
+     Music, Lecturer: <em>&quot;The Role of MOOCs in Transnational Higher Education: Instructional Design in the African Diaspora, and the Impact of Technology on Teacher Development&quot;</em></strong></p>
+   <p align="justify"><strong>Abstract:</strong> The term &quot;MOOCs,&quot; or &quot;Massive Open Online Courses&quot; originated in 2008 during a course called &quot;Connectivism and Connective Knowledge&quot; offered to students at the University of Manitoba, and these courses have been changing the way we think about higher education and distance learning in the United States for the past five years. These course offerings target large-scale participation along with free and open access via the web, often using open educational resources. Typically, MOOCs do not offer academic credit and roughly 10% of the tens of thousands of enrolled students successfully complete the courses. However, the discussion elevated to warp speed in Fall 2011 when Stanford University launched three courses, each of which had an enrollment of approximately 100,000; and several well-financed providers in collaboration with top universities emerged, including Coursera, Udacity, and edX. Not wanting to be left out of the equation, many universities and online service providers, including Blackboard, Inc., quickly followed the trend.</p>
+   <p align="justify">MOOCs attract large numbers of participants, some of whom have been educators, business people, researchers, and others interested in Internet culture. There are both benefits and risks associated with MOOCs. For example, a MOOC can be organized in any setting that has connectivity and can be conducted in any language, moving beyond time zones and physical boundaries. One of the most attractive features of MOOCS includes the opportunity to add to one's own personal learning environment and the capability of improving lifelong learning skills. One of the risks to consider: MOOCs threaten the current higher educational business model by potentially selling teaching, assessment and placement separately from the current suite of services. Some MOOC providers have begun charging licensing fees for educational institutions; students are now able to pay to take a proctored exam which could lead to obtaining transfer credit or a certificate at a degree-granting institution. To determine the role and relative merits of MOOCs in transnational higher education ? low-cost credit granting educational opportunities or merely online vocational education ? the research design for this article comprises an interpretive framework based upon quantitative and qualitative methods incorporating an exhaustive literature review and statistical analysis of MOOC course enrollments versus completion rates and student retention data.</p>
+   <p align="justify">Clearly, in a very short time MOOCs have become interwoven into the fabric of higher education and a presentation centering on the viability, role, and future of such massive open online courses in international online learning environments is both pertinent and critically important to the stakeholders, cohorts, and attendees at DETA 2015.</p>
+   <p align="justify"><a class="normalA" href="/hum/Programs/brownbag/flyers/15-16/May flyer.pdf" target="_blank">Flyer</a></p>
+   <p><strong><u>April 20 - renee c. hoogland</u><br />
+     English, Professor: &quot;Doing Something Close to Nothing: Marina Abramovic's War Machine&quot;</strong></p>
+<p><strong>Abstract:</strong> TSerbian artist Marina Abramovic's 700-hour performance at the Museum of Modern Art in New York &quot;The Artist is Present&quot; (2010) shows, perhaps more poignantly than any work of contemporary art in recent years, that resistance is, by necessity, an uncertain enterprise: it can always be colonized by the power it opposes and at the same time (continue to) elude such power.</p>
+   <p>In this paper, I explore Abramovic's longest performance piece and its operations as a publicity event as a paradox that conceals what French philosophers Gilles Deleuze and F?lix Guattari call a &quot;war machine,&quot; i.e., a form of social assemblage directed against the state, and against the coalescence of sovereignty. As a performance, an actualization, or, simply, an event (accessible now only in multiple mediated forms) &quot;the artist is present&quot; is fundamentally an expressive &quot;a-signifying rupture&quot;?a form of praxis that Guattari identifies as a mode of creation, a forging of ever more new relations with others, that both depends on and eludes the stultifying operation of current media technologies. </p>
+  </div>
+</div>
+
+  <!-- bg border div ends-->
+  <!-- InstanceEndEditable --><!--OuterBox ends-->
+
+  <footer>  
+    <ul class="footerlist seperator">
+    	<li><a href="#"><img src="../img/Humanities Center Logo.png" width="70" height="77"></a></li>
+    </ul>
+     <ul class="footerlist-map">      
+        <li><a href="https://maps.wayne.edu/all/#buildings-faculty-administration" target="blank"><img src="../img/map.png" width="50" height="50"></a></li></ul>
+        <ul class="footerlist seperator"> 
+        <li>656 W. Kirby </li>
+        <li> 2226 Faculty Administration Building</li>
+        <li> Detroit, MI 48202</li>
+    </ul>
+  	 <ul class="footerlist seperator">
+    	<li> PH: 313-577-5471</li>
+        <li>   FX: 313-577-2843 </li>
+        <li>  http://research2.wayne.edu/hum/</li>
+        <li> <a class="notA" href="mailto:walter.edwards@wayne.edu">walter.edwards@wayne.edu</a></li>
+    </ul> 
+    <ul class="footerlist ">
+    	<li><a class="notA" href="../AboutUs/OurMission/mission.html">Our Mission</a></li>
+        <li> <a class="notA" href="../MakeAGift/gift.html">Make a Gift</a></li>
+        <li> <a class="notA">Past Programs</a>
+            <ul class="dropdown">
+                <li><a class="notA" href="../PastPrograms/lecture.html"> Virtual Lecture</a></li>
+                <li> <a class="notA" href="../PastPrograms/OpenCompetition/competition.html">Open Competition</a></li>
+                <li> <a class="notA" href="../PastPrograms/InnovativeProjects/projects.html">Innovative Projects</a></li>
+                <li> <a class="notA" href="../PastPrograms/munusculum.html">Munusculum</a></li>
+                <li> <a class="notA" href="../PastPrograms/mentoring.html">Grant Mentoring</a></li>
+            </ul>
+        </li>
+        
+        <li><a class="notA" href="#"> Links</a> 
+            <ul class="dropdown">
+                <li><a class="notA" href="../Links/internal.html">Internal Links</a></li>
+                <li><a class="notA" href="../Links/external.html">External Links</a></li>
+            </ul>
+        </li>
+        
+    </ul> 
+    <ul class="horizontal hover1 footerlist">
+    	<li><a class="notA" href="https://twitter.com/wsuhumanities"> <img src="../img/twitter.png" width="45" height="40">  </a></li>
+        <li> <a class="notA" href="https://www.facebook.com/WSUHumanities">  <img src="../img/fb.png" width="50" height="50"></a></li>
+        <li><a class="notA" href="https://www.flickr.com/photos/53952766@N07/sets/">  <img src="../img/flikr.png" width="50" height="50"></a></li>
+        <li> <a class="notA" href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p"> <img src="../img/youtube.png" width="50" height="50"> </a></li>
+    </ul>   <hr>
+             <div class="left"> 
+             Developed by Shruthipriya Soranjerry Baskar. Operated by Jennifer Leonard
+             </div>
+             <div class="right">Humanities Center, Copyright &copy; 2017
+             </div>
+   </footer> 
+ 
+
+
+<!-- WSU Footer -->
+<div class="wsufooter">
+    <div class="wsuwrap">
+        <div class="privacy">
+            <p><a href="https://wayne.edu/policies/">Privacy and University Policies</a></p>
+        </div>
+        <div class="copyright">
+            <p><a href="https://wayne.edu/">Wayne State University</a> &copy; 2017</p>
+        </div>
+    </div>
+</div>
+<!-- WSU Footer-->
+   <script type="text/javascript">
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
+  </body>
+<!-- InstanceEnd --></html>

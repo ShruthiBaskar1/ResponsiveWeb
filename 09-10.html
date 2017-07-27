@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/BrownBagTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Redesigning New Website">
+  	<meta name="author" content="Shruthipriya Soranjerry Baskar">
+  	<!-- InstanceBeginEditable name="doctitle" -->
+  	<title>Wayne State University's Humanities Center | Welcome</title>
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript">
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+
+
+  	<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../main.css">
+  <link rel="icon" type="image/gif/png" href= "../img/w.png" width="16" height="13">
+  <link href="../search.htm"> 
+   <script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+  <link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Script for responsive menu-->
+  <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	
+	</script>
+  <!-- Script for the timeline slideshow-->
+ <script language="javascript">
+ (function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+
+</script>
+ 
+ <!-- InstanceBeginEditable name="head" -->
+ <!-- InstanceEndEditable -->
+ 
+</head>
+<body> 
+
+<!-- Wayne State University Header -->
+<div class="wsuheader">
+    <div class="wsuwrap">
+        <div class="wsuwordmark">
+            <a href="https://wayne.edu/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="57.22 18.736 350 32.636">
+                    <path d="M90.612 20.567c-.208.45-.382.737-.522 1.23l-8.67 28.428-6.86-21.63-6.72 21.794-9.192-29.13c-.104-.45-.208-.74-.487-1.15-.31-.45-.52-.7-.94-.99H62c-.174.33-.28.53-.313.9-.07.32-.105.57 0 .9l6.37 21.3 5.47-17.13-1.29-3.85c-.174-.53-.418-.78-.696-1.19-.24-.37-.45-.61-.73-.94h4.74c-.14.29-.21.45-.28.78-.1.57-.03.94.11 1.47l6.4 20.94 5.92-20.69c.21-.53.35-.9.32-1.43-.03-.45-.1-.74-.31-1.11h3.83c-.38.53-.59.9-.9 1.47zm80.894 29.655c-2.263-.04-3.69.04-5.814-.888V46.11c1.915 1.847 3.62 2.05 6.093 2.092 4.108.162 6.615-2.01 6.615-5.824 0-2.912-1.846-4.43-4.003-5.866l-4.735-3.2c-2.542-1.763-4.04-3.772-4.074-7.054-.035-4.84 4.004-7.68 8.39-7.516 2.055.08 3.344 0 5.225.888v3.142c-1.463-1.64-2.925-2.01-4.945-2.092-2.854-.202-5.99 2.05-5.745 5.415.174 2.174 1.427 3.364 3.064 4.47l4.142 2.83c3.13 2.134 5.74 3.28 5.92 8.49.2 6.762-5.44 8.46-10.14 8.337zm100.757-29.777c-.07.574-.035.902-.035 1.476v17.92c0 5.91-4.285 10.21-9.65 10.33-5.75.08-10.417-4.26-10.417-10.49V22.09c0-.534.04-.86-.03-1.394-.07-.656-.14-1.025-.31-1.6h3.55c-.17.45-.24.74-.31 1.27-.1.534-.07.903-.07 1.436V39.31c0 4.713 3.59 8.362 7.6 8.2 3.98-.124 6.76-3.61 6.76-7.955v-17.55c0-.614 0-.983-.07-1.56-.1-.53-.17-.86-.34-1.35h3.62c-.14.492-.21.82-.28 1.352zM105.83 49.205c-.136-.21-.26-.404-.41-.665-.564-1.05-.827-1.756-1.265-2.93l-7.09-19.017H94.22l.044.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.792 18.59c-.255.71-.43 1.06-.864 1.72-.152.25-.274.39-.443.59l-.526.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.13-.46l2.56-7.32h7.78l2.44 6.47c.04.1.07.2.11.3.08.19.13.34.15.57.05.4.02.67-.12 1.09l-.12.35h4.3l-.24-.41c-.12-.2-.22-.36-.31-.51zm-6.96-10.01h-6.233l3.047-8.596 3.187 8.59zm16.17-12.3c.024.194.024.325.003.5-.042.22-.124.375-.237.588l-4.223 7.857-3.84-7.324-.057-.103c-.152-.28-.252-.464-.334-.77-.05-.27-.072-.455-.048-.727l.025-.29h-4.11l.49.462c.22.21.34.37.5.587l.03.034c.2.33.31.51.48.84l5.28 9.73v10.4c0 .14 0 .24-.03.39-.02.21-.07.37-.17.65l-.14.36h3.28l-.1-.34c-.06-.21-.09-.35-.13-.52l-.03-.14c-.05-.29-.08-.46-.08-.72V38.29l5.35-9.434c.204-.397.33-.637.56-.995.185-.3.33-.51.62-.82l.42-.45H115l.037.3zm21.624.1c.068.298.115.496.162.8.144.877.138 1.5.13 2.286 0 .19-.003.39-.003.6v13.75l-13.236-17.8h-3.863l.69.49c.235.17.35.31.46.6.135.29.185.53.185.87v19.17c0 .46 0 .74-.11 1.19-.05.29-.13.44-.31.73l-.24.4h3.31l-.09-.33-.08-.29c-.07-.24-.12-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.493-.03-22.266c0-.46 0-.714.07-1.185v-.01c.05-.38.09-.616.2-.98l.1-.34h-2.87l.09.4zm17.882 20.465c-.8.302-1.266.352-2.073.352H146.5v-9.68h4.954c.303 0 .523 0 .79.05.418.115.667.2 1.04.405l.397.217V35.91h-7.25v-7.062h5.03c.12 0 .24-.007.34-.013.29-.016.49-.03.77.086.27.11.44.24.65.48l.48.56v-3.3h-10.77l.38.44c.16.19.23.32.32.55.1.32.15.53.15.9v19.23c0 .12.01.22.01.32.01.28.02.5-.05.79-.07.33-.15.52-.3.78l-.24.41h11.9l.938-3.54-.627.49c-.31.24-.49.34-.82.45zm35.942 1.444c-.107-.698-.106-.743-.104-.997v-19.06h3.99c.39 0 .647.05 1.057.2l.03.007c.34.09.55.177.82.34l.45.26-.24-2.997h-15.1l-.57 3.23.54-.386c.32-.23.56-.36.95-.45.24-.08.37-.1.59-.1h4.64v18.84c0 .16.01.29.01.42.01.28.02.51-.03.78-.07.27-.12.44-.24.71l-.17.38h3.85l-.19-.38c-.15-.3-.23-.49-.26-.76zm23.952.302c-.134-.21-.26-.405-.408-.666-.562-1.048-.824-1.75-1.265-2.93l-7.09-19.017h-2.844l.043.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.79 18.59c-.254.71-.43 1.06-.863 1.72-.152.25-.274.39-.444.59l-.52.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.14-.46l2.56-7.31h7.77l2.44 6.47c.03.1.07.2.11.3.07.19.13.34.15.57.05.4.02.67-.12 1.09l-.11.35h4.3l-.25-.41c-.12-.2-.22-.36-.312-.51zm-6.957-10.01h-6.234l3.04-8.596 3.18 8.596zm4.95-12.538l-.572 3.23.54-.386c.32-.232.56-.365.95-.455.24-.084.37-.107.59-.107h4.65v18.84c0 .153.01.287.01.415.01.28.02.504-.03.784-.07.26-.12.43-.24.69l-.17.38H222l-.193-.39c-.152-.31-.238-.49-.262-.77-.106-.7-.105-.75-.103-1V28.84h3.99c.39 0 .647.048 1.056.198l.022.007c.338.09.545.18.823.34l.447.26-.245-2.995h-15.097zm28.57 20.802c-.798.302-1.265.352-2.073.352h-5.973v-9.68h4.955c.302 0 .52 0 .79.05.425.117.665.2 1.04.405l.396.217V35.91h-7.258v-7.062h5.03c.123 0 .233-.007.34-.013.283-.017.488-.03.764.086.27.11.442.24.65.48l.474.56v-3.3h-10.77l.377.44c.16.19.223.32.314.55.09.32.14.53.14.9v19.23c0 .12 0 .22.01.32.01.28.01.5-.05.79-.08.33-.15.52-.31.78l-.24.41h11.9l.93-3.54-.63.49c-.31.24-.49.34-.82.45zm51.694-20.337c.054.23.096.406.137.673.145.874.14 1.495.13 2.282 0 .187-.003.383-.003.593v13.76l-13.23-17.8h-3.86l.69.49c.23.17.35.32.46.6.14.29.19.53.19.87v19.17c0 .46 0 .74-.1 1.19-.04.29-.12.43-.3.74l-.24.41h3.31l-.09-.33-.08-.29c-.06-.23-.11-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.495-.03-22.266c0-.46 0-.72.08-1.19v-.01c.06-.4.11-.62.2-.96l.1-.34h-2.86l.13.51zm9.8.76l.053-.173c.08-.26.147-.485.25-.723l.16-.374h-4.08l.228.4c.195.343.29.633.394 1.023.125.446.145.696.145 1.124v18.648c0 .45 0 .72-.148 1.13-.07.282-.14.45-.29.72l-.22.398h3.94l-.2-.388-.13-.23c-.11-.194-.19-.335-.22-.553-.08-.754-.08-1.77-.08-2.948v-16.84c0-.32 0-.516.17-1.215zm17.996-.923c.072.282.097.476.097.747-.017.27-.09.452-.185.682-.038.09-.076.18-.11.28l-6.333 15.99-6.75-16.72c-.07-.22-.108-.34-.108-.53 0-.14.015-.24.104-.42l.188-.39h-4.368l.645.48c.244.18.382.31.554.63.102.18.155.33.216.51l.083.23 9.367 22.51L322.678 29c.13-.337.234-.546.403-.86l.01-.016c.2-.43.34-.697.61-1.1l.27-.42h-3.55l.09.336zm15.52 20.5c-.8.302-1.265.352-2.074.352h-5.98v-9.68h4.95c.3 0 .52 0 .79.05.42.117.66.2 1.04.405l.39.217V35.91h-7.26v-7.063h5.03c.12 0 .23-.007.34-.013.28-.017.48-.03.76.086.27.107.44.233.65.48l.47.56v-3.303h-10.77l.37.442c.16.18.22.31.31.54.09.31.14.53.14.9v19.55c.01.28.02.49-.05.78-.08.33-.15.51-.31.78l-.24.4h11.91l.932-3.54-.63.49c-.306.24-.487.34-.82.45zm18.152 1.32c-.552-.565-.993-1.242-1.552-2.1l-4.734-7.082c-.47-.692-.78-1.103-1.31-1.7h.03c.97 0 1.91-.347 2.72-1.006 1.31-1.078 2.11-2.847 2.14-4.73.04-1.633-.48-3.043-1.49-4.078-.94-.956-2.2-1.48-3.56-1.48h-6.29l.26.565c.11.24.2.41.25.69.13.87.15 1.35.15 2.17v16.48c0 .82 0 1.85-.08 2.31-.02.24-.09.41-.2.66-.03.06-.06.14-.1.21l-.15.37h3.63l-.1-.35c-.037-.11-.06-.2-.09-.29-.09-.28-.15-.48-.19-.81-.08-.38-.08-.61-.08-.96v-10.2c.07.08.125.17.19.28.05.09.11.19.18.28l7.82 12 .08.13h3.936l-.53-.47c-.398-.35-.628-.57-.978-.92zm-10.67-19.93c.604-.295 1.03-.328 1.776-.328 2.92.143 3.42 1.87 3.53 3.712.15 2.377-1.31 3.937-3.89 4.173-.47.023-1.02.01-1.41-.03V28.85zm21.172 8.974c-.23-.152-.465-.308-.705-.47l-3.104-2.12c-1.256-.85-2.06-1.674-2.177-3.145-.07-.99.28-1.92.99-2.62.79-.79 1.95-1.23 3.04-1.15 1.45.06 2.48.32 3.52 1.48l.47.52v-3.24l-.15-.08c-1.28-.62-2.2-.65-3.46-.69-.18-.01-.36-.01-.55-.02-1.88-.07-3.65.57-4.88 1.76-1.11 1.08-1.69 2.52-1.68 4.16.03 2.33.98 3.97 3.17 5.5l3.55 2.39c1.52 1.01 2.88 2.09 2.88 4.17 0 1.25-.38 2.29-1.12 2.99-.81.78-2.04 1.16-3.56 1.1-1.74-.03-2.98-.15-4.38-1.49l-.45-.44v3.23l.16.07c1.49.66 2.53.67 3.97.69l.49.01h.34c1.62 0 4.25-.3 5.96-2.02 1.11-1.118 1.64-2.64 1.58-4.53-.12-3.64-1.85-4.78-3.86-6.1zm10.15-9.94c.105-.34.178-.568.302-.858l.15-.374h-4.07l.22.4c.19.332.28.58.39.984.12.443.14.694.14 1.123V47.8c0 .45 0 .72-.15 1.132-.07.28-.14.447-.29.716l-.23.4h3.94l-.2-.39-.13-.23c-.11-.193-.19-.333-.22-.55-.077-.754-.077-1.77-.077-2.947V29.1c.004-.324.004-.52.177-1.217zm28.817-1.29l.038.3c.023.195.023.326.002.502-.04.22-.123.372-.235.584l-4.23 7.86-3.84-7.325-.06-.105c-.15-.278-.26-.462-.34-.77-.05-.265-.07-.45-.05-.726l.02-.29h-4.1l.03.032h-13.22l-.58 3.23.53-.388c.32-.232.55-.365.95-.455.24-.084.36-.107.59-.107h4.64V47.78c0 .15 0 .285.01.41.01.283.01.507-.03.783-.08.266-.13.44-.25.7l-.177.38h3.85l-.197-.386c-.15-.304-.237-.488-.26-.765-.105-.7-.105-.74-.1-.998v-19.06h3.99c.39 0 .65.05 1.06.2l.02.008c.336.09.54.177.82.34l.38.222 4.694 8.676v10.22c0 .067.003.13.005.188 0 .145 0 .24-.03.397-.02.21-.07.376-.17.656l-.13.36h3.27l-.096-.33c-.06-.21-.09-.35-.12-.52l-.03-.14c-.05-.3-.077-.47-.077-.72V38.3l5.35-9.437c.206-.396.336-.637.56-.994v-.01c.19-.3.34-.51.62-.82l.426-.46h-3.58z"></path>
+                </svg>
+            </a>
+            <div class="wsuaimhigher">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100px" height="15px" viewBox="0 0 98 14" xml:space="preserve">
+                    <path d="M8.1 1.4l4.2 11.2H9.8l-1-3.1h-4l-1.2 3.1h-2L6.3 1.4H8.1zM8.4 8.2C8 6.7 7.5 5.3 6.9 3.6h0c-0.5 1.7-1 3.1-1.5 4.6H8.4zM13.7 12.6V1.4h2.3v11.2H13.7zM31.3 12.6H29V3.9h0c-1.2 3.1-2.5 5.9-3.8 8.7H24c-1.2-2.8-2.4-5.6-3.6-8.7h0v8.7h-1.8V1.4h2.8c1.2 2.8 3 7.1 3.4 8.6h0c0.5-1.5 2.5-5.8 3.8-8.6h2.6V12.6zM47.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM50.4 12.6V1.4h2.3v11.2H50.4zM64.8 7.5v4.6c-1.2 0.4-2.5 0.7-3.7 0.7 -3.9 0-6.3-2.6-6.3-5.9 0-3.1 2.4-5.7 6.4-5.7 1.2 0 2.5 0.4 3.2 0.9l-0.7 1.3C63 3.1 62 2.8 61.2 2.8c-2.4 0-4 1.6-4 4.2 0 2.7 1.9 4.2 3.8 4.2 0.6 0 1.1-0.1 1.6-0.3V7.5H64.8zM76.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM85.4 2.9h-3.8V6h3.7v1.5h-3.7v3.6h4.4v1.5h-6.7V1.4h6V2.9zM88.1 1.4H92c2.1 0 3.6 1 3.6 2.9 0 1.7-0.8 2.6-1.9 3.2l2.7 4.8 -2.4 0.4 -2.3-4.7h-1.3v4.5h-2.3V1.4zM90.3 6.6h0.9c1.6 0 2-1.2 2-2 0-1.3-0.9-1.7-1.8-1.7h-1.2V6.6z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="wsusearch">
+            <nav>
+                <ul>
+                    <li><a href="http://academica.wayne.edu/" class="spf-nolink">Academica</a></li>
+                    <li><a href="http://wayne.edu/directory/" class="spf-nolink">Directory</a></li>
+                    <li><a href="http://wayne.edu/contact/" class="spf-nolink">Contact</a></li>
+                    <li class="aimhigher"><a href="http://wayne.edu/aimhigher/" class="spf-nolink">Aim Higher</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="https://wayne.edu/search/">
+                <label for="q">Search:</label>
+                <input name="q" class="input-group-field" id="q" placeholder="Search..." type="text">
+                <button type="submit" class="button"><span class="search-icon"><span>Search</span></span></button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- WSU Header ends-->
+<div class="container">
+<!--Humanities Center logo-->
+<a class="notA" href="http://research2.wayne.edu/hum/"><img class="forhcheader" width="600" height="80" src="../img/hcheader.png"> </a>
+<!-- HC logo ends-->
+<div id="site-search">
+<form action="../search.htm" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="013346447988890295882:ebh4g3_d5_4" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+   <label for="site-q">Search</label>
+		<input id="site-q" class="searchText" type="text" size="13" name="q"/>
+    <input type="image" name="sa" alt="Search" src="../img/searchButton.jpg" />
+  </div>
+</form>		
+</div>	 
+</div><!--container div ends-->
+
+<section id="showcase"> 
+<div id="forid"><!-- #BeginLibraryItem "/Library/NavBarLibraryItem.lbi" -->
+  <nav class="clearfix">
+    <!-- div begins: make a gift floating label -->
+    <div id="gift"><img src="../img/gift-label1.png"></div>
+    <!-- div ends: floating label-->
+    <ul id="MenuBar2" class="MenuBarHorizontal clearfix">
+      <li><a href="http://research2.wayne.edu/hum/">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="../AboutUs/DirectorsMessage/message.html">Message from the Director</a></li>
+          <li><a href="../AboutUs/AdvisoryBoard/advisory.html">Advisory Board</a></li>
+          <li><a href="../AboutUs/SteeringCommittee/committee.html">Steering Committee</a></li>
+          <li><a href="https://www.flickr.com/photos/53952766@N07/sets/">Photos</a></li>
+          <li><a href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p">Videos</a></li>
+          <li><a href="../AboutUs/AnnualReports/reports.html">Annual Reports</a></li>
+          <li><a href="../AboutUs/OurStaff/staff.html">Our Staff</a></li>
+        </ul>
+      </li>
+      <li><a class="MenuBarItemSubmenu" href="#">Funding</a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">Faculty Funding</a>
+            <ul>
+              <li><a href="../FacultyFunding/MWFF/marilyn.html">Marilyn Williamson Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/ResidentScholars/resident.html">Resident Scholars</a></li>
+              <li><a href="../FacultyFunding/FacultyFellowship/fellowship.html">Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/WorkingGroups/groups.html">Working Groups</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Student Funding</a>
+            <ul>
+              <li><a href="../StudentFunding/DoctoralDissertation/dissertation.html">Doctoral Dissertation Fellowship</a></li>
+              <li><a href="../StudentFunding/DoctoralDissertation/travel.html">Graduate Travel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="brownbag.html">Brown Bag Colloquium Series</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+<!-- #EndLibraryItem --></div>
+<!-- forid div ends -->
+</section>
+<!-- InstanceBeginEditable name="EditTimeline" -->
+<img src="Smith-20.jpg" style="z-index:-2;position:relative;"> 
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="brownbagYearMenu" -->
+<div class="bg border">
+  <form name="form" id="form">
+    <select name="AdvisoryMenu" id="Menu" onChange="MM_jumpMenu('parent',this,0)">
+      <option value="brownbag.html">Brown Bag Series</option>
+      <option value="16-17.html">2016-2017</option>
+      <option value="15-16.html">2015-2016</option>
+      <option value="14-15.html">2014-2015</option>
+      <option value="13-14.html">2013-2014</option>
+      <option value="12-13.html">2012-2013</option>
+      <option value="11-12.html">2011-2012</option>
+      <option value="10-11.html">2010-2011</option>
+      <option value="09-10.html" selected>2009-2010</option>
+      <option value="08-09.html">2008-2009</option>
+      <option value="07-08.html">2007-2008</option>
+      <option value="06-07.html">2006-2007</option>
+      <option value="05-06.html">2005-2006</option>
+      <option value="04-05.html">2004-2005</option>
+      <option value="03-04.html">2003-2004</option>
+      <option value="02-03.html">2002-2003</option>
+      <option value="01-02.html">2001-2002</option>
+      <option value="00-01.html">2000-2001</option>
+      <option value="99-00.html">1999-2000</option>
+      <option value="98-99.html">1998-1999</option>
+      <option value="97-98.html">1997-1998</option>
+    </select>
+  </form>
+ <!-- InstanceEndEditable -->
+  <br>
+  <br>
+  <br>
+  <!-- InstanceBeginEditable name="brownbagtext" -->
+  <div id="text">
+ <p><strong>The Humanities Center has scheduled 63 talks to be held   during the Fall and Winter semesters.
+   These talks are held mainly on Tuesday   and Wednesday, but occasionally on other weekdays as well.   All lectures will   be held in 2339 FAB from 12:30-1:30 unless otherwise announced.</strong></p>
+ <p align="left">Since the inception of the weekly Brown Bag   Colloquium Series, literally hundreds of Wayne State humanities and arts faculty   and students have participated either as speakers or as members of the audience.   Each new year brings an increase in the number of faculty volunteering to   present talks. As a result, the Center regularly hosts talks twice a week   throughout the entire academic year. Brown Bag talks are free and open to the   public. We are inviting junior and senior scholars in the humanities and arts as   well as those working in the natural and social sciences whose work overlaps   with the humanities.<br />
+   Files that have audio or videos associated with   them will contain a audio or image next to the   title. Click on the title to go to the media file. </p>
+<p>Click <a href="BB 09-10 schedule fall  winter.pdf" target="_new">here</a> to download the schedule </p>
+
+</div>
+<h3>Fall Semester</h3>
+<div id="text">
+ <p>September 9 - <strong>Robert M. Ackerman</strong>, Dean, Law <a href="#robertmackerman" class="normalA">&ldquo;Communitarianism and Taking Responsibility&rdquo;</a></p><p>September 15 -<strong> Claude Schochet</strong>, Moderator, Professor,   Mathematics, <strong>Martha Ratliff</strong>, Department Chair, English, <strong>Susan Vineberg</strong>, Associate Professor, Philosophy, <strong>Robert   Bruner</strong>, Associate Chair, Mathematics, &amp; <strong>Allen   Batteau</strong>, Associate Professor, Anthropology <em><a href="#claudeschochet" class="normalA">&ldquo;&ldquo;The Two Cultures&rdquo; by C.P. Snow -- 50   Years Later&quot;</a></em> ***Special Time: 12:30-2:30 at Student   Center Bldg. Hilberry C*** </p><p>September 16 -<strong> Robert J. Burgoyne</strong>, Professor, English <em><a href="#robertburgoyne" class="normalA">&ldquo;Homeland/Promiseland: Gangs of   New York&rdquo;</a></em></p><p>September 22 <strong>- Erica Stevens Abbitt</strong>, Associate Professor,   University of Windsor, School of Dramatic Art <em><a href="#ericastevens" class="normalA">&ldquo;Body and Breath: Inspiring Feminist Research and   Practice&rdquo;</a></em></p><p>September 23 - <strong>Bruce Russell</strong>, Professor, Philosophy <em><a href="#brucerussell" class="normalA">&ldquo;Pedro Almodovar&rsquo;s Films: Explorations   of Love&rdquo;</a></em></p><p>September 29 - <strong>Steven Shaviro</strong>, Deroy Chair &amp; Professor,   English <a href="#stevenshaviro" class="normalA">&ldquo;<em>Dangerous Modulations:   Grace Jones&rsquo; &ldquo;Corporate Cannibal&rdquo;&rdquo;</em></a></p><p><em>Dr. Killion's talk has been postponed   until further notice</em><strong>.</strong> September 30 - <strong>Thomas   W. Killion</strong>, Associate Professor, Anthropology <em><a href="#thomaskillion" class="normalA">&ldquo;Corktown Archaeology: Recent Research at the Workers Row   House&rdquo;</a></em></p><p>October 06 - <strong>Christine Evans</strong>, Ph.D. Candidate, University   of California, Berkeley, History <em><a href="#christineevans" class="normalA">&ldquo;From Truth to Time: The Cold War and the Transformation   Of Soviet Central Television's Evening News, 1961-1982&rdquo;</a></em></p><p>October 07 -<strong> James Brown</strong>, Assistant Professor, English <em><a href="#jimbrown" class="normalA">&quot;Girl Talk vs. DJ Spooky: Remixes,   Mashups, and Digital Writing&quot;</a></em></p><p>October 13 - <strong>Tamara Bray</strong>, Associate Professor, Anthropology <em><a href="#tamarabray" class="normalA">&ldquo;Inca Imperialism on the Northern   Frontier&rdquo;</a></em></p><p>October 14 -<strong> Arifa Javed</strong>, Lecturer, Sociology <em><a href="#afirajaved" class="normalA">&ldquo;Effective Intervention Techniques in   Situations of Domestic Violence Among New Immigrants&rdquo;</a></em></p><p>October 20 - <strong>Marc Kruman</strong>, Chair &amp; Professor, History   &ldquo;<em>Abraham Lincoln: Bicentennial Reflections</em>&rdquo; </p><p>October 21 - <strong>Krista Brumley</strong>, Assistant Professor, Sociology <a href="#kristabrumley" class="normalA">&ldquo;<em>Globalization and   Organizational Culture: Women's and Men's Experiences of Paid Work in Mexico&quot; </em></a></p>
+ <p>October 27 - <strong>Vanessa Jill DeGifis</strong>, Assistant Professor,   CMLLC <a href="#vanessajilldegifis">&ldquo;<em>Scripture and Pious   Rhetoric in Abbasid Politics</em>&rdquo;</a> </p><p>October 28 - <strong>Marvin Zalman</strong>, Professor, Criminal Justice <a href="#marvinzalman" class="normalA">&ldquo;<em>Citizenship Explains Changes in   Police Interrogation Practices and Supreme Court Confessions Rulings</em>&rdquo;</a></p><p>November 03 - <strong>Roslyn Abt Schindler</strong>, Associate Professor,   CMLLC <a href="#roslynabtschindler" class="normalA">&ldquo;Enduring Connections:   Exploring Personal Roots and Professional Community in Poland&rdquo;</a></p><p>November 04 - <strong>Todd Meyers </strong>, Associate Professor, Medical   Anthropology <em><a href="#toddmeyers" class="normalA">&quot;Clinical Reasoning   and the Threat of the Unreasonable&quot;</a></em></p>
+ <p>November 10 -<strong> Annie Higgins</strong>, Assistant Professor, CMLLC <em><a href="#anniehiggins"class="normalA">&ldquo;Woman&rsquo;s Smile, History&rsquo;s Gaze:   Authority in Arabic Currencies&rdquo;</a></em></p><p>November 11 - <strong>Dora Apel,</strong> Associate Professor, Art &amp; Art   History <a href="#doraapel" class="normalA">&ldquo;<em>What is Radical Art Today?&rdquo;</em></a> ***Special Time: 12pm - 1pm*** </p>
+ <p>November 17 - <strong>Jaime Goodrich</strong>, Assistant Professor, English <em><a href="#jamiegoodrich">&ldquo;Who is Mrs. M.B.?: Monastic Authorship and the Case of   Dame Clementia Cary&rsquo;s Psalms&rdquo;</a></em><br />
+      November 18 - <strong>Marion Jackson</strong>,   Distinguished Professor, Art &amp; Art History <a href="#marionjackson" class="normalA"><em>&ldquo;Bandits &amp; Heroes: Art and Popular   Imagination in Brazil&rsquo;s Northeast&rdquo;</em></a></p>
+ <p>November 24 - <strong>Eric H. Ash</strong>, Associate Professor, History <em>&ldquo;The Unrecovered Country: The Non-Drainage of Cambridge Fens,   1619-1620&rdquo;</em></p><p>December 01 - <strong>Terese Volk Tuohey</strong>, Associate Professor,   Music &ldquo;<em>The WPA/DSO Music Manuscripts: Collaborative Research &amp; Website   Development&rdquo;</em></p><p>December 02 - <strong>Michele Valerie Ronnick</strong>, Professor, CMLLC <a href="#michelevalerie" class="normalA">&quot;The Use of the Roman Poet Vergil? in   John Quincy Adams&rsquo; Speech for the Amistad Africans&quot; </a></p><p>December 03 - <strong>Eldonna Lorraine May</strong>, Part-time Faculty,   Music <a href="#eldonna"><em>&ldquo;Music as   Propaganda: Sergei Prokofiev&rsquo;s Patriotic Cantatas</em>&rdquo;</a> ***Special Time &amp; Place: 11:45am at Schaver Recital   Hall*** </p><p>December 08 -<strong> Kathleen McNamee</strong>, Professor, CMLLC &amp; <strong>Judith Arnold</strong>, Librarian III, University Libraries <em>&ldquo;How do   we help students become good researchers?&rdquo;</em></p><p>December 09 - <strong>Nicholas Fleisher</strong>, Assistant Professor &amp;   Student Advisor, English (Linguistics)<em> &ldquo;Gradability, Vagueness, and the   Semantics of Inappropriateness&rdquo;</em></p><p>December 15 - <strong>Mark Ferguson</strong>, Senior Lecturer, CMLLC <em><a href="#markferguson" class="normalA">&ldquo;The Fetishization of Study   Abroad&rdquo;</a></em></p><p>December 16 - <strong>Jacalyn D. Harden</strong>, Assistant Professor,   Anthropology <a href="#jacalynharden" class="normalA"><em>&quot;A Tale of Two   Cities: Seattle, Detroit, and Twenty-First Century Wish   Dreams&quot;</em></a></p>
+</div>
+<h3>Winter Semester</h3>
+<div id="text">
+  <p>January 12 - <strong>Robert L. Thomas</strong>, Dean, College of Liberal   Arts &amp; Sciences<em> <a href="#robertl" class="normalA">&quot;Connections   Between Urban and Global Student Services Learning&quot; </a></em></p><p>January 13 -<strong> Andrew Port</strong>, Associate Professor, History <em><a href="#andrewport"class="normalA">&ldquo;German Reactions to Genocide since   1945&rdquo;</a></em></p><p>January 19 - <strong>Aaron Retish</strong>, Assistant Professor, History <em><a href="#aaronretish" class="normalA">&quot;Birth of the Soviet Prison:   Creating a Humane Prison in a Socialist World&quot;</a></em></p><p>January 20 - <strong>Anca Vlasopolos</strong>, Professor, English <a href="#anca" class="normalA"><em>&quot;Child Trauma and Reconfigured Families in   Pullman&rsquo;s Neo-Victorian Fiction&quot;</em></a></p><p>January 26 - <strong>Robert Sedler</strong>, Distinguished Professor, Law <em><a href="#sedler" class="normalA">&ldquo;Our 18th Century   Constitution Congress, the President, and our Two-Party Political System&rdquo; </a></em>></p>
+  <p>January 27 - <strong>Leisa Kauffmann</strong>, Assistant Professor, CMLLC <em><a href="#kauffmann" class="normalA">&ldquo;Disguising the Man-god: Rulership   and Religiousity iin colonial Nahua Histories&rdquo;</a></em></p><p>February 02 - <strong>Melba Boyd</strong>, Distinguished Professor &amp;   Chair, Africana Studies <em><a href="#melba">&ldquo;From Motown to   Shanghai: Teaching African American Studies in China&rdquo;</a></em></p><p>February 03 - <strong>William Harris</strong>, Professor, English<em> &quot;<a href="#harris" class="normalA">Booker T   Washington Goes to the Movies</a></em>&quot; </p><p>February 04 - <strong>Xavier O&rsquo;Neal Livermon</strong>, Assistant Professor,   Africana Studies <a href="#livermon" class="normalA"><em>&quot;Representations of   Sophiatown in Kwaito Music: Mafikizolo and Musical Memory in Post Apartheid   South Africa&quot;</em></a></p>
+  <p>February 09 - <strong>Guerin Montilus</strong>, Professor, Anthropology   &amp;<strong> Penny Godboldo</strong>, Associate Professor, Dance, Marygrove   College <em><a href="#montilus" class="normalA">&ldquo;Katherine Dunham (June 22,   1909-May 21, 2006): The Centennial birthday of an African American Woman,   Pioneer in Anthropology and Queen of the Black Dance&rdquo;</a></em></p><p>February 10 - <strong>Norah Duncan IV</strong>, Associate Chair, Music <em><a href="#norah" class="normalA">&quot;<span id="lw_1262707821_3">Norah Duncan   IV: A Celebration</span> of <span id="lw_1262707821_4">Black History Month</span> in Song&quot;</a></em> ***Special Time &amp; Place: 1:00 p.m. to   2:00 p.m. at Schaver Recital Hall*** </p><p>February 11 - <strong>David Goldberg, </strong>Assistant Professor, Africana   Studies <em><a href="#goldberg" class="normalA">&quot;Black Power at Work:   Community Control, Affirmative Action and the Construction Industry&quot;</a></em></p><p>February 16 - <strong>R. Khari Brown</strong>, Assistant Professor,   Sociology <a href="#brown" class="normalA">&ldquo;<em>The Impact of Religion on   African American Immigration Attitudes&rdquo;</em></a></p><p>February 17 - <strong>Osumaka Likaka</strong>, Associate Professor, History <em>&ldquo;Colonialism, Stereotyping, and New Ethnic Identities in Congo&rdquo;</em></p><p>February 18 - <strong>Daphne Ntiri</strong>, Associate Professor, Africana   Studies &amp; Merry Stewart <em><a href="#ntiri" class="normalA">&ldquo;Transformative Learning Intervention: Effect on Functional   Health&rdquo;</a></em></p><p>February 23 - <strong>Alicia Nails</strong>, Lecturer, Communication <em><a href="#nails">&ldquo;Recruiting, Retraining, and Retaining the   Urban Student&rdquo;</a></em></p><p>February 24 - <strong>Monica M. White</strong>, Assistant Professor,   Sociology<em> <a href="#white" class="normalA">&ldquo;D-Town Farm: Conversations   about Race and the Urban Gardening Movement in Detroit&rdquo;</a></em></p><p>February 25 - <strong>Marilyn Zimmerman</strong>, Associate Professor, Art   &amp; Art History <em><a href="#zimmerman" class="normalA">&ldquo;Detroit   Photography&rdquo;</a></em></p><p>March 02 - <strong>Jose A. Rico-Ferrer</strong>, Assistant Professor,   CMLLC<em> &ldquo;Poetic Friendships: The case of Boscan and Garcilaso&rdquo;</em><br />
+      March   03 - <strong>Eugenia Casielles</strong>, Associate Professor, CMLLC &amp; Dolly   Title, GTA, CMLLC<em> &ldquo;Spanish &amp; English in Contact: Codeswitching   strategies and radical bilingualism&rdquo;</em></p><p>March 09 - <strong>Mary Cay Sengstock</strong>, Professor, Sociology <em><a href="#sengstock" class="normalA">&ldquo;Voices of Diversity-Interviews with People   on the &lsquo;Assimilation Side&rsquo; of Multi-Culturalism&rdquo;</a></em></p>
+      <p>March 10 - <strong>Patricia K. McCormick</strong>, Associate Professor,   Communication<em> <a href="#mccormick" class="normalA">&ldquo;Transforming   Intergovernmental Satellite Organizations into Private Equity Assets&rdquo;</a></em></p><p>March 23 - <strong>Elizabeth Dorn Lublin</strong>, Assistant Professor,   History<em> &ldquo;Citizens and Social Work in Meiji Japan&rdquo;</em></p><p>March 24 -<strong> Renee C. Hoogland</strong>, Associate Professor, English <em>&ldquo;</em>Ethics, Aesthetics, and the Arts of the   Present<em>&rdquo;</em></p><p>March 30 - <strong>Lisa Maruca</strong>, Associate Professor, English <em><a href="#lisamaruca" class="normalA">&quot;The ABC's of Print Culture: Alphabetic   Literacy and Educational Technologies in 18th-Century England&quot; </a></em></p><p>March 31 - <strong>Sarika Chandra</strong>, Assistant Professor, English<em> <a href="#chandra" class="normalA">&quot;Americanization: Management Theory and   the Humanities&quot;</a></em></p><p>April 06 - <strong>Simone Chess</strong>, Assistant Professor, English <a href="#schess" class="normalA"><em>&ldquo;</em>Performing Blindness: Representing   Disability in Early Modern Popular Performance and Print<em>&rdquo;</em></a><em><strong> This talk has been postponed until April 28. </strong></em></p><p>April 07 - <strong>Jeff Pruchnic</strong>, Assistant Professor, English <em><a href="#jpruchnic" class="normalA">&quot;What is Virtual Life?: Evolution,   Ecology, and Ethics Online and On Earth&quot;</a></em></p><p>April 13 - <strong>Karen Liston</strong>, Librarian III, University   Libraries<em> <a href="#karenliston" class="normalA">&ldquo;Research in a Global   Context: Issues and Opportunities&rdquo;</a></em></p><p>April 14 - <strong>Fran Shor </strong>, Professor, History<em> <a href="#franshor">&quot;Bases, Bananas,   and Burgers: Deconstructing the Matrix of US Global Hegemony&quot;</a></em></p><p>April 20 -<strong> Dennis Tini</strong>, Distinguished Professor, Music <a href="#dennistini" class="normalA"><em>&ldquo;The Brain in Music and Martial   Arts&rdquo;</em></a></p><p>April 21 -<strong> John Corvino</strong>, Associate Professor, Philosophy <a href="#johncorvino" class="normalA"><em>&ldquo;Just My Opinion&rdquo;</em></a></p><p>April 27 - <strong>Michael Darroch</strong>, Assistant Professor, University   of Windsor, Communication, Media &amp; Film <a href="#michaeldarroch" class="normalA"><em>&ldquo;From Anonymous History to Acoustic Space: Marshall McLuhan   Between Urban and Media Studies&rdquo;</em></a></p><p>April 28 -<strong>Simone Chess</strong>, Assistant Professor, English <a href="#schess" class="normalA"><em>&ldquo;</em>Performing Blindness: Representing   Disability in Early Modern Popular Performance and Print<em>&rdquo;</em></a></p>
+</div>
+<div class="titles">Talk Abstracts</div>
+<div id="text">
+  <p align="left"><strong><em>***Please note that some of the abstracts are   accompanied by audio recordings.***</em></strong></p>
+  <p align="left">The Humanities Center is providing these audio   and video recordings for faculty, students and staff who were unable to attend   the Brown Bag talks.? Please respect the intellectual property of the speakers   by seeking permission to use their ideas and by acknowledging the sources of   your quotations.The speakers would also welcome your constructive feedback. <br />
+  </p>
+  <p><strong><a id="robertmackerman" name="robertmackerman" class="normalA"></a>Robert M. Ackerman,   Dean, Law <br />
+    &quot;Communitarianism and Taking Responsibility&quot;</strong></p>
+  <p>Communitarians have suggested that our self-seeking tendencies must sometimes   be set aside in pursuit of the common good. Government is often (although not   always) the mechanism through which common interests are advanced. When   government abdicates its responsibility, diastrous consequences often occur, as   was the case with respect to Hurricane Katrina and its aftermath. At the other   extreme, disaster can also result from the accumulation of too much power in   government, as in the case of the Chernobyl nuclear plant disaster. This talk   will suggest a communitarian framework for the powers and responsibilities of   government, individuals, and intermediate organizations. </p>
+  <p><strong><a name="claudeschochet" id="claudeschochet" class="normalA"></a>Claude Schochet, Moderator, Professor,   Mathematics, Martha Ratliff, Department Chair, English, Susan Vineberg,   Associate Professor, Philosophy, Bob Bruner, Associate Chair, Mathematics, &amp;   Allen Batteau, Associate Professor, Anthropology</strong><br />
+    <strong>&ldquo;The Two   Cultures&rdquo; by C.P. Snow -- 50 Years Later&quot;</strong></p>
+  <p>The Humanities Center, in collaboration with the Institute for Information   Technology and Culture, presents this important panel discussion marking the 50   year anniversary of C.P. Snow's work linking the sciences and the   humanities.</p>
+  <p>&quot;The Two Cultures&quot; is the title of an influencial 1959 lecture by British   scientist and novelist C.P. Snow. Its thesis was that the breakdown of   commuication between the &quot;two cultures&quot; of modern society - the sciences and the   humanities - was a major hindrance to solving the world's problems. </p>
+  <p>A panel of WSU faculty will discuss the current status and consequences of   this breakdown. Do we indeed have rwo cultures today? Is the problem worse or   better? <strong><br />
+  </strong></p>
+  <p><strong><a name="robertburgoyne" id="robertburgoyne" class="normalA"></a>Robert J. Burgoyne, Professor, English <br />
+    &ldquo;Homeland/Promised Land: Gangs of New York&rdquo;</strong></p>
+  <p>Rather than seeing nation as the apotheosis of ethnic conflict, or providing   an immigrant narrative where the ethnic other is absorbed into the national   body, <U><span id="lw_1251831356_5">Gangs of New York</span></U> presents the   ethnic gangs as a far more powerful source of identity and emotional purpose   than the fledgling nation-state. ?Instead, the nation-state is portrayed as a   contending gang in its own right, with no greater claim to allegiance than the <span id="lw_1251831356_6">Dead Rabbits</span> or the <span id="lw_1251831356_7">Native Americans</span>. ?Out of this struggle a form of   nation is born that is internally marked, as Homi Bhabha writes, &quot;by the   discourses of minorities, the heterogenous histories of contending peoples,   antagonistic authorities, and tense locations of cultural difference.&quot;?</p>
+  <p>Robert Burgoyne is professor of English and film studies. ???The presentation   on <U><span id="lw_1251831356_8">Gangs of New York</span></U>?is part of a chapter   from his forthcoming book,?<U>Film Nation: Hollywood Looks at U.S. History: <span id="lw_1251831356_9">Revised Edition</span></U>(<span id="lw_1251831356_10">University of Minnesota Press</span> , 2010). He has   recently published?<U>The Hollywood Historical Film</U>?(Wiley-Blackwell, 2008),   and he?has just completed the manuscript for <U>The Epic Film in <span id="lw_1251831356_11">World Culture</span></U>, an edited volume to be published   by Routledge.?</p>
+  <p><strong><a name="ericastevens" id="ericastevens"class="normalA"></a>Erica Stevens Abbit, Assistant Professor,   University of Windsor History <br />
+    &ldquo;Body and Breath: Inspiring Feminist Research   and Practice&rdquo;</strong></p>
+  <p>This talk, adapted from a recent keynote address at the 10th annual Feminist   Research Group at the University of Windsor, looks at feminist practice and   research across the arts and sciences. ?Are there common characteristics,   approaches, and strategies that &quot;mark&quot; feminism within the academy? ? Apart from   an interest in gender, class, race and sexuality, what might these tactics be?   ?How can they enhance our work, and extend our explorations beyond departmental   divides? <br />
+    <br />
+    Erica Stevens Abbitt trained as an actor and director, and   currently teaches theatre history, Canadian theatre and aspects of contemporary   practice at the University of Windsor. ?Her recent writings on theatre pedagogy   link a lifetime of interest in the intersections between feminism, drama, and   the active classroom. </p>
+  <div>
+    <p><strong><a name="brucerussell" id="brucerussell" class="normalA"></a>Bruce Russell, Professor,   Philosophy<br />
+      &ldquo;Pedro Almodovar&rsquo;s Films: Explorations of Love&rdquo;</strong></p>
+    <p>Analytic philosophers are interested in essences and try to formulate them in   terms of necessary and sufficient conditions.? For instance, the essence of   being a square is captured by the following formulation:? something is a square   if, and only if, it is a four-sided plane figure all of whose sides and angles   are equal.? Similarly, someone lies if, and only if, he says something he   believes to be false with the intention to deceive.? But what is the essence of   love?? Abe loves Beatrice if, and only if,...what?? One way to figure out how to   answer this question is to look at hypothetical cases, cases where love is   present and those where it is absent.? Almodovar&rsquo;s films are a rich source of   data, for they present cases of maternal and filial love, of romantic love, and   of their opposites.? In some of his examples it is not obvious that one person   loves another, but I will argue that they do and that we can learn something   about the nature of love from them, for instance, that love is compatible with   certain forms of selfishness.? In the end, I will argue that Abe loves Beatrice   if, and only if, Abe cares for Beatrice for her own sake and would tend to be   upset if he believed that Beatrice were being harmed or her life was not going   well for her.? <strong><br />
+    </strong></p>
+  </div>
+  <p><strong><a name="stevenshaviro" id="stevenshaviro" class="normalA"></a>Steven Shaviro, Deroy Chair &amp;   Professor, English <br />
+    &ldquo;Dangerous Modulations: Grace Jones&rsquo; &ldquo;Corporate   Cannibal&rdquo;&rdquo;</strong></p>
+  <p>Grace Jones' recent song and video, &quot;Corporate Cannibal&quot; (2008) marks her   return to pop music for the first time in nearly twenty years. Jones has always   been a transgressive figure, confounding boundaries between male and female, and   between black and white. In her earlier work, she assaulted gender divisions by   transforming herself into a cold, forbidding, more-than-masculine hardbody.; and   she assaulted racial divisions by embracing the worst stereotypes of both black   and white, the better to spit them back at the audience. Against all   distinctions of race, gender, and sexuality, Jones developed a sadistic,   robotic, &quot;transhuman&quot; persona. &quot;Corporate Cannibal&quot; pushes all this to a new   extreme. Jones takes on the persona of a corporate vampire. She equates   transgression with the depredations of capitalism. Her voice starts out   wheedling, then becomes contemptuous, commanding, and menacing, and finally   modulates into a predatory snarl. The music behind her is grinding and   dissonant, with harsh backbeats and shrieking guitars. In Nick Hooker's video,   her body passes through a series of unsettling electronic manipulations, never   coalescing into a single, graspable form. In &quot;Corporate Cannibal,&quot; Jones seeks   to &quot;make the world explode.&quot; <br />
+    <strong><br />
+      </strong><strong><a name="thomaskillion" id="thomaskillion" class="normalA"></a>Thomas W. Killion, Associate Professor,   Anthropology<br />
+        &ldquo;Corktown Archaeology: Recent Research at the Workers Row   House&rdquo;</strong></p>
+  <p>September 2009 marks the 50th birthday of the Museum of Anthropology at Wayne   State University.? On October 9 the Museum will open a new exhibit entitled   &ldquo;Mythical Foundations/Material Consequences: A Look at Archaeological Research   at the Workers Row House, Corktown, Detroit.&rdquo;? The exhibit presents three   seasons of excavation and research (2006-2008) in the heart of old Detroit,   which recently won recognition with the Governor&rsquo;s 2009 Award for Historic   Preservation.</p>
+  <p>Dr. Killion&rsquo;s presentation for the Humanities Center examines historical   archaeological research at the Workers Row House since 2006.? Students and   faculty at Wayne State, the University of Michigan, Flint, as well a high school   and primary students and volunteers from across the metro area have participated   in the project since its beginning.? Our research explores the city&rsquo;s early   residential, industrial, and ethnic history in the dooryard of a small working   class tenement built in 1849.? The Workers Row House (WRH), presently under   development as a community-based house museum by a local non-profit?the? Greater   Corktown Development Corporation (GCDC)?is perhaps the oldest wooden structure   of its kind still standing in the city.? Working in collaboration with the GCDC   archaeologists have uncovered more than 150 years of everyday life and material   culture from the early immigrants and working-class folks who built the modern   city.? </p>
+  <p>The talk focuses on the collaborative and community-centered nature of   research at the WRH and the challenges of digging up and interpreting the   remains of one of the city&rsquo;s earliest surviving residences.? Killion provides a   glimpse of immigration, industrialization, and urbanization as these factors   transformed the lives of working class residents some 50 years before the first   automobiles rolled off the assembly lines at the Ford Motor Company.? He looks   at the prospects and benefits of future historical archaeology research in   Detroit in the coming years. </p>
+  <p><strong><a href="#top">Back to top</a></strong></p>
+  <p><strong><a name="christineevans" id="christineevans" class="normalA"></a>Christine Evans, Ph.D. Candidate,   University of California, Berkeley, History <br />
+    &ldquo;From Truth to Time: The Cold   War and theTransformation of Soviet Central Television&rsquo;s Evening News,   1961-1982&quot;</strong></p>
+  <p>Beginning in the early 1960s, Soviet Central Television&rsquo;s journalists and   executives sought to alter the way that Soviet news was conceived and produced   in response to an enormous ideological challenge:? <span id="lw_1254338458_6">Western radio broadcasting</span> to Soviet audiences.? In   1968, modeling their efforts on British, European and American television news   programs, they created a new evening news show, entitled <em>Time</em>, that was   intended to compete directly with the speed and style of Western radio   broadcasting, while also conveying the superiority of the Soviet way of life.?   From its first broadcast, however, the show faced a persistent problem: an   awkward contrast, within every evening&rsquo;s broadcast,between static and   exclusively positive domestic Soviet news and conflictual, dynamic foreign news   coverage.? For the following decade, Central Television&rsquo;s journalists and   executives sought to reform <em>Time </em>in order to eliminate this contrast,   articulating, in the process, many of the ideas that would be enacted in Central   Television&rsquo;s news programming during <em>perestroika.? </em>Ultimately, however,   the problem proved insoluble because it was the result of a fundamental   difference between Soviet and Western news narratives: Western news was set   within a non-teleological historical framework, one whose conflicts and   uncertain outcomes proved far more recognizable to Soviet audiences. <strong><br />
+  </strong></p>
+  <p><strong><a name="jimbrown" id="jimbrown" class="normalA"></a>James Brown, Assistant Professor, English <br />
+    &ldquo;Girl Talk vs. DJ Spooky: Remixes, Mashups, and Digital Writing&quot; </strong></p>
+  <p>This talk stages a confrontation between the methods of two contemporary   DJs?DJ Spooky and Girl Talk?in the interest of rethinking digital writing. ?DJ   Spooky can be credited with bringing the DJ method to the academy. ?Spooky has   been writing and <span id="lw_1254234301_8">making music</span> since the   mid-1990s. His book, Rhythm Science, is a performance of the DJ method, mixing   philosophy, <span id="lw_1254234301_9">critical theory</span>, personal anecdotes,   and sound. ?Girl Talk?a DJ who creates mashup tracks that sample as many as 30   songs?has developed a method that differs significantly from Spooky&rsquo;s. ?Whereas   Spooky&rsquo;s tracks reflect the slowness of literate writing, Girl Talk&rsquo;s mashups   are a performance of digital speed. ?This presentation will focus on DJ Spooky&rsquo;s <span id="lw_1254234301_10">Rebirth of a Nation</span>, a film project that brings   the DJ method to film by remixing one of the most racist (and influential) films   in history. ?I offer both a critique of Spooky&rsquo;s Remix and an answer to it in   the form of my own mashup. ?By using Girl Talk&rsquo;s method to answer Spooky, this   talk will open up a discussion about digital writing and   speed.<strong><br />
+    <br />
+    </strong><strong><a name="tamarabray" id="tamarabray" class="normalA"></a>Tamara Bray,   Associate Professor, Anthropology <br />
+      &ldquo;Inca Imperialism on the Northern   Frontier&rdquo;</strong></p>
+  <p>Following a long and fierce resistance, the ethnic province of Caranqui in   the <span id="lw_1254234870_5">northern highlands</span> of <span id="lw_1254234870_6">Ecuador</span> became the last region to come under Inca   control prior to the Spanish invasion in 1532 CE. The period of formal   occupation of this region by Inca forces is estimated at no more than 30-50   years. Did the Inca approach to imperialism remain monolithic in the face of   unprecedented distances between the <span id="lw_1254234870_7">Cuzco</span> heartland and the <span id="lw_1254234870_8">northern frontier</span>? Did local   resistance and solutions to imperial consolidation remain constant through time?   What can we discern of the mature phase of imperial Inca expansion based on   archaeological evidence from the Caranqui region? These are some of the research   questions being addressed at the recently discovered imperial Inca site of   Caranqui located in <span id="lw_1254234870_9">northern highland Ecuador</span>.   This paper presents some of the preliminary findings of a collaborative,   international and interdisciplinary project initiated at the site in   2008.<br />
+    <strong><br />
+      </strong><strong><a name="afirajaved" id="afirajaved" class="normalA"></a>Afira Javed,   Lecturer, Sociology <br />
+        &ldquo;Effective Intervention Techniques in Situations of   Domestic Violence among New Immigrants&rdquo;</strong></p>
+  <p>My presentation is entitled &ldquo;Effective Intervention Techniques in Situations   of Domestic Violence among New Immigrants.&rdquo; It is based on my experience as an   applied sociologist working at different social service agencies where I ran an   acculturation project for new immigrant families of various ethnic backgrounds.   These included Arabic, Bosnian, Bangladeshi, Chaldean, Indian and Pakistani   immigrants. This presentation focuses on effective intervention in reported   cases of domestic violence involving spousal abuse and child abuse among new   immigrant families. In the aftermath of such incidents, many of these families   go through a crisis where they end up filing for divorce or losing their   children to child protective services. Their ignorance of laws in America that   define certain coercive forms of disciplining children and interpersonal   interaction with spouses as abuse makes their ordeal of acculturation even more   difficult. This presentation discusses effective techniques that will help both   law enforcement and immigrant families to deal with these situations more   constructively.<strong><br />
+  </strong></p>
+  <p><strong>Marc Kruman, Chair &amp; Professor, History <br />
+    &ldquo;Abraham Lincoln:   Bicentennial Reflections&rdquo;<br />
+  </strong></p>
+  <p><strong><a name="kristabrumley" id="kristabrumley" class="normalA"></a>Krista Brumley, Assistant Professor,   Sociology <br />
+    &ldquo;Globalization and Organizational Culture: Accommodation and   Resistance in Mexico&rdquo;</strong></p>
+  <p>
+    <embed height="32" type="audio/mpeg" width="373" src="audiofiles/KBrumley1021.mp3" loop="True" autostart="False"></embed>
+  </p>
+  <p>The new demands posed by globalization on economic life   shape our social world in ways that are contradictory and complex.? <em>The   objective of this presentation is to analyze women&rsquo;s and men&rsquo;s experiences of   paid work over the life span within the context of globalization.</em>? Using   in-depth interviews conducted at a Mexican multinational corporation, I present   two points: (1) the gender-based benefits and costs of globalization and (2) the   intersectional relationship of age, gender, and class in perceived workplace   changes.? I illustrate that workers perceive the changes of globalization as   having a significant and positive impact on the company&rsquo;s organizational   culture.? However, it is in the more nuanced analysis of the intersection of   gender, age, and class that the different experiences of the new organizational   culture become more visible.? Therefore, my analysis suggests that analyzing how   globalization shapes paid work requires an intersectional   approach.<strong><br />
+  </strong></p>
+  <p><strong><a name="vanessajilldegifis" id="vanessajilldegifis"></a>Vanessa Jill DeGifis, Assistant   Professor, CMLLC <br />
+    &ldquo;Scripture and Pious Rhetoric in Abbasid   Politics&rdquo;</strong><br />
+    <embed onafterupdate="MM_checkPlugin('Windows Media Player','audiofiles/VJDeGifis102709b.mp3','audiofiles/VJDeGifis102709b.mp3',false);return document.MM_returnValue" height="32" type="audio/mpeg" width="379" src="audiofiles/VJDeGifis102709b.mp3" loop="True" autostart="False"></embed>
+    <br />
+    <br />
+    The Qur&rsquo;an is an ideal tool for   the Muslim political propagandist because it is a source of vocabulary and   images familiar to a Muslim audience, and because it is considered to be of   sacred origin, with inherent religious, ethical, social, and rhetorical   authority.? By borrowing phrases, structures, and themes from the Qur&rsquo;an and   applying them in a new discursive context, the politician employs the persuasive   power of the scripture to evoke desired emotional and behavioral responses from   his audience. ?The Abbasid Caliph al-Ma&rsquo;mun&rsquo;s (r. 198-218 AH/813-833 CE) famous <em>mihna</em>, or &ldquo;inquisition&rdquo; regarding the nature of the Qur&rsquo;an, epitomizes   the impact of the Qur&rsquo;an on Islamic politics, because the Qur&rsquo;an is central to   both the subject and the lexicon of this debate.? The <em>mihna</em> was   intended, at least ostensibly, to promote the theological position that the   Qur&rsquo;an was &ldquo;created.&rdquo; ?Those who did not assent to the caliph&rsquo;s view were barred   from administrative office and from serving as courtroom witnesses. ?The present   paper is a textual analysis of the first official letter promulgating the <em>mihna</em> in 218/833.? An analysis of this text reveals that al-Ma&rsquo;mun&rsquo;s   qur&rsquo;anic borrowing is a deliberate and indispensible strategy for   conceptualizing and articulating his personal agenda.? Based on my assessment of   his qur&rsquo;anic rhetoric, I propose a new understanding of the motive and aim of   the <em>mihna</em>: It is a way for al-Ma&rsquo;mun to reclaim the prerogative of   &ldquo;commanding the right and forbidding the wrong (<em>al-amr bi-al-ma`ruf   wa-al-nahy `an al-munkar</em>)&rdquo; from the Hadith folk, who had assumed this   function since the Abbasid civil war of 195-198/809-813.<strong><br />
+      <br />
+      <a href="#top">Back to top</a></strong></p>
+  <p><strong><a name="marvinzalman" id="marvinzalman" class="normalA"></a>Marvin Zalman, Professor, Criminal   Justice<br />
+    &ldquo;Citizenship Explains Changes in Police Interrogation Practices and   Supreme Court Confessions Rulings&rdquo;</strong></p>
+  <p>Police scholarship traces the third-degree?threats and violence to obtain   confessions?from 1900 to its exposure in the 1931 Wickersham Commission, to its   eventual decline and replacement by &ldquo;psychological&rdquo; interrogations. Recent   studies show that false confessions and wrongful convictions result from   excessive pressure during psychological interrogations. </p>
+  <p>Constitutional criminal procedure scholarship traces Supreme Court   interrogation and confessions decisions from the due process era (1936-1966),   outlawing torture and other excesses, to the self-incrimination regime under <em>Miranda v. Arizona</em> (1966), to the present day Supreme Court that   supports an attenuated form of constitutional patrolling of police interrogation   behavior under <em>Miranda.</em>? </p>
+  <p>Speculation whether Supreme Court decisions tempered police excesses after   the 1930s, or whether the Court&rsquo;s current pro-law enforcement approach   encourages false confessions, is inconclusive.? My paper argues that social and   political factors, summarized through the lens of citizenship theory originally   developed by T.? H.? Marshall, offer a better explanation of changes in both   police and Supreme Court behavior than mechanistic ideas of police   professionalization or legal impact.? The notion that expanding indicia of   citizenship tend to accompany, or &ldquo;cause,&rdquo; more &ldquo;civilized&rdquo; police behavior and   more defense-leaning Supreme Court decisions is better seen as a heuristic than   a deterministic model. </p>
+  <p><strong><a name="roslynabtschindler" id="roslynabtschindler" class="normalA"></a>Roslyn Abt Schindler, Associate   Professor, CMLLC <br />
+  </strong><strong>&ldquo;Enduring Connections: </strong><strong>Exploring Personal Roots and Professional Community in   Poland&rdquo;</strong></p>
+  <p>In May 2009, I had the privilege of attending an international conference on   the Holocaust (&ldquo;Legacy of the Holocaust&rdquo;) hosted by The Jagiellonian University   in Krakow.? I took the opportunity to explore my connections to Poland for   several reasons: my mother&rsquo;s parents were born in Poland; my mother and several   family members were in a Polish forced labor camp (Zbaszyn); numerous relatives   died in ghettos and concentration camps; and I have an abiding professional   commitment to Holocaust Studies.? In addition to being in Krakow and traveling   throughout the area surrounding that city (including several <em>Shtetls</em> and Auschwitz-Birkenau), I visited Warsaw and northern Poland.?</p>
+  <p><br />
+    This will be a photographic presentation about the places I visited with   the following questions in mind: Which remnants of former Jewish life?and   death?remain in the <em>Shtetls</em>?? Is there a resurgence of Jewish life in   Poland?? If so, where, and what characterizes it??</p>
+  <p><strong><a name="toddmeyers" id="toddmeyers" class="normalA"></a>Todd Meyers, Associate Professor, Medical   Anthropology <br />
+    &quot;Clinical Reasoning and the Threat of the   Unreasonable&quot;</strong></p>
+  <p>
+    <embed height="32" type="audio/mpeg" width="374" src="audiofiles/TMeyers110409.mp2" loop="True" autostart="False"></embed>
+  </p>
+  <p>Pharmaceutical interventions take on a different character once treatment   moves outside a closely monitored clinical environment.? In the presentation,   Professor Meyers will detail the experiences of adolescents under treatment for   opiate dependence using a relatively new pharmacotherapy, buprenorphine   (Suboxone? and Subutex?), as these adolescents make the transition from a <span id="lw_1257268045_0">residential drug rehabilitation center</span> back to their   neighborhoods and other institutional environments.? He will offer an account of   how the thin line between <em>licit</em> and <em>illicit</em> opiate use is   drawn, and show how adolescents who are otherwise &ldquo;non-compliant&rdquo; and   &ldquo;self-medicating&rdquo; adopt similar forms of clinical reasoning to their   physicians.? The writing traces the way pharmacotherapy is experienced under   social and economic constraints, and considers how efficacy, certainty, and   success are shaped and challenged by the social worlds in which adolescents   participate outside the clinical environment.<strong><br />
+  </strong></p>
+  <p><strong><a name="doraapel" id="doraapel" class="normalA"></a>Dora Apel, Associate Professor, Art &amp; Art   History <br />
+    &ldquo;What is Radical Art Today?&rdquo;</strong></p>
+  <p>
+    <embed height="32" type="audio/x-wav" width="373" src="audiofiles/DoraApel111109.wav" loop="True" autostart="False"></embed>
+  </p>
+  <p>Since television first transformed the home from sanctuary and retreat from   the threat of the world into a zone easily entered by war, the Internet and   global blogosphere have extended the integration of the domestic and the   military, progressively dissolving the boundary between private and public, or   homefront and battlefront. In this paper, I examine the work of two   artists--Martha Rosler and Krzysztof Wodiczko?and the guerilla theater of the   group Iraq Veterans Against the War (IVAW) in order to reflect upon the   mobilization of media and military practices for radically oppositional   purposes. I analyze different ways of &ldquo;being political&rdquo; within the public sphere   of visual culture specifically in relation to the American wars in Iraq and   Afghanistan.<strong><br />
+  </strong></p>
+  <p><strong><a name="anniehiggins" id="anniehiggins" class="normalA"></a>Annie Higgins, Assistant Professor, CMLLC <br />
+    &ldquo;Woman&rsquo;s Smile, History&rsquo;s Gaze: Authority in Arabic Currencies&rdquo;</strong></p>
+  <p>This talk explores the images, symbols, and texts of paper currencies from   various Arab countries to reveal different levels of cultural identity, and to   trace relationships among local and global users of the currency, as well as   religious and state institutions. A queen, a peasant picking cotton, and   schoolchildren are imprinted on the banknote and, less overtly, on the user's   consciousness.</p>
+  <p>While a currency constitutes a concrete demonstration of a state&rsquo;s authority,   it draws its choices from accepted representations of a people&rsquo;s   self-identification. What historical figures tell the country&rsquo;s story ? are they   legends or people? How far back do they reach into history and how closely do   they approach contemporary developments? History appears in statues, scenes of   national triumph, numismatic imprints, and faces. Considering that some   interpretations of Islam frown on animate images, does this affect the engraved   faces and smiles? Does a concomitant to &quot;In God we trust&quot; appear?</p>
+  <p>A closer look at these currencies may change some notions of the cultural and   economic identities of Arab societies, at a time when westerners are casting an   economic glance eastward. With the backdrop of a united future world currency   introduced at the G8 summit last July, this paper will pose questions about a   currency's continuing ability to define the borders of its nation.</p>
+  <p><strong><a href="#top">Back to top</a></strong></p>
+  <p><strong><a name="jamiegoodrich" id="jamiegoodrich"class="normalA"></a>Jaime Goodrich, Assistant Professor,   English</strong><br />
+    <strong>&ldquo;Who is Mrs. M.B.?: Monastic Authorship and the Case   of Dame Clementia Cary&rsquo;s Psalms&rdquo;</strong></p>
+  <p>
+    <embed height="32" type="audio/mpeg" width="374" src="Jamie Goodrich.mp3" loop="True" autostart="False"></embed>
+  </p>
+  <p>In 1793, French soldiers burst into the English Benedictine convent in   Cambrai and loaded the surprised nuns into carts without giving them time to   collect their belongings.? While the nuns themselves were eventually sent to   England, many of this convent&rsquo;s voluminous writings still remain on the   Continent.? This essay considers the larger scholarly implications of one such   manuscript: MS 20H39, a set of Psalm paraphrases held by the Archives   D?partementales du Nord in Lille, France.? For twenty years, critics have argued   that Dame Clementia (Anne) Cary (1615-1671) wrote this text.? Dame Clementia was   the daughter of Elizabeth Cary, the first Englishwoman to write an original   play, and feminist scholars have favorably compared MS 20H39 with the   metaphysical poems of John Donne and George Herbert.? Yet while this text may   have been <em>written </em>and then <em>revised </em>by a nun (probably not Dame   Clementia), it was originally <em>composed</em> by Protestant poet Samuel   Woodford.? An analysis of the text&rsquo;s reception history reveals that wishful   thinking led scholars to ignore the manuscript&rsquo;s troubling physical evidence.?   Ultimately, MS 20H39 tells us as much about scholarly hopes of finding nuns&rsquo;   writings as it does about the role of authorship in 17th-century convents for   Englishwomen.<strong><br />
+  </strong></p>
+  <p><strong><a id="marionjackson" name="marionjackson" class="normalA"></a>Marion Jackson,   Distinguished Professor, Art &amp; Art History <br />
+    &ldquo;Bandits &amp; Heroes: Art   and Popular Imagination in Brazil&rsquo;s Northeast&rdquo;<br />
+    <embed height="32" type="audio/mpeg" width="373" src="audiofiles/MarionJackson111809q.mp3" loop="True" autostart="False"></embed>
+    <br />
+  </strong></p>
+  <p><strong>Eric H. Ash, Associate Professor, History<br />
+    &ldquo;The Unrecovered   Country: The Non-Drainage of Cambridge Fens, 1619-1620&rdquo;<br />
+  </strong></p>
+  <p><strong><a href="#top">Back to top</a></strong></p>
+  <p><strong>Therese T. Volk, Associate Professor, Music <br />
+    &ldquo;The WPA/DSO Music   Manuscripts: Collaborative Research &amp; Website Development&rdquo;<br />
+  </strong></p>
+  <p><strong><a name="michelevalerie" id="michelevalerie" class="normalA"></a>Michele Valerie Ronnick</strong>, <strong>Professor, CMLLC &quot;The Use of the Roman Poet Vergil? in John Quincy   Adams&rsquo; Speech for the Amistad Africans&quot; </strong></p>
+  <p>In February of 1839, Portuguese slave hunters sold a group of Africans ?from   Sierra Leone into slavery in? Havana, Cuba. Fifty-three were put aboard the   Cuban schooner Amistad? owned by two Spanish planters for shipment to their   plantation. On July 1, 1839, the Africans took control of the ship. After?   killing the captain and the cook, they ordered the planters to head back to   Africa. The planters did not obey and? after weeks? of drifting, the Amistad was   seized off Long Island by an American ship and brought to New Haven, CT. The   jailed Africans were claimed in court by the American ship owner? as his   property. The Federal District Court in Connecticut sent the case, now growing   in notoriety, on to the? Supreme Court in January 1841.? Former President John   Quincy Adams? successfully? defended the Africans and their right to regain   their freedom. My paper will describe how John Quincy Adams used quotations from   Vergil to shape the closing arguments of ?this famous speech.</p>
+  <p><strong><a name="eldonna" id="eldonna" class="normalA"></a>Eldonna Lorraine May</strong>, <strong>Part-time   Faculty, Music </strong><em><br />
+  </em><strong>&quot;Music as Propaganda: Sergei   Prokofiev&rsquo;s Patriotic Cantatas&rdquo;</strong></p>
+  <p>The Patriotic Cantata flourished in Russia during the years following the   1917 Revolution with clearly-defined characteristics because music&rsquo;s affect and   attendant demagogic power was recognized by Soviet leaders and assiduously   exploited by their composers, particularly Sergei Prokofiev following his return   to Russia in the mid-1930s. Prokofiev, as one of the best Soviet composers,   contributed heavily to the genre, including &quot;Cantata for the 20th Anniversary of   the October Revolution,&quot; &quot;On Guard for Peace,&quot; &quot;Ode to Stalin,&quot; and &quot;Flourish   Mighty Land.&quot; This lecture/demonstration investigates Prokofiev&rsquo;s contributions   to the genre of &quot;Patriotic Cantata.&quot;<br />
+  </p>
+  <p><strong>Kathleen McNamee, Professor, CMLLC &amp; Judith Arnold, Librarian   III, University Libraries<br />
+    &ldquo;How do we help students become good   researchers?&rdquo;<br />
+  </strong></p>
+  <p><strong>Nicholas Fleisher, Assistant Professor &amp; Student Advisor, English   (Linguistics Program)<br />
+    &ldquo;Gradability, Vagueness, and the Semantics of   Inappropriateness&rdquo;<br />
+  </strong></p>
+  <p><strong><a name="markferguson" id="markferguson" class="normalA"></a>Mark Ferguson, Senior Lecturer, CMLLC <br />
+    &ldquo;The Fetishization of Study Abroad&rdquo; </strong></p>
+  <p>Study abroad for US undergraduates has changed dramatically since the &ldquo;junior   year abroad&rdquo; movement began in the 1920s.? Today literally thousands of programs   (ranging from a few short weeks to a full academic year) await the   ever-increasing number of students who wish to include study abroad as part of   their undergraduate experience.? Global education and education abroad have   achieved a centrality within the undergraduate curriculum as never before, and   that the field of study abroad has become professionalized in ways unimaginable   not long ago.? It has even been suggested that education abroad ought to be   recognized as an academic discipline in its own right.? Some maintain that study   abroad has become &ldquo;democratized&rdquo; as more and more non-traditional students   participate in programs offered in more and more non-traditional locations.?   Others claim that study abroad has become &ldquo;demystified&rdquo; as a diversity of   program types now overshadows the &ldquo;junior year paradigm.&rdquo;? But as the goal of   study abroad shifts to that of experiential education abroad designed to create   global citizens, isn&rsquo;t study abroad on a collision course with liberal   education?? After all, in our age of assessment, how should the promise of   creating &ldquo;global citizens&rdquo; be judged when there is no consensus about what   constitutes the &ldquo;global competencies&rdquo; these global citizens ought to possess?? </p>
+  <p><strong><a name="jacalynharden" id="jacalynharden" class="normalA"></a>Jacalyn D. Harden, Assistant Professor,   Anthropology <br />
+    &quot;A Tale of Two Cities: Seattle, Detroit, and Twenty-First   Century Wish Dreams</strong>&quot;</p>
+  <p>?&ldquo;How did you move from Seattle to Detroit?&rdquo; The question continues to be   asked, and is just as loaded, six years later. In a &ldquo;Tale of Two Cities,&rdquo; I   focus on these two cities in which I have lived as an anthropologist, consumer,   neighbor, and mother over the past fifteen years. I argue that Seattle and   Detroit are important capitals of the twenty-first century. Just as Walter   Benjamin's famous drafts in <em>The Arcades Project</em> pointed to Paris as the   capital of the nineteenth century, Seattle and Detroit are capitals of the   twenty-first century. And as Benjamin saw Paris' architecture, events, and   notable figures as keys to understanding the nineteenth century, so are these   two U.S. cities capitals&rsquo; historical pasts and presents indicative of the new   millennium.? Current collective global wish dreams, Benjamin&rsquo;s term for   society&rsquo;s wishes and fears, can be seen in the daily life and in the imagery   that surrounds both cities in unexpected ways.? Interwoven tales of Seattle and   Detroit in the early twenty-first century both support and confound in this   context, whether it is the wish dreams of global terrorism or activism   (depending on whose defining), racialized/ethnic divisions (in the era of   biopolitical analysis and the first black U.S. president), or global economic   recoveries (with threats of environmental disaster). <br />
+  </p>
+  <p><a href="#top"><strong>Back to top</strong></a></p>
+  <p><strong>WINTER   SEMESTER</strong><em><br />
+    <br />
+    </em><strong><a id="robertl" name="robertl" class="normalA"></a>Robert L. Thomas, Dean, College of Liberal Arts &amp; Sciences <br />
+      &quot;Connections Between Urban and Global Student Service Learning&quot; </strong><br />
+    <br />
+    <br />
+    It is evident that poverty abounds, and that a primary   means for alleviating poverty is the same everywhere: improved educational   opportunity.? At home we have the all too familiar failing schools and   increasing poverty in our urban cores.? Pandemic poverty exists in rural areas   in Asia, with the disparity between the lot of the rural poor and that of the   urban rich being enormous and growing wider each year. ?In Beijing and Shanghai,   for example, there is a proliferation of luxury automobiles and other evidences   of prosperity, but for the 800 million people in the countryside, the situation   is very different, with people subsisting on an income of roughly one dollar per   day.? As in the USA, there is a corresponding educational divide, but it is   rural China that suffers from poor educational opportunity. ?Students in parts   of the Middle East are also lagging behind educationally and economically, in   part because of pervasive and seemingly intractable political problems. ?The   unfortunate common theme is a worldwide, growing disparity between haves and   have-nots, both economically and educationally.</p>
+  <p>Wayne State University students are finding opportunities to alleviate   poverty through educational assistance for middle school and high school   students here in urban Detroit and in rural areas around the world.?   Illustrative WSU student service-learning activities at home and abroad will be   described in this talk.? The beneficial impact of these educational outreach   activities on the WSU students themselves, as well as on the youth whom they   serve, will be presented.? Similarities among these activities will be discussed   and possible future connections between the urban and global student   service-learning activities will be suggested.<strong><br />
+    <br />
+    <a name="andrewport" id="andrewport" class="normalA"></a>Andrew Port, Associate Professor, History<br />
+    &ldquo;German   Reactions to Genocide since 1945&rdquo;</strong></p>
+  <p>This project explores the ways in which Germans have responded to acts of   genocide that have taken place elsewhere in the world since 1945. It   concentrates primarily on German reactions to the horrific events that occurred   from the mid-1970s to the late 1990s in Cambodia, Rwanda, and the Balkans, and   focuses in particular on the German media as well as on the political,   diplomatic and intellectual establishments. The object of this study is twofold:   first, to delineate and account for the evolution of German foreign policy and   especially its increasingly interventionist role abroad since unification in   1990, ostensibly for humanitarian reasons; and second, to shed new light ?   through the prism of genocide elsewhere ? on how the country most closely   associated with genocide has dealt with its own tarnished past. By examining the   intersection between domestic debates about the Nazi period and the evolving   nature of postwar German foreign policy, this project is especially interested   in understanding the international community&rsquo;s response ? or lack thereof ? to   reports of state-sponsored mass murder, one of the most vitally important of   contemporary foreign policy issues.<strong><br />
+    <br />
+    <a name="aaronretish" id="aaronretish" class="normalA"></a>Aaron   Retish, Assistant Professor, History <br />
+    &quot;Birth of the Soviet Prison: Creating a   Humane Prison in a Socialist World&quot;</strong></p>
+  <p>Russia&rsquo;s prisons are notorious as inhumane institutions that regularly   violate prisoners&rsquo; basic human rights. In part these problems stem from   contemporary prisons&rsquo; ties to the brutal Soviet-era forced-labor prison camp   system (the GULAG system).? Such horrible conditions were not completely by   design.? Experts of the penal system in the early days of the Soviet era   attempted to create a humane prison system free of capitalist, and tsarist,   punishment.? They believed that Soviet prisons could instill socialist values   through reform-centered programs.? Why did the reformers focus on prisons?? How   did they create humane prisons and why did their dreams eventually fail so   horribly?? This paper will examine the birth of Soviet prison and its quick   maturation into one of the world&rsquo;s worst penal systems.<strong><br />
+    <br />
+    <a name="anca" id="anca" class="normalA"></a>Anca Vlasopolos, Professor, English <br />
+  </strong>&quot;<strong>Child   Trauma and Reconfigured Families in Pullman&rsquo;s Neo-Victorian   Fiction</strong>&quot;</p>
+  <p>The family and child &ldquo;ownership,&rdquo; transference of such &ldquo;ownership&rdquo; via   adoption, children&rsquo;s rights, and laws governing adolescent behavior form a nexus   of contemporary preoccupations that inherit their conceptual framework from the   late nineteenth century, when legislation to protect the rights of children was   passed for the first time in history and when the nascent &ldquo;science&rdquo; of   psychology began directing its speculative gaze on the normative bourgeois   family. Many novelists, same as literary critics and theorists, regard the late   nineteenth century as an originary moment in the consolidation of discourses   about family and childhood. I contend that these novelists revisit the past,   change it, in order to propose blueprints for the future, i.e. our present. This   latter project is the aim of Philip Pullman in his YA detective trilogy in which   the first and last books are haunted by children abandoned, traded, adopted,   abused, lost, and in which families are successful social organisms only in   special, mostly non-biological., and non-conforming arrangements. Starting with <em>The Ruby in the Smoke</em>, proceeding through <em>Shadow in the North</em>,   and concluding with <em>The Tiger in the Well</em>, Pullman delivers a   devastating critique of normative families and an encomium of families of   choice. Through this trilogy he also aims his profound and serious political   protests at Empire, industrial and financial capitalism, English laws (Acts)   governing individual rights, and informal codes of propriety that proved nearly   as devastating to women and children as the official ones.</p>
+  <p><strong><br />
+    <a name="sedler" id="sedler" class="normalA"></a>Robert Sedler, Distinguished Professor, Law <br />
+    &ldquo;Our 18th Century Constitution Congress, the President, and our Two-Party   Political System&rdquo;</strong></p>
+  YouTube Videos<br />
+  <br />
+  <br />
+  <div><a href="http://www.youtube.com/watch?v=muUAJfDr_wM" target="_new">Robert Sedler Part   1</a><br />
+    <a href="http://www.youtube.com/watch?v=3FJ2j0ce5Z8"  class="normalA" target="_new">Robert   Sedler Part 2</a><br />
+    <a href="http://www.youtube.com/watch?v=Qnc0cCbqmXA"  class="normalA" target="_new">Robert Sedler Part 3</a><br />
+    <a href="http://www.youtube.com/watch?v=SZV9iArsxHQ" class="normalA" target="_new">Robert Sedler Part   4</a> <br />
+    <a href="http://www.youtube.com/watch?v=2hYkT66-x6Q"  class="normalA"target="_new">Robert Sedler Part 5</a><br />
+    <a href="http://www.youtube.com/watch?v=Ics110pKXRk" class="normalA" target="_new">Robert Sedler Part   6</a><br />
+    <a href="http://www.youtube.com/watch?v=O1PLUFAffzQ" class="normalA" target="_new">Robert   Sedler Part 7</a><br />
+  </div>
+  <p>We live under an 18th century Constitution. The framers were concerned about   the concentration of power in a single branch, and so they established a   constitution embodying 18th century concepts of separation of powers and checks   and balances. The framers did not contemplate political parties, which they   called factions. They assumed that the government would be run by high-minded   men like themselves, so there was no need of political parties. Political   parties, however, appeared in the 1796 Presidential election, and they have been   with us ever since. From a political standpoint, we have a two party system,   with the parties alternating power. In the 28 Presidential elections since 1900,   the Republicans have won 15 and the Democrats 13. We now have a Democratic   President, and the Democrats have substantial majorities in both Houses of   Congress However, as we see in the current debate over health care reform,?it   would be a mistake to overemphasize the dominance of the Democratic Party in   relation to the structure of constitutional governance established by our 18th   Century Constitution. The framers deliberately made it very difficult for   Congress to enact legislation. A law must be passed by both houses in identical   form and approved by the President (the Constitution doesn&rsquo;t use the term   &quot;veto&quot;) or passed by both Houses by two-thirds vote over the President&rsquo;s   disapproval. This happens very rarely,. At the same time, while the Constitution   gives the President the power to propose legislation, the Congressional leaders   decide whether they want to consider the President&rsquo;s proposals. As a result, as   we?saw with respect to the proposed stimulus passage, and as we are seeing now   with respect to health care reform.?the President must negotiate with Congress,   and Congress in turn must negotiate with the President. If politics is truly the   art of compromise, the art of compromise is structurally embodied in the   American constitutional system.<strong><br />
+    <br />
+    <a name="kauffmann" id="kauffmann" class="normalA"></a>Leisa   Kauffmann, Assistant Professor, CMLLC <br />
+    &ldquo;Disguising the Man-god: Rulership and   Religiousity iin colonial Nahua Histories&rdquo;</strong></p>
+  <p>Early colonial texts from New Spain testify to the importance of lines of   rulership in Nahua societies both before and after the conquest. Genealogical   lists, annals, chronicles, and mixes of other genres of historical records   carefully list rulers and their descendents up to and beyond the early years of   the conquest and colonization. The Spanish conquest, however, brought to a   rather sudden end the hegemony of the mighty <em>hueitlatoque </em>or <em>&ldquo;great   rulers&rdquo; </em>who were in power shortly before the time of the conquest. This   study examines important representations of Moteuczoma and Nezahualcoyotl, two <em>hueitlatoque </em>who figure prominently in colonial documents, and Hern?n   Cort?s, the famous Spanish conquistador who conquered Tenochtitlan, capital of   the Mexica empire, in 1521. Focusing on the characteristics attributed to the   pre-Hipanic Nahua ruler?as a so-called &ldquo;man-god,&rdquo; or manifestation of divine   forces in the earthly realm?I argue that colonial narratives, taken together,   tell a collective story about the cultural and material transformation of Nahua   rulership to subaltern status under Spanish dominion.<strong><br />
+    <a href="#top"><br />
+      Back to top</a> <br />
+    <br />
+    <a name="melba" id="melba" class="normalA"></a>Melba Boyd, Distinguished Professor &amp; Chair, Africana Studies <br />
+    &ldquo;From Motown to Shanghai: Teaching African American Studies in   China&rdquo;</strong></p>
+  <p>Professor Melba Joyce Boyd will present an?overview of her experiences at   Fudan?University in Shanghai , China as?well as a slide presentation from her   trip.?In October 2009, she taught a?graduate seminar on &ldquo;African?American   Literature in Film&rdquo; primarily for students in?Comparative?Literature and English   Education.?She will share how she adapted pedagogical methods for this unique   student?composition, and explain the?challenges she?encountered in the   classroom.?The presentation will also address, to a limited extent, the   historical presence of African Americans in China , as well as?the growing   interest in African American culture in Chinese?universities and in contemporary   culture.</p>
+  <p><strong><br />
+    <a name="harris" id="harris"class="normalA"></a>William Harris, Professor, English<br />
+    Booker   T. Washington Goes to the Movies</strong></p>
+  <p>Booker T Washington Goes to the Movies, is excerpted from Booker T Gets the   Blues; a continuing look at the Booker T. Washington era, in a post-bop-creative   writer-meets-history work in progress.?The poetic revisiting and revision is a   hypostatizing of Washington&rsquo;s viewing of Birth of a Nation, D. W. Griffith&rsquo;s   technically brilliant but thoroughly racist film commemorating the rise of the   Ku Klux Klan during Reconstruction.?There is no specific record of when and   where, during the last year of his life, Washington saw the film?or even that he   actually saw it.?I place the event at Tuskegee, his training school for the   manual arts, where young men and women trained for positions in a re-segregated   world.?Among those present are the historical figures Mrs. Washington, and   George Washington Carver, the chemurgist, inventor and Tuskegee professor, as   well as the student body, and teachers, including a ragtime playing mathematics   professor who lays down a signifying and syncopated accompaniment to the   film.</p>
+  <p><strong><br />
+    <a name="livermon" id="livermon" class="normalA"></a>Xavier O&rsquo;Neal Livermon, Assistant Professor, <br />
+    Representations of Sophiatown in Kwaito Music: Mafikizolo and Musical Memory   in Post Apartheid South Africa</strong></p>
+  YouTube Videos<br />
+  <br />
+  <br />
+  <div><a href="http://www.youtube.com/watch?v=B9I4i5DzWYI"  class="normalA"target="_new">Xavier O'Neal   Livermon Part 1</a><br />
+    <a href="http://www.youtube.com/watch?v=fdqXxjFIPc0" class="normalA"="_new">Xavier O'Neal Livermon Part 2</a><br />
+    <a href="http://www.youtube.com/watch?v=PcFRSX7rtbM" class="normalA" target="_new">Xavier O'Neal   Livermon Part 3</a><br />
+    <a href="http://www.youtube.com/watch?v=8TmYOAAp2Tw"  class="normalA"target="_new">Xavier O'Neal Livermon Part 4</a> <br />
+    <a href="http://www.youtube.com/watch?v=4Nvs3M9Jtcw"  class="normalA"target="_new">Xavier O'Neal   Livermon Part 5</a><br />
+    <a href="http://www.youtube.com/watch?v=el_KY-Woz-w"  class="normalA"  target="_new">Xavier O'Neal Livermon Part 6</a><br />
+    <a href="http://www.youtube.com/watch?v=Srfmxal5jWs"  class="normalA"target="_new">Xavier O'Neal   Livermon Part 7</a><br />
+    <a href="http://www.youtube.com/watch?v=Q53nIaMhdcc" class="normalA" target="_new">Xavier O'Neal Livermon Part 8</a></div>
+  <p>Within months of the first democratic elections in South Africa, media and   cultural critics began to notice <em>kwaito</em> music as a new popular musical   form that was taking the black townships by storm and causing much controversy   in its wake. This talk considers one aspect of <em>kwaito</em> performers&rsquo;   relationship with politics by investigating the role of the past in relationship   to contemporary musical performance. I will argue that the citational practices   of <em>kwaito</em> musicians destabilize the easy dismissal of the musical form   as consciously apolitical and unconcerned about the struggles of the past.   Instead, <em>kwaito</em> musicians&rsquo; citation of the past reveals a group of   artists who are extremely sensitive of the sacrifices made on their behalf.   Their use of sartorial, sonic, and kinesthetic markers of previous South African   musical genres indicates a sophisticated grasp of the present and a need to   remember the dismembered past. In the latter instances, <em>kwaito</em> musicians renew past musical milestones, updating them to make them sound fresh   in the present, while simultaneously capturing the creativity and aura that made   them hits in the past. Looking both ways at once has never been this   pleasurable.<strong><br />
+    <br />
+    <a name="montilus" id="montilus"class="normalA"></a>Guerin Montilus, Professor,   Anthropology &amp; Penny Godboldo, Associate Professor, Dance, Marygrove   College<br />
+    &ldquo;Katherine Dunham (June 22, 1909-May 21, 2006): The Centennial   birthday of an African American Woman, Pioneer in Anthropology and Queen of the   Black Dance&rdquo; </strong></p>
+  <p>Katherine Dunham is one of the heroines of? African American history in the   Twentieth Century. She was born on June 22, 1909 and died on May 21, 2006.   Dunham brought African dances to the core of American culture and the attention   of a broad public. She demonstrated how dance is connected to all aspects of   African, African American, and African Caribbean cultures. She did especially   ethnographic fieldwork in Haiti and studied especially Vodou religious rhythms   and body movements and showed that they are culturally patterned. The forms of   artistic expression, music and songs refer to daily life of the people perceived   through their myths and rituals. Dance in the African tradition, like Dunham saw   it, is a microcosm of a macrocosm. It is a complex whole which refracts   symbolically the community imagination, institutions, forms and function as a   whole. That is a central theme which her research, anthropological publications,   and her choreography. This lecture will analyze Katherine Dunham&rsquo;s life and   legacy and their importance for the Twentieth-First Century. It is important to   recall her memory in this African American History Month and centennial   celebration of her birthday, and remind her influence at a moment when   globalization and consumerism threaten to engulf local cultural identity. <strong></strong><strong><br />
+    <br />
+    <a name="norah" id="norah"class="normalA"></a>Norah Duncan IV, Associate   Chair, Music<br />
+    Norah Duncan IV: <span id="lw_1262707821_">A Celebration</span> of <span id="lw_1262707821_2">Black History Month</span> in Song</strong></p>
+  <p>Throughout our history, <span id="lw_1265651762_3">African American   composers</span> of <span id="lw_1265651762_4">vocal music</span> have captured   both the sorrows and joys of their people.? Their music has helped shape and   define what is our American music.? The WSU Concert Chorale will present a   program of <span id="lw_1265651762_5">choral music</span> in celebration of <span id="lw_1265651762_6">Black History Month</span>.? Most of the program consists of   works written by Black composers who were either born or educated in Michigan:   Robert A. Harris and Brazeal Dennard, both of whom are WSU alumni, and <span id="lw_1265651762_7">Adolphus? Hailstork</span>?? The other composers were   frequent visitors to <span id="lw_1265651762_8">Detroit</span>, <span id="lw_1265651762_9">Wayne State University</span>:? Ysaye Barnwell and <span id="lw_1265651762_10">William Dawson</span>.? The works of both <span id="lw_1265651762_11">Undine Smith Moore</span> and <span id="lw_1265651762_12">Adolphus Hailstork</span> were frequently performed by the <span id="lw_1265651762_13">Detroit Symphony Orchestra</span>. </p>
+  <p><strong><a name="goldberg" id="goldberg"class="normalA"></a>David Goldberg, Assistant Professor, Africana   Studies <br />
+    Black Power at Work: Community Control, Affirmative Action and the   Construction Industry</strong></p>
+  <p><em>Black Power at Work</em> chronicles the history and evolution of the   black protest movements for construction jobs between 1963-69 that gave rise to   modern affirmative action politics in the United States. Its case studies of   local movements in Brooklyn, Newark , the Bay Area, Detroit , Chicago and   Seattle show how building trades union racism became &ldquo;the central symbol for our   time of the quest for equality in employment opportunity.&rdquo; These movements   directly impacted, and were impacted by, the ascendancy of Black Power and   community control organizing during the 1960s. The overt nature of racial   segregation in the construction industry had long inspired black community   protests that politicians ignored. But when government War on Poverty and urban   redevelopment programs hired white construction workers to rebuild black   inner-city neighborhoods in the wake of urban rebellions in the mid-1960s, black   community protests targeted government itself. Forced to respond, politicians   used affirmative action as &ldquo;crisis management&rdquo; in the construction industry then   expanded this model throughout the country. But rather than ending there, as   most histories of affirmative action do, <em>Black Power at Work </em>also   exploreswhy affirmative action failed to desegregate the construction industry.   In response to &ldquo;hardhat&rdquo; protests by building trades union leaders, Nixon   retreated from enforcing affirmative action by promoting &ldquo;voluntarism&rdquo; that let   unions and employers violate affirmative action plans with impunity. In the face   of union resistance and the lack of political will to desegregate the workplace,   radical black community activists increasingly sought black community control of   the inner city economy. Their Black Power movements for jobs and power in the   1960s shaped the development of an alternative, community-based labor movement   that fused demands for affirmative action and inner-city jobs programs in the   1970s. <strong><br />
+  </strong></p>
+  <p><strong><a href="#top">Back to top</a></strong></p>
+  <p><strong>R. Khari Brown, Assistant Professor, Sociology <br />
+    &ldquo;The Impact of   Religion on African American Immigration Attitudes&rdquo;</strong></p>
+  <p>The current study assesses the relationship between exposure to political   cues from clergy and African American immigration attitudes. At first glance,   these findings suggests that the more political messages that blacks hear from   their clergy, the more critical they are of the immigrant presence. However, a   more critical look at the data suggest that these political messages only sway   the immigration attitudes of blacks that are worried about their own or the   nation&rsquo;s economic well being. This may suggests that economically concerned   African Americans are particularly sensitive to political cues that emphasize   policies, immigration being among them, that may threaten African American life   chances.<strong><br />
+    <br />
+    <a name="ntiri" id="ntiri" class="normalA"></a>Daphne Ntiri, Associate Professor,   Africana Studies &amp; Merry Stewart <br />
+    &ldquo;Transformative Learning Intervention:   Effect on Functional Health&rdquo;</strong></p>
+  <p>The United States is in the midst of a literacy crisis.? Adult illiteracy   rates, particularly among African Americans and other minority groups, are   profoundly troubling and demand innovative solutions. Those solutions must not,   however, merely focus on the traditional skills of &ldquo;reading, writing, and   arithmetic&rdquo; (though these are certainly needed). An effective bridge must be   built across America&rsquo;s social divide ? a deep chasm rooted in racism and the   excesses of our economic system. Literacy is both a casualty of American social   structures and one of our best hopes for altering these structures. Adult   literacy theories thus, must shift from a complete reliance on traditional   pedagogical approaches to alternative learning approaches in order to motivate   adults to become more active in the learning process. Transformative Learning   (TL), inspired by Freire&rsquo;s theory of critical consciousness promotes the   application of transformative learning principles as an instrument for personal   reflection and social change. The current study utilizes TL principles on   functional health literacy and diabetes knowledge in older African Americans   with diabetes to evaluate the effect of an education   intervention.<strong><br />
+    <br />
+    Osumaka Likaka, Associate Professor, History <br />
+    &ldquo;Colonialism, Stereotyping, and New Ethnic Identities in Congo&rdquo; <br />
+    <br />
+    <a name="nails" id="nails" class="normalA"></a>Alicia Nails, Lecturer, Communication <br />
+    &ldquo;Recruiting,   Retraining, and Retaining the Urban Student&rdquo;</strong></p>
+  <p>Wayne State University actively recruits and aggressively services graduates   of urban high schools, including those from the Detroit Public Schools.? The   national literature distinguishes factors that operate to either affect or   predict the collegiate success rates for urban students. This colloquium will   review key literature and then narrow the focus to the specific factors that   most affect WSU&rsquo;s entering freshmen, to best program around obstacles and   incorporate proven best practices.? </p>
+  <p>The Journalism Institute for Media Diversity Learning community is an honors   program that recruits students who express an early desire to assertively work   towards careers in the print, broadcast or internet based news media. This   successful &ldquo;professional specific&rdquo; program can serve as a model for recruiting   high school seniors, retraining to achieve college-level study skills and   exposure to the intangible academic skills that operate to retain the urban   student.<strong><br />
+    <br />
+    Monica M. White, Assistant Professor, Sociology <br />
+    &ldquo;D-Town Farm: Conversations about Race and the Urban Gardening Movement in   Detroit&rdquo;</strong></p>
+  <p>This paper examines how urban farmers engage in community gardening as a   means of renegotiating their social relationships with other racial groups and   their relationship with the environment to solve community problems and   re-create the city from the bottom up. Through an examination of community   gardeners, I provide an alternative perspective on the persistent representation   of Detroit as a site of urban decay that is in ruins. These gardens operate as   an alternative food system that provides healthy, nutritional, sustainable,   locally grown produce for people who live in areas defined as food   insecure?geographical locations where economic and physical barriers stand   between people and a healthy and safe food supply. The gardens allow citizens to   create new relationships with the environment through political and personal   agency.? They reconstitute relationships between communities and nature, between   communities and the political structure, among people of various classes and   races, and between defunct manufacturing plants and potential   revitalization.<strong><br />
+    <br />
+    <a name="zimmerman" id="zimmerman"class="normalA"></a>Marilyn Zimmerman,   Associate Professor, Art &amp; Art History <br />
+    &ldquo;Detroit Photography&rdquo;</strong></p>
+  <p><em>DETROIT IMAGES</em> draws from the archive and rephotographic project <em>Woodward Avenue ONLINE: Globalizing the Motorcity&rsquo;s Major Artery</em>. The   digitization project and process illuminates possibilities and benefits, limits   and drawbacks regarding the experience of the photographic analog/digital   transition. These comparative experiences and the subsequent generativity from   the URBANOLOGY photography classes will be shared. Technological reform of image   based information serves the revolution of visual literacy as we are   increasingly becoming an image based global language system propelled primarily   by photographic imagery. This also serves the question of photographic/education   reform. How can we utilize and incorporate new technologies; be connected and   not just hooked up, communicate and not just chat, photograph and not just   snap?<strong><br />
+    <br />
+    <a href="#top">Back to top</a> <br />
+    <br />
+    Jose A. Rico-Ferrer, Assistant Professor, CMLLC <br />
+    &ldquo;Poetic Friendships:   The case of Boscan and Garcilaso&rdquo;</strong></p>
+  <p>Bosc?n&rsquo;s and Garcilaso&rsquo;s literary productions take the form of various   collaborations, such as Garcilaso&rsquo;s help with Bosc?n&rsquo;s translation to Castilian   in 1534 of <em>The Book of the Courtier</em> by Baldassare Castiglione. This   will be followed by Bosc?n&rsquo;s self-edition of his poems in 1543, together &ldquo;with   some of Garcilaso&rsquo;s works,&rdquo; as the title reads. This presentation focuses on the   role played by their constant friendship in their literary activity. By   analyzing the use of certain elements on <em>filia</em> in their writings, a   more precise understanding of the dynamics of their friendship can be reached.   Their grade of symbiosis in means and objectives work in tandem to frame and   disseminate a new discourse of Italianate poetry and courtiership. In fact,   their relationship has a writerly character manifested through multiple poematic   references, and their mutual literary collaboration. Hence, from the analysis of   their tropes of friendship can be inferred important clues as to the   homonormative politics of masculinity they engage in through their shared   imaginative process, and more specifically their poetic   performances.<strong><br />
+    <br />
+    Eugenia Casielles, Associate Professor, CMLLC &amp;   Dolly Title, GTA, CMLLC <br />
+    &ldquo;Spanish &amp; English in Contact: Codeswitching   strategies and radical bilingualism&rdquo;</strong></p>
+  <p>Inspired by the Humanities Center interest in interdisciplinary   collaborations, this presentation offers a literary and a linguistic perspective   on the bilingual text <em><span id="lw_1268151263_10">The Brief Wondrous Life of   Oscar Wao</span></em> by <span id="lw_1268151263_11">Junot D?az</span>. In the   first part of our presentation, we place this work in the context of other   bilingual texts written by Hispanic writers in the United States . We consider   Torres&rsquo; (2007) analysis of codeswitching strategies by Hispanic authors and we   show that this work would fall into her &ldquo;radical bilingualism&rdquo;category. In the   second part of our presentation, we introduce some of the most influential   structural models of codeswitching and we examine the particular way in which   codeswitching is used in this novel. Not surprisingly, this text contains some   instances of intersentential codeswitching, as well as intrasentential   alternation. However, in contrast with other radical bilingual texts such as   Braschi&rsquo;s <em>Yo-Yo Boing!</em> where the alternation is expanded outwards   beyond the sentence level to include whole paragraphs and sections in Spanish,   the main strategy used in this text, which is more subtle, but still powerful,   goes from the sentence and even the phrasal level inwards down to the word   level, and rather than alternating with English, Spanish becomes part of   English. <strong><br />
+    <br />
+    <a name="sengstock" id="sengstock"class="normalA"></a>Mary Cay Sengstock, Professor,   Sociology <br />
+    &ldquo;Voices of Diversity-Interviews with People on the &lsquo;Assimilation   Side&rsquo; of Multi-Culturalism&rdquo;</strong><br />
+    <embed height="32" type="audio/mpeg" width="374" src="audiofiles/DW_C0174a.mp3" loop="True" autostart="False"></embed>
+  </p>
+  <p>The United States is home to persons from diverse cultures.? American   commentators have often discussed the role of these cultures in relation to each   other and on American society as a whole.? Usually, this analysis has focused on   a description of the characteristics of the varying racial, nationality, and   religious groups:? African Americans, Polish Americans, Jewish Americans, and so   on.? However, throughout this entire period, some members of these groups have   left the original groups to which they belonged and merged into American society   as a whole, largely through inter-marriage.? Little attention has been paid to   the characteristics of individuals who are the offspring of these mixed   marriages.? This study interviewed 30 people who grew up in such families; they   were of diverse ages, and from mixed race, mixed, nationality, and mixed   religion backgrounds.? They grew up from the 1940s and 1950s, when ethnic and   religious intermarriages were highly disapproved, to the 1980s and 1990s, when   inter-racial marriages were the major target of disapproval.? This lecture will   focus on the problems ? and the assets ? of these mixed background   individuals.<strong><br />
+    <br />
+    <a name="mccormick" id="mccormick" class="normalA"></a>Patricia K. McCormick,   Associate Professor, Communication<br />
+    &ldquo;Transforming Intergovernmental Satellite   Organizations into Private Equity Assets&rdquo;</strong></p>
+  <p>The application of neo-liberal principles to the telecommunications sector   has been accompanied by the privatization and restructuring of the world&rsquo;s most   prominent intergovernmental satellite organizations, namely, the International   Telecommunications Satellite Organization (INTELSAT) and the International   Mobile Satellite Organization (INMARSAT).? The enactment in March 2000 of U.S.   legislation, the Open-market Reorganization for the Betterment of International   Telecommunications Act or ORBIT Act, set forth specific criteria relating to the   privatization of INTELSAT and INMARSAT.? The ORBIT Act fundamentally altered   these intergovernmental treaty arrangements, transforming these   intergovernmental satellite organizations into private corporate enterprises,   owned, no longer by governments and by extension, citizens, but by private   equity firms.?</p>
+  <p>The privatization of the two organizations is structurally similar in that   intergovernmental agencies were created to ensure that the private companies   adhere to public service standards.? The International Mobile Satellite   Organization (IMSO) was established to ensure that Inmarsat continues to meet   its public service obligations, including those relating to the Global Maritime   Distress and Safety System.? The International Telecommunications Satellite   Organization (ITSO) was designated to serve for a minimum period of twelve years   to ensure that Intelsat meet its public service and lifetime connectivity   obligations to those developing countries largely dependent on its services and   pricing mechanisms. </p>
+  <p>Methodologically, the comparative case study is employed, as this research   analyzes the structural and ownership alterations of both INMARSAT and   INTELSAT.? It also seeks to address some of the implication of these changes for   developing states which remain dependent on these organizations to meet their   telecommunications needs.? In the context of international regime change, this   work critically examines the process of privatizing INTELSAT and INMARSAT and   post-privatization developments as well as the ability of the intergovernmental   agencies to effectively oversee their respective charge.? <strong><br />
+    <br />
+    Elizabeth Dorn Lublin, Assistant Professor, History <br />
+    &ldquo;Citizens and Social Work in Meiji Japan&rdquo;</strong></p>
+  <p>The <span id="lw_1268151263_1">Meiji period</span> (1868-1912) witnessed the   emergence of a <span id="lw_1268151263_2">vibrant reform movement</span>, which   aimed not to overthrow the establishment, but rather reshape and improve it. Far   from being monolithic, it involved a diverse community of participants,   incorporated a variety of different concerns, and included a range of tactics.   Avowed Buddhists, Catholics, and Protestants participated, as did Japanese who   did not identify with any one particular religious group. Collectively, they   agitated for voting rights, <span id="lw_1268151263_3">prison reform</span>,   regulation of factory conditions, an end to the death penalty, and temperance.   They also institutionalized <span id="lw_1268151263_4">social welfare</span> through the opening of orphanages and almshouses, the establishment of rescue   houses for prostitutes, and the operation of hospitals and schools for the poor.   This talk will focus on the latter <span id="lw_1268151263_5">social work   endeavors</span> and argue that, with these, reformers did not attempt simply to   ameliorate the harsh conditions of life created by <span id="lw_1268151263_6">Japan</span> &rsquo;s rapid modernization. They sought to define   good citizenship, through their own actions and the instruction they provided   and, in the process, challenged the state&rsquo;s attempt to dictate proper   roles.<br />
+    <strong><br />
+      <a name="renee" id="renee" class="normalA"></a>renee c. hoogland, Associate Professor,   English <br />
+      &ldquo;Ethics, Aesthetics, and the Arts of the Present&rdquo;</strong></p>
+  <p>Last year saw the foundation of The Association for the Study of the Arts of   the Present, a particular instantiation of a more overall trend in critical   cultural studies that is perhaps most manifestly marked by the emergence of   visual culture as growing and important interdisciplinary field of study. But   what does it mean to study the art of the present? How is this different from   studying the art of the past? And what would be the benefits of studying art   outside and beyond traditional (art historical) frameworks? Rather than   answering such questions, this paper stages a conversation between contemporary   art critical writings and the work of two very different visual artists to   explore the ethical implications of contemporary aesthetics by focusing on the   significance of the aesthetic encounter and on the work that art does in the   world.<strong><br />
+    <br />
+    <a href="#top">Back to top</a> <br />
+    <br />
+    <a name="lisamaruca" id="lisamaruca" class="normalA"></a>Lisa Maruca, Associate Professor, English <br />
+  </strong><strong>The ABC&rsquo;s of Print Culture: </strong><strong>Alphabetic   Literacy and Educational Technologies in 18th-Century England</strong></p>
+  <p>There is perhaps nothing as misleadingly simple as the ABC&rsquo;s. Traditionally,   work on the alphabet has focused on large-scale social and historical   ramifications of this sort of literacy. Ivan Illich and Barry Sanders, for   example, argue that the written word created the modern human, while Brian   Rotman contends that nothing less than God Himself emerged from the invention of   the alphabet. While these works and others provide useful analyses of   macro-level cultural change, they often neglect the vital interplay of media and   agency at multiple and often heterogeneous sites. Scholars in the history of the   book should view this gap as an invitation. Fruitful research remains to be done   in the identification and examination of local instances of technological and   cultural negations with alphabetic literacy. This paper proposes such a study of   the alphabetic texts that circulated as educational tools in late   eighteenth-century England, such as abecedaries, battledores, primers and even   type specimen sheets. Specifically, I will discuss the role of the print trade   in marketing products designed to construct the literate citizen in this   period?literate not just in traditional terms, but technologically literate as   well. Battledores, for example, labeled alphabets not just as letters, but as   specific forms of type, such as Roman or Gothic. Students were not meant to copy   these shapes, just learn to read them. Alphabet toys and texts thus served as an   introduction to a specific form of literacy based on the passive reading of   print products.</p>
+  <p><strong><a name="chandra" id="chandra" class="normalA"></a>Sarika Chandra, Assistant Professor, English <br />
+    Americanization:? Management Theory and the Humanities</strong></p>
+  <p>On January 9th 2010, <em>The New York Times</em> (&ldquo;Multicultural Critical   Theory. ?At ?B-School?&rdquo;) reported that over the past two decades the curricula   of North American business schools have placed increased emphasis on culture,   critical thinking and diversity, areas that have traditionally fallen under the   purview of the liberal arts. ?This talk analyzes how?this trend, simultaneous   with a correspondingly increased?attention to questions of?business and   corporate practices in the humanities themselves, supplies an especially apt   context within which to examine the reconfiguration of disciplinary practices   within the discourses of globalization and Americanization.?Americanization,   which typically projects itself as a network of power via forms of corporate   practice and managerial know-how (both within the U.S. and internationally) must   nevertheless seek to rationalize itself through cultural theory, literary   fiction and questions of multiculturalism. This talk explores this phenomenon   from the general standpoint of (inter)disciplinarity, globalization, American   imperialism, and oppositional   politics.<strong><br />
+    <br />
+    </strong><strong><br />
+      <br />
+      <a id="schess" name="schess" class="normalA"></a>Simone Chess, Assistant Professor, English <br />
+      &ldquo;Performing   Blindness: Representing Disability in Early Modern Popular Performance and   Print&rdquo;</strong></p>
+  <p>While we have often attended to the metaphor of blindness in early modern   literature, little attention has been devoted to instances in which literary   texts present us with representations of individuals who are actually blind.   What is the purpose of these blind characters, on the stage and on the page?   What can we learn from the textual specifics of their disabled bodies and of   their use of adaptive language and technology? What does the spectacle of visual   impairment mean for sighted (and for blind) readers or audiences?? Using   examples of blind and blinded characters in sources that include Shakespeare&rsquo;s <em>2Henry6</em> and the anonymous sixteenth-century play <em>Jacob and   Esau</em>, sixteenth and seventeenth-century scientific texts, and cheap-print   ballads and broadsides, this talk will trouble the ways that we think about   blindness in literature, and will interrogate the place of disability theory in   early modern studies. <strong><br />
+    <br />
+    <a id="jpruchnic" name="jpruchnic" class="normalA"></a>Jeff   Pruchnic, Assistant Professor, English <br />
+    &ldquo;What is Virtual Life?: Evolution,   Ecology, and Ethics Online and On Earth&rdquo;<br />
+    <br />
+    </strong>Two arguments are made   in this talk, both of which are fairly straightforward but at the same time   somewhat perverse insofar as they try to invert traditional approaches to the   subjects under review. The first is that the creation and population of &quot;virtual   worlds&quot; -- online communities that take place inside computer-based simulated   environments -- is an example of one of three primary ways that the purposes   that drive biological evolution, as first defined by Darwin, take place in   contemporary times, a moment in which many evolutionary biologists have proposed   that human biological evolution has ended, or at least no longer functions in   the ways in which we have traditionally conceived of evolution. The second is   that studying the ways that virtual worlds and the &quot;virtual life&quot; populating   them have developed and been sustained online might also offer novel strategies   for thinking through one of the more urgent concerns of contemporary biological   life: environmental crises and the question of how to promote more sustainable   lifestyles and uses of natural resources.<br />
+    <br />
+    In taking up these questions,   this talk also discusses more generally the difficulties of defining evolution   and &quot;life&quot; and various attempts to link biological evolution and human ethics   from the nineteenth century into the present.? <strong><br />
+      <br />
+      <br />
+      <a id="karenliston" name="karenliston" class="normalA"></a>Karen Liston, Librarian III, University   Libraries <br />
+      &ldquo;Research in a Global Context: Issues and Opportunities   &rdquo;</strong></p>
+  <p>In November of 2009, the Internet experienced &ldquo;the greatest technical change   since its inception.? .? .? . The addition of top-level country codes in   Chinese, Korean, Cyrillic and Arabic characters ends a monopoly by Latin letters   that has endured since the web&rsquo;s beginning and limited its   appeal.&rdquo;1<br />
+    <br />
+    Many   English-centric users are used to seeing non-English languages on the Internet ?   in articles, citations, and Web pages, etc, and developments like the appearance   of domain names in non-Latin scripts seem like a minor road bump on the   information superhighway that we travel every day.</p>
+  <p>However, new developments and the elimination of barriers to scholarly   communication constantly change our virtual landscape.? Electronic communication   has revolutionized scholars&rsquo; access to digitized materials all over the world,   and the expansion of the electronic universe will continue to provide   opportunities and challenges for some time to come.?? We will explore the   ramifications of &ldquo;global research&rdquo; today by exploring examples, resources,   finding tools, depositories, and strategies to expand our virtual borders ?   while we demystify, discuss, and imagine the power of a truly worldwide Web.</p>
+  <p>1Oliver, Christian, &ldquo;Internet set for language revolution,&rdquo; FT.com.? London.?   October 30, 2009.</p>
+  <p><strong><br />
+    <br />
+    <a id="franshor" name="franshor" class="normalA"></a>Fran Shor, Professor,   History <br />
+    &quot;Bases, Bananas, and Burgers: Deconstructing the Matrix of US Global   Hegemony&quot; </strong></p>
+  <p>If the United States is now a declining global power, it nonetheless still   expends tremendous efforts to retain its geopolitical, economic, and cultural   hegemony.? </p>
+  <p>This presentation will analyze the recent military and commercial efforts to   maintain global hegemony in each of the aforementioned domains while   highlighting the specific contradictions and challenges confronting the American   Empire.</p>
+  <p><strong><br />
+    <a id="dennistini" name="dennistini" class="normalA"></a>Dennis Tini, Distinguished   Professor, Music<br />
+    &ldquo;The Brain in Music and Martial Arts&rdquo;</strong></p>
+  <p>Music, and its integration with the Brain, has been the subject of   comprehensive research for many years. Numerous books, articles and   documentaries investigate, analyze and overview the inter-relationships evident   in the brain as one listens to, creates, and performs music.? The discipline,   study and application of Martial Arts also appear to have interesting   similarities and interactions with music and the brain. <em>Does Mozart&rsquo;s music   possibly improve academic achievement</em>? ?<em>Can martial arts technique and   performance be enhanced through music?</em> <em>Do the hemisphere functions of   the brain ever &ldquo;re-wire&rdquo;, following certain injuries?</em> <em>Will brain   activity/development, and/or performance training be enhanced by listening to   specific music involving certain historical periods, styles, and rates of tempo?   ?</em>Several noted authors, including Oliver Sacks, Daniel Levitan, and Michael   Thaut have written extensively on related topics involving music and the brain.   Interestingly, the implications of the brain and music may also correlate to   martial arts productivity and performance enhancement. </p>
+  <p><strong><br />
+    <a href="#top">Back to top</a> <br />
+    <br />
+    <br />
+    <a id="johncorvino" name="johncorvino" class="normalA"></a>John Corvino, Associate Professor,   Philosophy <br />
+    &ldquo;Just My Opinion&rdquo;</strong></p>
+  <p>The claim &quot;That's just your opinion&quot; is common, not only in introductory   philosophy classes, but also in everyday life. But what does it mean? Can we   usefully distinguish &quot;opinion&quot; from &quot;fact&quot; (which is the most obvious   contrast-class), and if so, how? I argue that our ordinary understanding of the   fact/opinion distinction is hopelessly muddy, and that most attempts by   critical-thinking professionals to explain the distinction are no better. After   examining a number of distinctions in the neighborhood, I propose a (somewhat   revisionist) account of the difference between facts and opinions.</p>
+  <p><strong><br />
+    <a id="michaeldarroch" name="michaeldarroch" class="normalA"></a>Michael Darroch,   Assistant Professor, University of Windsor, Communication, Media &amp; Film <br />
+    &ldquo;From Anonymous History to Acoustic Space: Marshall McLuhan Between Urban   and Media Studies&rdquo;</strong></p>
+  <p>The influence of urban and architectural theory on the development of media   studies has been largely overlooked. This paper belongs to a project to excavate   the vital collaborations that developed during the landmark interdisciplinary <em>Culture and Communications Seminar</em> held at the University of Toronto   (1953-55). Funded by a Ford grant, the weekly seminar was organized by the   little-known English professor Marshall McLuhan, anthropologist Edmund   Carpenter, and urban planner Jaqueline Tyrwhitt. They aimed to develop   interdisciplinary methodologies using a &lsquo;field&rsquo; approach to discern the new   grammars and environments created by electronic communications technologies. For   McLuhan, the central inspiration for this &ldquo;experiment in communication&rdquo; was the   Swiss art historian and architectural critic Sigfried Giedion. Giedion was   committed to crossing the boundaries between science, technology and art as a   means to engage with history as a living process of &ldquo;manifold relations&rdquo;. His   classic<em> Mechanization Takes Command</em> (1948) centred on a methodological   approach to the &lsquo;anonymous history&rsquo; of everyday objects and cultural phenomena   that reveal the essential spirit of their period. McLuhan and his colleagues   would adopt this approach to address the sociocultural implications of   electronic media. I examine how a particular methodology grew out of the   seminar, using the environment and architecture as the framework for analyzing   the effects of media.</p>
+</div>
+</div>
+  <!-- bg border div ends-->
+  <!-- InstanceEndEditable --><!--OuterBox ends-->
+
+  <footer>  
+    <ul class="footerlist seperator">
+    	<li><a href="#"><img src="../img/Humanities Center Logo.png" width="70" height="77"></a></li>
+    </ul>
+     <ul class="footerlist-map">      
+        <li><a href="https://maps.wayne.edu/all/#buildings-faculty-administration" target="blank"><img src="../img/map.png" width="50" height="50"></a></li></ul>
+        <ul class="footerlist seperator"> 
+        <li>656 W. Kirby </li>
+        <li> 2226 Faculty Administration Building</li>
+        <li> Detroit, MI 48202</li>
+    </ul>
+  	 <ul class="footerlist seperator">
+    	<li> PH: 313-577-5471</li>
+        <li>   FX: 313-577-2843 </li>
+        <li>  http://research2.wayne.edu/hum/</li>
+        <li> <a class="notA" href="mailto:walter.edwards@wayne.edu">walter.edwards@wayne.edu</a></li>
+    </ul> 
+    <ul class="footerlist ">
+    	<li><a class="notA" href="../AboutUs/OurMission/mission.html">Our Mission</a></li>
+        <li> <a class="notA" href="../MakeAGift/gift.html">Make a Gift</a></li>
+        <li> <a class="notA">Past Programs</a>
+            <ul class="dropdown">
+                <li><a class="notA" href="../PastPrograms/lecture.html"> Virtual Lecture</a></li>
+                <li> <a class="notA" href="../PastPrograms/OpenCompetition/competition.html">Open Competition</a></li>
+                <li> <a class="notA" href="../PastPrograms/InnovativeProjects/projects.html">Innovative Projects</a></li>
+                <li> <a class="notA" href="../PastPrograms/munusculum.html">Munusculum</a></li>
+                <li> <a class="notA" href="../PastPrograms/mentoring.html">Grant Mentoring</a></li>
+            </ul>
+        </li>
+        
+        <li><a class="notA" href="#"> Links</a> 
+            <ul class="dropdown">
+                <li><a class="notA" href="../Links/internal.html">Internal Links</a></li>
+                <li><a class="notA" href="../Links/external.html">External Links</a></li>
+            </ul>
+        </li>
+        
+    </ul> 
+    <ul class="horizontal hover1 footerlist">
+    	<li><a class="notA" href="https://twitter.com/wsuhumanities"> <img src="../img/twitter.png" width="45" height="40">  </a></li>
+        <li> <a class="notA" href="https://www.facebook.com/WSUHumanities">  <img src="../img/fb.png" width="50" height="50"></a></li>
+        <li><a class="notA" href="https://www.flickr.com/photos/53952766@N07/sets/">  <img src="../img/flikr.png" width="50" height="50"></a></li>
+        <li> <a class="notA" href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p"> <img src="../img/youtube.png" width="50" height="50"> </a></li>
+    </ul>   <hr>
+             <div class="left"> 
+             Developed by Shruthipriya Soranjerry Baskar. Operated by Jennifer Leonard
+             </div>
+             <div class="right">Humanities Center, Copyright &copy; 2017
+             </div>
+   </footer> 
+ 
+
+
+<!-- WSU Footer -->
+<div class="wsufooter">
+    <div class="wsuwrap">
+        <div class="privacy">
+            <p><a href="https://wayne.edu/policies/">Privacy and University Policies</a></p>
+        </div>
+        <div class="copyright">
+            <p><a href="https://wayne.edu/">Wayne State University</a> &copy; 2017</p>
+        </div>
+    </div>
+</div>
+<!-- WSU Footer-->
+   <script type="text/javascript">
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
+  </body>
+<!-- InstanceEnd --></html>

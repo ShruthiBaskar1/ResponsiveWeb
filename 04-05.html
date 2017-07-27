@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/BrownBagTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Redesigning New Website">
+  	<meta name="author" content="Shruthipriya Soranjerry Baskar">
+  	<!-- InstanceBeginEditable name="doctitle" -->
+  	<title>Wayne State University's Humanities Center | Welcome</title>
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript">
+	function MM_jumpMenu(targ,selObj,restore){ //v3.0
+	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+	  if (restore) selObj.selectedIndex=0;
+	}
+	
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+	</script>
+
+
+  	<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="../main.css">
+  <link rel="icon" type="image/gif/png" href= "../img/w.png" width="16" height="13">
+  <link href="../search.htm"> 
+   <script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+  <link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!-- Script for responsive menu-->
+  <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	
+	</script>
+  <!-- Script for the timeline slideshow-->
+ <script language="javascript">
+ (function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+
+</script>
+ 
+ <!-- InstanceBeginEditable name="head" -->
+ <!-- InstanceEndEditable -->
+ 
+</head>
+<body> 
+
+<!-- Wayne State University Header -->
+<div class="wsuheader">
+    <div class="wsuwrap">
+        <div class="wsuwordmark">
+            <a href="https://wayne.edu/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="57.22 18.736 350 32.636">
+                    <path d="M90.612 20.567c-.208.45-.382.737-.522 1.23l-8.67 28.428-6.86-21.63-6.72 21.794-9.192-29.13c-.104-.45-.208-.74-.487-1.15-.31-.45-.52-.7-.94-.99H62c-.174.33-.28.53-.313.9-.07.32-.105.57 0 .9l6.37 21.3 5.47-17.13-1.29-3.85c-.174-.53-.418-.78-.696-1.19-.24-.37-.45-.61-.73-.94h4.74c-.14.29-.21.45-.28.78-.1.57-.03.94.11 1.47l6.4 20.94 5.92-20.69c.21-.53.35-.9.32-1.43-.03-.45-.1-.74-.31-1.11h3.83c-.38.53-.59.9-.9 1.47zm80.894 29.655c-2.263-.04-3.69.04-5.814-.888V46.11c1.915 1.847 3.62 2.05 6.093 2.092 4.108.162 6.615-2.01 6.615-5.824 0-2.912-1.846-4.43-4.003-5.866l-4.735-3.2c-2.542-1.763-4.04-3.772-4.074-7.054-.035-4.84 4.004-7.68 8.39-7.516 2.055.08 3.344 0 5.225.888v3.142c-1.463-1.64-2.925-2.01-4.945-2.092-2.854-.202-5.99 2.05-5.745 5.415.174 2.174 1.427 3.364 3.064 4.47l4.142 2.83c3.13 2.134 5.74 3.28 5.92 8.49.2 6.762-5.44 8.46-10.14 8.337zm100.757-29.777c-.07.574-.035.902-.035 1.476v17.92c0 5.91-4.285 10.21-9.65 10.33-5.75.08-10.417-4.26-10.417-10.49V22.09c0-.534.04-.86-.03-1.394-.07-.656-.14-1.025-.31-1.6h3.55c-.17.45-.24.74-.31 1.27-.1.534-.07.903-.07 1.436V39.31c0 4.713 3.59 8.362 7.6 8.2 3.98-.124 6.76-3.61 6.76-7.955v-17.55c0-.614 0-.983-.07-1.56-.1-.53-.17-.86-.34-1.35h3.62c-.14.492-.21.82-.28 1.352zM105.83 49.205c-.136-.21-.26-.404-.41-.665-.564-1.05-.827-1.756-1.265-2.93l-7.09-19.017H94.22l.044.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.792 18.59c-.255.71-.43 1.06-.864 1.72-.152.25-.274.39-.443.59l-.526.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.13-.46l2.56-7.32h7.78l2.44 6.47c.04.1.07.2.11.3.08.19.13.34.15.57.05.4.02.67-.12 1.09l-.12.35h4.3l-.24-.41c-.12-.2-.22-.36-.31-.51zm-6.96-10.01h-6.233l3.047-8.596 3.187 8.59zm16.17-12.3c.024.194.024.325.003.5-.042.22-.124.375-.237.588l-4.223 7.857-3.84-7.324-.057-.103c-.152-.28-.252-.464-.334-.77-.05-.27-.072-.455-.048-.727l.025-.29h-4.11l.49.462c.22.21.34.37.5.587l.03.034c.2.33.31.51.48.84l5.28 9.73v10.4c0 .14 0 .24-.03.39-.02.21-.07.37-.17.65l-.14.36h3.28l-.1-.34c-.06-.21-.09-.35-.13-.52l-.03-.14c-.05-.29-.08-.46-.08-.72V38.29l5.35-9.434c.204-.397.33-.637.56-.995.185-.3.33-.51.62-.82l.42-.45H115l.037.3zm21.624.1c.068.298.115.496.162.8.144.877.138 1.5.13 2.286 0 .19-.003.39-.003.6v13.75l-13.236-17.8h-3.863l.69.49c.235.17.35.31.46.6.135.29.185.53.185.87v19.17c0 .46 0 .74-.11 1.19-.05.29-.13.44-.31.73l-.24.4h3.31l-.09-.33-.08-.29c-.07-.24-.12-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.493-.03-22.266c0-.46 0-.714.07-1.185v-.01c.05-.38.09-.616.2-.98l.1-.34h-2.87l.09.4zm17.882 20.465c-.8.302-1.266.352-2.073.352H146.5v-9.68h4.954c.303 0 .523 0 .79.05.418.115.667.2 1.04.405l.397.217V35.91h-7.25v-7.062h5.03c.12 0 .24-.007.34-.013.29-.016.49-.03.77.086.27.11.44.24.65.48l.48.56v-3.3h-10.77l.38.44c.16.19.23.32.32.55.1.32.15.53.15.9v19.23c0 .12.01.22.01.32.01.28.02.5-.05.79-.07.33-.15.52-.3.78l-.24.41h11.9l.938-3.54-.627.49c-.31.24-.49.34-.82.45zm35.942 1.444c-.107-.698-.106-.743-.104-.997v-19.06h3.99c.39 0 .647.05 1.057.2l.03.007c.34.09.55.177.82.34l.45.26-.24-2.997h-15.1l-.57 3.23.54-.386c.32-.23.56-.36.95-.45.24-.08.37-.1.59-.1h4.64v18.84c0 .16.01.29.01.42.01.28.02.51-.03.78-.07.27-.12.44-.24.71l-.17.38h3.85l-.19-.38c-.15-.3-.23-.49-.26-.76zm23.952.302c-.134-.21-.26-.405-.408-.666-.562-1.048-.824-1.75-1.265-2.93l-7.09-19.017h-2.844l.043.306c.05.35.075.55.05.91 0 .32 0 .53-.088.77l-6.79 18.59c-.254.71-.43 1.06-.863 1.72-.152.25-.274.39-.444.59l-.52.63h3.71l-.08-.34c-.07-.3-.09-.44-.04-.69.02-.15.07-.29.14-.46l2.56-7.31h7.77l2.44 6.47c.03.1.07.2.11.3.07.19.13.34.15.57.05.4.02.67-.12 1.09l-.11.35h4.3l-.25-.41c-.12-.2-.22-.36-.312-.51zm-6.957-10.01h-6.234l3.04-8.596 3.18 8.596zm4.95-12.538l-.572 3.23.54-.386c.32-.232.56-.365.95-.455.24-.084.37-.107.59-.107h4.65v18.84c0 .153.01.287.01.415.01.28.02.504-.03.784-.07.26-.12.43-.24.69l-.17.38H222l-.193-.39c-.152-.31-.238-.49-.262-.77-.106-.7-.105-.75-.103-1V28.84h3.99c.39 0 .647.048 1.056.198l.022.007c.338.09.545.18.823.34l.447.26-.245-2.995h-15.097zm28.57 20.802c-.798.302-1.265.352-2.073.352h-5.973v-9.68h4.955c.302 0 .52 0 .79.05.425.117.665.2 1.04.405l.396.217V35.91h-7.258v-7.062h5.03c.123 0 .233-.007.34-.013.283-.017.488-.03.764.086.27.11.442.24.65.48l.474.56v-3.3h-10.77l.377.44c.16.19.223.32.314.55.09.32.14.53.14.9v19.23c0 .12 0 .22.01.32.01.28.01.5-.05.79-.08.33-.15.52-.31.78l-.24.41h11.9l.93-3.54-.63.49c-.31.24-.49.34-.82.45zm51.694-20.337c.054.23.096.406.137.673.145.874.14 1.495.13 2.282 0 .187-.003.383-.003.593v13.76l-13.23-17.8h-3.86l.69.49c.23.17.35.32.46.6.14.29.19.53.19.87v19.17c0 .46 0 .74-.1 1.19-.04.29-.12.43-.3.74l-.24.41h3.31l-.09-.33-.08-.29c-.06-.23-.11-.41-.15-.67-.18-.99-.18-.99-.18-1.64V30.88l15.73 20.495-.03-22.266c0-.46 0-.72.08-1.19v-.01c.06-.4.11-.62.2-.96l.1-.34h-2.86l.13.51zm9.8.76l.053-.173c.08-.26.147-.485.25-.723l.16-.374h-4.08l.228.4c.195.343.29.633.394 1.023.125.446.145.696.145 1.124v18.648c0 .45 0 .72-.148 1.13-.07.282-.14.45-.29.72l-.22.398h3.94l-.2-.388-.13-.23c-.11-.194-.19-.335-.22-.553-.08-.754-.08-1.77-.08-2.948v-16.84c0-.32 0-.516.17-1.215zm17.996-.923c.072.282.097.476.097.747-.017.27-.09.452-.185.682-.038.09-.076.18-.11.28l-6.333 15.99-6.75-16.72c-.07-.22-.108-.34-.108-.53 0-.14.015-.24.104-.42l.188-.39h-4.368l.645.48c.244.18.382.31.554.63.102.18.155.33.216.51l.083.23 9.367 22.51L322.678 29c.13-.337.234-.546.403-.86l.01-.016c.2-.43.34-.697.61-1.1l.27-.42h-3.55l.09.336zm15.52 20.5c-.8.302-1.265.352-2.074.352h-5.98v-9.68h4.95c.3 0 .52 0 .79.05.42.117.66.2 1.04.405l.39.217V35.91h-7.26v-7.063h5.03c.12 0 .23-.007.34-.013.28-.017.48-.03.76.086.27.107.44.233.65.48l.47.56v-3.303h-10.77l.37.442c.16.18.22.31.31.54.09.31.14.53.14.9v19.55c.01.28.02.49-.05.78-.08.33-.15.51-.31.78l-.24.4h11.91l.932-3.54-.63.49c-.306.24-.487.34-.82.45zm18.152 1.32c-.552-.565-.993-1.242-1.552-2.1l-4.734-7.082c-.47-.692-.78-1.103-1.31-1.7h.03c.97 0 1.91-.347 2.72-1.006 1.31-1.078 2.11-2.847 2.14-4.73.04-1.633-.48-3.043-1.49-4.078-.94-.956-2.2-1.48-3.56-1.48h-6.29l.26.565c.11.24.2.41.25.69.13.87.15 1.35.15 2.17v16.48c0 .82 0 1.85-.08 2.31-.02.24-.09.41-.2.66-.03.06-.06.14-.1.21l-.15.37h3.63l-.1-.35c-.037-.11-.06-.2-.09-.29-.09-.28-.15-.48-.19-.81-.08-.38-.08-.61-.08-.96v-10.2c.07.08.125.17.19.28.05.09.11.19.18.28l7.82 12 .08.13h3.936l-.53-.47c-.398-.35-.628-.57-.978-.92zm-10.67-19.93c.604-.295 1.03-.328 1.776-.328 2.92.143 3.42 1.87 3.53 3.712.15 2.377-1.31 3.937-3.89 4.173-.47.023-1.02.01-1.41-.03V28.85zm21.172 8.974c-.23-.152-.465-.308-.705-.47l-3.104-2.12c-1.256-.85-2.06-1.674-2.177-3.145-.07-.99.28-1.92.99-2.62.79-.79 1.95-1.23 3.04-1.15 1.45.06 2.48.32 3.52 1.48l.47.52v-3.24l-.15-.08c-1.28-.62-2.2-.65-3.46-.69-.18-.01-.36-.01-.55-.02-1.88-.07-3.65.57-4.88 1.76-1.11 1.08-1.69 2.52-1.68 4.16.03 2.33.98 3.97 3.17 5.5l3.55 2.39c1.52 1.01 2.88 2.09 2.88 4.17 0 1.25-.38 2.29-1.12 2.99-.81.78-2.04 1.16-3.56 1.1-1.74-.03-2.98-.15-4.38-1.49l-.45-.44v3.23l.16.07c1.49.66 2.53.67 3.97.69l.49.01h.34c1.62 0 4.25-.3 5.96-2.02 1.11-1.118 1.64-2.64 1.58-4.53-.12-3.64-1.85-4.78-3.86-6.1zm10.15-9.94c.105-.34.178-.568.302-.858l.15-.374h-4.07l.22.4c.19.332.28.58.39.984.12.443.14.694.14 1.123V47.8c0 .45 0 .72-.15 1.132-.07.28-.14.447-.29.716l-.23.4h3.94l-.2-.39-.13-.23c-.11-.193-.19-.333-.22-.55-.077-.754-.077-1.77-.077-2.947V29.1c.004-.324.004-.52.177-1.217zm28.817-1.29l.038.3c.023.195.023.326.002.502-.04.22-.123.372-.235.584l-4.23 7.86-3.84-7.325-.06-.105c-.15-.278-.26-.462-.34-.77-.05-.265-.07-.45-.05-.726l.02-.29h-4.1l.03.032h-13.22l-.58 3.23.53-.388c.32-.232.55-.365.95-.455.24-.084.36-.107.59-.107h4.64V47.78c0 .15 0 .285.01.41.01.283.01.507-.03.783-.08.266-.13.44-.25.7l-.177.38h3.85l-.197-.386c-.15-.304-.237-.488-.26-.765-.105-.7-.105-.74-.1-.998v-19.06h3.99c.39 0 .65.05 1.06.2l.02.008c.336.09.54.177.82.34l.38.222 4.694 8.676v10.22c0 .067.003.13.005.188 0 .145 0 .24-.03.397-.02.21-.07.376-.17.656l-.13.36h3.27l-.096-.33c-.06-.21-.09-.35-.12-.52l-.03-.14c-.05-.3-.077-.47-.077-.72V38.3l5.35-9.437c.206-.396.336-.637.56-.994v-.01c.19-.3.34-.51.62-.82l.426-.46h-3.58z"></path>
+                </svg>
+            </a>
+            <div class="wsuaimhigher">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" width="100px" height="15px" viewBox="0 0 98 14" xml:space="preserve">
+                    <path d="M8.1 1.4l4.2 11.2H9.8l-1-3.1h-4l-1.2 3.1h-2L6.3 1.4H8.1zM8.4 8.2C8 6.7 7.5 5.3 6.9 3.6h0c-0.5 1.7-1 3.1-1.5 4.6H8.4zM13.7 12.6V1.4h2.3v11.2H13.7zM31.3 12.6H29V3.9h0c-1.2 3.1-2.5 5.9-3.8 8.7H24c-1.2-2.8-2.4-5.6-3.6-8.7h0v8.7h-1.8V1.4h2.8c1.2 2.8 3 7.1 3.4 8.6h0c0.5-1.5 2.5-5.8 3.8-8.6h2.6V12.6zM47.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM50.4 12.6V1.4h2.3v11.2H50.4zM64.8 7.5v4.6c-1.2 0.4-2.5 0.7-3.7 0.7 -3.9 0-6.3-2.6-6.3-5.9 0-3.1 2.4-5.7 6.4-5.7 1.2 0 2.5 0.4 3.2 0.9l-0.7 1.3C63 3.1 62 2.8 61.2 2.8c-2.4 0-4 1.6-4 4.2 0 2.7 1.9 4.2 3.8 4.2 0.6 0 1.1-0.1 1.6-0.3V7.5H64.8zM76.7 12.6h-2.3V7.2h-4.7v5.4h-2.3V1.4h2.3v4.3h4.7V1.4h2.3V12.6zM85.4 2.9h-3.8V6h3.7v1.5h-3.7v3.6h4.4v1.5h-6.7V1.4h6V2.9zM88.1 1.4H92c2.1 0 3.6 1 3.6 2.9 0 1.7-0.8 2.6-1.9 3.2l2.7 4.8 -2.4 0.4 -2.3-4.7h-1.3v4.5h-2.3V1.4zM90.3 6.6h0.9c1.6 0 2-1.2 2-2 0-1.3-0.9-1.7-1.8-1.7h-1.2V6.6z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="wsusearch">
+            <nav>
+                <ul>
+                    <li><a href="http://academica.wayne.edu/" class="spf-nolink">Academica</a></li>
+                    <li><a href="http://wayne.edu/directory/" class="spf-nolink">Directory</a></li>
+                    <li><a href="http://wayne.edu/contact/" class="spf-nolink">Contact</a></li>
+                    <li class="aimhigher"><a href="http://wayne.edu/aimhigher/" class="spf-nolink">Aim Higher</a></li>
+                </ul>
+            </nav>
+
+            <form method="get" action="https://wayne.edu/search/">
+                <label for="q">Search:</label>
+                <input name="q" class="input-group-field" id="q" placeholder="Search..." type="text">
+                <button type="submit" class="button"><span class="search-icon"><span>Search</span></span></button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- WSU Header ends-->
+<div class="container">
+<!--Humanities Center logo-->
+<a class="notA" href="http://research2.wayne.edu/hum/"><img class="forhcheader" width="600" height="80" src="../img/hcheader.png"> </a>
+<!-- HC logo ends-->
+<div id="site-search">
+<form action="../search.htm" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="013346447988890295882:ebh4g3_d5_4" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+   <label for="site-q">Search</label>
+		<input id="site-q" class="searchText" type="text" size="13" name="q"/>
+    <input type="image" name="sa" alt="Search" src="../img/searchButton.jpg" />
+  </div>
+</form>		
+</div>	 
+</div><!--container div ends-->
+
+<section id="showcase"> 
+<div id="forid"><!-- #BeginLibraryItem "/Library/NavBarLibraryItem.lbi" -->
+  <nav class="clearfix">
+    <!-- div begins: make a gift floating label -->
+    <div id="gift"><img src="../img/gift-label1.png"></div>
+    <!-- div ends: floating label-->
+    <ul id="MenuBar2" class="MenuBarHorizontal clearfix">
+      <li><a href="http://research2.wayne.edu/hum/">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="../AboutUs/DirectorsMessage/message.html">Message from the Director</a></li>
+          <li><a href="../AboutUs/AdvisoryBoard/advisory.html">Advisory Board</a></li>
+          <li><a href="../AboutUs/SteeringCommittee/committee.html">Steering Committee</a></li>
+          <li><a href="https://www.flickr.com/photos/53952766@N07/sets/">Photos</a></li>
+          <li><a href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p">Videos</a></li>
+          <li><a href="../AboutUs/AnnualReports/reports.html">Annual Reports</a></li>
+          <li><a href="../AboutUs/OurStaff/staff.html">Our Staff</a></li>
+        </ul>
+      </li>
+      <li><a class="MenuBarItemSubmenu" href="#">Funding</a>
+        <ul>
+          <li><a class="MenuBarItemSubmenu" href="#">Faculty Funding</a>
+            <ul>
+              <li><a href="../FacultyFunding/MWFF/marilyn.html">Marilyn Williamson Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/ResidentScholars/resident.html">Resident Scholars</a></li>
+              <li><a href="../FacultyFunding/FacultyFellowship/fellowship.html">Faculty Fellowship</a></li>
+              <li><a href="../FacultyFunding/WorkingGroups/groups.html">Working Groups</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Student Funding</a>
+            <ul>
+              <li><a href="../StudentFunding/DoctoralDissertation/dissertation.html">Doctoral Dissertation Fellowship</a></li>
+              <li><a href="../StudentFunding/DoctoralDissertation/travel.html">Graduate Travel</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="brownbag.html">Brown Bag Colloquium Series</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
+    </ul>
+    <a href="#" id="pull">Menu</a> </nav>
+<!-- #EndLibraryItem --></div>
+<!-- forid div ends -->
+</section>
+<!-- InstanceBeginEditable name="EditTimeline" -->
+<img src="Smith-20.jpg" style="z-index:-2;position:relative;"> 
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="brownbagYearMenu" -->
+<div class="bg border">
+  <form name="form" id="form">
+    <select name="AdvisoryMenu" id="Menu" onChange="MM_jumpMenu('parent',this,0)">
+      <option value="brownbag.html">Brown Bag Series</option>
+      <option value="16-17.html">2016-2017</option>
+      <option value="15-16.html">2015-2016</option>
+      <option value="14-15.html">2014-2015</option>
+      <option value="13-14.html">2013-2014</option>
+      <option value="12-13.html">2012-2013</option>
+      <option value="11-12.html">2011-2012</option>
+      <option value="10-11.html">2010-2011</option>
+      <option value="09-10.html">2009-2010</option>
+      <option value="08-09.html">2008-2009</option>
+      <option value="07-08.html">2007-2008</option>
+      <option value="06-07.html">2006-2007</option>
+      <option value="05-06.html">2005-2006</option>
+      <option value="04-05.html" selected>2004-2005</option>
+      <option value="03-04.html">2003-2004</option>
+      <option value="02-03.html">2002-2003</option>
+      <option value="01-02.html">2001-2002</option>
+      <option value="00-01.html">2000-2001</option>
+      <option value="99-00.html">1999-2000</option>
+      <option value="98-99.html">1998-1999</option>
+      <option value="97-98.html">1997-1998</option>
+    </select>
+  </form>
+ <!-- InstanceEndEditable -->
+  <br>
+  <br>
+  <br>
+  <!-- InstanceBeginEditable name="brownbagtext" -->
+  <div class="tab">
+    <button class="tablinks active" onClick="openCity(event, 'September')" id="defaultOpen">September</button>
+    <button class="tablinks" onClick="openCity(event, 'October')">October</button>
+    <button class="tablinks" onClick="openCity(event, 'November')">November</button>
+    <button class="tablinks" onClick="openCity(event, 'December')">December</button>
+    <button class="tablinks" onClick="openCity(event, 'January')">January</button>
+    <button class="tablinks" onClick="openCity(event, 'February')">February</button>
+    <button class="tablinks" onClick="openCity(event, 'March')">March</button>
+    <button class="tablinks" onClick="openCity(event, 'April')">April</button>
+    <button class="tablinks" onClick="openCity(event, 'May')">May</button>
+  </div>
+  <div id="September" class="tabcontent active">
+    <h3>September</h3>
+    <p>
+    <div class="titles">September 14 (3339 FAB) -George Galster, Dean of CULMA<br>
+"Sprawl and Pornography"
+</div>
+    A Supreme Court Justice once remarked that, indeed, pornography was hard to define precisely, but "you knew it when you saw it." Sprawl has been viewed in much the same manner: a vague but implicitly negative term that has been used as a noun, verb, or adjective. Unfortunately, such ambiguity is unsuitable for the scientific analysis of sprawl: its nature, causes and consequences.?This talk will discuss results of a long-term research project in CULMA funded by the US Geological Survey.?I will explain how sprawl can be conceptualized as a multifaceted phenomenon and present new information about how major US metropolitan areas rank on these various aspects of sprawl. Be prepared for some surprises! </p>
+    <p> 
+   <div class="titles"> September 21 (2339 FAB)- 
+Brendt Ostendorf, Ludwig Maximillian University in Munich <br>
+"Conspiracy Nation: Conspiracy theories in American History and Culture" 
+</div>
+The lecture identifies five "conspiracy fears" that run through American political and cultural history and that have provided fertile soil for conspiracy theories. The first such fear is a "fundamentalist" fear of losing the Christian character of the United States to secular, liberal, hedonist influences. This fear of falling away has been present in American culture ever since the Puritans, and is shared by fundamentalist Catholics, Mormons, and other conservative religious groups. Secondly, there is a "patriotic" fear of the dissolution of the exceptionalist character of the American nation as well as the United States? status as a superpower. American exceptionalism has been a central part of American thought from colonial times through the American revolution to Manifest Destiny and beyond. A third fear is the "communitarian" fear of the atomization of civil society and of the loss of community. While there is a strong American tradition of celebrating individualism, there is an equally strong belief that community is crucial but also embattled. The fourth fear is a "local populist" one. Throughout American history, marginalized groups (and those in fear of marginalization) have feared elitist concentration of power either in the federal government, an economic elite, or ? more recently ? international organizations or, as in the case of the militias, Zionist Occupational Governments (ZOG). These fears were a major source of Anti-Federalism, Jacksonianism and the states? rights movement; the rise in centralist power in post-WWII American has given rise to a number of conspiracy theories which often target central organizations such as the CIA or FBI. Finally, the fifth fear addressed is a "racist-biological" concern that America is endangered by the radically different. Practically every minority group in the United States has been subjected to nativism or racism; Robertson mirrors this fear in his concerns about satanic evil and his somewhat veiled anti-Semitism, or more currently anti-Islamism. In recent times, Ostendorf adds, the fear of the "Other" has made its way into conspiracy theories also in the form of alien abductions stories and theories about the origin of the AIDS virus. Conspiracy theories are the daily bread of Hollywood and TV, from the Manchurian Candidate in 1962 to the X-Files. Looking back to the first conspiracy theory in the young Republic directed against the Society of the Cincinnati the lecture ends with some thoughts on why the "American experiment" is so susceptible to conspiracy theories and why they have multiplied in the digital age.
+    </p>
+    
+    <p>  <div class="titles">September 23 (2339 FAB)-
+Herb Granger, Philosophy<br>
+"What Ails the Humanities?"</div>
+What I find of value among the programs at the Humanities Center at Wayne State is the Brown Bag Colloquium Series. This Series permits a point of vantage upon the intellectual practices of the wide variety of humanists at Wayne, not only upon the kinds of papers they may present, but upon the way in which they discuss their presentations with their audience. I am disappointed in much of what I have been able to observe. Many humanists at Wayne appear to be satisfied with remaining within the confines of their ?study? and the peculiar standards of assessment they claim for it. These humanists are skeptical of any unified field of assessment, in which the same fundamental critical standards may apply (with the appropriate changes) across all disciplines. This intellectual provincialism from what I may gather has something to do with the "theoretical" dispositions that emerge from what many today call "postmodernism". For my presentation I shall initiate an analysis of this "postmodernism" and try to identify its nature and its outstanding weaknesses. My hope is to make a presentation of twenty minutes so that considerable time will remain for discussion. I look forward to a hearty exchange. </p>
+
+<p> <div class="titles">September 28 (2339 FAB)-
+Robert A. Sedler, Distinguished Professor of Law and Gibbs Chair in Civil Rights and Civil liberties.<br>
+"Same-sex Marriage"</div>
+Professor Sedler maintains that as a matter of policy and constitutional law, same-sex persons should have the same right to marry that the law provides for opposite-sex persons. The constitutional argument is presented in The Constitution Should Protect the Right to Same-Sex Marriage, Vol. 49 Wayne Law Review 975 (2004). The argument is based on Supreme Court decisions invalidating as arbitrary and irrational legal discriminations on the basis of sexual orientation, such as a Texas law prohibiting oral or anal sex by same sex-persons and a Colorado state constitutional provision prohibiting the inclusion of sexual orientation discrimination in state and local anti-discrimination laws. These cases hold that governmental discrimination on the basis of sexual orientation cannot be justified on the basis of societal prejudice or morality, and Professor Sedler argues that once these purported justifications are removed, there can be no valid or rational justification for denying same-sex persons the right to marry that the law provides for opposite-sex persons. Therefore, he maintains that state laws denying same-sex persons the right to marry violate the Fourteenth Amendments guarantee of equal protection of the laws. 
+
+From a policy standpoint, Professor Sedler maintains that the societal interests advanced by providing legal recognition to committed intimate relationships between opposite sex-persons are equally advanced by providing legal recognition to committed intimate relationships between same-sex marriage. This may be described as a pro-marriage argument for same-sex marriage. Professor Sedler will also respond to the PIB argument - if we allow same-sex marriage, we also have to allow polygamy, incest, and bestiality - by showing its irrelevance to the issue of entitlement to same-sex marriage. In this context, he will also discuss the question of whether the state has valid reasons for prohibiting polygamy, incest, or bestiality. </p>
+    
+  </div>
+  <div id="October" class="tabcontent">
+    <h3>October</h3>
+    <p><div class="titles">October 7 (3339 FAB)
+Kathleen McNamee, Classics, Greek & Latin
+"Scholars? Libraries"</div>
+The books we accumulate around ourselves (if any) are an index of our educational level, our preoccupations and pastimes, and our cultural sophistication or lack of it. Ancient authors like Cicero and Plutarch have plenty to say about the authors who influenced them most. But their reading lists, or those of other prominent intellectuals, give a poor indication of the tastes of the rest of the literate population. It would be useful if we could identify the contents of actual libraries from antiquity, to get a better understanding of the kind of person that the ancient educational curriculum turned out. <br>
+
+Primary evidence about the contents of ancient Greek and Latin libraries in fact survives in the form of papyrus book fragments from Egypt. There the arid conditions of the desert preserved the written materials in towns abandoned for two thousand years but rediscovered in the late nineteenth century. In the treasure hunt of the Victorian age, however, no one thought much about applying scientific method very rigorously in the process of excavation. As a result, although we have more than five thousand literary texts, not a single collection has hitherto been reliably identified as a personal library. Even Herculaneum, which Vesuvius brought to a much more violent end than the Graeco-Egyptian cities ever suffered, did better than this: the extensive personal library of a philosopher of middling fame, one Philodemus, survived. It gives an idea of the man?s own intellectual interests and of the state of Stoic philosophy in the early days of the Roman empire. Greek Egypt still awaits its Philodemus. <br>
+
+Even without him, however, I think it is possible and useful to identify the personal libraries of a few of his Graeco-Egyptian contemporaries. This paper uses the evidence of handwriting and the few remaining scraps of archaeological information to identify as many as half a dozen personal libraries among surviving Egyptian texts. These collections belonged, evidently, to an assortment of readers. They include scholars and people possibly engaged in public life but also a number of ordinary readers. In different ways, these ?libraries? raise interesting questions about the extent of literacy, the prevalence of book ownership, and the principles that informed the educational curriculum in antiquity. </p>
+
+<p><div class="titles">October 12 (2339 FAB)
+Ken Jackson, English<br>
+"Shakespeare's Richard III and our Pauline Moment"</div>
+Richard III is the only Shakespearean character to invoke Saint Paul (and he does so no less than five times). The anomaly has been noted as something of a side topic for sometime, of course, but this essay attempts to show that Shakespeare's understanding of Pauline subjectivity determines the play (*Richard III*) as a whole. This new look at the play is made possible in part by what I call our own "Pauline moment." While it has not been fully recognized in the circles of critical and cultural theory, Saint Paul has become a major figure for such thinkers as Agamben, Badiou, Derrida, Lyotard, and Zizek (among others).</p>
+
+<p><div class="titles">October 14 (2339 FAB) *Please Note the time change- 1:30 p.m.-2:30 p.m
+Robert Arking, Biology <br>
+"Extending Longevity: Implications"</div>
+In 1900, the mean life expectancy at birth in the US was ~48 years. Over the ensuing 100 yrs, this value increased to ~80 years. More and more people are now living to advanced (85+) ages. There are two outcomes of this change. First, one of the great triumphs of the 20th century is presented to us as a major problem justifying certain solutions such as rationing of health care (e.g., Daniel Callahan, Leon Kass, et al.). These critics see only increased despair, loneliness, and financial costs in any further reduction of premature mortality. Second, there exists the false perception that this represents the triumph of medicine over aging. In truth, this ~60% increase in mean life expectancy is the outcome of deploying various public- and individual-health measures which decreased the inherent risks of the environment so that people would not die prematurely but would rather have a high probability of living a normal lifespan. The biological aging process was not affected by these activities. However, over the past quarter-century, basic research has uncovered the mechanisms controlling the aging process. Aging arises because of an organism's need to both maintain itself and its need to reproduce within a fixed energy budget. The need to reproduce generally trumps the need to maintain oneself, and so we age due to a lack of repair. There is no aging program; we are not required to age. We therefore age not because we must but because there is no biological reason not to age. Which means, of course, that if science can supply the necessary reason(s), then we should be able to stop - or at least slow - aging. Present genetic, physiological, and pharmecutical interventions have shown that laboratory animals can be induced to double their health span (the equivalent in current human terms of ages ~20 to ~55 years) without affecting the length of the senescent span (ages ~55 - ~85). This effect probably extends to primates, including humans. Doubling the health span from its current ~35 year length to a ~70 year period will have profound effects, such as giving us longer, healthier, more productive, and more interesting lives. The popular critics have not foreseen this future, and their pessimism is not justified. This talk will focus on the nature of the biological mechanisms involved, the nature of the present and future interventions, and some thoughts as to how this will play out. There are many uncertainties, but I believe it likely that the ability to extend healthy longevity will radically transform our age-structured society whether we wish it or not. </p>
+
+<p><div class="titles">October 19 (2339 FAB)
+Kate Paesani & Catherine Barrette, Romance Languages & Literatures<br>"A Theoretical Model of Program Articulation: Implications for Curriculum Development"</div> 
+Program articulation, the coherent planning and implementation of a program of study within and across instructional levels, is an issue of concern for departments across the university. In this presentation, we use the specific context of foreign language programs to present a three-dimensional model of articulation developed from survey data. The survey data were analyzed to investigate the relationship between the curriculum and 10 additional factors relevant to articulation. Results indicate that the curriculum is a decidedly central factor in achieving overall articulation, but is not the sole consideration. Other factors, such as faculty expertise, student characteristics, and institutional context, interact with the curriculum factor to contribute to articulation. 
+<br>
+After an introduction to the topic of articulation and an overview of our empirically-based model, we focus on the role of the curriculum within the model and its importance in achieving a coherent program. Curricular decisions help establish and maintain well-articulated programs by ensuring the efficient and effective development of skills and content knowledge from one instructional level to the next. We conclude with a discussion of the implications of the model for curricular policies and practices within the foreign language context and its potential application to other disciplines.</p>
+
+<p><div class="titles">October 21 (2339 FAB)-
+Marsha Richmond, Interdisciplinary Studies<br>
+"The Darwin 1909 Celebration at Cambridge: Re-evaluating Evolution in Light of Mendel, Mutation, and Meiosis"</div>
+In June 1909, more than two hundred scientists representing 167 different countries gathered in Cambridge to celebrate the hundredth anniversary of Charles Darwin?s the birth and the fiftieth anniversary of the publication of the Origin of Species. The event was perhaps the most magnificent commemoration in the annals of science, and, with political tensions already mounting, also the last to display "all the pomp and dignity of learning" of prewar Europe. Within the cloisters of Cambridge University delegates gathered to honor the "hero" of evolution, and also to re-assess Darwinism at a critical juncture. With natural selection increasingly under attack, evolution theory was in disarray. Against this backdrop biologists weighed the impact of several new developments--the re-discovery in 1900 of Mendel?s laws of heredity, the mutation theory of Hugo de Vries, and the new hypothesis that linked the mechanics of sex cell division (named meiosis in 1905) to heredity. By 1915, the new Mendelian Chromosome Theory had resolved some of the apparent contradictions. The 1909 Darwin Celebration thus was a significant watershed in the history of modern biology, illustrative of a period of "cognitive dissonance" in biology. This paper will highlight some of the events and activities of the celebration with the aim of evaluating the status of evolution theory on the eve of the "new genetics."</p>
+
+<p><div class="titles">October 26 (2147 Old Main) *Please Note Change in Location
+Nira Pullin & Mary Copenhagen, Theater and Dance<br>
+"Victorian Secrets-Underneath it all: Dress, Deportment, and Dance of the Late Victorian Age for the Stage"</div>
+The late Victorian/Edwardian time period, better known as Fin de Sicle in France and the Belle Epoch or Gilded Age here in the United States is a period of great interest to those of us in the theatre. Many of our most famous playwrights such as Oscar Wilde and George Bernard Shaw wrote numerous plays set in this era and they have become a mainstay in the repertoire of most educational as well as professional theatre companies. Therefore this time period is of special interest to actors, directors, designers, choreographers and movement specialists. In order to depict the time period accurately on stage it is necessary to know some of the general etiquette and fashions of the period as well as popular dances and pastimes. Through the use of slides, costume pieces and actual dance exhibition this talk will cover many of the fashions, mores, manners and taboos as well as the deportment and dance of the period which we have discovered through our research. Come join us for a brief look at a gentler time. Tea and light snacks will be served.</p>
+  </div>
+  <div id="November" class="tabcontent">
+    <h3>November</h3>
+    <p><div class="titles">
+November 4 (2339 FAB)
+Thomas Abowd, Anthropology<br>
+"The Spatial Construction of Identity and Difference in Contemporary Jerusalem"</div>
+This lecture will explore the spatial construction of identity and the politics of difference in contemporary Jerusalem. I trace some of the multiple ways in which space, identity, and alterity are experienced, produced, and contested by Palestinians and Israelis who reside and toil in this divided urban center. Throughout, I detail many of the complexities of a national-religious order that has beset, shaped, and defined relations between competing communities over the last several decades. How is the past produced in a city vigorously characterized by a set of myths and mythic representations? How have particular urban spaces and places come to take on national meanings in a city both Palestinians and Israelis consider as their capital? My work looks at the politics of Israeli-state segregationist schemes and seeks to examine how particular communities in the city are affected in diverse ways by what I argue is a distinctly colonial form of racism and administration.</p>
+
+<p><div class="titles">November 9 (2339 FAB)- Elizabeth Dorn, History<br>
+"Temperance and the Modernization of Japan"</div>
+Following its opening and subjugation by unequal treaties with five Western powers in the mid-1800's, Japan underwent a phenomenal transformation as officials and citizens strove to modernize the country. Their efforts were shaped by the belief that the West represented the apex of civilization and thus that to modernize meant to Westernize. That conviction led to intense study of American and European institutions, ideas, and customs and the subsequent adoption of many of the same. Two practices that took root were consumption of beer and wine and abstinence from all alcoholic beverages. In this paper, I will discuss both in light of Japan?s drive to gain a position of equality with the West. I will pay particular attention to temperance and will examine arguments its advocates gave and activities they undertook to make Japan a sober yet modern nation.
+
+<p><div class="titles">November 11 (4339 FAB)-
+James Tucker, Chair, Biological Sciences<br>
+"Understanding the Human Genome: What Should I Know and Why Should I Care?"</div>
+The complete DNA sequence of the human genome has now been established. What does this mean to you and to me? The amount of information encoded in our genes is vast and highly complex, yet the actual number of genes is much less than anticipated. Scientists will be working hard for many years to understand what the DNA sequence means, how the genome functions and how to apply this knowledge to improve human health. Even though the average person may never understand the human genome in all its complexity, knowledge about our genome has already begun to affect our lives. It is reasonable to expect that physicians will be incorporating genomics into their medical practice on a routine basis. The mystery concerning differences among people in susceptibility to medications is already yielding to the power of diagnostic tests which are designed to predict individual responses to those drugs and to improve therapies. However, the sensitivity and specificity of these tests also open the possibility of misuse. Ethical concerns exist about access to personal genetic information, including how that access should be controlled and by whom. Beyond the DNA sequence of the human genome lies the proteome, the complete set of proteins encoded by the genes. Scientists once thought that each gene made a single type of protein. We now know that several mechanisms exist whereby one gene may make many related proteins. This diversity may explain in part the paucity of genes while simultaneously providing cells with exquisite control over their metabolic processes. The nascent field of proteomics offers additional intriguing possibilities for medical interventions. Deciphering the genome has opened many doors. It is now up to us to explore and use these scientific riches in a responsible and ethical manner. </p>
+
+<p><div class="titles">November 16 (2339 FAB)-
+Mame Jackson, Art & Art History<br>
+"Handing it on: The Legacy of African American Art in Southeast Michigan" </div>
+A rich legacy of cultural achievements of Detroit?s African American citizens is manifest in the poetry, music, and visual arts that have helped to shape the culture of the city and earn for Detroit its national and international reputation as a crucible for culture as well as industry. Black Detroiters achieving prominence in music and literature are legendary ? Smokey Robinson, Marvin Gaye, other Motown artists, great jazz musicians as well as poets and writers such as Robert Hayden, Dudley Randall, and Wayne State?s Bill Harris and Melba Boyd. Equally important are Detroit?s African American visual artists who, since the era of slavery, have lived and worked in Detroit and contributed richly to the culture and the artistic life of the city. This presentation is designed to accompany and contextualize an exhibition, Reverberations ?Contemporary Art by African American Artists in Southeastern Michigan, at Siena Heights University, November 9- December 10, 2004. The focus will be on the work of seven artists whose recent paintings, sculptures, prints, and digital animation comprise this lively exhibition: Robert Martin (Professor of Art, WSU); Lester Johnson and Gilda Snowden (College for Creative Studies faculty); Al Hinton and Marianetta Porter (University of Michigan faculty); and independent Detroit artists, Charles McGee and Tyree Guyton. The work of these artists will be examined in historic and cultural context, with an emphasis on the heritage and connections that support their work and sustain a vibrant arts community in Southeastern Michigan. </p>
+
+<p><div class="titles">November 18 (2339 FAB)-
+Rayneld Johnson, Fashion Design and Merchandising<br>
+"Corsets and Culture"</div>
+Throughout the ages dress and adornment concealed and embellished the human body but also revealed the soul of culture. Items of apparel and practices of adornment are partly a result of the interrelationship of social factors such technology, polity, moral patterns, economy, class structure, rituals, religion, symbolism plus others. Social factors can be used to explain the appearance of different cultures, time periods, trends and various styles. One garment style, the corset has been worn for the last four hundred years. This discussion will explore the influence of social factors on styles and in particular, the corset. The various past and present social meanings of this controversial, alluring, restrictive and artistic garment in western dress will be discussed. Additionally, historic garments will be presented from the Dorothea June Grossbart Historic Costume Collection that will visibly show corseting in garment construction that created the corseted silhouette.</p>
+
+<p><div class="titles">November 23 (2339 FAB)-
+Tony Crowley, Chair, Art & Art History<br>
+"Finding Visual Form in John Milton?s L?Allegro and Il Penseroso"</div>
+Every artist has a point of departure when he or she begins a new work. It may be a desire to meticulously reproduce the landscape or an impulse to capture the power of an emotion in a gesture. In this slide lecture, I will describe the process I used to find shape, pattern, and rhythm in John Milton?s companion poems and then translate my discoveries into visual form. I will discuss several examples of the art works I created during more than a year?s work on this project.</p>
+
+<p><div class="titles">November 30 (2339 FAB)-
+Anca Vlasopolos, English<br>
+"Crossing the Equator and Other Maritime Rituals: Gender Bending on the High Seas"</div>
+This lecture will present the results of my research into 19th-century whaling culture. Of necessity and, later, by choice a homosocial group, whalers often engaged in "female" endeavors such as sewing, mending, laundering, and spinning yarn needed for the lines that were constantly frayed with wear. What is less known is that the sailors developed entertainments as well as followed rituals that destabilized gender and were distinctly homoerotic. I will be presenting two major instances: the events surrounding ships "speaking" one another on the high seas; and the initiation rites celebrated upon the ship?s crossing the equator. One seemed to be more spontaneous and contingent on the nationality and nature of the ships encountering one another. The other followed a tradition dating at least as far back as the 18th-century. Adopted from the British Navy, it continues to the present day.</p>
+  </div>
+  <div id="December" class="tabcontent">
+    <h3>December</h3>
+    <p><div class="titles">December 9 (2339 FAB)-
+William Lynch, Interdisciplinary Studies<br>
+"How the West was Won...Starting in Ireland"</div>
+Frederick Jackson Turner famously identified the frontier as the defining feature of American history. But where did westward expansion begin? And what were its characteristic features? In an attempt to answer these questions, I examine the massive transfer of Irish land following the Cromwellian suppression of the 1641 Irish rebellion. The English Parliament, in the midst of its conflict with Charles I, had financed troops for reconquest by offering Irish land to private investors and later confiscations were called for to satisfy army arrears. The Down Survey of land confiscated from those judged disloyal (with maps laid "down," 1654-59), was directed by William Petty, physician general to the army and later Royal Society fellow, and carried out with the help of a pool of Commonwealth Army soldiers. The Down Survey set important precedents for future land surveys in America. Both the Down Survey and the U.S. Northwest Survey employed remarkably similar techniques of surveying and mapping, as well as similar organizational forms. Both took place in the context of ongoing colonial settlement, displacing the native population following a century of demographic expansion of the colonizing society. Both involved cash-strapped governments emerging from civil war who transferred land to soldiers, settlers, and investors to pay off governmental debts and manage internal tensions. Likewise, the effective control of expanding territory and population was facilitated by settling land upon those familiar with English custom and property law, who would (usually) share the "habit of subordination" (Adam Smith) to the central government even as they settled the frontier. Finally, both processes led to a recognition of the need to understand how governmental policies can help or hinder economic improvement in a context where land was plentiful and labor scarce.</p>
+
+<p><div class="titles">December 16 (4339 FAB)-
+John Corvino, Philosophy<br>
+"Preference and Discrimination"</div>
+People "discriminate" for a variety of reasons: some rational, some not; some admirable, some deplorable. Recently I have become interested in the issue of discrimination on the basis of "bare" or "basic" preferences--that is, preferences that are not instrumental to satisfying some other preference. In this talk I intend to explore, in a rather informal way, what the moral limits on such preferences might be, and why.</p>
+  </div>
+  <div id="January" class="tabcontent">
+    <h3>January</h3>
+    <p><div class="titles">January 11 (2339 FAB)-
+Richard Grusin, Chair, English<br>
+"DVDs, Video Games, and the Digital Cinema of Interactions"</div>
+Borrowing from the idea that electronic textuality marks what has been called the late age of print, I argue that digital cinema marks our cultural moment as the late age of cinema (or perhaps phrased differently, the late age of celluloid film). In describing the current cinematic moment in this fashion, I do not mean to suggest that film will disappear, but that it will continue increasingly to be engaged with the social, technological, and aesthetic forms and practices of digital media. This engagement will not be marked (as many digital enthusiasts contend) by the emergence of a distinctively new digital medium (and the concomitant abandonment of the technologically outmoded medium of celluloid film), but rather by the emergence of multiply networked, distributed forms of cinematic production and exhibition. Indeed I am convinced that in this sense we already find ourselves with a digital cinema--not as a distinctively new medium but as a hybrid network of media forms and practices, what the title of my paper, alluding to Tom Gunning's paradigmatic conception of a "cinema of attractions", characterizes as a "cinema of interactions". In this brown bag I will focus on the idea of digital cinema at the present historical moment, to look at the questions of convergence and hybridity in our contemporary cinema of interactions.<br>
+
+Industry and media discussions of digital cinema have tended to focus on the digital production and screening of conventional films like Attack of the Clones, while academic discussions of interactive cinema often indulge in the desire for a radically new cinema along the lines of hypertext fiction and other new media art. I want to depart from both of these portrayals of digital cinema, to suggest that by looking at the relation between cinema and new media, we can see that we already find ourselves with a digital cinema of interactions. My argument has both a social and an aesthetic dimension. I will first look at the social and economic distribution of cinema across a number of different digital media, including DVDs, video games, and the Web. I will then suggest briefly how this cinema of interactions has manifested itself aesthetically and formally in a couple of recent and forthcoming film projects.
+
+<p><div class="titles">January 18 (2339 FAB)-
+J. Vander Weg, Associate Dean, CFPCA <br>
+""Publishing Your Research: An Editor?s Perspective"</div>
+
+Acquisitions Editor<br>
+
+Production Editor<br>
+
+Managing Editor<br>
+
+Manuscript Editor<br>
+
+Copy Editor<br>
+
+Indexer<br>
+
+Proofreader</br>
+
+Who are all these people, and why should I care? Join an experienced editor for an informal presentation on academic journal and book publishing. Intended for graduate students and untenured faculty early in their careers, the presentation will focus on moving from ideas to manuscripts to published work. Among the topics to be discussed will be the effective marketing of research for publication, what journals and publishers expect of authors, and what authors should expect of publishers.<br>
+
+John Vander Weg currently serves as Associate Dean for Academic Affairs in the College of Fine, Performing and Communication Arts. He has been the editor of In Theory Only, an associate editor for the University of Michigan Press, production editor for the Institute for Music Research Press (San Antonio, TX), manuscript editor for Public Opinion Quarterly, and a designer and editor for UMI Research Press and AR Editions (Madison, WI). Dr. Vander Weg previously served on the faculty at Rutgers University, the University of Michigan, DePauw University, and the University of Texas at San Antonio.</p>
+
+<p><div class="titles">January 20 (2339 FAB)-
+Laura L. Winn, Communication<br>
+"Rise of the Moorlocks: Voices of Working Class Academics and their Import for Diverse Pedagogy" </div>
+This paper explores themes within the family stories of academics from working class backgrounds, as presented in a series of edited volumes dedicated to this topic. In negotiating a new identity for themselves as academy members, working class academics must balance higher education?s denial of their working class roots with their own desires to succeed in their chosen profession--often resulting in a disconnection from their families of origin and a challenge to their working class identity. This dynamic has the impact to greatly affect the process of higher education in that working class teacher may bring different insights and strengths into the classroom, and also may face different challenges than their non-working class peers. Because "class" within the U.S. is often a less salient identity than are other cultural identities, students from the working class may not naturally connect their own differntial classroom experiences with this identity. Thus, the reflections of working class academics may also pose a valuable opportunity for all teachers to gain a better understanding of the challenges and strengths involved with being a working class origin student.</p>
+
+<p><div class="titles">January 25 (2339 FAB)
+Allen Goodman, Economics<br>
+"Can Medical Treatments that Shorten One?s Life be Efficacious?"</div>
+For medical treatments that address life-threatening diseases, the medical community typically defines efficacy in terms of extending the lives of those treated. Therefore, treatments that do not extend the lives of those treated are often deemed to be ineffective. Economic analysis suggests, however, that improved quality of life while alive may justify treatment, even when length of life is not extended. Following this logic, it may follow that treatments that shorten one?s life can be justified if the improvement in quality of life, while alive, is sufficiently large. In this talk, I discuss the economic analysis and its implications.</p>
+
+<p><div class="titles">January 27 (2339 FAB)
+Robert Elsie, Anthropology: Olzheim, Germany<br>
+"Modern Albanian Literature and its Reception in the English Speaking World"</div>
+The lecture endeavors to introduce contemporary Albanian literature. It focuses on the prose and poetry of Albanian writers, some internationally known like Ismail Kadare and many authors currently being discovered. It also provides insight into the difficulties faced by a small literature in gaining the attention of the Western reader. <br>
+
+Dr. Robert Elsie is a leading specialist in Albanian affairs, in particular on Albanian literature. He is the author of over twenty-five books on Albania and its culture, including a History of Albanian Literature (Boulder 1995) and literary translations from Albanian, and of many articles and research papers. On Robert Elsie, see www.elsie.de and www.albanianliterature.com </p>
+  </div>
+  <div id="February" class="tabcontent">
+    <h3>February</h3>
+    <p><div class="titles">February 1 (2339 FAB)
+Rodney Clark, Psychology
+"Racism and the Health Divide: Effects across the Life Span"</div>
+Perceptions of inter-ethnic group and inter-ethnic group racism are disproportionately higher among Blacks in the United States. As an added stressor for many Blacks, perceptions of racism may influence psychological, social, and physiological functioning in this group, and help account for between-ethnic group and within-ethnic group disparities in health. Although the mechanistic pathways by which racism influences health have yet to be determined, conceptual models have recently been forwarded to facilitate systematic investigations of the relationship between perceived racism and health processes in Blacks. Dr. Clark?s presentation will 1) examine the major tenets and components of these models, and 2) review studies examining the empirical unity of these models. </p>
+
+<p><div class="titles">February 3 (2339 FAB)
+Donald Schurlknight, Chair, Romance Languages & Literatures<br>
+"Power and Politics: Larra and the Death Penalty in Romantic Spain"</div>
+With the death of Ferdinand VII in the fall of 1833, the Queen Regent Mar?a Cristina found herself embroiled in a civil war begun by ultra-conservative forces determined to have Carlos, the king?s brother and pretender to the throne, inherit the crown, instead of the king?s infant daughter Isabel. To counter the Carlists, the Queen Regent was impelled to seek help from moderates and liberals, who, in return, demanded an end to the absolutist state and reforms that would usher in a parliamentary form of government. The civil war itself, in conjunction with a new government headed by a new prime minister who many hoped would produce a democratic form of government, created a scenario of competing voices, competing authorities. Metaphorically, a door had been opened, a new terrain had appeared in which the orthodox still dominated but in which other liberal and subversive voices began to be heard.<br>
+
+Despite Spain?s slow movement away from despotism, remarkably arbitrary power remained in the hands of the few, and these same few nourished the appearances of an emerging parliamentary state. In this climate of progress but also deceit, reforms but also false appearances Mariano Jos? de Larra, a young writer profoundly interested in politics and in the changes sweeping over Spain, and who was already making a name for himself in the literary world, begins to achieve a significant political voice. His is the power of the written word, and one of his major objectives is to uncloak both the mechanisms of power and those responsible for creating these illusions of progress toward freedom.<br>
+
+In this presentation I explore how Larra exposes the power relations that exist between the classes that form society. His essay "Un reo de muerte" is seen as his own subversive discourse opposing the official discourses of truth. In his efforts to unmask these official discourses and to make his readers understand his own "truth," the writer, fearing censorship, employs a discourse that suggests much more than it seems to state at first glance. Hired primarily as a theater critic, Larra describes a public execution as if it were theater, i.e., as a world of fictionality. He draws attention to the fact that "performance" is what is occurring on the real stage of life: there are created illusions, fictions, masks, disguises. We see too that his discourse masquerades as an "art?culo de costumbres" [article on customs] in order to make heard a dissonant political voice that indicts the ruling establishment.</p>
+
+<p><div class="titles">February 8 (2339 FAB)
+Osaumaka Likaka, History <br>
+"Talking Under One?s Breath: Praise Nicknames as Voices of Protest"</div>
+The literature on peasant societies of Africa and Southeast Asia indicates that under conditions of unequal power relations and exploitation the simultaneous use of praise of and insults to authorities, seemingly a contradictory political behavior was a form of resistance motivated by a need for safety. From the outset of colonial encounters, Africans gave derogatory nicknames to despised colonial government officials. They also gave praise nicknames to express appreciation to colonial officials who were less brutal in collecting taxes, recruiting labor, and checking cash crops production. However, some of these nicknames apparently suggesting genuine praise articulated as much protest as those overtly insulting colonial officials. The oppressed used praise to keep "A smile on the lips and war in the heart."</p>
+
+<p><div class="titles">February 10 (2339 FAB)
+Juanita Anderson, Media Arts and Studies<br>
+"Race, Culture and the American City"</div>
+During the past quarter-century, many American cities began to undergo the process of re-invention in the wake of such trends as suburbanization, the transformation of previous minorities into majority populations, new waves of immigration, and, concomitantly, the decline of the manufacturing and industrial complexes which were once a central raison-d?etre of both their economic strength and identity. Detroit in many ways epitomizes these efforts as much as it has come to epitomize America?s urban crisis in the wake of a post ?industrial society.
+
+Race, Culture and the American City is the title of a new television documentary series that I am currently developing. This series will examine the constructs of race and the dynamics of culture in the physical, economic and political evolution of Detroit during the 20th Century. The project takes a holistic view at the complex and interwoven factors and relationships that impact upon the rise, fall, and efforts at renewal of a city whose 20th Century history, until now, has largely been viewed in economic and political terms, and in stark terms of black and white.
+
+In contrast to several emergent studies that focus primarily on the role of race in the politics and economics of the city, this project views the city as an organic entity?comprised of people, neighborhoods, industry, schools, churches, cultural institutions, retailers, services, and centers of recreation and leisure?that changes over time. The project places the African American experience in the broader context of the city?s evolution, and in concert with the stories of the city?s other long-standing ethnic communities, including Italian, Polish, Jewish, Armenian, Asian American, Mexican American and Middle Eastern communities whose histories in Detroit span much, if not all, of the 20th Century. The series will focus attention on the people of this city, their ways of life, aspirations, attitudes, identities and socialization as it examines the constructs of power and privilege that contributed to both the rise and fall of this industrial capital.
+
+For this presentation, I will discuss my preliminary approach to the humanities themes that will underlie the series, as well as my approach to personal narrative and cultural artifacts in documentary filmmaking. I look forward to the input of this colloquium?s participants in helping to refine the themes and in contributing insights that may help guide by research.</p>
+
+<p><div class="titles">February 15 (2339 FAB)
+Ron Brown, Political Science<br>
+"Seek and Ye Shall Find: Thomas Gray, Nat Turner, St. Augustine and Rebellion"</div>
+On November 5, 1831, six acting Justices of the Peace in Southampton County, Virginia, sentenced Nat Turner to death for leading a slave insurrection, which resulted in the estimated death of fifty-six white Virginians. Turner and his co-conspirators violated Chapter 42 of the Code of Virginia, enacted on January 15, 1801, which stated that it was a criminal offense for blacks to plot, conspire, or make insurrection. The fear of black uprisings led the Virginian General Assembly to allocate appropriations annually for the deportation or execution of black Americans. Why would Nat Turner and his co-conspirators select insurgency knowing that their odds of success were extremely low?
+
+This essay, relying primarily on Amartya Sen?s theoretical discussion of "maximization and the act of choice? and Thomas Gray?s, pamphlet, The Confessions of Nat Turner, 1831 maintains that the felt need for personal and collective autonomy, as well as the belief that God was guiding his choices significantly influenced Nat Turner?s selection of political violence. The essay attempts to increase our understanding of the relationship between a quest for human freedom and autonomy and menu selection in Southampton County, Virginia in 1831 by discussing the following issues. First, a brief accounting of the limits placed on black political participation in 1831 will demonstrate that political violence was one of the few available menus for blacks willing to risk their lives for freedom. Second, the essay will show specific passages from St. Augustine?s Confessions and The City of God that help frame Thomas Gray?s portrayal of Nat Turner. This evidence will support the contention that Thomas Gray frames Nat Turner as a normal, deliberate, religious person, with a corruptible scheme who misinterprets God?s holy word. Thirdly, the essay attempts to demonstrate that Nat Turner?s selection of political terror from the political violence menu is deliberate; socialization within the black enslavement community, listening to an inner voice over a three-year period, and a strong believe that his sense of individual autonomy is interwoven with the collective autonomy of the racial group structures the decision to rebel The fourth and last section of the paper attempts to show that political marginalization may lead to the selection of a political violence menu when rebels are willing to risk their lives. Hence, political violence, when selected from a full or restricted menu is often a cry for individual and collective autonomy or recognition of one?s humanity.</p>
+
+<p><div class="titles">February 17 (2339 FAB)
+Vanessa Middleton, Library & I.S. *****THIS LECTURE HAS BEEN CANCELLED DUE TO ILLNESS******
+"International Librarianship: Building an International Online Learning Community"</div>
+Advanced technologies have enhanced individuals? ability to communicate, interact, exchange ideas and participate within society. However, many disenfranchised individuals have not been empowered by these advances. This lecture will review varying levels of access to information and technology, often referred to as the digital divide; including findings from a recent study examining the impact of technology on the urban poor. There will be a demonstration and discussion of a recent grant funded project that supports the development of an online international learning community of librarians and faculty with research interests related to how Africa, the Caribbean, and other countries are addressing issues related to the digital divide and the role of libraries.<br>
+
+Bio: Vanessa Middleton is a Librarian at Wayne State University. Her research interests include information literacy, comparative and international librarianship, equity of information access and technology. She earned her Master?s of Library and Information Science from Wayne State University and Bachelor?s of Business Administration from The University of Michigan. She recently attended The Association of Caribbean University, Research and Institutional Libraries Conference in Trinidad and Tobago.</p>
+
+<p><div class="titles">February 22 (2339 FAB)
+Leon Wilson, Chair, Sociology<br>
+"Fatherhood in the Caribbean: Myths and Realities"</div>
+Debates about the status of Caribbean males in familial affair abound in the extant literature. More often than not, males at worst are considered absent and at best marginal. Yet such characterizations are constructed without understanding the cultural or structural contexts of familial relationships. Additionally, such claims are seldom buttressed by adequate empirical data. This study offers a critique of the concept of matrifocality, a term developed to describe the nature of Caribbean paternal and conjugal relational structures. It provides an empirical challenge to the idea of the marginal male and provides a framework for understanding the roles males adopt in Caribbean families. Empirical results suggest that given specific contexts, the Caribbean male is not as marginal as thought and thus the need to further investigate the nature of cultural arrangements that determine relational structures in the Caribbean.</p>
+
+<p><div class="titles">February 24 (2339 FAB)
+Norah Duncan IV, Music<br>
+"A Comparative Discussion of African and African American Spirituality"</div>
+As a scholar of African-American spiritual music, Norah Duncan IV often is called upon to compare the music of various Christian churches in America with the sacred music of African-Americans. In September 2004, Duncan spent time in Eastern and Northern Nigeria, in the Igbo and Hause regions, studying the religious music of these African peoples as well as teaching various Nigerian choirs the music of African-Americans. His Brown Bag lecture will be a discussion of his experiences in Nigeria and a comparison of the spiritual music of Nigeria with the music of African-Americans, paying particular attention to the similarities between the two. </p>
+  </div>
+  <div id="March" class="tabcontent">
+    <h3>March</h3>
+    <p>Data</p>
+  </div>
+  <div id="April" class="tabcontent">
+    <h3>April</h3>
+    <p>Data</p>
+  </div>
+  <div id="May" class="tabcontent">
+    <h3>May</h3>
+    <p>Data</p>
+  </div>
+</div>
+  <!-- bg border div ends-->
+  <!-- InstanceEndEditable --><!--OuterBox ends-->
+
+  <footer>  
+    <ul class="footerlist seperator">
+    	<li><a href="#"><img src="../img/Humanities Center Logo.png" width="70" height="77"></a></li>
+    </ul>
+     <ul class="footerlist-map">      
+        <li><a href="https://maps.wayne.edu/all/#buildings-faculty-administration" target="blank"><img src="../img/map.png" width="50" height="50"></a></li></ul>
+        <ul class="footerlist seperator"> 
+        <li>656 W. Kirby </li>
+        <li> 2226 Faculty Administration Building</li>
+        <li> Detroit, MI 48202</li>
+    </ul>
+  	 <ul class="footerlist seperator">
+    	<li> PH: 313-577-5471</li>
+        <li>   FX: 313-577-2843 </li>
+        <li>  http://research2.wayne.edu/hum/</li>
+        <li> <a class="notA" href="mailto:walter.edwards@wayne.edu">walter.edwards@wayne.edu</a></li>
+    </ul> 
+    <ul class="footerlist ">
+    	<li><a class="notA" href="../AboutUs/OurMission/mission.html">Our Mission</a></li>
+        <li> <a class="notA" href="../MakeAGift/gift.html">Make a Gift</a></li>
+        <li> <a class="notA">Past Programs</a>
+            <ul class="dropdown">
+                <li><a class="notA" href="../PastPrograms/lecture.html"> Virtual Lecture</a></li>
+                <li> <a class="notA" href="../PastPrograms/OpenCompetition/competition.html">Open Competition</a></li>
+                <li> <a class="notA" href="../PastPrograms/InnovativeProjects/projects.html">Innovative Projects</a></li>
+                <li> <a class="notA" href="../PastPrograms/munusculum.html">Munusculum</a></li>
+                <li> <a class="notA" href="../PastPrograms/mentoring.html">Grant Mentoring</a></li>
+            </ul>
+        </li>
+        
+        <li><a class="notA" href="#"> Links</a> 
+            <ul class="dropdown">
+                <li><a class="notA" href="../Links/internal.html">Internal Links</a></li>
+                <li><a class="notA" href="../Links/external.html">External Links</a></li>
+            </ul>
+        </li>
+        
+    </ul> 
+    <ul class="horizontal hover1 footerlist">
+    	<li><a class="notA" href="https://twitter.com/wsuhumanities"> <img src="../img/twitter.png" width="45" height="40">  </a></li>
+        <li> <a class="notA" href="https://www.facebook.com/WSUHumanities">  <img src="../img/fb.png" width="50" height="50"></a></li>
+        <li><a class="notA" href="https://www.flickr.com/photos/53952766@N07/sets/">  <img src="../img/flikr.png" width="50" height="50"></a></li>
+        <li> <a class="notA" href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p"> <img src="../img/youtube.png" width="50" height="50"> </a></li>
+    </ul>   <hr>
+             <div class="left"> 
+             Developed by Shruthipriya Soranjerry Baskar. Operated by Jennifer Leonard
+             </div>
+             <div class="right">Humanities Center, Copyright &copy; 2017
+             </div>
+   </footer> 
+ 
+
+
+<!-- WSU Footer -->
+<div class="wsufooter">
+    <div class="wsuwrap">
+        <div class="privacy">
+            <p><a href="https://wayne.edu/policies/">Privacy and University Policies</a></p>
+        </div>
+        <div class="copyright">
+            <p><a href="https://wayne.edu/">Wayne State University</a> &copy; 2017</p>
+        </div>
+    </div>
+</div>
+<!-- WSU Footer-->
+   <script type="text/javascript">
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
+  </body>
+<!-- InstanceEnd --></html>
