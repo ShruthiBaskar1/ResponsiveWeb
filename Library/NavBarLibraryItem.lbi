@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><nav class="clearfix"> 
+<!-- div begins: make a gift floating label -->
+       <div id="gift"><img src="../img/gift-label1.png"></div>
+		<!-- div ends: floating label--> 
+<ul id="MenuBar2" class="MenuBarHorizontal clearfix">
+<li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+        	<ul>
+                <li><a href="../AboutUs/DirectorsMessage/message.html">Message from the Director</a></li>
+                <li><a href="../AboutUs/AdvisoryBoard/advisory.html">Advisory Board</a></li>
+                <li><a href="../AboutUs/SteeringCommittee/committee.html">Steering Committee</a></li>
+                <li><a href="https://www.flickr.com/photos/53952766@N07/sets/">Photos</a></li>
+                <li><a href="https://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#g/p">Videos</a></li>
+                <li><a href="../AboutUs/AnnualReports/reports.html">Annual Reports</a></li>
+                <li><a href="../AboutUs/OurStaff/staff.html">Our Staff</a></li>
+          </ul>
+        </li>
+        <li><a class="MenuBarItemSubmenu" href="#">Funding</a>
+          <ul>
+            <li><a class="MenuBarItemSubmenu" href="#">Faculty Funding</a>
+              <ul>
+                <li><a href="../FacultyFunding/MWFF/marilyn.html">Marilyn Williamson Faculty Fellowship</a></li>
+                <li><a href="../FacultyFunding/ResidentScholars/resident.html">Resident Scholars</a></li>
+                <li><a href="../FacultyFunding/FacultyFellowship/fellowship.html">Faculty Fellowship</a></li>
+                <li><a href="../FacultyFunding/WorkingGroups/groups.html">Working Groups</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Student Funding</a>
+            	<ul>
+                <li><a href="../StudentFunding/DoctoralDissertation/dissertation.html">Doctoral Dissertation Fellowship</a></li>
+                <li><a href="../StudentFunding/DoctoralDissertation/travel.html">Graduate Travel</a></li>
+           	  </ul>
+            </li>
+            
+          </ul>
+        </li>
+        <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
+        <li><a href="../Conference/conference.html">Conference</a></li>
+        <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+        <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
+   </ul>
+  <a href="#" id="pull">Menu</a>
+</nav>

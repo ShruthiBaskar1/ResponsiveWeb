@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0607timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="globalviolence.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,63 +256,124 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Sovereignty, Justice and the Law Across Disciplines</div>
-<div id="text">
- <p>Conference date: Friday, April 11, 2008 <br />
-Alumni House 
-</p>
-
-<p align="center">Click <a class="normalA" href="SJ flyer.pdf" target="_new">here</a> to open the schedule</p>
-</div>
-
-<div class="titles">Abstracts</div>
-<div id"text">
-<p><b>Jeremy Waldron (Law, New York University)
-</b></p><div id="text">
-<p>He is the author of several books, including the forthcoming <em>Toleration and   Its Limits</em> (NOMOS Series) with Melissa Williams (NYU Press, March 2008), <em>God, Locke, and Equality: Christian Foundations of Locke's Political Thought </em>(Cambridge University Press, November 2003).<em>The Dignity of   Legislation</em> (Cambridge University Press, 1999),<em>Law and   Disagreement</em> (Oxford University Press, 1999).</p>
-<p>&quot;<strong>Sovereign States and the Rule of   International Law</strong>&quot;<br />
-  Should we apply the requirements of the Rule of   Law to law in the international realm? Are the requirements the same in this   context as they are in the law of a particular country? We usually associate the   Rule of Law with a demand for certainty, predictability and settlement in legal   affairs, with requirements of clarity and prospectivity, with generality and   legal equality, and with principles of institutional regularity and natural   justice. Do these requirements make sense in the international context? That's   the first set of questions that will be addressed in the lecture. <br />
-  The second   part of the lecture will address some issues about the Rule of Law and   sovereignty in the international arena. There is no world government; there is   no overarching sovereign in the international arena. Does this make the Rule of   Law easier or harder? It might make it harder because the absence of a   sovereign?the absence of centralized authority generally?means it is more   difficult to subject law-making and legal administration to Rule-of-Law   discipline: non-centralized law-making is haphazard and effectively   uncontrolled. </p>
-<p>At the same time the absence of an international sovereign might   make the Rule of Law easier, because we are not faced with the Hobbesian problem   of subjecting the sovereign to his own laws. It might even make the Rule of Law   unnecessary. If the Rule of Law is conceived in the ordinary way as a check on   governmental power, then it may be redundant in this context because there is no   international government to limit. 
-  That analysis, however, involves a   misleading picture of international law, which treats individual sovereign   states simply as sovereigns and aims to give them protections analogous to those   needed by individuals at the level of national law. Formally that picture is   correct, but it ignores a couple of important points: (i) sovereign states are   also law-makers and officials of the international system; (ii) they need to be   protected from one another in these capacities (as well as in more obvious ways,   such as protection form one another's aggression); and (iii) ultimately the   point or purpose of international law is not the protection of sovereign states   but the protection of the populations committed to their charge. The Rue of Law   in the international realm, just as much as the Rule of Law at the national   level, is designed to offer protection (directly or indirectly) to ordinary men   and women against the various things that may be done to them by those who hold   any sort of political power.
+</form><br><br><br>
+<div id="text"><h2>Theme: Global Violence Impact and Resolution
+</h2>
+ <p>Friday, November 21st
+<br />
+Alumni House</p>
+<p align="center">Please click <a href="scheduleflyerfallsymposium09.jpg" target="_new">here</a> for schedule.
 </p>
 </div>
 
-<p><strong>Ollie Johnson</strong>,   Assistant Professor of Africana Studies<br /><b>"Affirmative Action and Racial Justice in Brazil"</b>
+<h3>Explication</h3>
+<div id="text">
+  <p align="justify">Violence itself is a very broad concept -   ranging from individual to international conflict patterns. It involves the   infliction of pain and suffering on life forms (human, animals) and the   destruction of property and the natural environment. To narrow our focus we   identify collective political violence with global or international implications   (Global Violence) as the major concern of the world today. Our more specific   interest here is on the impact or consequences of such violence on the human and   global environment.<br />
+    <br />
+    The main types of global violence to be investigated   are international wars involving bombings (particularly cluster bombs), and at   the domestic (national) level, civil wars and land mines, ethnic conflicts, and   resource wars (over land, oil, diamonds etc.) in the Global South, particularly   those conflicts in which the US and other developed global powers were/are   directly involved both historically and contemporaneously.</p>
+  <p>A focus on the impact of collective violence counterbalances the plethora of   existing theories on its causes and spread. The more immediate consequences   involve in some cases genocide, in other cases refugee crises, deforestation and   desertification, air, ground and water pollution, starvation, lost childhood,   and untold numbers of casualties.<br />
+    <br />
+    For the more economically developed   societies such as the United States, the consequences of global violence could   be viewed in terms of what Chalmers Johnson called the &ldquo;blowback&rdquo; effect which   has brought economic crises, mass political protest, serious challenges to   democratic participation and values, xenophobic responses to such issues as   immigration and religious tolerance, global anti-Americanism and increasing   terrorism.</p>
+  <p>In academia, the study of global violence transcends disciplinary boundaries.   Apart from the Social Sciences (particularly Political Science and History)   where probably most of the writing and studies of this phenomenon are pursued,   the humanities and the arts also demonstrate concerns about wars and the   consequences of wars and other forms of collective violence. Both war and peace   have inspired creative expressions in music and song, films and plays, novels   and poetry, and varieties of paintings. Also, in the natural sciences wars and   collective violence significantly impact research on the environment and health   issues.</p>
+  <p>Important among the consequences of global violence are the collective   responses to it, particularly the varied approaches to conflict mitigation or   resolution. Resolution of global violence could be conceived in terms of seeking   alternatives to violence in struggles for change, such as non violent   responses/approaches, instituting or expanding political democracy, and states   employing more racially and socially inclusive economic redistribution programs   and projects.</p>
+  <p>The Humanities Center is inviting WSU faculty to nominate themselves to   present papers on the theme &ldquo;Global Violence: Impact and Resolution&rdquo; for the   Center&rsquo;s 2008 Fall Symposium on November 21, 2008. Each self-nomination must   include the proposed title of the talk and short description (abstract) of the   content of the paper including its theoretical framework, if applicable. This   statement should not be long (a paragraph would suffice) but should contain   enough information for the Center&rsquo;s Advisory Board to make a decision on the   papers to choose for the symposium. The proposals should be addressed to Walter   Edwards, Director of the Humanities Center, 2226 FAB or email your proposal to   walter.edwards@wayne.edu . The proposal should reach the Director by April 25,   2008. Authors of selected papers will be notified by May 9, 2008.</p>
+  <p>The Humanities Center welcomes proposals to talk about global violence from   all disciplines.</p>
+</div>
+<h3>Keynote Speakers</h3>
+<div id="text">
+<p><strong>John Vasquez, Professor, Political Science at University of Illinois   at Urbana-Champaign<br />
+</strong><em>Controlling War: What Social Science Can   Tell Us</em> <br /></p><div id="text">
+<p>The scientific study of peace and war has long been premised on the notion   that to control war one must understand its causes; eliminating or mitigating   those causes is the key to building peace. Recent research on the risk factors   associated with crises escalating to inter-state war is reviewed to see what   early warning indicators of war onset can be provided to help avoid or even   prevent its outbreak. Research on zones of peace, especially the democratic   peace but also work on stable borders, is reviewed to learn how to build   peaceful neighborhoods. The dangers posed by deriving incorrect policy   implications from the democratic peace are briefly outlined. </p>
+</div>
+<p><strong>Rey Chow, Professor, Humanities at Brown University </strong><br />
+  <em>&ldquo;I Insist on the Christian Dimension&rdquo;: Forgiveness,   Translation, Secularized Representation, and the Outside of the Human </em></p>
+<div id="text">
+<p>The question I will explore pertains to the type of exchange specific to   human relations we call forgiveness. I shall begin with a reference to a key   episode in the South Korean film &ldquo;Miryang&rdquo;/&rdquo;Secret Sunshine&rdquo; (directed by Lee   Chang-dong, 2007), which stages forgiveness in a context of globalized Christian   evangelism. Through the writings of Jacques Derrida, Erich Auerbach, and Edward   Said, among others, I will then argue that the connotations of forgiveness   extend considerably beyond a strictly religious dimension, going so far as to   bear on questions about translation, the secularization of representation, and   the limits of the human.</p>
+</div>
+
+</div>
+<h3>Speaker Abstracts</h3>
+<div id="text">
+<p><strong>Irshad Altheimer, </strong>Assistant Professor, Criminal Justice <br />
+  <em>Social Disadvantage and Homicide in Global Context
+  </em>
 </p>
 <div id="text">
-<p>Affirmative action has been one of the most significant developments in   contemporary Brazilian politics. Governments, universities, and private   institutions throughout the country have proposed, debated, and in many cases   implemented policies to include members of the national population who had been   excluded, underrepresented or simply absent. Women, Afro-descendants, public   high school graduates, indigenous people, the poor, and the disabled have often   been the target beneficiary groups. Despite the good intentions of its earliest   sponsors, affirmative action has become an intensely polarizing public policy   issue. This lecture will emphasize that affirmative action is a step on the path   to racial justice in Brazil.</p>
+<p><strong> </strong>Over the last 35 years immigration has led to the settlement of   diverse ethnic groups in many Western developed nations. Although members of   some of these groups have flourished, others have not fared as well. In many   Western developed nations members of immigrant and ethnic minority groups face   social disadvantage and live in isolated ethnic enclaves. Although this issue   has received limited attention in the criminological literature, no study to   date has adequately addressed whether change in levels of disadvantage for   immigrants and ethnic minorities living in Western developed nations has   influenced changes in homicide rates in these nations. This study attempts to   address this gap in the literature.</p>
 </div>
 
-<p><strong>Denver Brunsman</strong>,   Assistant Professor of History<br />
-  <strong>&quot;<em>The Evil Necessity: British Naval   Impressment in the Eighteenth-Century Atlantic World</em>&quot;<br />
-  </strong></p>
+<p><strong>Clifford Clark, </strong>Distinguished Visiting Professor, Economics <br />
+  <em>Development or Military Action as a Source of National Security</em></p>
 <div id="text">
-<p>British naval impressment, or forced service, was one of the greatest   controversies in the eighteenth-century Atlantic World. Even as the practice   helped the Royal Navy to control the seas against its imperial rivals, it tore   sailors from their families, destabilized Atlantic seaports, and played crucial   roles in both the American Revolution and War of 1812. At the heart of the   controversy over impressment was a simple question: was it legal? If so, was it   just, or did it violate traditional British liberty? A diverse group of   Enlightenment thinkers, including Voltaire, David Hume, and Benjamin Franklin,   all weighed in on these questions. Ultimately, legal arguments that impressment   was a state necessity satisfied British courts, but the defense never silenced   the institution's many critics. </p>
+<p>In a search for causes, I will review studies of organized violence during the   first and second world wars. Recent works such as <em>Dynamics of Destruction </em>by Alan Kramer who argues that extensions of wars to include civil   populations began during the early phases of the WWI, and <em>Retribution: The   Battle for Japan, 1944-45,</em> by Max Hastings who seeks to explain violence   directed to civilian populations by the combatants. I will review explanations   of the authors, attempt to understand different forms of violence,?? and focus   on common linkages between poverty, marginalization, humiliation, and violence   described by the literature on the urban uprisings during the late 1960's, in   development studies of poverty throughout the world including recent works on   terrorism such as <em>Civil Paths to Peace </em>written byAmartya Sen, John   Alderdice, Kwame Appian, and others. During the final weeks of study, I expect   to put forth well defined intervening explanations for statistical ties between   poverty and violence found by Paul Collier in <em>The Bottom Billion.</em></p>
 </div>
 
-<p><strong>Christopher Peters</strong>,   Associate Professor of Law<br />
-  <strong><em>&quot;Popular Sovereignty and   Legality&quot;</em></strong>
-</p>
+<p><strong>Annie C. Higgins, </strong>Classical and Modern Languages,   Literatures and Cultures <br />
+  <em>See the Faces, Hear the Voices</em></p>
 <div id="text">
-<p>Popular sovereignty and legality ? in   particular, legal rights entrenched in a constitution ? often are thought to   conflict with each other in a way that mirrors the supposed tension between   individual autonomy and legal authority. Both perceived conflicts, however, rest   in part upon the problematic idea that law knows better than legal subjects what   to do in particular cases. In fact, legal authority is best justified as a means   of resolving disputes about what to do in particular cases. This   dispute-resolving account of law dissolves the autonomy-authority dichotomy, and   it suggests a way to accommodate popular sovereignty and constitutional rights:   Judicially enforced constitutional rights might serve as a relatively neutral   means of settling disagreements about the relationship between political   majorities and political minorities.</p>
+<p>A popular Palestinian song describes martyr memorial posters thus: <br />
+  <em>The streets of the camp are crowded with portraits;</em> <br />
+  <em>Our   martyr speaks and gives voice to stones.</em></p>
+<p>In the spirit of Ranajit Guha&rsquo;s method of listening to the   small voices, I will bring some of these neglected voices to challenge popular   perceptions, and to replace some categorizations of &ldquo;enemy&rdquo; with that of   &ldquo;co-exister,&rdquo; and even beyond that, to &ldquo;friend.&rdquo; <br />
+  Public   memorials for the dead have become a part of everyday life in refugee camps,   most commonly as streams of posters which fade and are then replaced by faces of   new martyrs. Is the martyr depicted as victim or victor? How many are fighters   and how many are children and other civilians, including foreigners? Most   significantly, what impact do the posters have on someone who sees them   everyday? Is it the blowback phenomenon offered by media analyses, urging new   generations to sacrifice themselves? Or do the posters become a part of the   landscape that is largely ignored? I suggest that the responses are more nuanced   than either of these explanations. We can find threads of engagement in the   humane strains that become evident in the context of these poster texts. <br />
+  I will discuss this context based on the time I spent in   Jenin refugee camp in 2002, with reference to my research in refugee camps in   the diaspora, especially Lebanon and Syria. I use de Certeau&rsquo;s practice theory   [<em>The Practice of Everyday Life</em>, 1984], Baudrillard&rsquo;s concepts   [<em>Symbolic Exchange and Death</em>, 1976], and Boal&rsquo;s methods [<em>Theatre of   the Oppressed</em>] in my theoretical framework.</p>
+<p> When I did   Boal-style theatre spontaneously in a variety of street and home venues, I was   surprised at the depth of desire for making the enemy a friend. In practice, I   have seen soldiers lay down their weapons to shake hands with children who put   down their stones. The possibilities for the future are already happening in the   present; the faces need to be seen and the voices heard. I hope to bring these   into the spotlight for all to consider, and perhaps to reshape their own views   on &ldquo;what needs to be done.&rdquo; </p>
 </div>
 
-<p><strong>Brad Roth</strong>, Associate   Professor of Political Science and Law<br />
-  <strong><em>&quot;Sovereign Equality and   Moral Disagreement&quot;</em>
-  </strong></p>
+<p><strong>Frank Koscielski, </strong>Academic Services Officer IV <br />
+  <em>Teaching Non-Violence: an Interdisciplinary Approach</em></p>
 <div id="text">
-<p>For those who impute to the international legal order an inherent purpose to   establish a universal justice that transcends the boundaries of territorial   communities, the legal prerogatives associated with state sovereignty represent   impediments to the global advance of legality. Sovereignty thus appears as the   unconquered domain: a realm of lawlessness that must recede for international   law to advance. This view, however, tends to neglect persistent and profound,   albeit bounded, disagreement within the international community as to the   requirements of justice. An alternative conception of international order   predicates peace and cooperation on continued respect for each political unit's   capacity to make and enforce the ineluctably contentious decisions needed to   structure social life. </p>
-<p>The international order's pluralism   should never be confused with the &quot;gorgeous mosaic&quot; pluralism of the liberal   imagination, in which an overarching unity as to &quot;the right&quot; renders   inoffensive, and even enriching, the persistence of differences over &quot;the good.&quot;   A duty not to intervene in a foreign political community's internal conflict, so   far as that duty extends, is a duty to respect patterns of coercion, and even   violence, within a collectivity of which one is not a member. As long as   profound disagreement about justice remains part of the human condition, an   international pluralism, even in its ideal form, will at moments be a tense and   even ugly pluralism, an accommodation among political communities dominated by   incompatible positions on matters of justice and injustice, freedom and tyranny,   and, ultimately, life and death.</p>
+<p>I have had the privilege of designing and implementing a large number of courses   for the Department of Interdisciplinary Studies here at Wayne State over the   past ten years.? A number of them, both at the undergraduate and graduate level,   have dealt with war, national and international violence, and most importantly   movements for peace and social justice. These courses include &ldquo;World War I as a   Turning Point&rdquo; (3000 level), &ldquo;Approaches to the Study of History&rdquo; (3000 level),   &ldquo;Peaceful Revolutions: 20th Century Non-Violent Movements for Social Change&rdquo;   (3000 and 6000 level), and &ldquo;The Cold War&rdquo; (3000 and 7000 level).? </p>
+<p>Each of these courses explores, in some way, humanity&rsquo;s   propensity for hatred, violence, and war. But each course also taught about the   individuals and institutions who, using non-violent methods, sought to   understand and oppose the forces of evil and violence in the world. In all of   these courses I used multiple approaches and multiple disciplines to study and   develop an understanding of, not only the causes, but possible solutions. Music,   poetry, literature, film?the visual and performing arts as well as the Social   Sciences, particularly History, Anthropology, and Economics were incorporated   into the teaching and learning processes. Students were encouraged to grapple   with the issues and seek their own understanding of violence and non-violence. </p>
+<p> My presentation will focus on particular methodologies for   teaching about violence and non-violence using my syllabi and course materials   as examples of interdisciplinary approaches to problem solving. Education,   global understanding, and cooperation provide the only long term hope for   humanity&rsquo;s survival on earth. In this presentation I will demonstrate how   teaching non-violence can be an ideal way to both emphasize interdisciplinary   methods of study and to nurture integration of knowledge towards positive   change. </p>
 </div>
+
+<p><strong>Perry Mars, </strong>Professor, Africana Studies <strong>?</strong> <br />
+  <em>Hot Legacies of the Cold War: Destabilization and Change in the   Caribbean</em></p>
+<div id="text">
+<p>The food riots and protests in Haiti, Guyana, and other Caribbean countries   in April 2008 are only the latest manifestations of the usually violent and   destabilizing legacies of Cold War strategies employed in that region. This   paper will seek to trace the inter-connection between the application of US cold   war policies to the Caribbean between the 1950s and the 1980s, and the frequency   of political violence events, labor unrest, armed criminal gangsterism,   narco-trafficking, and hunger marches today - with the further consequence of   increasing militarization of conflict in the most vulnerable of these Caribbean   countries. The relationship between these &ldquo;security&rdquo; issues and the prospects   for developmental change will also be addressed. US Cold War strategies are   discerned not only in terms of fostering &ldquo;low intensity warfare&rdquo; in the region,   but in the imposition of a &ldquo;new world order&rdquo; asserting IMF structural adjustment   policies and the hegemonic control of neo-liberalist globalization. Further,   this study puts under searching scrutiny, or also challenges, three basic   theoretical assumptions of the main literature on global political violence:   that violent conflicts between democracies are virtually non-existent, that   coercive and military force is sufficient to bring peace and democracy to poor   unstable countries, and that internal factors are invariably predominant in   determining political conflict and violence in developing countries.?? </p> 
+</div>
+
+<p><strong>Frederic S. Pearson, </strong>Director of Peace and Conflict   Studies<strong>, and Susumu Suzuki, </strong>Ph.D. student, Political Science <br />
+  <em>Approaching Peace: Origins, Processes and Outcomes of Negotiations in   Civil Wars, 1990-2006</em></p>
+<div id="text">
+<p>This paper presents our research on disaggregating negotiation processes in   civil wars in the context of external military intervention and arms supply in   the conflicts. We seek to understand the effects of intervention and arms on the   onset (timing), process (progress/regress) and outcome (success/failure) of   civil war negotiations in Southeast Asia and other regions. Southeast Asia is   the site of a high percentage of civil war cases in the post-cold war period. A   careful theoretical framework for understanding negotiation impetus for both   governments and insurgent groups is developed and presented for testing with   quantitative and qualitative indicators. The framework will entail such factors   as contrasting group and government perspectives, power balances, stalemates,   costs, and external backing. Our findings show various dimensions affecting   progress and failure in approaching peace, together with policy-relevant   considerations for facilitating effective talks and conflict management. Results   of a preliminary pilot study of five countries are appended; the entire group of   Southeast Asian countries will be analyzed for the November presentation.?? </p>
+</div>
+
+<p><strong>Michael Scrivener, </strong>Professor, English <br />
+  <em>Habermas and   Taylor on Global Violence</em></p>
+<div id="text">
+<p>The usefulness and limitations of J?rgen Habermas's writings that are   relevant to the problem of global violence are important to explore. Few   thinkers have developed as rigorously as Habermas Kantian ideas of cosmopolitan   right and norms of international law. In interviews and a few writings, he has   applied these ideas and norms to contemporary international conflicts, including   the first Gulf War, which he supported on grounds of international law, and the   present war in Iraq, which he has opposed on the same legal grounds. For   understanding the emotional intensities behind the fierce opposition to Israel   one has to turn away from a Kantian like Habermas to a Hegelian like Charles   Taylor, who attends to the process by which social groups acquire and maintain   their identity. Abstractly and pragmatically, I am inquiring about the capacity   of rational procedures and logic to mitigate against the violence of nationalism   and religion. If one uses Taylor to understand nationalistic and religious   commitments, do Habermasian cosmopolitan procedures require revision of any   kind?? How does the rational cope with the non-rational when the latter is   violent?<strong>?</strong></p>
+</div>
+
+<p><strong>Anca Vlasopolos, </strong>?Professor, English <br />
+  <em>Global Violence   and the Creation of the Transnational Subject as Reflected in Contemporary   Fiction and Memoirs</em></p>
+<div id="text">
+<p>My presentation will center on the way in which a large number of novels and   memoirs in the late twentieth and early twenty-first centuries articulate the   protagonist(s) as transnational subjects. The definition of a transnational   subject, as I see it forming through these texts, is one whose antecedents are   &ldquo;mixed&rdquo; or &ldquo;impure&rdquo; or of an ethnicity that constitutes a minority in whatever   nation the subjects finds him/herself in. In such memoirs as Sara Suleri&rsquo;s <em>Meatless Days</em> and Shirley Lim&rsquo;s <em>Among the White Moon Faces</em>, as   well as in novels like M.G. Vassanji&rsquo;s <em>The In-Between World of Vikram   Lall</em> and Arhundati Roy&rsquo;s <em>The God of Small Things</em>, the protagonists   (narrators in the case of the memoirs) struggle with problems of location in   their search of identity. The crisis in adjustment, assimilation, successful   migration, successful returns can in each case be seen as arising from global   violence exacerbated in the country of origin by forces of colonialism and its   aftermath; by global capital; by the rise of nationalism and religious fervor in   response to global marginalization of small nation-states; by the continued   practices of empire even after independence. <br />
+  </p>
+<p>Because the   scope of the presentation is brief, I will concentrate on showing the startling   similarities of subject formation under global violence despite the minutely   specific circumstances of the narrators (memoirs) and protagonists (novels). My   research focuses on the phenomenon of the transnational subject in contemporary   writing; its frequency suggests that notwithstanding national and religious   fanaticism, the human condition in the new century tends toward a transnational   identity that opposes global violence through two primary traits: a deliberate,   conscientious alliance with people not of one&rsquo;s own narrowly defined &ldquo;family,&rdquo;   whether this means &ldquo;race,&rdquo; nationality, ethnic group; and a fierce loyalty to   local culture in its best, most earth-embracing practices.</p>
+</div>
+
+<p><strong>David Weinberg, </strong>Director of the Cohn-Haddow Center for   Judaic Studies and Professor, History <br />
+  <em>Dealing with Holocaust Survivor   Youth in Postwar West European Jewish Communities</em></p>
+<div id="text">
+<p>Among the many issues that concerned Jewish communities in postwar Western   Europe as they attempted to reintegrate returning survivors and new immigrants   from Nazi camps was the fate of young survivors. Community leaders were   convinced that the lack of adult supervision and the hostility that Jewish youth   often evinced toward authority during the Holocaust had led many? of them to   engage in anti-social activity along with their non-Jewish peers. The problem   was seen as most acute among the thousands of young men and women orphaned by   the war. In the late 1940s and early 1950s, Jewish educators in France, Belgium,   and Holland talked openly about the danger of Jewish 'juvenile delinquency' and   the fate of 'feral children.' Leaders of all ideological stripes wondered   whether rebellious Jewish youths threatened the survival of the community by   refusing to socialize with one another and to marry. As late as 1953, a report   presented to the American Jewish Joint Distribution Committee warned that unless   something was done to integrate 'alienated youth,' 'one can envision a period,   close at hand, in which all Jewish efforts, in whatever sphere, will have lost   all possibility to survive.' </p>
+<p>In my presentation, I propose to discuss   the distinctive problems that young Jewish survivors faced in readapting to the   postwar environment in France, Belgium, and the Netherlands. Special emphasis   will be placed on the various approaches devised by communal leaders to   integrate young survivors back into the Jewish fold, including the development   of informal methods of Jewish education, the establishment of children?s homes   and summer camps, changes in religious liturgy and observance, and the creation   of Jewish community centers.</p>
+</div>
+
+<p><b>Daphne Ntiri, Associate Professor of Africana Studies <br />
+Merry Stewart from University of Detroit College of Nursing, <br>Transformative Learning Intervention: Effect on Functional Health Literacy and Diabetes Knowledge in Older African Americans </b></p><div id="text">
+<p>This study evaluated the effect of a transformative learning (TL) intervention on functional health literacy and diabetes knowledge in older African Americans in Detroit. Twenty participants from senior community centers completed a six session intervention. </p><p>
+Research pertaining to adult learning theories has been centered in traditional educational environments (e.g. classrooms). However, adult learning theories are reaching beyond traditional contexts. These extended contexts include health care environments. The exploration of educational pedagogies for adults in health care has been driven by longer life spans and the increasing incidence of chronic illnesses (Chronic Illness - The Rise of Chronic Illness, 2007). </p><p>
+Educators have explored the process of change in adults over the years. Adult educators have been shifting from a complete reliance on traditional pedagogical approaches to alternative learning approaches (Knowles, 1984). Knowles stated that the goal of these alternative approaches should be to motivate adults to become more active in the learning process. Active learning affords adults the opportunities to develop new frames of reference and see the world differently from where they were before. Green (1981) advocated that active learning principles emphasize learner choice more than expert control.</p><p>
+Mezirow (1996) has expanded the theoretical debate further with his focus on transformative learning (TL). Mezirow declared that TL is a social process by which one can construct and apply new meaning to one's experience as a guide to action. In other words, TL is viewed as an effective method to expand one's consciousness and bring about the required social change as is advocated in this study. Additionally, TL is a self-directed process whereby learners use their initiatives with or without the help of others to determine the information they need and seek ways to acquire it (Cranton, 2006). This acquisition process involves self-reflection by the learners in which they question why it is important to learn and the validity of the learning itself (Pilling-Cormick, 1997). This process is also in support of Freire's (1970; 1973) theory of critical consciousness that promoted the application of transformative learning principles as an instrument for personal transformation and social change. Freire asserted that education is liberating for both the change agent and the individual learner in the search for knowledge. </p></div>
 </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->

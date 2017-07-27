@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0809timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="century.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,66 +256,148 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: The Environment</div>
-<div id="text">
- <p>Conference date: Friday, March 26, 2010 <br />
-The McGregor Memorial Conference Center<br />
-495 Ferry Mall Detroit, MI 48202-3610
-</p><p>Please click <a href="conference 2010-2011.pdf" target="_new" class="normalA">here</a> for schedule</p>
-</div>
-<div class="titles">Explication</div>
-<div id="text">
- <p>From the cave paintings of early humans to the elaborate laboratory-like zoological gardens in contemporary cities, nature and humans' place in nature have preoccupied humanity. We measure ourselves against nature; we create myths to explain natural phenomena; religions begin in intense, visionary encounters with the natural Other; science attempts to persuade us in the twenty-first century to begin to see ourselves as part of nature, not as dominators or exploiters of it.</p><p>
+</form><br><br><br>
+<div id="text"><h2>Theme: Bildung in the 21st Century </h2>
+ <p>The Advisory Board of the Humanities Center invites WSU faculty to propose papers that address the ideas inherent in the concept of Bildung, explicated below.</p>
+ <p> <u>Conference Date:</u> November 19, 2010.<br /><br />
+<a class="normalA" href="10-11/Bildung_schedule-flyer2.pdf" target="_new">Flyer</a><br />
+<a class="normalA" href="10-11/schedule.pdf" target="_new">Schedule</a><br />
+<a class="normalA" href="http://www.flickr.com/photos/53952766@N07/sets/72157625388735215/" target="_new">Pictures</a>
 
-The theological and classical views of humans as stewards of the natural world as well as lords of creation began to give way to more systematic approaches following the Copernican and Galilean revolution: our entire planet was no longer the center of the universe. The discovery of the microscope led to advances in empirical science. Alexander von Humboldt's path-breaking scientific study of nature, the three-volume Personal Narrative of Travels to the Equinoctial Regions of America, 1799-1804, was pivotal in engendering a new approach to nature. This work influenced generations of naturalists, including the young Charles Darwin, who sought to systematize both nature's living and nonliving productions and characterize the laws governing the natural world. Humboldt's portrayal of lands untouched by human presence also stimulated a new genre of literary and artistic expression?the wilderness romance and lyric meditation along with landscapes, prints, and, by the 1840s, photographs depicting the romantic conception of pristine nature. In the United States, Thoreau is often hailed as the most notable progenitor of a new sense of environmental awareness, addressing ideas of communion with nature, ecological relationships, and the conservation of natural resources, expressed in Walden (1854) and other writings.</p><p> In the wake of the major assaults on the environment produced by the Industrial Revolution, empire building and expansion, and globalization, early twentieth-century naturalists, most notably Aldo Leopold, offered less sanguine meditations on the human relationship to nature, vigorously promoting activism in preserving and conserving rapidly disappearing natural treasures. Yet as environmental historian, Susan Flader , noted Leopold's advocacy of "land husbandry" or wilderness conservation in A Sand County Almanac (1949) "contains no panaceas, no blueprints for mass action." Moved by the realization that birds were crucial to keeping in check pests that destroyed agriculture, the Audubon society in the late nineteen century began lobbying for bird preservation and protection. As we devised other means of preventing harmful insects from competing with us for crops, a new naturalism was born: Rachel Carson in her classic work, Silent Spring (1962), attacked current "Stone Age science" that would unquestioningly spread deadly DDT, asking, "How could intelligent beings seek to control a few unwanted species by a method that contaminated the entire environment and brought the threat of disease and death even to their own kind?" Carson's warning channeled the outrage many felt at the continued, mindless, and harmful exploitation of nature. She inspired the environmental movement of the late twentieth century.</p><p> Yet her message?promoting an ethical, responsible and sustainable approach toward satisfying human economic needs with the survival of species and of natural resources?still meets with opposition and decision. 
 </p>
 </div>
-<div class="titles">Keynote Speakers</div>
-<div id"text">
-<p><b>Dorceta E. Taylor </b></p><div id="text">
-<p>When we examine environmental issues on a national and global scale, there is evidence that inequalities are deeply entrenched and have been around for a long time. These inequalities arise from racial, ethnic, gender, and class interactions, etc. In the American context, environmental inequalities arose from the exploitation of resources and human labor, appropriation of land, and the disruption and displacement of communities. Environmental inequities -- as illustrated by grave disparities in wealth, consumption, exposure to hazards, and ability to make a living -- present major challenges to national and global efforts to work towards sustainability. Though sustainability is not a term that resonates readily in non-white communities, there are many reasons why non-whites should be concerned it and put greater effort into building sustainable communities.</p></div>
 
-<p><b>Susan Haack</b></p><div id="text">
-<p>My primary purpose here is to suggest some ways to recognize when the line between appropriate respect for the achievements of the sciences, and inappropriate or exaggerated deference, has been crossed. The "six signs of scientism" to which my title refers are, in brief: </p><ol><li>Using the words "science," "scientific," "scientifically," etc., honorifically, as generic terms of epistemic praise.</li><li>Adopting the trappings and technical terminology of the sciences irrespective of their real usefulness. </li><li>A preoccupation with "demarcation," i.e., with drawing a sharp line between genuine science and "pseudo-scientific" imposters. </li><li>A corresponding preoccupation with identifying the "scientific method," presumed to explain how the sciences have been so successful.</li><li>Looking to the sciences for answers beyond their scope.</li><li>Denying or denigrating the worth of other kinds of inquiry besides the scientific, or the value of other human activities besides inquiry, such as poetry or art. 
-</li></ol><p>My discussion of fifth of these six signs will include some thoughts about the appropriate relation between environmental science and environmental policy. </p></div>
+<h3>Explication</h3>
+<div id="text">
 
-<p><b>Dora Apel - Professor, Art and Art History <br />
-"The Landscape of War" - Chapter in book: War Culture: Art, Media, and Contemporary War  </b></p><div id="text">
-<p>The landscape of war is neither simple nor transparent. Being both the object of war as battlefield or contested territory, and the subject of war as confirmation of national identity, the landscape of war is not just a ruined environment or destroyed piece of nature, but also a symbolic entity and political imaginary. In this paper I examine the responses of Israeli, Palestinian and international artists to the ongoing Israeli-Palestinian conflict and focus on their representations of the landscape as defined and redefined in relation to collective identity and the goals of war. </p></div>
-
-<p><b>Eric H. Ash - Associate Professor, History<br /> 
-Shifting Knowledge, Shifting Nature: The Drainage of the English Fens </b></p><div id="text">
-<p>The drainage of several hundred thousand acres of wetlands in the English Fens was one of the largest "public works" projects of seventeenth-century Europe. The decades-long undertaking transformed the landscape, as well as the entire economy and way of life of the region's inhabitants. Not surprisingly, the project was also highly controversial. In my paper, I will examine the shifting attitudes of the English toward nature and the environment as manifested in public debates over the drainage. Those favoring and opposing the drainage had very different and incommensurate understandings of what the natural world was, what it ought to be, and how to make it so. Moreover, even after the drainage was completed there remained many questions about the degree to which the natural environment could be reformed, reconstructed, and even perfected through human artifice. </p></div>
-
-<p><b>Victor Figueroa - Associate Professor, CMLLC<br /> 
-Eco-Coloniality: Nature between Empire & Revolution in Alejo Capentier's El reino de este mundo </b></p><div id="text">
-<p>The paper deals with Carpentier's1949 novel about the Haitian Revolution. While the novel is well-known as an early example of the Latin American "marvelous-real," and as a compelling study of power and oppression, less attention has been paid to the important role of nature in the text. I argue that the modes of domination and emancipation presented in the novel could be described as different attempts to define and codify the relation between human beings and nature. </p></div>
-
-<p><b>Guerin Montilus - Professor, History <br />
-The Adja Fon of Southern Benin, Cultural Change, Vodun Religion and the Environment </b></p><div id="text">
-<p>The purpose of this paper is to analyze the impact of globalization upon the relationship of the Adja Fon of southern Benin, West Africa, with the environment. We will seek to understand the dialectical differences between the two cultures: the western and capitalist world which has had a long standing relationship of Manichaeism and exploitation (negative reciprocity) with the environment, and, in contrast, the southern Benin, like most of Sub-Saharan African continent, which developed a culture of holism and moderation (balanced reciprocity) with the environment. To do so, it will be examined the indigenous structure of the Adja Fon vision of the universe as embodied in the Vodun mythology, rituals and ethics, and the social practice of the community in contrast with the philosophy underlying western globalization and consumption (capitalism) introduced into Benin. The ceaseless western appetite for the raw material and new markets for commodities is the cause of this breakdown of African traditional values that goes back to the partition of Africa and the European mercantilism of colonial time at the end of Nineteenth Century. This paper will assess the encounter of the western world with the indigenous culture of Benin and the nature of the cultural change ranging from the decline of the indigenous social institutions to the breakdown of the relationship with the environment.  </p></div>
-
-<p><b>Bruce Russell - Professor, Philosophy<br /> 
-The Philosophical Basis of a Limited Land Ethics </b></p><div id="text">
-<p>Some people think that we have an obligation to preserve and protect the environment. But if there is such an obligation, what is its basis, whose obligation is it, and what actions does it require? Is the basis enlightened self-interest, utilitarianism, or founded on respect? If there are conflicts between the interests of plants and animals, or between plants or animals and humans, which interests should take precedence if not all can be satisfied? I will argue that preservation of the environment is sometimes in the long-term self-interest of some, but not of others, and that in any case the obligation to preserve and protect the environment is founded on respect, not enlightened self-interest. When there are irresolvable conflicts, the important interests of animals and humans should take precedence over those of plants, and the important interests of rational creatures should take precedence over those of non-rational animals and plants. Finally, I will argue that everyone has an obligation to protect and preserve the environment, and contra Aldo Leopold, that it does not fall only on the shoulders of private landowners. </p></div>
-
-<p><b>John Strate - Associate Professor, Political Science<br /> 
-Comparing Three Environmental Discourses: Growth Forever, Sustainable Development, and Green </b></p><div id="text">
-<p>Three different modes of thinking and talking about the environment and H. sapiens relationship to the environment compete for space on public and governmental agendas: Growth Forever, Sustainable Development, and Green. These modes vary along a number of dimensions including key facts taken to be true, beliefs about human nature, understandings about natural systems, views regarding the efficacy of different institutions, preferences regarding forms of political action, and goals or desired end states. These modes are associated with quite different understandings of environmental problems and the policy options thought appropriate to deal with them. Accordingly, the relative success of these different modes in capturing space on public and governmental agendas will have much to do with the public policies that are formulated and enacted to address environmental problems. The different dimensions of these modes of thinking and talking about the environment are explored as found in various media sources including books, magazine articles, newspapers, and documentaries.</p></div>
-
-<p><b>Monica White - Assistant Professor, Sociology <br />
-Emergent Cityscapes: Communities of Color, Urban Farming and the Environment </b></p><div id="text">
-<p>Detroit, in the aftermath of de-industrialization and post-urbanization, represents an example of disharmony with the environment. Such disharmony is manifested in contaminated soil, abandoned houses and empty lots. Detroit is littered with dilapidated and vacant buildings, ruins left behind when manufacturing jobs fled the city. Also illustrative of the abandonment, there exists dramatic disparities among neighborhoods, and uncomfortable social relations among people of different races and classes. Using in-depth interviews and participant observation of community gardeners, this project analyzes the nature and function of gardens both in creating public space and in enabling citizens to renegotiate their relationship with the environment. Additionally, this paper investigates the relationship among people of color, poverty, and community engagement as they work in harmony with the natural environment in the city of Detroit. </p></div>
-
+<p>Bildung, like Zeitgeist or Weltschmertz, is one of those irreducible German words that have been untouched by translators. While originally used to refer to learning - as distinct from education - and to foreground the spiritual and/or aesthetic sides of life, Bildung is today largely employed to designate the social function of education. Yet, where education has a function, furthering the acquisition of knowledge, skills, and competencies that fulfill the needs and requirements of the day, Bildung, in contrast, is a value in itself: contemplation moving beyond the necessity to survive. In short, if education is on the side of preparing for work and social life beyond school, Bildung is on the side of individuality, ethics, and spiritual independence. Indeed, if education is for now, Bildung is forever.</p>
+<p>In light of the growing corporatization of higher education, in which colleges and universities increasingly function as a "competency-producing" industry that primarily serves post-industrial demands for a flexible workforce, what role, if any, can Bildung play in 21st century public education? IIf there is no one-to-one correspondence between educational input and learning output, do we (not) need to resurrect Bildung in our efforts to assist today's college students in developing critical, ethical and aesthetic abilities, over and above rapidly superannuating skills and competencies? Or is Bildung an elitist and outdated concept of the past, an irrelevant by-product of a sociopolitical situation that is effectively over and done?</p>
+<p>Scholars interested in this subject might consider the philosophical, theoretical, legal, socio-economic or historical influences on higher education in this century compared to previous centuries; examine the purpose and value of a college education in the early 21st century; argue the role of "alternative" schooling that challenges (successfully or not) the corporate demands on education; de- or re-construct the term Bildung and its assumptions; or examine places in American culture where Bildung is alive and well.</p>
+<p>The Humanities Center invites proposals from all disciplines on any or all aspects of Bildung in contemporary higher education. We encourage scholars and artists in all humanities and arts disciplines to submit papers from which a selection will be drawn for discussion at the Center's Fall Symposium, tentatively scheduled for November 19, 2010. Proposals should include the name, rank and affiliation of the proposer, along with a title and short abstract. Proposals should be submitted via email to walter.edwards@wayne.edu by May 31, 2010 . Selected presenters will be notified by June 30, 2010. </p>
 </div>
+
+<h3>Keynoters/Abstracts</h3>
+<div id="text">
+<p><b>Bildung: A Short Critical History of a German Term (and Tradition)</b><br />
+Liliane Weissberg, Christopher H. Browne Distinguished Professor<br />Arts and Sciences, University of Pennsylvania
+</p>
+
+<p>(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/8/U0fR_FS9BkI" target="_new">Video</a>)
+</p>
+<p>The notion of "Bildung" derives from biology. In the late eighteenth century, it was often used to describe the inner development of human beings as well, most strikingly in the work of Johann Wolfgang Goethe. But it is in the nineteenth century, where "Bildung" received a significance that would not only characterize general development, but one to which Germans in particular would be prone--in short, it received national and political meaning. My talk will trace the development of the term to provide a historical background to discussions on "Bildung" today. </p>
+</div>
+
+<div id="text">
+<p><b>Educating Us All: Henry Adams and Human Arts</b><br />
+Paul A. Bove, Distinguished Professor<br />English, University of Pittsburgh
+</p>
+
+<p>(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/8/U0fR_FS9BkI" target="_new">Video</a>)
+</p>
+<p><i>The Education of Henry Adams</i> dramatizes how American education comes not from an educator but from an antagonism to the educator, whether teacher or institution. In effect, Henry Adams' legendary insistence that he was unqualified and uneducated in this life, that at education he was a failure, is not in itself an antagonistic relation to the US politics, economy, and society. Rather, it is the mark of US intellectual and political failure that it attempts to trap education within a set of reifying practices that have their bases in both capitalism's commitments to universal commodification, especially of human subjects within education, but also in elemental or primordial and so terrifying elements of 'natural' forces that socialized human intelligence seemingly directs toward war, exploitation, violence, and cruelty. In some, Adams appears in <i>The Education</i> as a more radical figure than recent academic 'left' opinion holds and reveals himself, in keeping with the opinion of his neo-conservative antagonists, as a radical threat to American business as usual. 
+</p>
+</div>
+
+<h3>Speakers/Abstracts</h3>
+
+
+<div class="tab">
+     <button class="tablinks" onClick="openCity(event, 'September')" id="defaultOpen">Lisabeth Hock</button>
+    <button class="tablinks" onClick="openCity(event, 'October')">Ren?e Hoogland</button>
+    <button class="tablinks" onClick="openCity(event, 'November')">Julie Thompson & Roslyn  Schindler</button>
+    <button class="tablinks" onClick="openCity(event, 'December')">Mary Anderson and Richard Haley</button>
+    <button class="tablinks" onClick="openCity(event, 'January')">Kathryne Lindberg</button>
+    <button class="tablinks" onClick="openCity(event, 'February')">Karen Liston</button>
+    <button class="tablinks" onClick="openCity(event, 'April')">Mary Sengstock</button>
+    <button class="tablinks" onClick="openCity(event, 'May')">Barrett Watten</button>
+  </div>
+   <div id="September" class="tabcontent active">
+    <b>Goethe, Steiner, and Bildung in the 21st Century</b><br>Lisabeth Hock, 	Associate Professor, CMLLC<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/22/0EeoA0l7lew" target="_new">Video</a>)  (<a class="normalA" href="10-11/Lisabeth Hock/presentation.pdf" target="_new">Presentation</a>)
+
+             	<p> This paper will ask whether the German poet and philosopher, Johann Wolfgang Goethe (1749-1832), and the Austrian architect and founder of anthroposophy, Rudolf Steiner (1861-1825) have anything to say to us about education and the formation of the human being and human communities in the twenty-first century. Both Goethe's poem, "The Metamorphosis of Plants" and his Bildungsroman, Wilhelm Meister's Apprenticeship, offer teleological models of development that might appear at odds with poststructuralist notions of the fragmented or constructed subject. Steiner, who in his work on Goethe's scientific writings was more interested in Goethe's imaginative work than his experimentation, posited in Anthroposophy the belief in "a path of knowledge leading the Spirit in Man to the Spirit in the Universe"?an approach that finds critics among both traditional religious believers and materialists. This paper proposes that in their holistic approaches to life, living, and learning, Goethe and Steiner offer not necessarily models but inspirations for thinking about the nuts and bolts of formal education at the secondary and post-secondary levels, in particular with regard to the question of how and what to teach in an age in which we are buried in information, but especially in the humanities, short on the funds and support necessary to help students make use of it. </p>
+  </div>
+  <div id="October" class="tabcontent">
+    <b>Subverting the Subject: Bildung as Ethico-Aesthetic Praxis</b><br />
+		Ren?e C. Hoogland, Associate Professor, Department of English
+		<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/20/OGr95y4i9fg" target="_new">Video</a>)
+
+             	<p> In these post-postmodern, or, indeed, hypermodern times, the concept of Bildung in its eighteenth and nineteenth, German idealist sense would seem no longer to make sense at all: the classical ideals of wholeness, unity, universality, and self-transcendence do neither jibe with the de-centered, multiple, discursively constructed subject of poststructuralist thought, nor with liberal democratic notions of difference, individualism, pluralism, and multiculturalism. Yet, in order to think the possibility of ethical becoming, and to consider the constitution of the "I" within the "we" beyond the subjugating forces of disciplinary institutions such as colleges and universities, as much as beyond the parameters of quantifiable forms of knowledge or competencies, some concept of Bildung appears to be required. Taking aesthetic experience as its starting-point, this paper seeks to think through, from a largely theoretical/philosophical perspective, a contemporary notion of Bildung as a de-subjectivating process, as a subversive force of transformation that takes the subject outside of itself, a de-territorializating force that transgresses the borders of experience and enacts a non-transparency of self that nonetheless renders the subject into a person. </p>
+  </div>
+  <div id="November" class="tabcontent">
+    <b>Bildung in Contemporary Higher Education</b><br />
+		Julie Thompson Klein, Professor of Humanities, Department of English, Faculty Fellow in The Office for Teaching and Learning<br />
+		Roslyn Abt Schindler, Associate Professor of German, CMLLC<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69" target="_new">Video</a>) (<a class="normalA" href="10-11/Julie Klein and Roslyn Abt Schindler/BildungHandoutFInal[1].pdf" target="_new">Handout</a>)
+
+
+		<br />
+             	<p> The concept of Bildung has multiple connotations. In their joint exploration of its meanings, Schindler will contribute etymological and historical expertise in German culture, Klein will add research on innovative approaches to the undergraduate education, and together they will reflect on implications for curriculum, pedagogy, and learning today. The German concept of Bildung refers not only to learning and teaching but also, in James Good's words, a generic "coming of age" through an "ongoing process of both personal and cultural maturation." Bildung is a complex term that embodies what Ekkehard Nuissl deemed "the totality of all teaching and learning related activities," from younger years through lifelong learning. Moses Mendelssohn also aligned the concept with the idea of enlightenment, in the form of "unfolding one's potential." Both denotatively and connotatively, Bildung refers to expansion of the mind, heart, and soul, and, Klaus Prange urges, autonomous learning opposed to regular training in the imperatives of an age. Thus, the concept is interdisciplinary, spanning historical, philosophical, etymological, literary, and political dimensions of what it means to be an "educated person." </p>
+
+             
+             	<p>In the United States, underlying principles of Bildung resonate in conceptions of general, liberal, and interdisciplinary education aimed at cultivating the "whole person." Integrative approaches counter narrow notions of training by accentuating personal development, multidisciplinary breadth of knowledge, and a relational understanding of disciplines and subjects. Functional skills and competencies are also expanded within a larger set of learning objectives aimed at cultivating critical, ethical, and aesthetic capacities. The general education movement, which arose in the early 20th century, continues to advance values of Bildung in core curricula and multi-year sequences of courses aimed at fostering both personal and intellectual growth. Integrative models of general education and interdisciplinary fields incorporate comparable design features and innovative pedagogies that shift the focus of teaching and learning from production, prescription, control, and mastery to dialogue, process, inquiry, interaction, construction, and negotiation. The curriculum, in kind, emphasizes process-based over strictly product-oriented outcomes and developmental sequences from first-year through capstone experiences. More recently, the notion of "integrative learning" has expanded to foster greater connections and coherence across all divides. Integrative structures and strategies bridge high school and college, general education and the major, disciplines and interdisciplinary fields, introductory and advanced courses, theory and practice, and personal and civic responsibility.
+             
+             	</p>
+  </div>
+  <div id="December" class="tabcontent">
+    <b>Ears, Knuckles, Prisons:  Philosophical Fragments and the Teaching Body</b><br />
+		Kathryne V. Lindberg, Professor of English and Associate Faculty in Africana Studies
+
+
+
+             	<p> Rising to mastery in an educational establishment and a liberal state that he at once founded and critiqued, Georg Wilhelm Friedrich Hegel argued against education that was merely utilitarian, instrumental, or "in service" even to his idealized German civil society.  Bildung, the word he often used for his dialectical thinking on education and the role of philosophy (a path or advanced post-graduate curriculum consisting of or enabling the development of an immanent cultural critique, of a New Man and a society adequate to a pure self-consciousness of/or Geist) is a knotty matter. Departing from Jacques Derrida's writings about and his administrative efforts at bringing philosophy into the curriculum as early and as democratically as possible, this paper will take up three "case studies."  </p>
+
+             
+             	<p>Friedrich Nietzsche, W.E.B. Du Bois, and Nelson Mandela might, at first blush, seen odd interlocutors or members of a staged seminar on the matter of enabling freedom of thought and the radical critique of reigning ideas.  However, despite the barbarous use that was made of Nietzsche's earliest writings on moral education, where he ponders the way that the ears of students, passively receiving Truth in lectures, are umbilically attached to the state, Nietzsche can be a tool for dismantling both Wagner's Gesamkuntswerk and the uncritical fealty of philosophy to rulers and reigning ideas. W.E.B. Du Bois who decided that he could not aspire to being uplifted to literary or academic stardom when he saw Sam Hose's knuckles for sale in a window, fought, especially in Black Reconstruction, within and against the norms of disciplined academic research to reveal the lies and legitimating power of institutional racism. He was honest enough to embed in his text the ambivalence of "the black savant" who wanted also to turn slave songs into his own masterwork.  Nelson Mandela, put his arguments about civil society and Bantu education before the bar and received an extraordinary sentence and a long time for testing the powers of employing and resisting the power of an education that, acquired within and against institutions, allows one to survive.
+             
+             	</p>
+             
+             	<p>Nelson Mandela's legacy, perhaps more recognizably than those of the other two philosophers (Nietzsche + Du Bois + Mandela [supplemented by Derrida on Hegel] make 3 right?), seems lost to popular heroics.  But Soweto, even the Spear of the Nation, was also practically and theoretically about educational policy and political education.  With some rather fine-gauged deconstructive or rhetorical instruments for revealing and translating philosophical words or notions read "Bildung" or freedom and tools for independent thought into action or at active reading, "Ears, Knuckles and Prisons" will sound educational philosophy and the political commitment to educational reform in the deliberately public or political works of several reluctant philosophers and marginalized pedagogues.  My hope is to perform or at least to trace a strenuous critique that is quite different from hagiography or the weaving of philosophical fragments into a paean to the way things were supposed ideally to be in the humanities.  The fact that, when read differently and/or as philosophers, Du Bois and Mandela have not been thought up to or muddled up by the rigors of Bildung, but are now heroes of a different stripe, is not without dramatic irony and interest.</p>
+  </div>
+  <div id="January" class="tabcontent">
+    <b>Bildung in American Libraries</b><br />
+		Karen A. Liston, Public Services Librarian III, Wayne State University Libraries
+
+             	<p>The characteristics of American public and academic libraries that support information literacy, academic freedom, lifelong learning, and free inquiry provide unique benefits for users in pursuit of bildung.  Key documents such as the Library Bill of Rights and Intellectual Freedom Manual are hallmarks of the library professions' standards which insure patron's access to information, as well as preserving their privacy.  Techniques such as prohibiting censorship, balancing collections, insuring patron confidentiality, resource sharing between libraries, and preserving cultural history are critical to enabling individuals to pursue diverse and unique intellectual pursuits.  </p>
+             
+             	<p>Special attention will be given to recent factors such as globalization, technological change, and the changing state of information literacy.  These factors serve to both  broaden opportunities for the individual scholar, and present a variety of unique challenges with which library professionals continue to struggle.             </p>
+  </div>
+  <div id="February" class="tabcontent">
+    <b>Technologies of Bildung, or Thinking Machines: Pen, Press, iPad</b><br />
+		Lisa Maruca, Associate Professor, Department of English, Wayne Sate University<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/2/764pJIHzsis" target="_new">Video</a>)  (<a class="normalA" href="10-11/Lisa Maruca/Presentation.pdf" target="_new">Presentation</a>)
+
+             	<p>Based in the Enlightenment's presupposition of an individual free to choose the path of knowledge, bildung is rooted in eighteenth-century constructions of the human.   We can see these roots in (among other texts) Kant's famous exhortation in "What is Enlightenment?": "Sapere Aude!" he challenges scholars, clergy and public officials that is, dare to know. Knowledge, whether self-knowledge or the political act of speaking truth to power, is to paraphrase the X Files, something that is "out there"; one needs only courage to grab and deliver it. Encouraging this "free thinking," Kant concludes, is to treat men as "more than machines." </p>
+             	<p> It is Kant's distaste for machines, however, that is my departure point in this paper. As a concept with a specific cultural history, bildung can be examined precisely as a machine, both in the Foucauldian sense, as a discursive technology of the educational subject, but also in a real, material way that is, as a regime linked with specific tools and methods. The concept of bildung relies on and constructs a specific media formation, one based on the absorption of knowledge through reading and the production of knowledge through writing, technologies controlled (in this view) by the humanist individual.  Nonetheless, as my discussion of examples from Enlightenment England will show, pedagogical theorists sought to distance themselves from technology's taint.  Advanced literacy was seen as a disembodied and abstract state of mind the "free" in "free thinking" seen as freedom from the material constraints of corporality. </p>
+             	<p> These issues are particularly salient today as the relationship between reading and writing, the student's position within these disciplines, and the institutions that support them undergo radical transformation in the digital era.  If the Industrial Age spawned fears of the Fordist factory production model of education, in which students are turned out like widgets, the model for tomorrow may be the cyborg, in which students blend seamless into their machines.  Both draw on and exploit fears of the educational machine.  These fears are not ungrounded, but they do prevent a full analysis of the perils and the promises of the future.  Understanding that education and its subjects have always been products of a human-machine interface in other words, that bildung has always been mediated allows us to more carefully examine our own transitional moment and to rethink free thinking. </p>
+  </div>
+  <div id="March" class="tabcontent">
+    <b>Bildung in an Anglo-Jewis Context</b><br />
+		Michael Scrivener, Professor, Department of English, Wayne State University
+		<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/13/D_p_bSwkfCw" target="_new">Video</a>)
+	        <p> Although Jewish emancipation in Germany was conditioned by the demand that Jews take up the task of Bildung and acquire Kultur, Jews themselves like Mendelssohn, the leaders of the Jewish Enlightenment (Haskalah), and the scholars studying the history and culture of Judaism (Wissenschaft des Judentums) critically engaged European culture while maintaining continuity with Jewish tradition.  In England where Jews were not as legally restricted, Anglo-Jewry needed no prodding by liberal Christians to embrace the modern English world and its pleasures, from sports like boxing to theatre and music.  Jewish women writers in the early nineteenth century like Emma Lyon and Grace Aguilar, anxious to promote Emancipation, played the role of mediator between the Jewish and British worlds, acting like latter-day Jessicas repudiating Shylock.  For both writers literary culture also represented something alluringly but dangerously desirable, a promise of guilty pleasure.   By the time Matthew Arnold had constructed the paradigmatic argument for Bildung in Culture and Anarchy (1867-9), Jewishness was already intertwined with Arnoldian culture by the antithesis of Hellenism and Hebraism first developed by the German convert to Christianity Heine.   Although Arnold's antithesis was between morally strict Hebraism and beauty-loving Hellenism, the stereotypical antithesis was between Jewish materialism?money, wealth, the body, materialistic interpretive procedures of traditional and modern Jewish textualityl and Christian spirituality, idealism, and aesthetic-moral sensibility.  Jewish and Christian writers responded in various ways, undermining and reinforcing the stereotype that is behind Arnold's famous Hebraic/Hellenic contrast. </p>
+  </div>
+  <div id="April" class="tabcontent">
+    <b>Can Education Play a Role in Improving Inter-Group Relations?  Should It?</b>
+		Mary C. Sengstock, Professor, Sociology, Wayne State University
+		<br /><br />(<a class="normalA" href="http://www.youtube.com/user/WSUHumanitiesCenter?feature=mhum#p/c/68CF3C2AC27CAB69/5/qqLuNWNvZzE" target="_new">Video</a>) (<a class="normalA" href="10-11/Mary Sengstock/Bildung_MCS[1].pdf" target="_new">Presentation</a>)
+
+	        <p> This question arises from my research on multi-cultural and multi-racial individuals.  Nearly all of them had had unpleasant experiences in school - from kindergarten through college. What were these experiences? How did the schools and teachers react?  What role did they play in these students' negative experiences? </p><p>On a broader scale, what should be the role of educators and educational institutions in training young people to be more accepting of racial, religious, and cultural diversity?  Examples of both negative experiences and positive programs will be provided.
+
+		</p>
+  </div>
+  <div id="May" class="tabcontent">
+    <b>The Death of Bildung: Radical Pedagogy after the Crisis of Representation</b><br />
+		Barrett Watten, Professor, Department of English, Wayne State University
+
+
+             	<p> In this lecture, I will attempt to cross the "great divide" between the German tradition of aesthetic education, beginning with Schiller's foundational On the Aesthetic Education of Man and the humanistic tradition it helped to define, and its excluded opposite, practical vocation. Drawing from two recent studies in German poetics and visual culture, I will show how the ideal of Bildung has been dismantled and reconfigured in experimental literary and visual texts and develop implications for contemporary pedagogy in the humanities. Drawing from my essay on Berlin poet Ulf Stolterfoht's ground-breaking (and award-winning) collection Fachsprachen, I show how he uses the languages of practical activity?popular media, technology, "nonliterary" language?as a critique of the literary ideals of the Enlightenment and German romanticism. Fach- in German is a prefix meaning "practical"; Fachsprachen are literally "technical languages" and thus to be distinguished from literary diction and usage: Stolterfoht collapses the distinction between the two. Then, drawing from an essay on visual culture in contemporary Germany, I will show how the conceptual photographs of Bernd and Hilla Becher convert the landscape of postindustrial Europe and America into aesthetic objects, making the image of a blast furnace into a consumable commodity, while the nonnarrative paintings of Leipzig painter Neo Rauch deploy a critique of visual representation that involves a reconsideration of the distinction between the aesthetic and the practical.  Generalizing from these three examples, I will show how contemporary aesthetic strategies undermine the distinction between aesthetic and practical that the tradition of Bildung is founded on, and how such a rethinking of this distinction may be useful at Wayne State.
+		</p>
+  </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->
 

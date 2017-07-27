@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0011timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="citizenship.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,29 +256,27 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
-    <option value="2002.html" selected>2002</option>
+    <option value="2003.html">Anniversary</option>
+    <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Plants, Animals, and Insects in Human Culture</div>
-
-<div class="titles">Speakers</div>
-<div id="text">
-  <p><strong>Donna Haraway</strong>, Professor of the History of Consciousness at the   University of California at Santa Cruz:. From Cyborgs to Companion Species:   Kinship in Technoscience</p>
-    <p><strong>Christopher Collins</strong>, Associate Professor, Music: <em>Animals, Beasts, and Banshees in Celtic Folklore: Expressions of an   Irish-American Composer</em></p>
-  <p><strong>William Harris</strong>, Professor, English: <em>Hip-Hop Adaptations   of Brer Rabbit Tales</em></p>
-  <p><strong>Donna Landry</strong>, Professor, English, <em>The Making of the   English Hunting Seat</em></p>
-  <p><strong>Anca Vlasopolos</strong>, Professor, English: Ring of Fire: <em>Opening Japan to Western-Style Species Extinction</em></p>
-</div><h3>Edward M. Wise Dissertation Fellows Conference</h3>
-<div id="text">
-  <p><strong>Julie Towell</strong>, Ph.D. Candidate, English, Edward M. Wise Fellow: <em>The 'Rise and Progress' of Anglo-Saxonism and English National   Identity</em></p>
-  <p><strong>Craig Smith</strong>, Ph.D. Candidate, Communication, Awardee: <em>Eustace Tilley's Closet: Gay and Lesbian Writers at the New Yorker   1925-1992</em></p>
-  <p><strong>Mark Huston</strong>, Ph.D. Candidate, Philosophy, Awardee: <em>Intuitions and Concepts</em></p>
-</div>
+</form><br><br><br>
+<div id="text"><h2>Theme: <strong>The Meaning of Citizenship</strong><br />
+</h2>
+<p>The Humanities Center Fall Symposium on &quot;The Meaning of Citizenship,&quot; held   November 8, 2002, attracted an audience of 150 people for the keynote speaker   and excellent attendance throughout the rest of the day.</p>
+<p>The keynote speaker for the event was <strong>Patricia J. Williams</strong>,   James L. Dohr Professor of Law at Columbia University. Dr Williams is an avid   writer. She has published many books and is best known for her &quot;Diaries of a Mad   Law Professor&quot; articles that appear in <em>The Nation</em>. Williams discussed   issues about citizenship in America. <strong>President Irvin Reid</strong> made   opening remarks at the event. <br />
+  <br />
+  Other speakers were the following Wayne   State University Faculty:<br />
+  <strong>Kevin Deegan Krause</strong>, an Assistant   Professor in the Department of Political Science, gave a talk on &quot;Who owns the   State? Majorities, Minorities &amp; Group Rights in Central Europe.&quot; <br />
+  <strong>Lisa Vollendorf</strong> is an Assistant Professor of Romance   Languages and Literatures; she is also a Resident Scholar at the Humanities   Center. Professor Vollendorf discussed &quot;Policing Citizenship: The Case of Early   Modern Spain&quot; <br />
+  <strong>Kenneth Walters</strong>, Professor and Chair of   Classics, spoke about &quot;Sexual Betrayal and Political Confrontation in Colonial   Contexts: How Some Native Women in Ancient Societies Could Acquire a New Civic   Identity&quot;<br />
+  <strong>Marvin Zalman</strong>, Professor and Chair of the   Department of Criminal Justice talked about &quot;Convicted Criminals: Citizens or   Outlaws&quot;.<br />
+  <br />
+  Following the presentations, a roundtable discussion was held   involving all of the day's speakers and questions from the audience. A reception   closed the conference.<br />
+</p>
 </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->

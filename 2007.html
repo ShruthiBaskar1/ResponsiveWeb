@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0506timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="silence.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,67 +256,108 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Translation and Representation</div>
-<div id="text">
-<p>Conference date: Friday, March 23, 2007 <br />
-Alumni House 
-</p>
-<p align="center">Click <a class="normalA" href="SpringConference07.pdf" target="_new">here</a> to open the schedule</p>
-</div>
-<h3>Internal Speaker Biographies</h3>
-<div id="text">
-  <p><a class="normalA" href="http://www.clas.wayne.edu/polisci/faculty/goldfield/Goldfield1.htm">Michael   Goldfield, </a>Professor of Political Science, </p>
-  <p><a class="normalA" href="http://www.english.wayne.edu/fac_pages/ewatten/">Barrett Watten,</a> Professor of English, </p>
-  <p><a class="normalA" href="http://www.clas.wayne.edu/unit-faculty-detail.asp?FacultyID=137">Aaron   Retish,</a> Assistant Professor of History, </p>
-  <p><a class="normalA" href="http://www.art.wayne.edu/profiles.php?id=21">Jeffrey Abt</a>, Associate   Professor of Art and Art History, </p>
-  <p><a class="normalA" href="http://www.theatre.wayne.edu/profiles.php?id=133">James Thomas</a>,   Professor of Theatre, </p>
-  <p><a class="normalA" href="http://www.clas.wayne.edu/faculty/figueroa">Victor Figueroa</a>, Assistant   Professor of Romance Languages &amp; Literatures, </p>
-  <p><a class="normalA" href="http://www.clas.wayne.edu/duggan/">Anne   Duggan</a>, Associate Professor of Romance Languages &amp; Literatures, </p>
-</div>
-<h3>Abstracts</h3>
-<div id"text">
-<p><strong>Lawrence Venuti, Professor of   English, Temple University. <br />
-</strong></p>
-<div id="text">
-<p>Lawrence Venuti is a translation theory and historian as well as a prolific   translator. He is the author of <em>The Translator's Invisibility: A History of   Translation </em>and <em>The Scandals of Translation: Towards an Ethics of   Difference</em> and the editor of <em>The Translation Studies Reader</em>. His   recent translations include Antonia Pozzi's <em>Breath: Poems and Letters, </em>the anthology <em>Italy: a Traveler's Literary Companion</em>, Melissa P.'s   fictionalized memoir <em>100 Strokes of the Brush before Bed, </em>and Massimo   Carlotto's crime novel <em>The Goodbye Kiss</em>. Dr. Venuti's current focus is   on the relations between translation and interpretation to study the impact of   translated texts on canon formation, disciplinary divisions, cultural movements,   and political struggles.</p>
-</div>
-
-<p><strong>Mary Louise Pratt, Silver   Professor, Departments of Social and Cultural Analysis and Spanish, New York   University.
-</strong></p>
-<div id="text">
-<p>Mary Louise Pratt is Silver Professor in the Department of Spanish and   Portuguese and the Department of Social and Cultural Analysis at New York   University, where she is also affiliated with the Hemispheric Institute for   Performance and Politics and the Center for Latin American and Caribbean Studies   and is the former President of the Modern Language Association. <strong>?</strong>She is Olive H. Palmer Professor of Humanities (emerita) at   Stanford University. Pratt's publications include <em>Toward a Speech Act Theory   of Literary Discourse</em> and <em>Imperial Eyes: Travel Writing and   Transculturation</em>.? She is coauthor of <em>Linguistics for Students of   Literature</em>, <em>Amor Brujo: Images and Culture of Love in the Andes</em>,   and <em>Women, Culture, and Politics in Latin America</em>.? She has contributed   to numerous collections and her articles have appeared in many journals and   publications in North America, Latin America, and Europe. Her major interests   include language and globalization; culture, colonialism and decolonization;   cultural theory, Latin American literature since 1800; contemporary Latin   American narrative; cultural studies; women and print culture in Latin   America;?and travel writing. </p>
-</div>
-
-<p><strong>Victor Figueroa, Assistant Professor, Romance Languages &amp;   Literatures </strong>- &quot;<strong>Between Louverture and Christophe: Aim? C?saire   on the French Revolution&quot;</strong>
-</p>
-<div id="text">
-<p>The paper examines two of Aim? C?saire&rsquo;s works: the historical essay <em>Toussaint Louverture: La r?volution fran?aise et le probl?me colonial </em>(1961)<em>,</em><strong> </strong>and the play, <em>La tragedie du roi   Christophe </em>(1963)<em>. </em>In those two works C?saire approaches the   Haitian Revolution from very different perspectives, and the tension between   those two approaches reveals the diverse imperatives that the poet struggles   with as a Caribbean intellectual. <em>Toussaint Louverture</em> attempts to   explain the Revolution, and the figure of Toussaint Louverture, in terms of the   &quot;enlightened,&quot; universalist ideals that shaped the French? Revolution. <em>Henri   Christophe</em>, on the other hand, attempts to show how, in spite of his   despotism, Christophe can be celebrated because, even when he acts against   &ldquo;universal&rdquo; humanistic values, he does so in an attempt to affirm the rights of   ?the black populations in Haiti (and by extension, everywhere); thus, Christophe   emerges as a forerunner of <em>n?gritude</em>: trying to reach the universal via   an affirmation of the particular (in his case, the black people of Haiti),   rather than subordinating the particular to the claims of &ldquo;universal&rdquo; values   (that always have a very particular origin: Europe). </p>
-</div>
-
-<p><strong>Aaron Retish, Assistant Professor, History - </strong><strong>&ldquo;Peasants   in a Modern State: Power and Identity in Russia&rsquo;s Age of War and Revolution,   1914-1921&rdquo;</strong></p>
-<div id="text">
-<p>In the early-twentieth century, Russian educated society imagined the country&rsquo;s   peasants as a culturally backward people. Fearing social breakdown from a period   of rapid modernization, commentators created a rural other that expressed their   societal and cultural dreams and anxieties. War and revolution empowered   educated society and gave them the opportunity to tutor and incorporate the   benighted and &ldquo;helpless&rdquo; rural other into the political system.? However, the   modern revolutionary states, especially the Soviet state, created the dilemma   that the new leaders had to rely on active peasant participation to survive and   to justify their rule. Peasants engaged, adopted, and resisted elite pejorative   images by constantly refashioning their identities to fit political realities.   They did so through reception, translation, manipulation, and even recreation of   symbols, language, and political institutions.? This paper will focus on a   central aspect of this dialogue between peasants and new modern state   agents--the debate over national minority culture.? State agents saw non-Russian   peasants as a magnification of the Russian peasantry&rsquo;s ills and feared that   backwardness would threaten the war and revolutionary efforts.? They narrowed in   on non-Russians&rsquo; drinking habits as an especially pernicious cultural product   and lamented its corruptive capabilities and sought to categorize and control   this &ldquo;unrevolutionary&rdquo; cultural behavior.? National minority peasants translated   these constructed notions of national benightedness to win many of their demands   for cultural and political autonomy and carve a niche for themselves inside the   Soviet system.?</p>
-</div>
-
-<p><strong>Jeffrey Abt, Associate Professor of Art and Art History - &quot;Picturing   Writing Pictures: From Representation to Translation in the Historiography of   Egyptology&quot;<br />
-</strong></p>
-<div id="text">
-<p>The terms &ldquo;translation&rdquo; and &ldquo;representation&rdquo; have multiple meanings with   reference to Egyptian hieroglyphs. Because the translation of hieroglyphs into   modern languages requires the comparative analysis of many texts, scholars must   be able to study inscriptions scattered among Egyptian monuments or on stelae in   distant museums. This requires a prior kind of &ldquo;translation&rdquo;: the transcription   of hieroglyphs from engraved inscriptions into drawings. Yet even slight errors   in the replication of an engraved hieroglyph can confound the determination of a   text&rsquo;s meaning. Accordingly, the &ldquo;representation&rdquo; of hieroglyphic texts entails   their exacting depiction.<br />
-  Beginning with the earliest images of hieroglyphs   in classical antiquity and concluding with development of modern epi?graph?ic   methods in the 1920s, this paper focuses on the particular challenges of   accurately reproducing hiero?glyphs?defining issues in the formation of   Egyptology as a scholarly discipline. These challenges will be set in the   evolving historical context of hieroglyphic studies including their association   with visual allegories, Oriental enigmas, and occult knowledge in the western   European imagination, notions that confused and delayed the effective   translation of hieroglyphs until the mid-nineteenth century.
+</form><br><br><br>
+<div id="text"><h2>Theme: Silence and Silencing</h2>
+ <p>Friday, November 9th
+<br />
+Alumni House</p>
+<p align="center">Please click <a href="markyourcalendarSS.pdf" target="_new">here</a> for schedule.
 </p>
 </div>
 
-<p><strong>Anne Duggan</strong>, <strong>Associate Professor, Romance Languages and   Literatures - &quot;The Tragic Story: An Exercise in Translation&quot;</strong></p>
+<h3>Explication</h3>
 <div id="text">
-<p>In 1554 and 1573, the Italian writer Matteo Bandello published his Novelles,   which interspersed comic with serious stories, much in the tradition of   Boccaccio. When the French writer Pierre Boaistuau, best-known for his   intermediary role in the diffusion of the story of Romeo and Juliet, set out to   translate six of Bandello's 214 novellas into French, his embellishments,   editorial decisions, and moral frames resulted in the creation of a new genre   distinct from the novella, which he himself seemed to recognize when he entitled   his translation Tragic Stories, Excerpted from the Italian Works of Bandello,   and Put into the French Language (1559). I will argue that Boaistuau recrafted   Bandello's novellas in such a way as to create a new genre, the tragic story,   through the mediation of 1) the Christian notion of the theater-of-the-world;   and 2) the spectacle of the monstrous. Theater, spectacle, and the monstrous   would characterize this popular Catholic-Reformation genre well into the   seventeenth century. </p>
+  <p align="justify">Paradoxically, &quot;silence&quot; has come to express   many of the concerns of modernity writ large. In Edvard Munch's famous painting <em>The Scream</em>, for example, we <em>experience </em>- if not necessarily   hear - the alienation, anomie, solitude, and social fragmentation associated   with the modern world. Indeed, scholars of modern art such as Frederic Jameson   have traced the development of this paradoxical expression with great care and   eloquence. Amplifying this speaking silence, it has now long been noted,   constitutes a crucial element in what many refer to as our 'postmodern'   condition. John Cage's notorious musical composition (4'33&quot;), with its long   stretches of &quot;rhythmic&quot; silence, for example, made clear to a general public   that silence, in some sense, sings. The challenge, in other words, to addressing   the condition of silence imposed on us by alienating effects of modernity was   not to plumb the depth's of Munch's distorted subject and translate the scream   of silence into recognizable language but to let silence speak for itself. Of   course, the paradox of silence is not contained by the realm of art. </p>
+  <p align="justify">The   political, historical, sociological aim of much scholarly work in the late   twentieth century was to allow marginalized or silenced groups to speak, and   speak for themselves. Psychiatry, psychology, and social work, for example,   became much more attuned to the violence a therapeutic voice could do to a   silent subject. But what does it really mean to let silence or the silenced   speak? Are we really hearing the sounds of silence more distinctly now? Or is   this a postmodern illusion (is 'postmodern' an illusion)? </p>
+  <p align="justify">Are we simply hearing   more noise? &quot;Babel&quot; - an Oscar nominated film this year about globalization -   seems to make a distinct artistic contrast to <em>The Scream</em> - or does it?   Have we really been <em>translating and representing </em>silence as sound? That   is, have we really been mistranslating and misrepresenting silence and sound?   Our government is listening to us certainly, but not always when and where we   would like. What does the law have to say about &quot;silence&quot;? <em>And   silencing</em>? Anglo-American analytic philosophy has long resisted the notion   that silence 'speaks' as nonsense; if silence speaks, it is not 'silence'! Have   they been right? Perhaps the problem in understanding silence is tied to our   concentration on modernism, our attempt to understand the problem purely in a   modernist context at the expense of pre-modern history in our fast paced world.   Saying the unsayable and, in turn, listening to what does not correspond to   language has a long, long history, dating back to the ancient world and its   apophatic, religious discourses (&quot;Babel&quot; indeed!). </p>
+</div>
+<h3>Keynote Speakers</h3>
+<div id="text">
+<p><strong>Kevin Hart</strong>,   Professor of Christian Studies at the University of Virginia, Author of: <em>The   Trespass of the Sign</em> (Cambridge UP); <em>A.D. Hope</em> (Oxford UP); and <em>Samuel Johnson and the Culture of Property </em>(Cambridge UP)<br />
+  <em>&quot;The   Experience of Silence&quot;
+  </em></p><div id="text">
+<p>In what ways does silence give itself? This simple question ramifies endlessly,   and it turns out that experience presumes silence and, more, presumes different   shadings of silence. For on the one hand, silence is a means of manifestation   while, on the other hand, it is sometimes what is made manifest. Similarly,   there is a &ldquo;silence of&rdquo; and a &ldquo;silence for,&rdquo; and, perhaps most interestingly,   silence can be construed negatively and affirmatively. The poets and mystics   tell us a great deal about silence, and some of their ideas will be brought into   the conversation and analyzed.<em><br />
+</em></p>
+</div>
+</div>
+<h3>Speaker Abstracts</h3>
+<div id="text">
+<p><strong>Lisabeth Hock</strong>,   Assistant Professor of Classical and Modern Languages, Literatures and   Cultures<br />
+  <em>&quot;Giving Voice to the Silence of Melancholoy: The Friendship of   Bettina von Arnim and Karoline von G?nderode&quot;
+  </em></p>
+<div id="text">
+  <p align="justify">Throughout its long history, melancholy has been associated with both artistic   productivity and withdrawn silence. This paradoxical relationship is expressed   in Nietzsche&rsquo;s 1871 poem, &ldquo;To Melancholy,&rdquo; in which, under melancholy&rsquo;s shadow,   the lyrical voice finds redemption in the depths of despair by turning its gaze   ever deeper inward, in order to brilliantly illuminate within itself the abyss   of existence.&rdquo; In the case of women, however, the balance historically has   seemed tipped in favor of silence. In their respective readings of Freud&rsquo;s   understanding of depression as a form of loss, for example, Julia Kristeva and   Judith Butler interpret women&rsquo;s depression as stemming from a loss of, or lack   of access to, language. My paper will explore the depiction of melancholy as   both a source of poetic expression and as a form of silence in Bettina von   Arnim&rsquo;s 1840 epistolary novel, G?nderode. The novel is based on the letters that   Arnim exchanged with the poet Karoline von G?nderode (1780?1806) before the   latter committed suicide in 1806. </p>
+  <p align="justify">G?nderode offers a debate between two women about the nature of   melancholy. Karoline von G?nderode is the archetypical melancholic romantic   poet, whose poetry grows out of deep sadness and lack of connectedness with   life. She considers her melancholy a form of existential boredom that serves as   an impetus for her artistic production, and she therefore views her melancholic   state and her poetic talents as being of a piece. In contrast, Bettine (as the   name of Arnim&rsquo;s literary persona is spelled) views melancholy as a silencing   force. She believes that G?nderode is melancholy because she is prevented from   achieving her potential, and Bettine insists, &ldquo;Melancholy flows out of the   source of a desire for life, which has no outlet.&rdquo; Here, she echoes the words of   psychiatrist Karl Wilhelm Ideler in his Outline of Psychiatry from 1835-38: &ldquo;The   pain and suffering of the soul indicates an inhibited emotional drive, which has   either been deprived of its object or of the means to achieve its object.&rdquo;   Melancholy is thus a sign of a desire for life that is trapped in a world of   philistines. While G?nderode sees death as the only escape from this suffering   (and writes of this frequently), Bettine responds to her own experience of (and   fear of) the nihilistic aspects of melancholy by emphasizing the concept of   youth, Jugend, which for her represents both resistance to the conservative   nature of middle class society and the appropriation of her own voice. Die   G?nderode thus becomes a criticism of a society that silences the female artist   and a depiction of Bettine&rsquo;s strate?gies for resisting and/or overcoming   melancholic silence.<br />
+  </p>
+</div>
+
+<p><strong>Ken Jackson</strong> Associate Professor of English<em><br />
+  &quot;Kierkegaard and Silence in the &quot;trial&quot; of   Shylock&quot;</em>
+</p>
+<div id="text">
+<p>This essay on The Merchant of Venice and, in particular, the famous &ldquo;trial&rdquo;   scene and the so called &ldquo;forced conversion&rdquo; of Shylock to Christianity, is part   of a larger project on the vexed question of Shakespeare&rsquo;s religion. My intent   is to illuminate for the first time Shakespeare&rsquo;s fascination with the story of   Abraham&rsquo;s sacrifice of Isaac in Genesis 22, a fascination that when complexly   mediated on the stage ultimately addresses -- not the God of Renaissance   Christianity -- but a radical Otherness beyond or distinct from that particular   onto-theological concept. My claim is that Shakespeare identifies something like   what Jacques Derrida has identified in his philosophical explorations of the   &ldquo;Abrahamic&rdquo; gift: a messianic structure and desire determining, but not   necessarily equivalent to Judaism, Christianity, and Islam, a structure that   demands an openness to the wholly other or a willingness to give oneself up to   the absolutely other in a manner that defies reason or self interest. This   desire to give oneself absolutely to the other that cannot be known is   inextricably intertwined with a secular or existential worldview. The inability   of scholarship to locate Shakespearean drama precisely on the Christian spectrum   stems, then, not from a secular tendency in the playwright, but from an almost   hyper-religious one, one that pushes back to the ancient mystery of Genesis 22,   a &ldquo;hyper-religious&rdquo; passion that presses very close to our own (supposedly)   secular ethics grounded in a respect or openness to the &ldquo;other.&rdquo; <br />
+  <br />
+  I want   to test this hypothesis here on the play that seems the most at odds with both   any pre-Christian &ldquo;Abram/Abraham&rdquo; and our current secular ethics: The Merchant   of Venice. In many ways, the play engages the most violent forms of Christian   typology, rereading Judaism in general and certain figures in particular, like   Abraham, from the Hebrew bible simply as prefiguring Christian salvation.   Correspondingly, the play&rsquo;s treatment of Shylock the Jew and, in particular, the   forced conversion to Christianity he experiences, directly contradicts the prime   directive of our ethics: you must respect the difference of the &ldquo;other.&rdquo; The   play&rsquo;s profound religious desire for the Abrahamic gift interrupts its own,   often violent and hypocritical early modern Christian allegorizing in a way that   simultaneously turns us back to the ancient mystery of Abraham and Isaac, and   points forward -- albeit briefly -- to a postmodern desire for alterity, a   postmodern respect for the individual subject that is not subsumed entirely by   dominant political and cultural forces. This reading is possible, however, only   if we attend to an extraordinary moment of silence and hesitation in the famous   trial scene, a moment of silence that throws the otherwise horrifically   anti-semitic play back to Genesis 22.
+</p>
+</div>
+
+<p><strong>Kathryne Lindberg</strong>,   Professor of English<em> </em>&amp; <strong>Thomas Featherstone</strong>,   Archivist III, Archives of Labor and Urban Affairs<em><br />
+  &quot;Shot in Silence:   Labor Photography and Commentary in Black and Red, 1932-1934&quot;
+</em></p>
+<div id="text">
+<p>A paper and presentation on the photo albums (some of which carry commentary) of   Walter and Victor Reuther. These books, one of which was a project for a course   at Wayne, were made at virtually the same time as the Ford Hunger March and   initial union and unemployed organizing efforts in Detroit; while silent about   these events, these amateur photographers and future labor professionals shot   films of Detroit's Black Bottom and the Gorky Ford Motor Plant in USSR that cry   out to be brought into interdisciplinary discussions that can take them   diacritically outside the normative interrogations of labor history and   aesthetics. Official labor history, including that of the UAW, has been   virtually silent about the Soviet and domestic, youthful political affiliations   and artistic adventures of these labor leaders; not for this reason alone, the   interest that this research can now excite cannot be over-estimated. Part of   what is new and different is that the work of these young activists, barely in   their 20s in the 30s, is that 'the work of art [and activism] in the age of   digital reproduction' allows one to see so much more of the eyes and &quot;I's&quot;   behind the camera than ever before.<br />
+  <br />
+  Professor Lindberg of English and   Africana Studies and Thomas Featherstone Graphics Archivist at Reuther Library   will collaborate on a presentation, both visual and critical, that will   introduce this virtually material and show its importance to the continuing   struggle for human and labor rights against the changing urgencies of   globalization.
+</p>
+</div>
+
+<p><strong>Caroline Maun</strong>,   Assistant Professor of English<br />
+  <em>&quot;Shattering Silence in <U>The Souls of   Black Folk</U> by W. E. B. Du Bois&rdquo;&quot;
+  </em></p>
+<div id="text">
+<p>In describing the level of public discourse that was devoted to African   Americans at the end of 19th century and early 20th century, W. E. B. Du Bois   wrote about a &quot;conspiracy of silence.&quot; He opens his famous book, The Souls of   Black Folk, with a scene of a hypothetical, polite exchange between him and   presumably well-meaning and typically liberal white people who can't bring   themselves to voice the question that Du Bois himself opens this book with, &quot;How   does it feel to be a problem?&quot; In this way, he implicates all people of good   will who do not act on their good will. One way of understanding the life and   work of W.E.B. Du Bois is to see his main project as shattering silences:   silences about the real plight of African Americans, about the racial injustices   that permeated throughout the U.S. largely unchecked and the deathly silence   about blackness in general. His work forces an ethical imperative that all   people who have a stake in the American project must work together toward racial   justice. I will follow this theme of the breaking of silence in The Souls of   Black Folk, a work intended to start a national conversation. </p>
+</div>
+
+<p><strong>Jennifer Sheridan   Moss</strong>, Associate Professor of Classical and Modern Languages,   Literatures and Cultures<br />
+  <em>&quot;The Silence of the Queen: How Plutarch and a   Bunch of Others Silence Cleopatra&quot;</em></p>
+<div id="text">
+  <p align="justify">The written history of Cleopatra begins in earnest with the Greek author   Plutarch, who in his Life of Antony, written around a century after the death of   the famous Roman, details how the Queen of Egypt lead to the downfall of her   Roman lover. On the eve of the battle of Actium, which would lead to their   ultimate defeat, Plutarch describes Antony as &ldquo;an appendage of the woman&rdquo;   (Antony 62.1); the Life of Antony in general ascribes much of Antony&rsquo;s fall from   grace and power to his unnatural, and un-Roman, attachment to   Cleopatra.</p>
+  <p align="left">That Plutarch&rsquo;s Antony should become the basis, and even the   model, for all subsequent histories of Cleopatra is something that Plutarch   himself would have found laughable. First, Plutarch never intended to write   history. He himself states &ldquo;For it is not Histories that I am writing, but   Lives&rdquo; (Alexander 1.2); his focus was on certain events in the lives of his   subjects that illustrated their morality. Furthermore, this is not a biography   of Cleopatra at all, but one of Antony. Thus the history of Cleopatra becomes an   appendage of the history of Antony, this story of the fall of a great man.</p>
+</div>
+
+<p><strong>Roslyn Abt   Schindler</strong>, Associate Professor of Classical and Modern Languages,   Literatures and Cultures<br />
+  <em>&quot;The 'Unsilencing' of Holocaust Survivors:   Voices of Rebirth&quot;</em></p>
+<div id="text">
+  <p align="center"><em>&ldquo;We cannot live   without words<br />
+    but let us not imagine that words are sufficient.&rdquo;<br />
+    ----------------------------------- - Rami M.   Shapiro</em></p>
+  <p align="justify">The 1893 painting by Edvard Munch, &ldquo;The Scream,&quot; can well   represent the absolute horror of the Jewish Holocaust survivor. Holocaust   survivors were silenced fundamentally and profoundly: their identity, their   citizenship, and their humanity were taken from them, leaving them only with a   silent scream. Indeed, the goal of the Nazi regime was not just &quot;to build a   society in which there simply would be no room for Jews&quot;; it was &quot;to leave   behind a world in ruins in which Jews would seem never to have existed&quot; (Elie   Wiesel). This would have been the ultimate silencing: eradication from the   world, from the universe, from memory.</p>
+  <p align="justify">What is the significance, then, of encouraging a whole group of   silenced individuals--the survivors--&quot;to speak, and to speak for themselves&quot;?   Their words--their individual voices--are profoundly important: for them as a   form of rebirth and for future generations, the most precious preservation of   the full range and depth of memory. A plethora of Holocaust memoirs is testimony   to this rebirth, which comes from discharging a burden unimaginable to anyone   who did not experience these crimes against humanity. &quot;If in my lifetime I was   to write only one book, this would be the one,&quot; Elie Wiesel said of Night.   Wiesel, an extraordinarily prolific writer, uttered these powerful words about   the one work that &quot;unsilenced&quot; him. Even more recently, there has been an   avalanche of memoirs written by the second generation, the daughters and sons of   survivors, as the survivor generation ages and dies. </p>
+  <p align="justify">This presentation, then, will focus on the &quot;unsilencing&quot; of   Holocaust survivors. We will hear their voices directly or through their   children. We will witness their rebirth.</p>
+</div>
+
+<p><strong>Bob Sedler</strong>,   Distinguished Professor of Law<br />
+  <em>&quot;The First Amendment Right of   Silence&quot;</em></p>
+<div id="text">
+<p>In a number of respects, the First Amendment recognizes that the values embodied   in the constitutional protection of freedom of speech and freedom of association   mandate a right of silence. Thus, in answer to the question, &quot;What does the law   have to say about silence?&quot; I would say that the law of the First Amendment   recognizes a right of silence. Recognition of a right of silence under the First   Amendment appears in the following contexts:</p>
+<p align="justify">(1) The right to refuse to disclose one s beliefs and   associations to the government. This right was first recognized in the 1950's   when the state government in some southern states tried to obtain lists of   members of the NAACP and other civil rights organizations. It received further   impetus when witnesses before Congressional investigating committees refused to   answer questions about their beliefs and associations, such as, &quot;Are you now or   have you ever been a member of the Communist Party?&quot; It has also been held   unconstitutional for a state to require that a small political party report the   names and addresses of campaign contributors and recipients of campaign   disbursements.</p>
+<p align="justify">(2) The right to speak anonymously without disclosing one's   identity. Because there is a right to speak anonymously, it is unconstitutional   for the government to prohibit the distribution of anonymous pamphlets or the   distribution of anonymous campaign literature.</p>
+<p align="justify">(3) The right not to be compelled to speak in conformity with   the government's message, such as the right of schoolchildren to refuse to   pledge allegiance to the flag, and the right of government employees to refuse   to take an oath disavowing particular beliefs and associations.</p>
+<p align="justify">(4) The right not to be associated with particular ideas. This   right has been broadly construed. Examples of the recognition of this right   include the following: It is unconstitutional for a state to require people to   display an automobile license plate carrying an ideological message with which   the owner of the automobile disagrees. While non-union members may be compelled   to service fees to the union that is their collective bargaining representative,   rebates must be provided if they object to the union's support of political   candidates or political views unrelated to the union's duties as collective   bargaining representative. Where lawyers are required to pay dues to state bar   association, there must be a rebate for any portion of dues used for political   or ideological purposes. Objecting growers of agricultural products could not be   compelled by the government to fund generic advertisements supporting sales of   the product. Organization sponsoring a parade could not be compelled to permit a   group with those philosophy it disagreed to participate in the   parade.</p>
+</div>
+
+<p><strong>Anca Vlasopolos</strong>,   Professor of English<br />
+  <em>&quot;How to Silence Non-Commercial Writers: The   Publishing Business in the 21st Century&quot;
+  </em></p>
+<div id="text">
+<p>I propose to present on the subject of the various types of silencing in the   contemporary publishing business, from the demise of independent presses to the   demands for huge profit margins by corporate publishers; from the depression of   the market caused by academic incorporation of creative writing and writers in   curriculum and faculty to the proliferation of magazines that not only do not   pay but solicit funding from contributors, to reading fees, and to the   well-documented corruption of literary contests; from the necessity of   &ldquo;agenting&rdquo; to the requirement of subventions by academic as well as small   presses. I will speak to the topography of silencing: the &ldquo;coastal&rdquo; monopoly in   publishing and the dearth of middle-of-the-country and southern publishing   houses. I will finally address the post-publication quick silencing of books in   terms of the politics of reviewing.</p>
 </div>
 </div>
 </div><!-- bg border ends-->

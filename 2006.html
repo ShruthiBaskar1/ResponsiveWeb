@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0405timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="immigration.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,71 +256,52 @@
     <option value="2006.html" selected>2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Globalization and the Humanities</div>
-<div id="text">
-<p>Conference date: Friday, March 24, 2006 <br />
-Alumni House 
+</form><br><br><br>
+<div id="text"><h2>Theme: Immigration:
+Interdisciplinary Perspectives </h2>
+ <p>Friday, November 17th
+<br />
+McGregor Memorial Conference Center
 </p>
-<p>Click <a class="normalA" href="GatHschedule.pdf" target="_new">here</a> to open the schedule</p>
-</div>
-<div class="titles">Internal Speaker Biographies</div>
-<div id="text">
-  <p><a class="normalA" href="http://www.cla.wayne.edu/history/faculty/bogosian.htm">Catherine   Bogosian,</a> Assistant Professor of History, is the author of &quot;The 'Little   Farming Soldiers': The Evolution of a Labor Army in Post-Colonial Mali,&quot; in <U>Mande Studies</U> (forthcoming) and &quot;Public Works and the Public's Duty:   French and African views on the military nature of the Deuxi?me Portion&quot; in <U>L'Interface entre les saviors paysans et le savoir universel</U> (Bamako:   LeFiguier, 2003). Her area of specialization is West African history. </p>
-  <p><a class="normalA" href="http://www.english.wayne.edu/People/faculty/burgoyner/">Robert   Burgoyne</a>, Professor of Film Theory in the English Department, is the author   of <U>Film Nation: Hollywood Looks at U.S. History</U> (University of Minnesota   Press, 1997), <U>New Vocabularies in Film Semiotics</U> (co-authored, Routledge,   1992) and <U>Bertolucci's 1900: A Narrative and Historical Analysis</U> (Wayne   State University Press, 1991). His areas of specialization include narrative   theory of film, historical representation and film and national identity and   film.</p>
-  <p><a class="normalA" href="http://www.english.wayne.edu/People/faculty/chandras/index.html">Sarika   Chandra</a>, Assistant Professor of English, is the author of &ldquo;From the   Boardroom to Cocktail Parties: &lsquo;Great&rsquo; Books, Multiethnic Literature, and the   Production of the Professional Managerial Class in the Context of Globalization&rdquo;   in <U>Multiethnic Literature and Canon Debates</U> (SUNY Press, forthcoming),   &ldquo;Interruptions: Tradition, Borders, and Narrative in Gayl Jones&rsquo; Mosquito&rdquo; in <U>Critical Essays on Gayl Jones</U> (Peter Lang Publishing, forthcoming) and   &ldquo;Teaching in Florida: The End of Affirmative Action and the Politics of Race&rdquo; in <U>Race in the College Classroom: Pedagogy and Politics</U> (Rutgers University   Press, 2002. Her areas of specialization include globalization studies,   contemporary American literary/cultural studies and critical ethnic studies.</p>
-  <p><a class="normalA" href="http://www.anthro.wayne.edu/Kangas.htm">Beth   Kangas</a>, Lecturer of Anthropology, is the author of &quot;Therapeutic Itineraries   in a Global World: Yemenis and Their Search for Biomedical Treatment Abroad&quot;   (Medical Anthropology, 2002), &quot;Review of Murshidat: Female Primary Health Care   Workers Transforming Society in Yemen (video)&quot; (Middle East Studies Association   Bulletin, 2001) and &quot;Informing Terminally Ill Patients in Yemen&quot; (International   Institute for the Study of Islam in the Modern World (ISIM) Newsletter, 2001).   Her areas of specialization include the Muslim Middle East, focusing on ethical,   economic, and emotional issues related to advanced medical technology, both in   the Middle East and globally.</p>
-  <p><a class="normalA" href="http://www.english.wayne.edu/People/faculty/marbackr/index.html">Richard   Marback</a>, Associate Professor of Composition Theory in the English   Department, is the author of &quot;Detroit and the Closed Fist: Toward a Theory of   Material Rhetoric&quot; (Rhetoric Review, 1998), &quot;Rhetoric at the End of History:   Post-colonial Theory and Writing Histories of Rhetoric&quot; (JAC, 1998) and &quot;Race   Identity, Writing, and the Politics of Dignity: Reinvigorating the Ethics of   'Students' Right to Their Own Language&quot; (co-authored, JAC, 1997). His areas of   specialization include culture, history, and theory of literacy, rhetoric, and   writing, the ebonics controversy as a site for theorizing material rhetoric,   race identity, and writing pedagogy.</p>
-  <p><a class="normalA" href="http://www.lisp.wayne.edu/people/faculty.html">Gordon B. Neavill</a>,   Associate Professor of Library and Information Science, is the author of   &quot;Archiving electronic journals&quot; (Serials Review, Winter 1995) and &quot;Preservation   of Computer-Based and Computer-Generated Records&quot; in <U>Conserving and   Preserving Materials in Nonbook Formats</U> (University of Illinois Graduate   School, 1991). His areas of specialization include advanced classification and   cataloging, history of books, printing and publishing, technical services,   modern publishing, descriptive bibliography and sociology of knowledge.</p>
-  <p><a class="normalA" href="http://www.pcs.wayne.edu/about/F_Pearson.htm">Frederic Pearson</a>,   Director of the Center for Peace and Conflict Studies, is the author of <U>Arms   and Ethnic Conflict</U> (co-authored, Rowman &amp; Littlefield Publishers, 2001)   and <U>The Global Spread of Arms: Political Economy of International   Security</U> (co-authored, McGraw-Hill Humanities, 1994). His areas of   specialization include international military intervention, arms transfer   effects on civil and international wars and ethnic conflict analysis.</p>
-  <p><a class="normalA" href="http://www.clas.wayne.edu/unit-faculty-detail.asp?FacultyID=714">Vidya   Ramaswamy</a>, Research Associate for the Center for Peace and Conflict Studies,   has been recently funded for her project entitled &quot;The Relationship Between   Grand-Parenting Style, Social Support, and Stress and Young Children&rsquo;s Social   Competence&quot; and gave the talk &quot;Increasing Prosocial Behavior in Preschool   Children: A Teacher-Based Intervention&quot; at the Center for Peace and Conflict   Studies in October, 2005.</p>
-  <p><a class="normalA" href="http://www.english.wayne.edu/People/faculty/scrivenerm/">Michael   Scrivener</a>, Professor of English, is the author of &quot;British-Jewish Writing of   the Romantic Era and the Problem of Modernity: The Example of David Levi&quot; in <U>British Romanticism and the Jews</U> (Palgrave Macmillan, 2002), <U>Seditious   Allegories: John Thelwall and Jacobin Writing</U> (Penn State Press, 2001) and   editor of <U>Poetry and Reform: Periodical Verse from the English Democratic   Press, 1792-1824</U> (Wayne State University Press, 1992). His areas of   specialization include Early Romantic-era writing (especially by Thelwall, the   Shelleys, Wollstonecraft, Anglo-Jewish writers), American and British Jewish   studies, and literary theory (Freud, Frankfurt School, hermeneutics).</p>
-</div>
-<div class="titles">Abstracts</div>
-<div id"text">
-<p><strong>Brent Edwards, English, Rutgers   University
-  <br />
-</strong></p>
-<div id="text">
-  <p align="left">Brent Hayes Edwards is an associate professor in the Department of English at   Rutgers University. He is the author of <em><a class="normalA" href="http://www.amazon.com/gp/product/0674010221/qid=1137781470/sr=1-1/ref=sr_1_1/002-3099328-1396818?s=books&amp;v=glance&amp;n=283155">The   Practice of Diaspora: Literature, Translation, and the Rise of Black   Internationalism</a></em> (Harvard University Press, 2003) and co-editor of <em><a class="normalA" href="http://www.amazon.com/gp/product/0231123515/qid=1137782517/sr=8-1/ref=sr_8_xs_ap_i1_xgl14/002-3099328-1396818?n=507846&amp;s=books&amp;v=glance">Uptown   Conversation: The New Jazz Studies</a></em> (Columbia University Press, 2004).   His translations include essays, fiction, and poetry by authors including   Jacques Derrida, Edouard Glissant, Sony Labou Tansi, and Monchoachi. He is the   co-editor of the journal <em>Social Text</em>, and serves on the editorial   boards of <em>Transition</em> and <em>Callaloo</em>. He is currently completing   a book on jazz and literature titled <em>Epistrophies</em>.</p>
-  <p align="left"><a class="normalA" href="http://english.rutgers.edu/faculty/profiles/edwards.html">Brent Edwards'   Rutgers University page</a></p>
-</div>
 
-<p><strong>Obioma Nnaemeka, French,   Women's Studies, and African-American and African Diaspora Studies, Indiana   University</strong></p>
-<div id="text">
-  <p align="left">A multilingual, widely traveled scholar/activist, Obioma Nnaemeka is Professor   of French, Women&rsquo;s Studies and African/African Diaspora Studies and a former   Director of the Women&rsquo;s Studies Program at Indiana University, Indianapolis. She   studied French, German, and African Studies at the University of Nigeria, Nsukka   (Nigeria), the former Universit? de Dakar (Senegal), Universit? de Grenoble   (France), and the University of Minnesota (Minneapolis) where she earned an M.   A. and a Ph. D. with distinction. </p>
-  <p>A former Rockefeller Humanist-in-Residence (University of Minnesota), Edith   Kreeger-Wolf Distinguished Visiting Professor (Northwestern University,   Evanston), and Verne Wagner Distinguished Visiting Professor (University of   Kansa), Professor Nnaemeka is the Founder and current President of the   Association of African Women Scholars (AAWS) and the List Administrator of an   internet discussion group on gender issues in Africa and the African Diaspora   (AFWOSCHO). She has received numerous national and international awards as well   as grants and fellowships from several foundations and agencies, including   Rockefeller, MacArthur, SIDA and SAREC (Sweden), and IRDC (Canada). </p>
-  <p>Prior to coming to Indiana University, Professor Nnaemeka taught at the   University of Nigeria (Nsukka) and College of Wooster (Wooster, Ohio). She is a   commentator/cultural critic for the French Service of the International Service   of Radio Netherlands in Helversum (Netherlands), a Nominator for the Civitella   Ranieri Foundation (Italy) and the Carnegie Corporation of New York, and a   member of the National Advisory Board of the Association of American Colleges   and Universities (AAC&amp;U) for the Liberal Education and Global Citizenship   Project. </p>
-  <p>She is a member of the Board of Trustees of many international   nongovernmental organizations (NGOs) and on the Advisory Board of several   refereed scholarly journals. As an expert in African/African Diaspora studies,   development, globalization, women's/gender studies, human rights, and   multiculturalism, Professor Nnaemeka combines research and consultancy for the   United Nations, foreign governments, international agencies, and academic   institutions with speaking engagements and active participation in national and   international conferences and programs. She is the convener of the &quot;Women in   Africa and the African Diaspora&rdquo; international conferences. </p>
-  <p>A sought-after speaker, Professor Nnaemeka has delivered over 100 keynote   addresses, lectures, and papers in over thirty countries. She has published   extensively in the following areas: women/gender in development, literature by   Black women from Africa and the African Diaspora, feminist theory, war and   conflict resolution, human rights, and African oral and written literatures. She   is the author of scores of scholarly articles and book chapters, and   author/editor of nine books, including <em><a class="normalA" href="http://www.amazon.com/gp/product/1403967075/qid=1137782168/sr=8-1/ref=sr_8_xs_ap_i1_xgl14/002-3099328-1396818?n=507846&amp;s=books&amp;v=glance">Engendering   Human Rights: Cultural and Socio-economic Realities in Africa and the African   Diaspora</a></em> (Palgrave Macmillan, 2005), <em><a class="normalA" href="http://www.amazon.com/gp/product/0897898656/qid=1137782737/sr=1-1/ref=sr_1_1/002-3099328-1396818?s=books&amp;v=glance&amp;n=283155">Female Circumcision and the Politics of Knowledge: African   Women in Imperialist Discourses</a></em> (Praeger Publishers, 2005), <em><a class="normalA" href="http://www.amazon.com/gp/product/0865434395/qid=1137782808/sr=1-1/ref=sr_1_1/002-3099328-1396818?s=books&amp;v=glance&amp;n=283155">Sisterhood,   Feminisms, and Power: From Africa to the Diaspora</a></em> (Africa World Press,   1998), and <em><a class="normalA" href="http://www.amazon.com/gp/product/041513790X/qid=1137782828/sr=1-1/ref=sr_1_1/002-3099328-1396818?s=books&amp;v=glance&amp;n=283155">The   Politics of (M)Othering: Womanhood, Identity, and Resistance in African   Literature</a></em> (Routledge, 1997).</p>
-  <p align="left"><a class="normalA" href="http://w3.liberalarts.iupui.edu/faculty/fgMain.asp?action=view&amp;FacultyNumber=133">Obioma   Nnaemeka's Indiana University site</a></p>
 </div>
-
-
-<p><strong>Christopher Southgate,   Theology, University of Exeter (U.K.)</strong></p>
+<h3>Keynote Speakers</h3>
 <div id="text">
-<p>Christopher Southgate trained originally as a research biochemist, and has also   been a poet, editor and bookseller. Between 1987-1990, he went through the   training taken by Anglican ordinands and from 1990-1996 worked full-time with   students in the Chaplaincy at Exeter University. Since 1993 he has lectured at   the University of Exeter on the relation between science and religious faith and   the application of Christian theology to the environmental crisis. In April,   1996, his course God, Humanity and the Cosmos won a Templeton Foundation Award   for a Course in Science and Religion. He was the principal author and   co-ordinating editor of a much-praised textbook on the science-religion debate   titled <a class="normalA" href="http://www.amazon.com/gp/product/0567030164/qid=1139522363/sr=2-1/ref=pd_bbs_b_2_1/103-1400887-3024656?s=books&amp;v=glance&amp;n=283155">God,   Humanity and the Cosmos: A Textbook in Science And Religion</a> (T&amp;T Clark   and Trinity Press International, 1999). He is also involved in an ecumenical   scheme to train clergy in S.W. England.</p>
-<p>Southgate has given readings and seminars in a wide range of places including   King's College, London, Sarum College, the Little Gidding Community and the   Edinburgh Fringe. His most recent books of poetry include <a class="normalA" href="http://www.amazon.com/gp/product/3705200984/sr=8-1/qid=1139522280/ref=sr_1_1/103-1400887-3024656?%5Fencoding=UTF8">A   Love and its Sounding: Explorations of T.S.Eliot</a> (University of Salzburg,   1997), a verse biography of the poet with three critical essays, <a class="normalA" href="http://www.amazon.com/gp/product/1899549471/qid=1139522311/sr=1-1/ref=sr_1_1/103-1400887-3024656?s=books&amp;v=glance&amp;n=283155">Beyond   the Bitter Wind: Poems 1982-2000</a> (Shoestring Press, 2000) and most recently, <a class="normalA" href="http://www.amazon.co.uk/exec/obidos/ASIN/1904886299/203-8551568-0222345">Easing   the Gravity Field: Poems of Science and Love</a> (Shoestring Press, 2006), which   launches in London at King's College on March 8, 2006.</p>
-<p><a class="normalA" href="http://www.huss.ex.ac.uk/theology/staff/southgate.html">Christopher   Southgate's University of Exeter homepage</a></p>
-</div>
-
-<p><strong>Frederic Pearson &amp; Vidya Ramaswamy - &quot;The Impact of Immigration   Patterns in Local Community Schools&quot;</strong></p>
+<p>T. Alex Aleinikoff<br />
+  <strong>Professor of Law, Executive Vice   President of Law Center Affairs, Dean of the Law Center<br />
+  Georgetown   University</strong></p>
 <div id="text">
-<p>One of the interests of the Center for Peace and Conflict Studies, Wayne State   University is to look at the impact of immigration/globalization on local school   communities. This research study will focus on how <strong>the acculturation   process</strong> (by this we mean the influence of the dominant culture) impacts <strong>adolescents' identity development</strong> and how this in turn impacts   their <strong>positive social development</strong> - in this study we are   looking at one aspect of social development-the need to help others. Data will   be collected on 150 teens representing different ethnic groups using self report   psychological measures. This research will be helpful to parents/educators to   understand the issues facing adolescents of diverse groups with respect to   issues of immigration and the meeting of different cultures.</p>
+<p>Co-author of <em>Immigration and Citizenship: Process and   Policy</em> (West Group, 5th ed., 2003)<br />
+  Author of <em>Semblances of   Sovereignty: The Constitution, the State, and American Citizenship</em> (Harvard   University Press, 2002)</p>
 </div>
-
-<p><strong><a name="Scrivener" id="Scrivener"></a>Michael Scrivener, Professor of English -   &quot;Habermas and the Cosmopolitan Ideal&quot;</strong></p>
+<p>Ali Behdad<br />
+  <strong>Professor of English and Chair of   Comparative Writing<br />
+  University of California, Los   Angeles</strong><br />
+</p>
 <div id="text">
-<p>Jurgen Habermas, a German philosopher who has written extensively on   globalization and imperial power, has been one of the strongest European voices   in favor of what he has called after Kant a cosmopolitan social order, and since   the American invasion and occupation of Iraq in 2003, one of the Bush   administration's most astute critics. I will describe some of the prominent   features of Habermas's cosmopolitanism its assumptions, origins, logic, and   overall implications and suggest some ways that cosmopolitanism reconfigures the   thought and literature of the late 18th and early 19th centuries when the full   force of modernity was being conceptualized. Certain Enlightenment and Romantic   texts and ideas considered marginal or utopian become more central after the   contemporary emergence of cosmopolitanism, an important response to the crisis   of globalization.</p>
+<p>Author of <em>A Forgetful Nation: On Immigration and Cultural   Identity in the United States</em> (Duke University Press, 2005)<br />
+  Author of   &ldquo;National Identity and Immigration: American Polity, Nativism, and the &lsquo;Alien&rsquo;&rdquo;   in <em>Beyond Dichotomies</em> (ed. Elisabeth Mudimbe-Boyi, SUNY Press,   2000)</p>
 </div>
-
+</div>
+<h3>Speaker Abstracts</h3>
+<div id="text">
+  <p><strong>John J. Bukowczyk</strong>,   Professor of History</p>
+  <p><strong>Alfred L. Cobbs</strong>,   Associate Professor of German</p>
+  <p><strong>Jos? Cuello</strong>,   Associate Professor of History</p>
+  <p><strong>May Seikaly</strong>, Chair   of Near Eastern and Asian Studies</p>
+  <p><strong>Mary Cay   Sengstock</strong>, Professor of Sociology<br />
+    <br />
+    <strong>Anca Vlasopolos</strong>, Professor   of English</p>
+  <p><strong>R. Fred Wacker</strong>,   Associate Professor of Interdisciplinary Studies<br />
+    <br />
+    <strong>Jonathan Weinberg</strong>,   Professor of Law</p>
 </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->

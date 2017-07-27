@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="9899timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="civil.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,32 +256,32 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html" selected>2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Landscapes of Depopulation</div>
-<div id="text">
+</form><br><br><br>
+<div id="text"><div class="titles">Theme: The Humanities and Civic Engagement</div>
+  <p align="left"><strong><em>Morning Session</em></strong></p>
+  <p><em>Keynote Speaker</em></p>
+  <p>Michael Sandel, Professor of Government, Harvard University: What Ails   Democracy Today?: America in Search of a Public Philosophy </p>
+  <p><em>Respondents</em></p>
+  <p>Brad Roth, Assistant Professor, Political Science</p>
+  <p>Anne Rawls, Associate Professor, Sociology</p>
+  <p>Bruce Russell, Professor, Philosophy</p>
+  <p>?</p>
+  <p><strong><em>Afternoon Session</em></strong></p>
+  <p><em>Principal Speaker</em></p>
+  <p>Otto Feinstein, Professor of Political Scicence, Wayne State University: The   Politics of Inclusion in Multicultural Societies</p>
+  <p><em>Respondents</em></p>
+  <p>Jagdish Gundara, Head, Institute of Multicultural Education, University of   London; President, International Association for Intercultural Education</p>
+  <p>Sheri Hamilton, Adult and Civil Education Project, South Africa</p>
+  <p>Joszef Katus, Professor, Leiden University; University of Budapest; President   of European Symposium of Voluntary Associations</p>
+  <p>Silva Meznaric, Director, Center for Immigration and Ethnic Studies,   University of Zagreb</p>
 </div>
-<div class="titles">Keynote Speaker</div>
-<div id="text">
-  <p><strong>Sharon Zukin</strong>, Broeklundian Professor of Sociology, Brooklyn   College, CUNY: American Cities in the 20th Century: Cultural Sites of Growth and   Decline</p>
-  </div>
-     <div class="titles">WSU Speakers</div>
-      <div id="text">
-        <p><strong>Linda Housch-Collins</strong>, Assistant Professor, Law. <em>Many   African Americans Left Atlanta, but Most Chose to Stay: A Population and   Community Study of Black Atlanta from 1880 to 1940</em></p>
-        <p><strong>Cynthia Erb</strong>, Associate Professor, English: <em>Lost   Horizons: Cinema and the Tibet </em>Crisis</p>
-        <p><strong>Jerry Herron</strong>, Professor, English: <em>I Remember Detroit: A   Short History of American Forgetting </em></p>
-        <p><strong>James E. Nawara</strong>, Professor Art &amp; Art History, <em>Depopulated Landscapes: An Exhibition</em></p>
-        <p><strong>Ruth Ray</strong>, Associate Professor, English: <em>Generational   Exchange and the &quot;Repopulation&quot; of Detroit</em></p>
-        <p><strong>John Richardson</strong>, Assistant Professor, Art &amp; Art History: <em>The Meaningful Object: A Visual Dialogue on Cultural Transformation, Urban   Decay, and Renewal</em></p>
-        <p><strong>May Seikaly</strong>, Professor, Near Eastern &amp; Asian Studies: <em>Space and Identity: Palestinian Displacement </em></p>
-        <p><strong>Marilyn Zimmerman</strong>, Assistant Professor, Art &amp; Art   History: <em>Woodward Avenue Rephotographic Project: Repopulating the Grand   Boulevard</em></p>
-      </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->
 

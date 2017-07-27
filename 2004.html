@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0203timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="questionmethod.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,67 +256,49 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html" selected>2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: The Religious and the Secular: Past, Present and Future</div>
-<div id="text">
+</form><br><br><br>
+<div id="text"><h2>Theme: Questioning Foundations and Methods in the Humanities and Arts</h2>
+ <p>November 12, 2004 
+<br />
+10:30 a.m.- 5:30 p.m.
+</p>
 </div>
-<div class="titles">Key Note Speakers</div>
+<h3>Speakers</h3>
 <div id="text">
-  <p>Michael Eric   Dyson<br />
-    Avalon Professor in the   Humanities, </p>
-  <p>John D.   Caputo<br />
-    David   R. Cook Professor of Philosophy, Villanova   University. <br />
+  <p><strong>Anne Wagner, University of California at Berkeley<br />
+    </strong><strong><em>&quot;Our Flag Was Still There: U.S. Hegemony and Jasper   Johns&quot;</em></strong><em><strong></strong></em><strong><br />
+      <br />
+      Michael Berube, Pennsylvania   State<br />
+      <em>&quot;What I Tell my Students about   Post-modernism&quot;</em></strong></p>
+  <p><strong><br />
+    Sue Wells, Temple University<br />
+    <em>&quot;Theory vs.   Practice: The Case of Grounded Theory&quot;</em></strong></p>
+  <p><br />
+  </p>
+  <p><strong>Dora Apel, Art &amp;   Art History</strong><br />
+    &quot;Media Images and Public Art: The   Photographs of Abu Ghraib&quot;</p>
+  <p><strong>Barrett Watten, English</strong><br />
+    &quot;Poetry as a Scene of   Decision&quot;</p>
+  <p><strong>Steve Shaviro,   English</strong><br />
+    &quot;Without Criteria&quot;</p>
+  <p><strong>Herb Granger,   Philosophy</strong><br />
+    &quot;Philosophical Analysis: Its Past and   Prospects&quot;</p>
+  <p><strong>Allen Batteau, </strong><strong>Anthropology </strong><br />
+    &quot;Situated Knowledge in Engineering, the Arts and the Natural   Sciences&quot; </p>
+  <p><strong>Ellen Barton, </strong><strong>Linguistics</strong><br />
+    &quot;The Linguist in the English Department&quot;</p>
+  <p><br />
+    Moderator:<strong><br />
+      </strong><strong>S</strong><strong>teve Winter,</strong> Professor of Law, Director of the Center for Legal   Studies<br />
   </p>
 </div>
-<h3>WSU Speakers</h3>
-<div id="text">
-<p><strong>Elizabeth A. Dorn</strong><br />
-  History<br />
-  &quot;For God, Home and   Country&quot;<br />
-  <br />
-  <strong>Anne E. Duggan</strong><br />
-  Romance Languages &amp;   Literatures<br />
-  &quot;<em>The Bishop of Belley's Bloody Stories&quot;</em><br />
-  <br />
-  <strong>Ken   Jackson</strong><br />
-  English<br />
-  <em>&quot;Abraham and the Abrahamic   Shakespeare&quot;</em><br />
-  <br />
-  <strong>Janet Langlois</strong><br />
-  English<br />
-  <em>&quot;Other Worlds&quot;:   An ethnographic Study of Personal Accounts of the Return of the Dead and Other   Mystical Experiences in Health-Related Contexts&quot;</em><br />
-  <br />
-  <strong>Brian   Madigan</strong><br />
-  Art &amp; Art History<br />
-  <em>&quot;Roman Ceremonial   Sculpture&quot;</em><br />
-  <br />
-  <strong>Arthur Marotti</strong><br />
-  English<br />
-  <em>&quot;Catholic Writing   in Early Modern England&quot;</em><br />
-  <br />
-  <strong>Robert Martin</strong><br />
-  Art &amp; Art   History<br />
-  <em>&quot;Voudou&quot;: An Interactive Video Opera&quot;<br />
-  </em><br />
-  <strong>Jennifer   Sheridan Moss</strong><br />
-  Classics, Greek, and Latin<br />
-  <em>&quot;The Religious in the   Midst of the Secular&quot;<br />
-  </em><br />
-  <strong>Bruce Russell</strong><br />
-  Philosophy<br />
-  &quot;<em>The   Existence of God&quot;</em><br />
-  <br />
-  <strong>Francis Shor</strong><br />
-  Interdisciplinary Studies,   CULMA<br />
-  &quot;<em>From 'Beloved Community' to Black Power&quot; </em></p>
-</div></div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->
 

@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="9900timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="beauty.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,31 +256,54 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html" selected>2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: Adults and Children at Play </div>
-<div class="titles">Speakers</div>
+</form><br><br><br>
 <div id="text">
-  <p><strong>Nancy Lieberman-Cline</strong>, Basketball Hall-of-Famer, Television   Broadcaster for ESPN, and Former Head Coach of the Detroit Shock (WNBA):   Gender/Sex/Play: What Have Women Got to Do With It?</p>
-  <p><strong>Philip Abbott</strong>, Professor, Political Science: <em>Utopians at   Play</em></p>
-  <p><strong>Abigail Butler</strong>, Assistant Professor, Music, with Vicki Lind,   Assistant Professor, Music, University of Colorado at Boulder: <em>A Child's   Book of Madrigals: Songs, Games, and Dances of the Renaissance</em></p>
-  <p><strong>Jorgelina Corbatta</strong>, Professor, Romance Languages &amp;   Literatures: <em>Playing Games With the Reader: The Writings of Jorge Luis   Borges</em></p>
-  <p><strong>Anne Duggan</strong>, Assistant Professor, Romance Languages &amp;   Literatures: <em>Adults at Play: Les Chroniques du Samedi and the Production of   Elite Subjects</em></p>
-  <p><strong>Cynthia Erb</strong>, Director, Film Studies Program, Associate   Professor, English, on behalf of Kirsten Thompson, Assistant Professor, English: <em>At Play in the Field of Animation: the Fleischer Bros. Studio,   1915-1944</em></p>
-  <p><strong>Sandra VanBurkleo</strong>, Associate Professor, History, on behalf   of Edward M. Wise, Professor, Law: <em>Play Forms in the Criminal Trial: A   Comparative Study</em></p>
+      <h2>Theme: The Notions of Beauty &amp; Pleasure</h2>
+    <p>The Humanities Center's symposium
+on The Notions of Beauty and Pleasure
+was held in the Alumni Lounge, Ferry Mall,
+on campus on November 30, 2001. The
+event provided participants with a good
+way to intellectually stop and smell the
+roses at a time when the ugliness of war in
+the wake of the events of September 11 was
+forefront in our minds.
+The program spotlighted two concepts
+that are central to the humanities and arts
+by approaching them from several disciplinary
+viewpoints: literary, philosophical,
+psychological, historical, artistic and theatrical;
+and from interdisciplinary perspectives.
+The Moderator was Jerry Herron,
+Professor of English, and Director of
+WSU's American Studies Program. Jerry
+is well known for his outstanding work on
+Detroit's cultural institutions, for his book
+Afterculture: Detroit and the Humiliation
+of History (1993), and for his eloquence and
+wit. The event was co-sponsored and partially
+funded by the Michigan Humanities
+Council.</p>
   </div>
-  <h3>Dissertation Fellow Presenters:</h3>
-  <div id="text">
-  <p><strong>Joseph Helminski</strong>, Ph.D. Candidate, English: <em>Rome in   America: Anti-Catholicism and American Identity in Antebellum   Literature</em></p>
-  <p><strong>Jane Yamazaki</strong>, Ph.D. Candidate, Communication: <em>A Nation   Apologizes: A Rhetorical Study of Postwar Japanese Apologies for World War   II</em></p></div>
-</div>
-
+<h3>Keynote Speakers</h3>
+<div id="text">
+    <p>Dave Hickey, Professor of Art Theory &amp; Criticism, University of Nevada at Las Vegas: The Notions of Beauty and Pleasure </p>
+  </div>
+  <h3>Speakers</h3>
+  <div id ="text">
+    <p>David Magidson, Professor, Theatre and Robert Wilbert, Professor Emeritus, Art &amp; Art History: Meaning and Beauty</p>
+    <p>Robert Yanal, Professor, Philosophy: The Beauty of Meaning</p>
+    <p>Nancy Locke, Associate Professor, Art &amp; Art History: Gendering Beauty and Pleasure</p>
+    <p>Gisela Labouvie-Vief, Professor, Psychology: The Self and Beauty</p>
+    <p>Barrett Watten, Associate Professor, English: Difficult Images: Trauma and Pleasure</p>
+  </div>
 </div><!-- bg border ends-->
 <!-- InstanceEndEditable --><!--OuterBox ends-->
 

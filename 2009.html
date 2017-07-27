@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/ConferenceTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/FallSymposiaTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Redesigning New Website">
   	<meta name="author" content="Shruthipriya Soranjerry Baskar">
   	<!-- InstanceBeginEditable name="doctitle" -->
   	<title>Wayne State University's Humanities Center | Welcome</title>
-     <link href="../secondarycss.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript">
+    <link href="../secondarycss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
 	function MM_jumpMenu(targ,selObj,restore){ //v3.0
 	  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
 	  if (restore) selObj.selectedIndex=0;
 	}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
 	</script>
   	<!-- InstanceEndEditable -->
 <link rel="stylesheet" href="../main.css">
@@ -211,8 +227,8 @@
         </ul>
       </li>
       <li><a href="../BrownBag/brownbag.html">Brown Bag Colloquium Series</a></li>
-      <li><a href="conference.html">Conference</a></li>
-      <li><a href="../FallSymposia/symposia.html">Fall Symposia</a></li>
+      <li><a href="../Conference/conference.html">Conference</a></li>
+      <li><a href="symposia.html">Fall Symposia</a></li>
       <li><a href="../VisitingScholars/scholars.html">Visiting Scholars</a></li>
     </ul>
     <a href="#" id="pull">Menu</a> </nav>
@@ -220,14 +236,12 @@
 <!-- forid div ends -->
 </section>
 <!-- InstanceBeginEditable name="EditTimeline" -->
-<!--Slideshow-->
-<img src="0708timeline.jpg" width="100%" style="z-index:-2;position:relative;"> 
-
+<img src="health.jpg" width="100%" style="z-index:-2;position:relative;"> 
 <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="EditUpdates" -->
 <div class="bg border">
 <form name="form" id="form">
   <select name="AdvisoryMenu" id="Menu" onchange="MM_jumpMenu('parent',this,0)">
-  <option value="conference.html">Conference</option>
+  <option value="symposia.html">Yearly Symposia</option>
     <option value="2017.html">2017</option>
     <option value="2016.html">2016</option> 
     <option value="2015.html">2015</option>
@@ -242,66 +256,97 @@
     <option value="2006.html">2006</option>
     <option value="2005.html">2005</option>
     <option value="2004.html">2004</option>
-    <option value="2003.html">2003</option>
+    <option value="2003.html">Anniversary</option>
     <option value="2002.html">2002</option>
     <option value="2001.html">2001</option>
-    <option value="300.html">Detroit 300</option>
     <option value="2000.html">2000</option>
+    <option value="1999.html">1999</option>
+    <option value="1998.html">1998</option>
 </select>
-</form>
-<br><br><br>
-<div class="titles">Theme: The Hauntings</div>
-<div id="text">
- <p>Conference date: Friday, April 3, 2009 <br />
-The McGregor Memorial Conference Center<br />
-495 Ferry Mall Detroit, MI 48202-3610
-</p>
-
-</div>
-<div class="titles">Explication</div>
-<div id="text">
- <p>"Thou art a scholar, speak to it, Horatio!" </p>
-<p>
-The terrified guards at the beginning of Hamlet beg Horatio to speak to the uncanny apparition of the dead king's ghost. Why do they look to Horatio as one especially able to "speak to" -- both with and about--the ghost? Because he is a scholar. But why ask a scholar to speak to a ghost? Especially a skeptic who has already scolded the frightened guards, "'tis but fantasy!" and who declares that he "will not let belief take hold of him"? Confronted by the ghost, even he has to admit its presence. Even worse, deprived of the scholar's preferred response to such things--which is haughty, knowing dismissal--Horatio has to admit he has no idea how to talk to or about the ghost.</p><p>
-
-Horatio's dilemma is not an uncommon one for scholars in many different disciplines. As we work in and through the past, we find ourselves grappling with many ghosts, and in some sense are the ones, because we are scholars, to sort it out. At the end of the 20th century and into the first decade of the 21st century, scholarship is still humbled by such hauntings. For all the advances that have been made in various disciplines, we cannot seem to exorcise our ghosts completely. We often say we are "haunted" by memories and history. Much music and poetry, of course, is still said to be "haunting." But what does this mean in the 21st century? Why is this spectral metaphor so indispensable? Does this persistent haunting have anything to do with the seemingly ever present attention to spirit and spiritualism? After all, one tends to need specters to make "pure" spirit manifest.</p>
-
-<p> In what sense are we now haunted by virtual realities? Or do virtual realities render us into the apparitions? The most material thing in modern global capitalism ? money ? has itself a certain spectral quality. We do not know what it is precisely. We alternately want more of it and want to get rid of it, but it both eludes us and remains indispensable at the same time ("A specter is haunting Europe ? the specter of Communism," Marx famously wrote). There has been an extraordinary revival of interest in spiritism, as well as the metaphorical sense of haunting in terms of layered history (for instance, the colonial carvings of lands and peoples in the Middle East that now represent a return of the repressed), the haunting of the Holocaust through European memory (the museums dedicated to it are but an example), the African religions and languages still "haunting" practices all through the Caribbean, native gods and customs infiltrating the Catholicism of South and Central America. </p><p>We are at a point where people desperately want to connect to a world of the spirit, to some confirmation of an afterlife, and at the same time re-live history in contemporary events and policies. Can societies be haunted? Are there geographical spaces that gather the past to themselves? Can debt be a kind of haunting?</p>
-<p>
-In brief, this faculty fellowship competition invites scholars from all disciplines to address -- via the term and concept of haunting ? that which they normally take for granted: the distinction between real and unreal, the actual and inactual, the living and the non-living, being and non-being, presence and non presence.</p>
-<p>
-*Title subject to change.</p>  
+</form><br><br><br>
+<div id="text"><h2>Theme: Representation of Health and Disease in the City</h2>
+ <p>The McGregor Memorial Conference Center<br />
+495 Ferry Mall Detroit, MI 48202-3610<br /><br /><a href="scheduleflyerfallsymposium09.jpg" target="_new">Schedule</a>
 </p>
 </div>
-<div class="titles">Abstracts</div>
-<div id"text">
-<p><b>Robert Burgoyne - Professor, English <br />
-Haunting in the War Film </b></p><div id="text">
-<p>Robert Burgoyne willl argue that the war film, one of the oldest and most significant genres in film history, has been critically reduced by its conventional designation as a realist genre. However, he maintains that the defining and distinguishing feature of the genre is the past haunting the present, the past possessing the present, a theme manifested through spectral encounters, traumatic memories, and more generally through a sense of debt and obligation. </p></div>
 
-<p><b>Jorgelina Corbatta - Professor, CMLLC<br />
-The Argentine Dirty War's haunting repercussions today* </b></p><div id="text">
-<p>Jorgelina Corbatta will explore the military coup in Argentina "the Dirty War" (1976-1983) that resulted in the disappearance of 30,000 people and the extra-judicial execution of untold more. March 24th is now the national day of "Memory for Truth and Justice" in Argentina, a country still haunted by its past history. </p></div>
+<h3>Explication</h3>
+<div id="text">
+ <p>The city has from ancient times been seen as a nexus of confluences. In its glory, the polis, Athens for instance, represented the center of balance and enlightenment, where a man like Orestes could find justice and be released from mental and physical torment. In its decadence, the city becomes the site of pollution and infection: the pestilence in Thebes stands for crimes against king and nature. Medieval cities, ravaged by the plague, lost two thirds of their citizens through death; other, more fortunate inhabitants could take refuge in the country, away from the hot points of contamination; The Decameron is an entertainment for just such refugees. Revolutions were fomented in cities.</p><p> Spectacles such as ritual processions, marches through arches of triumph, public executions, all required the collective gaze of multitudes to achieve their greatest effects. During the Industrial Revolution and in its aftermath, as cities increased their populations more than five times, these pullulating centers fostered both the most horrific sites of congestion, filth, and diseases, as well as the greatest advances in sanitation known in human history. Competing and overlapping discourses about eugenics and degeneration in general took their data from urban populations. </p><p>Psycho-analysis began as an investigation of Viennese bourgeois malaise. In the United States as well, cities have been the object of pronounced ambivalence. Jefferson described cities as a canker on the body politic and urged parents to forbid their sons to visit European capitols. Progressives regarded cities as a source of liberation once they were cleansed of corruption. The anomaly of New York City as the cultural center of the U.S. and Washington, D.C., as the capital points to the American ambivalence about cities. </p><p>The Humanities Center invites proposals for talks that address the ways in which health and disease have been represented as located in the city. What is the significance of the urban setting in the pursuit of health and/or disease? How our attitudes about cities formed by the discourses of health practitioners, innovative medical geniuses, social reformers, novelists, artists, and composers in depicting the vectors of health and disease among citizens of the polis? How, in turn, are our views of disease and health colored by cultural notions of the city as both a center of medical expertise and an environment where pollution, noise, germ transference, and adulterated food supplies promote the spread of disease? 
+</p>
+</div>
 
-<p><b>Alexander Day - Assistant Professor, History<br /> 
-Haunting History: The continuing affects of the Cultural Revolution on Chinese intellectual politics </b></p><div id="text">
-<p>Alexander Day will focus on two linked moments in the political/intellectual history of the reform era (1979-present): the debate over Marxist humanism and alienation and the debate between the liberals and new left that emerged in China during the mid-1990's. These debates are affected by the Cultural Revolution (1966-1969). Day suggests that the specter haunting the present is the emergence of a popular mass democratic politics that could not be controlled by elites and a radical breakdown in the separation between the economic and political spheres, such that overcoming economic alienation is understood as linked to overcoming political alienation and bureaucracy. </p></div>
+<h3>Speaker Abstracts</h3>
+<div id="text">
+<p><b>Kristine M. Gebbie, Joan Hansen Grabe Dean, School of Nursing, Hunter College, CUNY <br />
+Healthy Cities or Health in Cities? </b></p><div id="text">
+<p>In the world of public health, there is much enthusiasm for the phrase 'healthy cities' and several projects that are designed to engage a wide range of citizens in activities to make their city a healthy city. A dominant paradigm displaying the determinants of whether or not an individual will be healthy includes both the physical and social environments as critical components. There are also multiple perspectives on city life that suggest it is inherently unhealthy or at least far less healthy than an idealized, bucolic rural or suburban life. Which paradigm works for what purpose? Is it possible to concentrate on a healthy city without considering the individual health of each inhabitant? Is it possible to attend to the health of a series of individual city dwellers without considering the overall level of functioning of the city? Taking the perspective of a long-time public health official and nurse, this session explores how various ways of considering health from a corporate or individual level might influence decisions about health investments and planning. </p></div>
 
-<p><b>Ken Jackson - Associate Professor, English <br />
-"Hauntology": The Ghost(s) of Shakespeare Continental Philosophy  </b></p><div id="text">
-<p>Ken Jackson will outline the extent to which major philosphers in the European or "continental" tradition read and respond to the work of William Shakespeare. Jackson's work suggests that over time continental philosophy's actual engagement with the playwright has been uneven; nonetheless, there are suprising and important moments of engagement that have yet to be catalogued. </p></div>
+<p><b>Ellen Barton, Professor of English and Richard Marback, Associate Professor of English <br />
+The Bodies of the Urban Public </b></p><div id="text">
+<p>The bodies of the urban public have always been of special importance to medical research, from the new Renaissance practice of grave-robbing from urban cemeteries for the emerging art and science of dissection (Park), to the injection of cancer cells in terminal patients in an urban hospital in 1963, during a period David Rothman calls "the gilded age of [medical] research," a time when researchers "ran their laboratories free of external constraints". </p><p>
 
-<p><b>Janet Langlois - Associate Professor, English <br />
-"Other Words:" Return of the Dead and Other Mystical Experiences in Health-Related Contexts </b></p><div id="text">
-<p>Janet Langlois has been recording accounts of mystical experiences in hospices and other health related contexts. She has conducted interviews with individuals in hospice care, with hospice/hospital staff and volunteers and with members of bereavement groups and others bereaved. According to one hospice doctor when asked if patients and their relatives have reported anything unusual surrounding death and bereavement: "They all say they see dead people". </p></div>
+In this presentation, we look at minority inclusion in medical research from a combined micro- and macro-perspective. Barton, a linguist, first presents the findings of a micro-level linguistic analysis of offers to participate in cancer clinical trials, with data analyzed by race. The study analyzed the presentation of key elements of informed consent during trial offers, finding that there were significant differences in trial offers to African-American vs. Caucasian-American patients. Marback, a rhetorician, then theorizes the results of this study, beginning with consideration of the urban teaching hospital as a racialized site and the idea of inclusion as the preferred response to patterns of racial exclusion ?in this case the singular appeal to African-American patients to want to participate. By situating the appeals in these cancer clinical trials in a more general description of the successes and failures of appeal to inclusion that shape current rhetoric, this analysis argues that mandated minority inclusion in medical research fails to adequately respond to the systemic racism that continues to debilitate the bodies of the urban poor.  </p></div>
 
-<p><b>Elena Past - Assistant Professor, CMLLC<br />
-The Specter of Lombroso in Contemporary Italian Crime Fiction </b></p><div id="text">
-<p>Cesare Lombroso 's positivist criminological studies of the "born criminal", prominent at the end of the nineteenth and beginning of the twentieth centuries, in modern Italian crime fiction. Lombroso in the Criminal Man(1896-1897) combines anthropometric studies and autopsies of hundreds of prison innmates and concludes that criminal man is genetically predisposed to commit crimes. The specter of Lombroso informs the work of contemporary author, Carlo Lucarelli, who today haunts the Italian airwaves and best-seller lists. </p></div>
+<p><b>Kristin Ross, Professor of English, NYU <br />
+Bad Blood </b></p><div id="text">
+<p>In this talk I focus less on the sick of the city than on those fictional figures who investigate them: doctors and detectives. I begin with the theory of the novelist as doctor or physiologist, engaged on equal footing with the scientist in the "universal investigation" that was the dream of the 19th century: Zola, heredity, and the naturalist experiment. I trace the way in which the doctor/diagnostician of social ills is replaced in the 20th century by the figure of the private investigator. Both doctor and detective share, by way of their profession, an exceptional access to the urban totality and the raw material it offers. Yet both suffer from a hierarchical distribution of places and functions that isolates them from "the people" they investigate or treat?they are different from their patients or clients, exterior to their situation. For crime writers in France writing after 1968, this epistemological and narratological problem was viewed as a political dilemma?one they attempted to solve by a transformation of the figure of the detective. </p></div>
 
-<p><b>Fran Shor - Professor, History <br />
-Mississippi Hauntings: Exorcising the Ghosts of Past Civil Rights Murders </b></p><div id="text">
-<p>Fran Shor will examine the high-profile murder cases of civil rights activists. After the 1992 hearing before a Mississippi court to dismiss the trial against Byron De La Beckwith for the murder of civil rights leader, Medgar Evers, Ever's widow, Myrlie Evers, defended the need to go forward with the trial. "We have to settle those dastardly acts of old. If we don't, we will live with ghosts that will haunt us forever." Because Mississippi was considered to be one of the most lethal environments for civil rights workers and the last bastion of virulent white supremacy, an examination of how the past was re-presented during the trials and commented on by the Mississippi and national media should help to identify the ways that history's hauntings are reconciled with the present. </p></div>
+<p><b>Sherylyn Briller, Assistant Professor of Anthropology<br />
+Stephanie Myers Schim, Associate Professor of Family, Community and Mental Health<br />
+Contemplating Death in a Dying City  </b></p><div id="text">
+<p>With the growth of cities came new ways of contemplating the meanings of life, health, and individual and collective ways of living. The creation of urban environments also changed how people die, where they die, and how death is represented. We will discuss selected social and public health aspects of urban death over time and across locations. Building on this historical and cross-cultural discussion, we will highlight the importance of understanding death within particular urban contexts. Metropolitan Detroit provides a rich exemplar of an urban area in which death and dying and related social meanings need to be considered. We discuss ways in which recent interdisciplinary scholarship enriches understanding of the relationships between health, personhood, life, and death in this unique urban context. As historical, social, and economic forces converge on Metro Detroit and profoundly impact current health care resources, access to care, and quality of life overall, the discussion of what death and dying mean, how they are experienced, and the representations they have are all the more relevant. We will discuss some collaborative research exploring individual, family and community stories of dying in Detroit. Through these end-of-life stories, we will highlight some of the cultural, physical, spiritual, ethical, legal, political and economic issues that arise when thinking about death in this 21st century post-industrial urban context. </p></div>
+
+<p><b>Heather Dillaway Associate Professor of Sociology <br />Women, Disability, and Reproductive Health in Detroit: A Report on Research and Advocacy in a Local, Urban Context </b></p><div id="text">
+<p>Traumatic spinal cord injury (SCI) refers to a sudden injury that causes paralysis and loss of sensation, the effects of which occur below the trauma site. For this reason, some persons lose the ability to use their legs and lower body (paraplegia) while others lose this ability from the neck down (tetraplegia). Approximately 253,000 Americans currently live with SCI, and an estimated 11,000 new injuries occur each year (National Spinal Cord Injury Statistics Center, NSCISC 2008). Since complete or partial motor paralysis necessitates lifelong wheelchair use and lifelong coping with a range of serious medical complications (Jensen, Kuehn, Amtmann, & Cardenas 2007), a survivor of SCI must contend with their appearance as a permanently broken body as they strive for desired participation in society replete with social and physical barriers. Thus, it is difficult at first to conceptualize individuals who have a disability like SCI as physically "healthy." And what about women with disabilities? Again, we assume that women with disabilities might not experience reproductive "health" at all, only "illness." 
+</p><p>
+We attempt to expand the literature on and understanding of disabled women's "health" experiences by reporting on data from 20 in-depth, individual interviews with Detroit women who have existing spinal cord injuries. Our findings suggest that women in our sample were not always stereotyped as non-reproductive by their physicians; in fact most reported being told by SCI doctors that "they could still get pregnant." Our findings also suggest, however, that disabled women in our sample do not have adequate access to comprehensive reproductive health care. The idea that reproductive "health" is something that only able-bodied women can achieve is an important theme in our interviews. In this paper we also discuss how the local, urban context impacted these women. </p><p><b>References</b></p><p>Freeman, E., Grisso, J., Berlin, J., Sammel, M., Garcia-Espagna, B., & Hollander, L. 2001). Symptom reports from a cohort of African American and white women in the late reproductive years. Menopause, 8(1), 33-42. </p><p>
+
+Jensen, M., Kuehn, D., Amtmann, D., & Cardenas, D. (2007). Symptom burden in persons with spinal cord injury. Archives of Physical Medicine and Rehabilitation, 88, 638-645. </p><p>
+
+NSCISC (2008). National spinal cord injury statistics center. http://www.spinalcord.uab.edu </p>
+<p>
+Spradley, J. (1979). The ethnographic interview. New York: Holt.</p> </div>
+
+<p><b>Anne Duggan Associate Professor of CMLLC <br />
+Jacque Demy's The Pied Piper, or Dis-ease in the Provincial City </b></p><div id="text">
+<p>The explication for the Humanities Center Fall Symposium includes "bourgeois malaise" as one venue for exploring the Representation of Health and Disease in the City. Films by the French New Wave director Jacques Demy constantly move between nostalgia for the provincial city one left to "make it" in Paris, and criticism of the dis-ease of bourgeois life within the closed environment of such cities as Nantes (Lola, 1960), Cherbourg (The Umbrellas of Cherbourg, 1964), and Rochefort (The Young Girls of Rochefort, 1967). Whereas The Young Girls of Rochefort celebrates the comforts and joys of the provincial city, only marginally treating the constraints of provincial life, The Umbrellas of Cherbourg depicts a more tragic version of the rigid social structures and bourgeois mentality that prevail in the closed environment of Cherbourg. </p><p>
+
+In my paper, I will explore the dis-ease of the provincial city in another film by Demy, The Pied Piper (1971), which takes an allegorical look at the prejudices and constraints of bourgeois society depicted more "realistically" in his other films. Following the German legend of the Pied Piper, Demy situates his story in the quite literally closed city of Hamelin, which has cut itself off from the rest of Germany to protect itself from the Black Death. Although the plague poses a potential threat to the city, the true menaces to Hamelin include the burgermaster, a social climber who sells his daughter off to improve his own social standing; the baron, so obsessed with his own personal salvation that he spends all the town's money and resources on building a cathedral instead of fighting the plague; and an unscrupulous and superstitious clergy, who condemn the Jewish alchemist Melius for believing the plague has natural causes and is not a punishment sent from God. The tale tragically ends when the people of Hamelin, out of self-interest and social prejudice, refuse to pay the man who rid the city of rats and burn at the stake the Jewish doctor who nearly found a cure for the plague. In Demy's Pied Piper, the plague becomes a metaphor for the ills of Hamelin society. In the end, it is not the rats or the plague that destroy the town, but the people themselves. </p></div>
+
+<p><b>Annie Higgins Assistant Professor of CMLLC <br />
+Touching the City: Ease and Dis-ease of Oasis, Prison, and Village  </b></p><div id="text">
+<p>The city plays a potent role in a number of modern Arabic novels and short stories, in some cases taking on a persona of its own which interacts with its denizens. The city is the locus for plays of power amongst local, national, and global forces reshaping the individual's role in the microcosm of his daily life as well as the macrocosm of changing regional relations. These changes affect the ease and dis-ease of human relationships, societal structure, and the effectual exercise of power on political and personal bases. </p><p>
+In Abdelrahman Munif's novel, Cities of Salt, we see the transformation of an industrially unsophisticated society when an oasis is erased while its inhabitants are displaced in a city where their values, goals, and relationships take on new dimensions. The urban locus brings social breakdown, with tragic dis-eases caused by sudden shifts from rural to urban, local to global, independent to colonial, and a bartering to a monetized economy. While the images are not all negative, this work was close enough to the discomfort of political reality to cause the novelist's exile from his native Saudi Arabia. </p><p>
+
+Salwa Bakr's novel, The Golden Chariot, demonstrates how an Egyptian women's prison introduces the protagonist to fellow inmates from a wider range of social strata than her cloistered life of freedom gave her. Here, she evaluates which women will accompany her in the golden chariot of her fantasy, thus becoming the judge of inclusion and exclusion, but using different criteria than those by which the court judged her. Prison is an urban locus for containing society's dis-eases, by confining the dis-eased. Paradoxically, these socially excluded women find inclusion and spiritual ease through communication, compassion, and individual expression which they lacked when free. </p><p>
+
+The Dawm Tree of Wad Hamid is Sudanese author, Tayeb Salih's, powerful short story where nature and ancient village traditions subvert successive government authorities in their attempted public works program, designed to ease the village into the chain of modern life. The city-authorized program of modernization and ease is refuted by notions of the relationship between local residents, prophecy, and nature. The impotence of the capital city's influence-wielders in contrast to the lasting power of the tree and villagers' perceptions etch indelible questions of who dominates and what endures. </p>
+<p>
+While the city is at times a source of dis-ease, disturbing the flow of life of simpler times, it can also ease social dysfunctions in unexpected ways, inverting inclusion and exclusion, and engendering new lines of communication. In another scenario, nature and villagers' connection to the land can vanquish political and industrial intrusions sent from the city. These three writers show how oasis, prison, and village touch the city and are touched by it, easing and dis-easing the individual's relationship to their spiritual selves, their society, and their environment. </p></div>
+
+<p><b>Thomas Kohn Assistant Professor of CMLLC <br />
+The Source of the Plague at Thebes in Seneca's Oedipus </b></p><div id="text">
+<p>It is well known that disease plays an important role in the myth of Oedipus. In Sophocles' Oedipus Tyrannus, it is the impetus which drives the king to investigate the murder of his predecessor. Seneca picks up this motif in his Oedipus. But whereas Sophocles merely mentions the Plague, Seneca goes into much greater detail, as both Oedipus and the Chorus describe the symptoms and the devastating effect the disease is having on both the physical and moral health of Thebes. And although the audience knows that the Plague has come from the gods, the king suggests that the Sphinx has brought this destruction on the city, perhaps meaning that the rotting corpse is the source of the pestilence. But it is more interesting to consider the literary source of the disease. Again, Seneca is most directly copying Sophocles. But his descriptions also seem indebted to Thucydides and his account of the Plague of Athens. In this, Seneca follows a long tradition of plague-narrative from the historian through Lucretius to Vergil and Ovid. But the playwright is the first to link the Thucydidean Plague to a city other than Athens, thus combining the traditions of Sophocles and Thucydides in an attempt to show disease in an urban setting. </p></div>
+
+<p><b>Chris Leland Professor of English <br />
+Reading from Letting Loose 'Thanateros,' Chapter 2 </b></p><div id="text">
+<p>This novel (1996) explores the years from the 1950s through the 1990s through the lives of its three major characters who all hail from the same small town--a Vietnam Veteran, a woman entrepreneur, and a gay photographer in now living in New York City, Barry Caraway. In this chapter, set in February of 1984 but with action interspersed from 1982, Barry visits his wealthy friend, Bowen, whose apartment on the Upper West Side has become something a hospice for victims of AIDS, the disease which killed Barry's lover, Jacy, early in the epidemic.</p><p>
+
+What is notable is that, at this point, while most of New York (and most of the United States) remained relatively ignorant of and/or complacent about HIV, the virus had devastated the gay communities in the larger metropolitan areas. There was a peculiar and ugly smugness in Reagan's America at the horror being visited upon a group who many, at least, felt had brought plague upon themselves. It was only later that the full extent of the pandemic, now in its thirtieth year, received the attention it deserved.</p><p>
+
+Herein, then, is the story of those who, in the midst of an apparently healthy city, confront the ravages of epidemic disease. For brevity's sake, I'll be reading the passages from 1984. Those from 1982 relate Jacy's diagnosis, illness, and death. </p></div>
+
+<p><b>Daphne Ntiri, Associate Professor of Africana Studies <br />
+Merry Stewart from University of Detroit College of Nursing, <br>Transformative Learning Intervention: Effect on Functional Health Literacy and Diabetes Knowledge in Older African Americans </b></p><div id="text">
+<p>This study evaluated the effect of a transformative learning (TL) intervention on functional health literacy and diabetes knowledge in older African Americans in Detroit. Twenty participants from senior community centers completed a six session intervention. </p><p>
+Research pertaining to adult learning theories has been centered in traditional educational environments (e.g. classrooms). However, adult learning theories are reaching beyond traditional contexts. These extended contexts include health care environments. The exploration of educational pedagogies for adults in health care has been driven by longer life spans and the increasing incidence of chronic illnesses (Chronic Illness - The Rise of Chronic Illness, 2007). </p><p>
+Educators have explored the process of change in adults over the years. Adult educators have been shifting from a complete reliance on traditional pedagogical approaches to alternative learning approaches (Knowles, 1984). Knowles stated that the goal of these alternative approaches should be to motivate adults to become more active in the learning process. Active learning affords adults the opportunities to develop new frames of reference and see the world differently from where they were before. Green (1981) advocated that active learning principles emphasize learner choice more than expert control.</p><p>
+Mezirow (1996) has expanded the theoretical debate further with his focus on transformative learning (TL). Mezirow declared that TL is a social process by which one can construct and apply new meaning to one's experience as a guide to action. In other words, TL is viewed as an effective method to expand one's consciousness and bring about the required social change as is advocated in this study. Additionally, TL is a self-directed process whereby learners use their initiatives with or without the help of others to determine the information they need and seek ways to acquire it (Cranton, 2006). This acquisition process involves self-reflection by the learners in which they question why it is important to learn and the validity of the learning itself (Pilling-Cormick, 1997). This process is also in support of Freire's (1970; 1973) theory of critical consciousness that promoted the application of transformative learning principles as an instrument for personal transformation and social change. Freire asserted that education is liberating for both the change agent and the individual learner in the search for knowledge. </p></div>
+
+<p><b>Mary C. Sengstock Professor of Sociology <br />
+Family Violence: Is It a City Problem?  </b></p><div id="text">
+<p>Nearly four decades of conducting research and presenting training sessions on family violence at several levels (spouse abuse, child abuse, and elder abuse) provide extensive evidence of the manner in which family violence tends to be viewed. Is it a health problem or a deviance problem? Is it a problem at all? Or is it simply the way in which some people choose to conduct their family lives, and is, therefore, none of anyone else's business? Is it a problem which should be of concern for all of society? Or is it only a problem to be found in the "evil urban centers"? In this presentation, I will discuss the prevalent tendency to view family violence as primarily a health problem, and likewise, as a problem indigenous to the urban environment, one not likely to occur in the idyllic settings outside of urban centers. </p></div>
 
 </div>
 </div><!-- bg border ends-->
